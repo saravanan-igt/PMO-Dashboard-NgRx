@@ -66,21 +66,14 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #budgetContent
-      ><p>
+    <ng-template #budgetContent>
+      <p>
         This section represents approved budgets for the combined CTOGL
         portfolio and individual business unit portfolios. Active (full project
         budgets for projects in delivery), Planned (approved budget forecasts
         for in plan probability level opportunities), and Closed (full project
         budgets for projects that have gone live in 2020).
       </p>
-      <!-- <p class="text-danger-tooltip">
-        *drc – Please confirm this section is pulling approved budgets for in
-        delivery and closed project and approved forecast for Planned projects
-        (Planed projects generally do not have a budget noted in the Cost plan
-        or As Negotiated field in RI Clarity, only Current forecast field is
-        updated).
-      </p> -->
     </ng-template>
     <div class="col-md-5 mb-4">
       <app-budget-chart
@@ -109,18 +102,14 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #forecastContent
-      ><p>
+    <ng-template #forecastContent>
+      <p>
         This section represents the budget performance for each individual
         business unit portfolio, broken down by Active, and Closed projects.
         Cost Planning indicates the approved budget or cost plan per project.
         Current Forecast represents the Actuals + ETC.
       </p>
-      <!-- <p class="text-danger-tooltip">
-        *drc- Maybe instead of “Current Forecast” we can call it “Current
-        Forecast” since this represent actual + ETC, not just actuals to date.
-      </p> -->
-      Exception:
+      <p>Exception:</p>
       <ul>
         <li>
           The VLT portfolio labor actuals are collected via RI Clarity and may

@@ -77,6 +77,10 @@ export class AppComponent implements OnInit {
     this.sidenavOpen = !this.sidenavOpen;
   }
 
+  openForm() {
+    this.router.navigate(["/dcForm"]);
+  }
+
   ngOnInit() {
     if (window.innerWidth <= 768) {
       this.sidenavMode = "over";

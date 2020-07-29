@@ -24,6 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^5.3.1",
     "@ngrx/effects": "^9.2.0",
     "@ngrx/store": "^9.2.0",
+    "@syncfusion/ej2-angular-richtexteditor": "^18.2.46",
     "angular-particle": "^1.0.4",
     "bootstrap": "^4.5.0",
     "compressed-json": "^1.0.15",

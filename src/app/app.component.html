@@ -18,12 +18,17 @@
     <mat-nav-list>
       <p class="sidenav-header">IGT - Leadership Board</p>
       <a mat-list-item routerLink="/home" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          >settings_input_svideo</mat-icon
-        >
+        <mat-icon>settings_input_svideo</mat-icon>
         Dashboard
+      </a>
+      <a
+        mat-list-item
+        routerLink="/dcForm"
+        routerLinkActive="active"
+        *ngIf="currentUser.roleid === 1"
+      >
+        <mat-icon>help_outline</mat-icon>
+        Update Help Text
       </a>
     </mat-nav-list>
     <mat-nav-list>
@@ -166,11 +171,9 @@
           type="button"
           mat-icon-button
           matTooltip="Help"
-          (click)="openDialog()"
+          (click)="openForm()"
         >
-          <mat-icon fontSet="material-icons-outlined" aria-label="call icon"
-            >info
-          </mat-icon>
+          <mat-icon fontSet="material-icons-outlined">article </mat-icon>
         </button> -->
         <button
           type="button"

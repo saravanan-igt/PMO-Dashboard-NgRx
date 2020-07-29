@@ -19,6 +19,7 @@ import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.co
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
 
 import { LoginComponent } from "./login/login.component";
+import { DcFormComponent } from "./dc-form/dc-form.component";
 import { AuthGuard } from "./_helpers";
 
 const routes: Routes = [
@@ -97,7 +98,9 @@ const routes: Routes = [
     component: VltGoLiveComponent,
     canActivate: [AuthGuard],
   },
+  { path: "dcForm", component: DcFormComponent, canActivate: [AuthGuard] },
   { path: "login", component: LoginComponent },
+
   {
     path: "",
     redirectTo: "/home",
