@@ -1,17 +1,13 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-import {
-  FormGroup,
-  FormBuilder,
-  Validators,
-  FormControl,
-} from "@angular/forms";
-import {
-  ToolbarService,
-  LinkService,
-  ImageService,
-  HtmlEditorService,
-  RichTextEditorComponent,
-} from "@syncfusion/ej2-angular-richtexteditor";
+import { Component, OnInit } from "@angular/core";
+import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { HelpTextService } from "../_services/help-text.service";
+// import {
+//   ToolbarService,
+//   LinkService,
+//   ImageService,
+//   HtmlEditorService,
+//   RichTextEditorComponent,
+// } from "@syncfusion/ej2-angular-richtexteditor";
 
 @Component({
   selector: "app-dc-form",
@@ -20,8 +16,8 @@ import {
 })
 export class DcFormComponent implements OnInit {
   pageTitle: string = "Update Help Text";
-  // updateTextForm: FormGroup;
   rteForm: FormGroup;
+  helpTextData: any;
   public tools: object = {
     items: [
       "Bold",
@@ -37,59 +33,61 @@ export class DcFormComponent implements OnInit {
     ],
   };
 
-  // @ViewChild("fromRTE", { static: false })
-  // private rteEle: RichTextEditorComponent;
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private api: HelpTextService) {}
 
   ngOnInit() {
-    this.rteForm = this.formBuilder.group({
-      pdProject: [null, [Validators.required]],
-      pdBudget: [null, [Validators.required]],
-      pdForecast: [null, [Validators.required]],
-      pdRAG: [null, [Validators.required]],
-      pdGoLIve: [null, [Validators.required]],
-      ldProject: [null, [Validators.required]],
-      ldBudget: [null, [Validators.required]],
-      ldForecast: [null, [Validators.required]],
-      ldRAG: [null, [Validators.required]],
-      ldGoLive: [null, [Validators.required]],
-      lsvProject: [null, [Validators.required]],
-      lsvProjectList: [null, [Validators.required]],
-      lsvGoLive: [null, [Validators.required]],
-      lsdProject: [null, [Validators.required]],
-      lsdProjectList: [null, [Validators.required]],
-      lsdGoLive: [null, [Validators.required]],
-      lrdProject: [null, [Validators.required]],
-      lrdProjectList: [null, [Validators.required]],
-      lrdGoLive: [null, [Validators.required]],
-      lotGoLive: [null, [Validators.required]],
-      cdProject: [null, [Validators.required]],
-      cdBudget: [null, [Validators.required]],
-      cdForecast: [null, [Validators.required]],
-      cdRAG: [null, [Validators.required]],
-      cdGoLive: [null, [Validators.required]],
-      csdProject: [null, [Validators.required]],
-      csdProjectList: [null, [Validators.required]],
-      csdGoLive: [null, [Validators.required]],
-      crdProject: [null, [Validators.required]],
-      crdProjectList: [null, [Validators.required]],
-      crdGoLive: [null, [Validators.required]],
-      casGoLive: [null, [Validators.required]],
-      vdProject: [null, [Validators.required]],
-      vdBudget: [null, [Validators.required]],
-      vdForecast: [null, [Validators.required]],
-      vdRAG: [null, [Validators.required]],
-      vdGoLive: [null, [Validators.required]],
-      vsvProject: [null, [Validators.required]],
-      vsvProjectList: [null, [Validators.required]],
-      vsvGoLive: [null, [Validators.required]],
-      vsdProject: [null, [Validators.required]],
-      vsdProjectList: [null, [Validators.required]],
-      vsdGoLive: [null, [Validators.required]],
-      vrdProject: [null, [Validators.required]],
-      vrdProjectList: [null, [Validators.required]],
-      vrdGoLive: [null, [Validators.required]],
-      vltGoLive: [null, [Validators.required]],
+    this.api.getHelpText().subscribe((res) => {
+      console.log("res", res);
+      this.helpTextData = res;
+      this.rteForm = this.formBuilder.group({
+        pdProject: [res["pdProject"], [Validators.required]],
+        pdBudget: [res["pdBudget"], [Validators.required]],
+        pdForecast: [res["pdForecast"], [Validators.required]],
+        pdRAG: [res["pdRAG"], [Validators.required]],
+        pdGoLIve: [res["pdGoLIve"], [Validators.required]],
+        ldProject: [res["ldProject"], [Validators.required]],
+        ldBudget: [res["ldBudget"], [Validators.required]],
+        ldForecast: [res["ldForecast"], [Validators.required]],
+        ldRAG: [res["ldRAG"], [Validators.required]],
+        ldGoLive: [res["ldGoLive"], [Validators.required]],
+        lsvProject: [res["lsvProject"], [Validators.required]],
+        lsvProjectList: [res["lsvProjectList"], [Validators.required]],
+        lsvGoLive: [res["lsvGoLive"], [Validators.required]],
+        lsdProject: [res["lsdProject"], [Validators.required]],
+        lsdProjectList: [res["lsdProjectList"], [Validators.required]],
+        lsdGoLive: [res["lsdGoLive"], [Validators.required]],
+        lrdProject: [res["lrdProject"], [Validators.required]],
+        lrdProjectList: [res["lrdProjectList"], [Validators.required]],
+        lrdGoLive: [res["lrdGoLive"], [Validators.required]],
+        lotGoLive: [res["lotGoLive"], [Validators.required]],
+        cdProject: [res["cdProject"], [Validators.required]],
+        cdBudget: [res["cdBudget"], [Validators.required]],
+        cdForecast: [res["cdForecast"], [Validators.required]],
+        cdRAG: [res["cdRAG"], [Validators.required]],
+        cdGoLive: [res["cdGoLive"], [Validators.required]],
+        csdProject: [res["csdProject"], [Validators.required]],
+        csdProjectList: [res["csdProjectList"], [Validators.required]],
+        csdGoLive: [res["csdGoLive"], [Validators.required]],
+        crdProject: [res["crdProject"], [Validators.required]],
+        crdProjectList: [res["crdProjectList"], [Validators.required]],
+        crdGoLive: [res["crdGoLive"], [Validators.required]],
+        casGoLive: [res["casGoLive"], [Validators.required]],
+        vdProject: [res["vdProject"], [Validators.required]],
+        vdBudget: [res["vdBudget"], [Validators.required]],
+        vdForecast: [res["vdForecast"], [Validators.required]],
+        vdRAG: [res["vdRAG"], [Validators.required]],
+        vdGoLive: [res["vdGoLive"], [Validators.required]],
+        vsvProject: [res["vsvProject"], [Validators.required]],
+        vsvProjectList: [res["vsvProjectList"], [Validators.required]],
+        vsvGoLive: [res["vsvGoLive"], [Validators.required]],
+        vsdProject: [res["vsdProject"], [Validators.required]],
+        vsdProjectList: [res["vsdProjectList"], [Validators.required]],
+        vsdGoLive: [res["vsdGoLive"], [Validators.required]],
+        vrdProject: [res["vrdProject"], [Validators.required]],
+        vrdProjectList: [res["vrdProjectList"], [Validators.required]],
+        vrdGoLive: [res["vrdGoLive"], [Validators.required]],
+        vltGoLive: [res["vltGoLive"], [Validators.required]],
+      });
     });
   }
 
@@ -104,11 +102,4 @@ export class DcFormComponent implements OnInit {
     console.log("this.rteForm.value", JSON.stringify(this.rteForm.value));
     alert("Form submitted successfully");
   }
-
-  // submit() {
-  //   if (!this.updateTextForm.valid) {
-  //     return;
-  //   }
-  //   console.log(this.updateTextForm.value);
-  // }
 }

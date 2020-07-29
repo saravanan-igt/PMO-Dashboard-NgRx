@@ -32,6 +32,7 @@ export class DashboardComponent implements OnInit {
   DataSubscription: Subscription;
   DataLists: any[] = [];
   dataError;
+  helpText;
 
   calculateTotal(data) {
     let total = data.reduce((total, currentValue) => {
@@ -50,6 +51,8 @@ export class DashboardComponent implements OnInit {
       .subscribe((data) => {
         if (data.Data.length) {
           this.DataLists = data.Data;
+          this.helpText = this.DataLists[3];
+          console.log("this.helpText", this.helpText);
           this.customerProjects = this.DataLists[0].customer;
           this.rndProjects = this.DataLists[0].rnd;
           this.customerActiveProjects = this.customerProjects.projectList.Active;

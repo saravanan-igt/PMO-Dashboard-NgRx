@@ -21,10 +21,17 @@ export class DataHttpService {
     this.baseUrl + "/GetallDetails/Video"
   );
 
+  private helpTextURL = this.httpclient.get(`../assets/data/helpText.json`);
+
   constructor(private httpclient: HttpClient) {}
 
   public getAllProjects(): Observable<any[]> {
-    return forkJoin([this.LotteryApiURL1, this.CasinoApiURL, this.VltApiURL]);
+    return forkJoin([
+      this.LotteryApiURL1,
+      this.CasinoApiURL,
+      this.VltApiURL,
+      this.helpTextURL,
+    ]);
   }
   public getDatas() {
     return this.getAllProjects().pipe(
@@ -33,6 +40,7 @@ export class DataHttpService {
           Utils.createLotteryData(response[0]),
           Utils.createCasinoData(response[1]),
           Utils.createVltData(response[2]),
+          response[3],
         ];
       })
     );
