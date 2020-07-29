@@ -137,8 +137,8 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #ragContent
-      ><p>
+    <ng-template #ragContent>
+      <p>
         This section represents the Overall Risk Status for the Active projects
         in the combined CTOGL portfolio and individual business unit portfolios
         as currently set in RI Clarity or NV PPM.
@@ -199,8 +199,8 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #goLiveContent
-      ><p>
+    <ng-template #goLiveContent>
+      <p>
         This section displays the calendar of go live dates across the CTOGL
         portfolio as derived from applicable fields in RI Clarity or NV PPM. The
         color shading represents the different business units. Click on any of
@@ -216,15 +216,7 @@
         <strong>Business</strong> dropdown buttons to isolate those projects in
         the calendar view. Select <strong>All</strong> in both the dropdowns to
         display all statuses.
-        <!-- *Click on any color in the RAG Status pie chart to isolate those
-        projects in the calendar view. (Refresh to return the display to all
-        statuses.) -->
       </p>
-      <!-- <p class="text-danger-tooltip">
-        *drc – when you isolate the calendar by RAG status there is no way to go
-        back to showing all without refreshing the screen. Should we add a help
-        text for that?
-      </p> -->
     </ng-template>
     <div class="col-12" *ngIf="calendarData">
       <app-go-live-calendar

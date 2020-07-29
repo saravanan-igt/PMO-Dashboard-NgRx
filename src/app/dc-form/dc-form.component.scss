@@ -4,3 +4,15 @@
 .helptext-form-title {
   font-size: 1.05rem;
 }
+.help-form-cantainer {
+  max-height: 62vh;
+  overflow: auto;
+}
+.form-card {
+  .form-card-title {
+    font-size: 20px;
+  }
+  .mat-card-content {
+    padding-top: 10px;
+  }
+}

@@ -24,8 +24,8 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #projectContent
-      ><p>
+    <ng-template #projectContent>
+      <p>
         These charts reflect the number of projects in the combined Lottery
         Portfolio and individual Lottery portfolios by business type. Active (in
         delivery), Planned (0,1,2 probability, forecasted opportunities), and
@@ -76,8 +76,8 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #budgetContent
-      ><p>
+    <ng-template #budgetContent>
+      <p>
         These charts reflect combined Lottery portfolio and individual Lottery
         portfolio budget figures from different fields in RI Clarity depending
         upon the business type. The numbers reflected are as of the latest
@@ -98,14 +98,6 @@
           field.
         </li>
       </ul>
-      <!-- <p class="text-danger-tooltip">
-        *drc – Need to verify these statements above per business type. For
-        Completed projects we need to take the number from the Actuals to Date
-        field because once the project is closed the Budget and Cost Plan fields
-        revert to 0. For Planned projects no budget or cost plan number is
-        entered in SAP until awarded so need to take the number from the Current
-        Forecast field.
-      </p> -->
       <strong>R&D</strong>
       <ul>
         <li>
@@ -150,8 +142,8 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #forecastContent
-      ><p>
+    <ng-template #forecastContent>
+      <p>
         This section represents the budget performance by Active and Closed
         projects in the Lottery portfolio, further broken down business type.
       </p>
@@ -159,10 +151,6 @@
         Cost Planning indicates the approved budget or cost plan per project.
         Current Forecast represents the Actuals + ETC.
       </p>
-      <!-- <p class="text-danger-tooltip">
-        *drc- Maybe instead of “Current Forecast” we can call it “Current
-        Forecast” since this represent actual + ETC, not just actuals to date.
-      </p> -->
     </ng-template>
     <div class="col-12 mb-4">
       <app-forecast-chart
@@ -279,9 +267,6 @@
         <strong>Business</strong> dropdown buttons to isolate those projects in
         the calendar view. Select <strong>All</strong> in both the dropdowns to
         display all statuses.
-        <!-- *Click on any color in the RAG Status pie chart to isolate those
-        projects in the calendar view. (Refresh to return the display to all
-        statuses.) -->
       </p>
     </ng-template>
     <div class="col-12" *ngIf="calendarData">

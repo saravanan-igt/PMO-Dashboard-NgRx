@@ -75,6 +75,21 @@ export class DcFormComponent implements OnInit {
       crdProjectList: [null, [Validators.required]],
       crdGoLive: [null, [Validators.required]],
       casGoLive: [null, [Validators.required]],
+      vdProject: [null, [Validators.required]],
+      vdBudget: [null, [Validators.required]],
+      vdForecast: [null, [Validators.required]],
+      vdRAG: [null, [Validators.required]],
+      vdGoLive: [null, [Validators.required]],
+      vsvProject: [null, [Validators.required]],
+      vsvProjectList: [null, [Validators.required]],
+      vsvGoLive: [null, [Validators.required]],
+      vsdProject: [null, [Validators.required]],
+      vsdProjectList: [null, [Validators.required]],
+      vsdGoLive: [null, [Validators.required]],
+      vrdProject: [null, [Validators.required]],
+      vrdProjectList: [null, [Validators.required]],
+      vrdGoLive: [null, [Validators.required]],
+      vltGoLive: [null, [Validators.required]],
     });
   }
 
@@ -86,7 +101,7 @@ export class DcFormComponent implements OnInit {
     if (!this.rteForm.valid) {
       return;
     }
-    console.log("this.rteForm.value", this.rteForm.value);
+    console.log("this.rteForm.value", JSON.stringify(this.rteForm.value));
     alert("Form submitted successfully");
   }
 
