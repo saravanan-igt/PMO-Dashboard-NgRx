@@ -1,0 +1,40 @@
+<mat-card class="list-card px-0" *ngIf="projectList">
+  <mat-card-title class="px-3 pb-1">{{ cardTitle }}</mat-card-title>
+  <mat-divider></mat-divider>
+  <div class="pt-1">
+    <cdk-virtual-scroll-viewport itemSize="20" class="list-card-scroll">
+      <mat-card-content
+        class="container-fluid mb-2 border-bottom"
+        *cdkVirtualFor="let project of projectList; trackBy: trackByFn"
+      >
+        <div class="container-fluid">
+          <div class="row py-2">
+            <div class="col-12 px-0">
+              <p class="mb-2">
+                <a class="proTitle"
+                  >{{ project.Project
+                  }}<i class="fas fa-chevron-circle-right"></i
+                ></a>
+              </p>
+              <p class="mb-2">
+                Project ID: <span class="amount-text">{{ project.ID }}</span>
+              </p>
+              <p class="mb-1">
+                Cost:
+                <span class="amount-text">{{
+                  project["Forecast Dollars"] !== undefined
+                    ? (project["Forecast Dollars"] | amount: 1)
+                    : (project["ForecastDollars"] | amount: 1)
+                }}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </cdk-virtual-scroll-viewport>
+    <div class="no-data" *ngIf="!projectList.length">
+      <img src="./assets/img/nodata.png" />
+      <p>No {{ cardTitle }} found.</p>
+    </div>
+  </div>
+</mat-card>

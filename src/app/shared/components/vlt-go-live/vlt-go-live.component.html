@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="page-title mb-1">{{ pageTitle }}</h2>
+    </div>
+    <div class="col-md-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn text-white"
+      [ngbPopover]="projectContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #projectContent
+      ><p>
+        The calendar page displays only Active (in delivery) VLT projects (all
+        project types).
+      </p>
+      <p>
+        The triangles are positioned under the month of go live with the color
+        representing the risk level of project as indicated in the RAG status
+        section. Hovering over a triangle reveals the exact go live date. Note:
+        VLT projects are not tracking status in NV PPM or RI Clarity and are
+        therefore defaulting to Low risk (green).
+      </p>
+      <p>
+        * Select the values from <strong>RAG Status</strong> and
+        <strong>Business</strong> dropdown buttons to isolate those projects in
+        the calendar view. Select <strong>All</strong> in both the dropdowns to
+        display all statuses.
+      </p>
+      <!-- <p>
+        *drc – can this have buttons for SD, SV, R&D so the projects displayed
+        can be filtered?
+      </p> -->
+    </ng-template>
+    <div class="col-12">
+      <app-go-live-calendar
+        [scheduleData]="calendarData"
+        [calendarTitle]="'VLT Projects Go-Live Calendar'"
+        [ragFilter]="true"
+        [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
+      ></app-go-live-calendar>
+    </div>
+  </div>
+</div>

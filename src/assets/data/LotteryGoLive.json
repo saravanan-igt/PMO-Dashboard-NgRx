@@ -1,0 +1,1483 @@
+{
+    "Customer": [
+      {
+        "Project": "Aurora Navigator",
+        "Component": "Navigator 1.8 Point Release 1",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/01/19",
+        "LiveDate": "02/14/20"
+      },
+      {
+        "Project": "Aurora Navigator",
+        "Component": "Navigator 1.9",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "02/01/20",
+        "LiveDate": "09/18/20"
+      },
+      {
+        "Project": "Aurora Platform",
+        "Component": "A3.2 Benchmark Upgrade",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/21/19",
+        "LiveDate": "01/17/20"
+      },
+      {
+        "Project": "Aurora Platform",
+        "Component": "Order Wizard 1.2",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "08/05/19",
+        "LiveDate": "04/03/20"
+      },
+      {
+        "Project": "Brazil Lotex Instants Operator",
+        "Component": "BLX-Conversion",
+        "BusinessType": "System Delivery",
+        "StartDate": "12/03/19",
+        "LiveDate": "08/01/20"
+      },
+      {
+        "Project": "California Systems Conversion",
+        "Component": "CA Aurora Conversion",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/14/19",
+        "LiveDate": "11/15/20"
+      },
+      {
+        "Project": "California Systems Conversion",
+        "Component": "Aurora Wish List",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/02/20",
+        "LiveDate": "05/10/21"
+      },
+      {
+        "Project": "DevOps",
+        "Component": "RHS6-POC",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/30/20",
+        "LiveDate": "03/31/20"
+      },
+      {
+        "Project": "DevOps",
+        "Component": "GRAD Phase I",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/27/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "Mississippi Aurora Project",
+        "Component": "Powerball and Mega",
+        "BusinessType": "System Delivery",
+        "StartDate": "09/26/19",
+        "LiveDate": "01/30/20"
+      },
+      {
+        "Project": "Mississippi Aurora Project",
+        "Component": "Touch 28",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "07/31/20"
+      },
+      {
+        "Project": "New Jersey Conversion",
+        "Component": "Tech Refresh Conversion",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/21/19",
+        "LiveDate": "01/18/21"
+      },
+      {
+        "Project": "New Jersey Conversion",
+        "Component": "Tech Refresh - Deleted",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "01/18/21"
+      },
+      {
+        "Project": "Oregon System Conversion",
+        "Component": "OR Aurora Emulation",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/18/19",
+        "LiveDate": "07/20/20"
+      },
+      {
+        "Project": "Oregon System Conversion",
+        "Component": "OR Aurora Conversion",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "03/16/20",
+        "LiveDate": "02/21/21"
+      },
+      {
+        "Project": "Point of Access",
+        "Component": "Open Retail 1.8",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "09/02/19",
+        "LiveDate": "03/31/20"
+      },
+      {
+        "Project": "RFSS-Antilles",
+        "Component": "CY19 Promo Module & Convenio Expan Phase I",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/09/19",
+        "LiveDate": "01/07/20"
+      },
+      {
+        "Project": "RFSS-Antilles",
+        "Component": "CY1902 Maint Batch 2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/09/19",
+        "LiveDate": "01/07/20"
+      },
+      {
+        "Project": "RFSS-Argentina IPLC",
+        "Component": "CY19 Loto Plus and Brinco",
+        "BusinessType": "Service Delivery",
+        "StartDate": "05/20/19",
+        "LiveDate": "01/19/20"
+      },
+      {
+        "Project": "RFSS-Arizona",
+        "Component": "CY1901 Transition",
+        "BusinessType": "Service Delivery",
+        "StartDate": "03/19/18",
+        "LiveDate": "01/12/20"
+      },
+      {
+        "Project": "RFSS-Atlantic Lottery (Canada)",
+        "Component": "CY19 CR14 Printer Firmware Upgrade",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/14/19",
+        "LiveDate": "02/03/20"
+      },
+      {
+        "Project": "RFSS-Atlantic Lottery (Canada)",
+        "Component": "CY19 CR1 QR codes for draw games",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/18/19",
+        "LiveDate": "04/06/20"
+      },
+      {
+        "Project": "RFSS-Atlantic Lottery (Canada)",
+        "Component": "CY2020 - ALC25861",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/30/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Belgium",
+        "Component": "PLB18",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/18/19",
+        "LiveDate": "01/15/20"
+      },
+      {
+        "Project": "RFSS-Belgium",
+        "Component": "PLB19",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/13/20",
+        "LiveDate": "01/20/20"
+      },
+      {
+        "Project": "RFSS-Belgium",
+        "Component": "PLB20",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/15/20",
+        "LiveDate": "09/28/20"
+      },
+      {
+        "Project": "RFSS-Belgium",
+        "Component": "BEL Endava",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/15/20",
+        "LiveDate": "09/28/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "CY1905 Mini Batch 5",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/30/19",
+        "LiveDate": "02/02/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "CY1906 Mini Batch 6",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/11/19",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "RW - Final 3.1 Sprint",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/23/20",
+        "LiveDate": "03/17/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "Aurora",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/03/19",
+        "LiveDate": "06/01/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "RW 3.2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "08/22/19",
+        "LiveDate": "06/21/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "SRP Report Conversion with Aurora",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "10/26/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "EBF 2020",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "Reporting Open",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/13",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "Production",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/13",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "Under Investigation",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/11",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "2nd Chance Batch TBD",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/15",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "QA System",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/13",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "2nd Chance Special requests",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/15",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "GTECH Printing Development",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/15",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "2nd Chance Shared Services",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/17",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-California",
+        "Component": "2nd Chance EBFs",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/17",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Colombia",
+        "Component": "CY19 CS Service Delivery B - Phase 3",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/01/19",
+        "LiveDate": "01/15/20"
+      },
+      {
+        "Project": "RFSS-Colorado",
+        "Component": "CY1903 Maintenance Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/03/19",
+        "LiveDate": "01/26/20"
+      },
+      {
+        "Project": "RFSS-Colorado",
+        "Component": "CO IPS/Back-Office Conversion",
+        "BusinessType": "System Delivery",
+        "StartDate": "07/22/19",
+        "LiveDate": "06/05/20"
+      },
+      {
+        "Project": "RFSS-Colorado",
+        "Component": "EBF CY20",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Colorado",
+        "Component": "2020 ESMM",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Costa Rica",
+        "Component": "CY19 Reventado Game Ehc",
+        "BusinessType": "Service Delivery",
+        "StartDate": "08/19/19",
+        "LiveDate": "01/13/20"
+      },
+      {
+        "Project": "RFSS-Czech-Republic",
+        "Component": "CY19 Release 6: Jan 20",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/21/19",
+        "LiveDate": "02/03/20"
+      },
+      {
+        "Project": "RFSS-Czech-Republic",
+        "Component": "CY19 Release 5:  Winchecker2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/18/19",
+        "LiveDate": "02/24/20"
+      },
+      {
+        "Project": "RFSS-Czech-Republic",
+        "Component": "CY20 Rel1 Extra Renta",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/25/19",
+        "LiveDate": "06/01/20"
+      },
+      {
+        "Project": "RFSS-Finland",
+        "Component": "Templates",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/16",
+        "LiveDate": "01/01/20"
+      },
+      {
+        "Project": "RFSS-Florida",
+        "Component": "CY2020-02 March Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/09/19",
+        "LiveDate": "03/27/20"
+      },
+      {
+        "Project": "RFSS-Florida",
+        "Component": "CY2020-03 Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "02/03/20",
+        "LiveDate": "05/11/20"
+      },
+      {
+        "Project": "RFSS-Florida",
+        "Component": "FL Emergency Bug Fix 2020",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/24/20",
+        "LiveDate": "07/31/20"
+      },
+      {
+        "Project": "RFSS-Florida",
+        "Component": "Sales/Retailer Wizard",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/17/19",
+        "LiveDate": "09/17/20"
+      },
+      {
+        "Project": "RFSS-Florida",
+        "Component": "FL CY2020 - Planning",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/10/19",
+        "LiveDate": "10/10/20"
+      },
+      {
+        "Project": "RFSS-Florida",
+        "Component": "PENDING",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/10/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Georgia",
+        "Component": "GA 2020-Feb AEM EBF",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/31/20",
+        "LiveDate": "02/10/20"
+      },
+      {
+        "Project": "RFSS-Georgia",
+        "Component": "CY19 Cash Pop Phase 2 - Interactive",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/01/19",
+        "LiveDate": "02/18/20"
+      },
+      {
+        "Project": "RFSS-Georgia",
+        "Component": "CY20 Maintenance Batch",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "09/27/19",
+        "LiveDate": "02/23/20"
+      },
+      {
+        "Project": "RFSS-Georgia",
+        "Component": "CY20_GA_Maintenance_GA25987",
+        "BusinessType": "Service Delivery",
+        "StartDate": "08/27/19",
+        "LiveDate": "02/28/20"
+      },
+      {
+        "Project": "RFSS-Georgia",
+        "Component": "2020 Q1 Release",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/13/20",
+        "LiveDate": "04/30/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY20 Fast Play Phase 28",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/03/19",
+        "LiveDate": "01/19/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY19 GT20",
+        "BusinessType": "System Delivery",
+        "StartDate": "06/11/19",
+        "LiveDate": "01/26/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY20 Fast Play Phase 29",
+        "BusinessType": "Service Delivery",
+        "StartDate": "02/03/20",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY19 Revenue B - Phase 2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/08/19",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "CY19 Double Play",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/26/19",
+        "LiveDate": "04/19/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY18 Cash Pop",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/08/19",
+        "LiveDate": "09/21/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN HOA",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/31/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY20 Mobile",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/31/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY20 ESMM",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/31/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Indiana",
+        "Component": "IN CY20 ESBI",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/31/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Israel",
+        "Component": "Game Touch",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/06/20",
+        "LiveDate": "06/10/20"
+      },
+      {
+        "Project": "RFSS-Israel",
+        "Component": "Tech Stack",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "09/23/19",
+        "LiveDate": "07/10/20"
+      },
+      {
+        "Project": "RFSS-Israel",
+        "Component": "Terminal Open Retail",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/09/19",
+        "LiveDate": "09/11/20"
+      },
+      {
+        "Project": "RFSS-Israel",
+        "Component": "HOA",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Jamaica",
+        "Component": "JAM New Hot Pick Game ",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "09/05/19",
+        "LiveDate": "03/01/20"
+      },
+      {
+        "Project": "RFSS-Jamaica",
+        "Component": "JAM GemIntelligence",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/18/19",
+        "LiveDate": "03/01/20"
+      },
+      {
+        "Project": "RFSS-Jamaica",
+        "Component": "JAM CY19 GemIntelligence",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/18/19",
+        "LiveDate": "03/01/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "CY1903 Vending Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/22/19",
+        "LiveDate": "01/26/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "KY PlayDigital 2020 Sprint 20-01",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/06/20",
+        "LiveDate": "01/31/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "Fenix-KY App Upgrade",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/21/19",
+        "LiveDate": "02/07/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "Remote Planogram 2019",
+        "BusinessType": "System Delivery",
+        "StartDate": "08/01/19",
+        "LiveDate": "03/12/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "CY1904 Cash Pop",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/16/19",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "KY CY1906 Win Place Show Statewide",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/04/19",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "CY 1905 NewFastPlayGames1",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/04/19",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "Cashless Transactions",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "06/30/20",
+        "LiveDate": "06/30/20"
+      },
+      {
+        "Project": "RFSS-Kentucky",
+        "Component": "KY IGT Pay",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/07/19",
+        "LiveDate": "10/15/20"
+      },
+      {
+        "Project": "RFSS-Lithuania",
+        "Component": "CY20 HOA",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Luxembourg",
+        "Component": "ELO ANNI 2019",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "09/09/19",
+        "LiveDate": "01/24/20"
+      },
+      {
+        "Project": "RFSS-Luxembourg",
+        "Component": "Sprint 10",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/28/20",
+        "LiveDate": "01/28/20"
+      },
+      {
+        "Project": "RFSS-Luxembourg",
+        "Component": "EUML Topaz",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/02/19",
+        "LiveDate": "02/01/20"
+      },
+      {
+        "Project": "RFSS-Luxembourg",
+        "Component": "Euromillions Topaz",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/10/19",
+        "LiveDate": "02/01/20"
+      },
+      {
+        "Project": "RFSS-Massachusetts",
+        "Component": "CY20 Ongoing Software Support",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "02/03/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Mauritius",
+        "Component": "MAU CY19 Batch 17",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/29/19",
+        "LiveDate": "03/29/20"
+      },
+      {
+        "Project": "RFSS-Mauritius",
+        "Component": "MAU CY20 Batch 18",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/20/20",
+        "LiveDate": "05/09/20"
+      },
+      {
+        "Project": "RFSS-Mauritius",
+        "Component": "MAU Maintenance",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/19/19",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Mexico",
+        "Component": "CY19 Maintenance Batch A",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/02/19",
+        "LiveDate": "03/16/20"
+      },
+      {
+        "Project": "RFSS-Michigan",
+        "Component": "MI22160 GT28 Hardware",
+        "BusinessType": "System Delivery",
+        "StartDate": "11/18/19",
+        "LiveDate": "01/27/20"
+      },
+      {
+        "Project": "RFSS-Michigan",
+        "Component": "MI CY1903 Maintenance Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/25/19",
+        "LiveDate": "03/02/20"
+      },
+      {
+        "Project": "RFSS-Michigan",
+        "Component": "MI CY2001 MM/PB Double Play",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/18/19",
+        "LiveDate": "04/19/20"
+      },
+      {
+        "Project": "RFSS-Minnesota",
+        "Component": "CY2020 EBFs",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/23/19",
+        "LiveDate": "02/24/20"
+      },
+      {
+        "Project": "RFSS-Minnesota",
+        "Component": "Wal-Mart Touch 20s",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/31/19",
+        "LiveDate": "04/30/20"
+      },
+      {
+        "Project": "RFSS-Missouri",
+        "Component": "Cashless Project",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/02/19",
+        "LiveDate": "06/01/20"
+      },
+      {
+        "Project": "RFSS-Nebraska",
+        "Component": "Documentation",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/08/11",
+        "LiveDate": "07/08/21"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "SPRINT_2019_10",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/04/19",
+        "LiveDate": "01/06/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "SPRINT_2020_01",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/02/20",
+        "LiveDate": "01/31/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "CY2001 Cashpop Markup",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/02/20",
+        "LiveDate": "02/29/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "Terminal_Emulation_2020",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "07/25/19",
+        "LiveDate": "03/23/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "CY1904 MM DoublePlay",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/04/19",
+        "LiveDate": "04/18/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "CY1904 Double Draw",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "11/11/19",
+        "LiveDate": "04/20/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "mtv_temp",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/22/15",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "EBF/Non-Batch 2020",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-New Jersey",
+        "Component": "Tech_Refresh_Deleted",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "01/29/21"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "2019 NY Batch 2.5",
+        "BusinessType": "System Delivery",
+        "StartDate": "07/24/19",
+        "LiveDate": "01/01/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "NY 2019 Batch 4 P2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/01/19",
+        "LiveDate": "04/06/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "2019 Get Well Plan",
+        "BusinessType": "System Delivery",
+        "StartDate": "06/25/19",
+        "LiveDate": "04/30/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "NY 2020 A/R Enhancements",
+        "BusinessType": "Service Delivery",
+        "StartDate": "02/03/20",
+        "LiveDate": "05/11/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "NYL Backlog",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/19",
+        "LiveDate": "08/31/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "2020 NY Batch 1",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "NY 2020 Deleted or Closed RFSS's",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "2020 NY Batch 2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-New York",
+        "Component": "2020 IBR_EBF",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-New Zealand",
+        "Component": "NZ-ESI Upgrade",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "04/01/19",
+        "LiveDate": "04/26/20"
+      },
+      {
+        "Project": "RFSS-North Carolina",
+        "Component": "CY1904 Keno Multiplier",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/04/19",
+        "LiveDate": "03/15/20"
+      },
+      {
+        "Project": "RFSS-North Carolina",
+        "Component": "CY1903 Fast Play",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/16/19",
+        "LiveDate": "05/10/20"
+      },
+      {
+        "Project": "RFSS-North Carolina",
+        "Component": "NCEL Game Card",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/27/20",
+        "LiveDate": "06/08/20"
+      },
+      {
+        "Project": "RFSS-Oregon",
+        "Component": "Second Chance",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "09/01/19",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Oregon",
+        "Component": "2020 EBF",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Poland",
+        "Component": "Batch 28 _ Szybkie 600",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/04/19",
+        "LiveDate": "01/31/20"
+      },
+      {
+        "Project": "RFSS-Poland",
+        "Component": "Batch 29 - 2020",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "11/11/19",
+        "LiveDate": "03/29/20"
+      },
+      {
+        "Project": "RFSS-Portugal",
+        "Component": "CY20 EM Logo Changes",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/21/19",
+        "LiveDate": "01/29/20"
+      },
+      {
+        "Project": "RFSS-Portugal",
+        "Component": "CY19 Horse Race",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/28/19",
+        "LiveDate": "06/04/20"
+      },
+      {
+        "Project": "RFSS-Rhode Island",
+        "Component": "RI CY19 IBR B",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/14/19",
+        "LiveDate": "01/31/20"
+      },
+      {
+        "Project": "RFSS-Rhode Island",
+        "Component": "CY20 MM Double Play",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/20/20",
+        "LiveDate": "04/18/20"
+      },
+      {
+        "Project": "RFSS-Rhode Island",
+        "Component": "RI CY20 Playdigital B1",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Saxony (Germany)",
+        "Component": "SLG B28 GE",
+        "BusinessType": "Service Delivery",
+        "StartDate": "05/20/19",
+        "LiveDate": "03/08/20"
+      },
+      {
+        "Project": "RFSS-Saxony (Germany)",
+        "Component": "SLG B28 Maintenance",
+        "BusinessType": "Service Delivery",
+        "StartDate": "05/20/19",
+        "LiveDate": "03/08/20"
+      },
+      {
+        "Project": "RFSS-Saxony (Germany)",
+        "Component": "SLG B29 GE",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/01/19",
+        "LiveDate": "08/31/20"
+      },
+      {
+        "Project": "RFSS-Saxony (Germany)",
+        "Component": "SLG B29 Maintenance",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/01/19",
+        "LiveDate": "08/31/20"
+      },
+      {
+        "Project": "RFSS-Singapore",
+        "Component": "CY19 B17 Maint Q2 Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/02/19",
+        "LiveDate": "02/18/20"
+      },
+      {
+        "Project": "RFSS-Singapore",
+        "Component": "CY19 B18 Maint Q3 Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/11/19",
+        "LiveDate": "03/10/20"
+      },
+      {
+        "Project": "RFSS-Singapore",
+        "Component": "Deleted Issues Component",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/31/22",
+        "LiveDate": "12/31/22"
+      },
+      {
+        "Project": "RFSS-Singapore",
+        "Component": "SNG RFSS/Defer?red TIR/Baseli?ne issues/Enh?ancements",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/31/22",
+        "LiveDate": "12/31/22"
+      },
+      {
+        "Project": "RFSS-Singapore",
+        "Component": "RFSS/Deferred TIR/Baseline issues/Enhancements",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/31/22",
+        "LiveDate": "12/31/22"
+      },
+      {
+        "Project": "RFSS-Slovak-Republic",
+        "Component": "Lottery & Instants RFP",
+        "BusinessType": "System Delivery",
+        "StartDate": "02/04/19",
+        "LiveDate": "02/17/20"
+      },
+      {
+        "Project": "RFSS-Slovak-Republic",
+        "Component": "CY20 HOA",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "CY2001 Maint Batch",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/06/20",
+        "LiveDate": "04/20/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "Sales Wizard",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "05/25/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "CY2002 Maint Batch",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "03/09/20",
+        "LiveDate": "08/02/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "Investigation",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/01/20",
+        "LiveDate": "12/05/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "Status Verification",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/01/20",
+        "LiveDate": "12/05/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "Pending Closure",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/01/20",
+        "LiveDate": "12/05/20"
+      },
+      {
+        "Project": "RFSS-South Carolina",
+        "Component": "2020 EBF",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-South Dakota",
+        "Component": "SD HOA",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/31/19",
+        "LiveDate": "12/29/20"
+      },
+      {
+        "Project": "RFSS-Spain ONCE",
+        "Component": "CY19 My Day",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/07/19",
+        "LiveDate": "05/10/20"
+      },
+      {
+        "Project": "RFSS-Spain ONCE",
+        "Component": "CY20 Batch MR12",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/21/20",
+        "LiveDate": "10/25/20"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "CY19 Small Batches",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/02/19",
+        "LiveDate": "04/15/20"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "Aurora Migration",
+        "BusinessType": "System Delivery",
+        "StartDate": "10/07/19",
+        "LiveDate": "11/08/20"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "SWZ Backlog Future Batches",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/13",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "HARD DRIVE",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/18",
+        "LiveDate": "01/31/22"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "BATTERY",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/18",
+        "LiveDate": "01/31/22"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "Local Support",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "04/04/16",
+        "LiveDate": "04/04/22"
+      },
+      {
+        "Project": "RFSS-Switzerland",
+        "Component": "HW incident",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/18",
+        "LiveDate": "12/30/22"
+      },
+      {
+        "Project": "RFSS-Tennessee",
+        "Component": "CY1902 PYON 4 Digit & Tableau",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/15/19",
+        "LiveDate": "02/23/20"
+      },
+      {
+        "Project": "RFSS-Tennessee",
+        "Component": "Fenix-TN App Upgrade",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "12/03/19",
+        "LiveDate": "04/20/20"
+      },
+      {
+        "Project": "RFSS-Tennessee",
+        "Component": "CY19 Tableau Content Upgrade",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/07/19",
+        "LiveDate": "03/28/22"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX MPS - 2.3.2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/06/20",
+        "LiveDate": "02/28/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX MPS - 2.4.0",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/20/20",
+        "LiveDate": "03/02/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX GT20 Phase 2 Post Live Rel 2",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/25/19",
+        "LiveDate": "04/05/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX MPS - 2.5.0",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/27/20",
+        "LiveDate": "04/13/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX MPS - 2.6.0",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "11/08/19",
+        "LiveDate": "06/19/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX TP66 In Lane BHN",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/30/20",
+        "LiveDate": "08/11/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "TX MUSL EBF Sept 2018",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "07/09/18",
+        "LiveDate": "08/19/20"
+      },
+      {
+        "Project": "RFSS-Texas",
+        "Component": "EBF_2020",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "LTG B33 GE",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/01/19",
+        "LiveDate": "04/01/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "LTG B33 MTN",
+        "BusinessType": "Service Delivery",
+        "StartDate": "09/01/19",
+        "LiveDate": "04/01/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "Additional Spare System ",
+        "BusinessType": "System Delivery",
+        "StartDate": "09/02/19",
+        "LiveDate": "06/30/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "LTG B34 GE",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/01/19",
+        "LiveDate": "06/30/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "LTG B34 MTN",
+        "BusinessType": "Service Delivery",
+        "StartDate": "12/01/19",
+        "LiveDate": "06/30/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "LTG B35 GE",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "10/01/20"
+      },
+      {
+        "Project": "RFSS-Thueringen (Germany)",
+        "Component": "LTG B35 MTN",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/01/20",
+        "LiveDate": "10/01/20"
+      },
+      {
+        "Project": "RFSS-Trinidad&Tobago",
+        "Component": "TT CY1902 Maintenance Batch B",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/25/19",
+        "LiveDate": "02/10/20"
+      },
+      {
+        "Project": "RFSS-Trinidad&Tobago",
+        "Component": "FastCash, Instants, Pick2 Enhancement",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/01/19",
+        "LiveDate": "03/16/20"
+      },
+      {
+        "Project": "RFSS-Virginia",
+        "Component": "Host ECR/MUSL EBF/IBR",
+        "BusinessType": "Service Delivery",
+        "StartDate": "11/11/19",
+        "LiveDate": "01/10/20"
+      },
+      {
+        "Project": "RFSS-Virginia",
+        "Component": "Mobile Promo Code",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "10/01/19",
+        "LiveDate": "01/31/20"
+      },
+      {
+        "Project": "RFSS-Virginia",
+        "Component": "CY1902 Keno system delivery",
+        "BusinessType": "Interactive Delivery",
+        "StartDate": "06/15/19",
+        "LiveDate": "04/15/20"
+      },
+      {
+        "Project": "RFSS-Virginia",
+        "Component": "PD Quick Draw",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "06/15/19",
+        "LiveDate": "04/15/20"
+      },
+      {
+        "Project": "RFSS-Virginia",
+        "Component": "EBF",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/28/17",
+        "LiveDate": "12/31/22"
+      },
+      {
+        "Project": "RFSS-Washington",
+        "Component": "CY1902 Quincy Jones Winter 19 Maint ",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/15/19",
+        "LiveDate": "02/10/20"
+      },
+      {
+        "Project": "RFSS-Washington",
+        "Component": "CY20 Sam Kinison",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/16/20",
+        "LiveDate": "04/27/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto B44 G AND E",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/30/19",
+        "LiveDate": "03/01/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto B44 SGI",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/30/19",
+        "LiveDate": "03/01/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto B44 MTN",
+        "BusinessType": "Service Delivery",
+        "StartDate": "04/30/19",
+        "LiveDate": "03/01/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto B45 G AND E",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/09/19",
+        "LiveDate": "07/16/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto B45 SGI",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/09/19",
+        "LiveDate": "07/16/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto B45 MTN",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/09/19",
+        "LiveDate": "07/16/20"
+      },
+      {
+        "Project": "RFSS-West Lotto (Germany)",
+        "Component": "WestLotto Non-software",
+        "BusinessType": "Service Delivery",
+        "StartDate": "07/11/17",
+        "LiveDate": "07/31/20"
+      },
+      {
+        "Project": "RFSS-West Virginia",
+        "Component": "CY19 Maintenance",
+        "BusinessType": "Service Delivery",
+        "StartDate": "08/26/19",
+        "LiveDate": "01/19/20"
+      },
+      {
+        "Project": "RFSS-West Virginia",
+        "Component": "WV CY20 Keno Draw Frequency and Licensing",
+        "BusinessType": "Service Delivery",
+        "StartDate": "01/21/20",
+        "LiveDate": "05/17/20"
+      },
+      {
+        "Project": "RFSS-Wisconsin",
+        "Component": "CY1903 Midday draw",
+        "BusinessType": "Service Delivery",
+        "StartDate": "10/21/19",
+        "LiveDate": "05/03/20"
+      },
+      {
+        "Project": "RFSS-Wisconsin",
+        "Component": "WI GT20s Project",
+        "BusinessType": "System Delivery",
+        "StartDate": "12/03/19",
+        "LiveDate": "06/01/20"
+      },
+      {
+        "Project": "RFSS-Wisconsin",
+        "Component": "WI EBF 2020",
+        "BusinessType": "Unknown Business Type",
+        "StartDate": "01/01/20",
+        "LiveDate": "12/31/20"
+      },
+      {
+        "Project": "South Dakota System Conversion",
+        "Component": "SD Phase 2 Gemini Ultra",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/14/19",
+        "LiveDate": "03/30/20"
+      },
+      {
+        "Project": "Swiss Loro Aurora Migration",
+        "Component": "Aurora Migration",
+        "BusinessType": "System Delivery",
+        "StartDate": "09/02/19",
+        "LiveDate": "11/08/20"
+      },
+      {
+        "Project": "Swiss Loro Aurora Migration",
+        "Component": "DEVOPS",
+        "BusinessType": "System Delivery",
+        "StartDate": "09/02/19",
+        "LiveDate": "11/08/20"
+      },
+      {
+        "Project": "Swiss Loro Aurora Migration",
+        "Component": "Game Touch Pilot",
+        "BusinessType": "System Delivery",
+        "StartDate": "01/07/20",
+        "LiveDate": "11/08/20"
+      }
+    ],
+    "RnD": [
+      {
+        "Project": "Aurora Platform",
+        "Component": "Data Connector 1.2",
+        "Business Type": "Product Delivery",
+        "StartDate": "09/01/19",
+        "LiveDate": "01/31/20"
+      },
+      {
+        "Project": "Aurora Platform",
+        "Component": "Aurora Modular Accounting 1.1",
+        "Business Type": "Product Delivery",
+        "StartDate": "10/01/19",
+        "LiveDate": "05/29/20"
+      }
+    ]
+  }

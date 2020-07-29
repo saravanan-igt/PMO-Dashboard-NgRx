@@ -1,0 +1,211 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    [mode]="sidenavMode"
+    [opened]="sidenavOpen"
+    role="navigation"
+    *ngIf="currentUser"
+  >
+    <a class="navbar-brand" href="index.html">
+      <img
+        src="./assets/img/logo-igt.png"
+        alt="homepage"
+        class="dark-logo"
+        height="45"
+      />
+    </a>
+
+    <mat-nav-list>
+      <p class="sidenav-header">IGT - Leadership Board</p>
+      <a mat-list-item routerLink="/home" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          >settings_input_svideo</mat-icon
+        >
+        Dashboard
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <p class="sidenav-header">Lottery</p>
+      <a mat-list-item routerLink="/lotteryDashboard" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          >settings_input_svideo</mat-icon
+        >
+        Dashboard
+      </a>
+      <a mat-list-item routerLink="/lotterySv" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined"> loyalty</mat-icon>Service
+        Delivery
+      </a>
+      <a mat-list-item routerLink="/lotterySd" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined"> important_devices</mat-icon
+        >System Delivery
+      </a>
+      <a mat-list-item routerLink="/rndDashboard" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          emoji_objects</mat-icon
+        >R & D
+      </a>
+      <a mat-list-item routerLink="/goLive" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          date_range</mat-icon
+        >Go-Live Calendar
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <p class="sidenav-header">Casino</p>
+      <a mat-list-item routerLink="/gameDashboard" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          >settings_input_svideo</mat-icon
+        >
+        Dashboard
+      </a>
+      <a mat-list-item routerLink="/gameCustomer" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          important_devices</mat-icon
+        >System Delivery
+      </a>
+      <a mat-list-item routerLink="/gameRnd" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          emoji_objects</mat-icon
+        >R & D
+      </a>
+      <a mat-list-item routerLink="/gameGoLive" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined"> date_range</mat-icon
+        >Go-Live Calendar
+      </a>
+    </mat-nav-list>
+
+    <mat-nav-list>
+      <p class="sidenav-header">VLT</p>
+      <a mat-list-item routerLink="/vltDashboard" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          >settings_input_svideo</mat-icon
+        >
+        Dashboard
+      </a>
+      <a mat-list-item routerLink="/vltSv" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          loyalty</mat-icon
+        >Service Delivery
+      </a>
+      <a mat-list-item routerLink="/vltCustomer" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          important_devices</mat-icon
+        >System Delivery
+      </a>
+      <a mat-list-item routerLink="/vltRnd" routerLinkActive="active">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example settings_input_svideo icon"
+          fontSet="material-icons-outlined"
+        >
+          emoji_objects</mat-icon
+        >R & D
+      </a>
+
+      <a mat-list-item routerLink="/vltGoLive" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined"> date_range</mat-icon
+        >Go-Live Calendar
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content ngClass="sidenavOpen ? 'sidenavOpen' : ''">
+    <mat-toolbar *ngIf="currentUser">
+      <mat-toolbar-row>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="toggleLeftNav()"
+          class="sidenav-toggle-btn"
+        >
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <!-- <form>
+          <input type="text" class="search-input" placeholder="Search" />
+        </form> -->
+        <span class="toolbar-spacer"></span>
+        <!-- <button type="button" aria-label="Home" mat-icon-button>
+          <mat-icon fontSet="material-icons-outlined" aria-label="Home icon"
+            >home</mat-icon
+          >
+        </button>-->
+        <!-- <button
+          type="button"
+          mat-icon-button
+          matTooltip="Help"
+          (click)="openDialog()"
+        >
+          <mat-icon fontSet="material-icons-outlined" aria-label="call icon"
+            >info
+          </mat-icon>
+        </button> -->
+        <button
+          type="button"
+          mat-icon-button
+          (click)="logout()"
+          matTooltip="Logout"
+        >
+          <mat-icon
+            fontSet="material-icons-outlined"
+            aria-label="help_outline icon"
+            >power_settings_new</mat-icon
+          >
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <main class="main-content">
+      <div class="loginBg" *ngIf="!currentUser"></div>
+      <div
+        class="content-wrapper-before gradient-45deg-indigo-purple"
+        *ngIf="currentUser"
+      >
+        <particles
+          [params]="particleParams"
+          [style]="particleStyle"
+          [width]="particleWidth"
+          [height]="particleHeight"
+          *ngIf="currentUser"
+        >
+        </particles>
+      </div>
+      <router-outlet></router-outlet>
+    </main>
+    <footer class="page-footer" *ngIf="currentUser">
+      <p>Copyrights &copy; 2020 IGT</p>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<app-loader></app-loader>

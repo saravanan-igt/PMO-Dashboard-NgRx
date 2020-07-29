@@ -1,0 +1,832 @@
+{
+  "Active_Projects": [{
+      "SAP_ID": "MKT27533",
+      "Project": "Order Wizard 1.2",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "3746647.4",
+      "Actual Cost": "3172827"
+    },
+    {
+      "SAP_ID": "MKT26484",
+      "Project": "Open Retail 1.8",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "3746647.4",
+      "Actual Cost": "3172827"
+    },
+    {
+      "SAP_ID": "MKT27643",
+      "Project": "Navigator 1.8 Point Release 1",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "3746647.4",
+      "Actual Cost": "3172827"
+    },
+    {
+      "SAP_ID": "MKT27640",
+      "Project": "Aurora Modular Accounting 1.1",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "3746647.4",
+      "Actual Cost": "3172827"
+    },
+    {
+      "SAP_ID": "MKT27810",
+      "Project": "Navigator 1.9",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "174000.12",
+      "Actual Cost": "163008.5"
+    }
+  ],
+  "Completed_Projects": [{
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/23399",
+      "Project": "eInstants 5.2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "0"
+    },
+    {
+      "SAPID": "MKT/23399",
+      "Project": "eInstants 5.3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "0"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/23399",
+      "Project": "eInstants 5.2",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "0"
+    },
+    {
+      "SAPID": "MKT/23399",
+      "Project": "eInstants 5.3",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "0"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "3",
+      "Month Name": "March",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "3",
+      "Month Name": "March",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "3",
+      "Month Name": "March",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "3",
+      "Month Name": "March",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "3",
+      "Month Name": "March",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "3",
+      "Month Name": "March",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "4",
+      "Month Name": "April",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "4",
+      "Month Name": "April",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "4",
+      "Month Name": "April",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "4",
+      "Month Name": "April",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "4",
+      "Month Name": "April",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "4",
+      "Month Name": "April",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "5",
+      "Month Name": "May",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "5",
+      "Month Name": "May",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "5",
+      "Month Name": "May",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "5",
+      "Month Name": "May",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "5",
+      "Month Name": "May",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "5",
+      "Month Name": "May",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "6",
+      "Month Name": "June",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "6",
+      "Month Name": "June",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "6",
+      "Month Name": "June",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "6",
+      "Month Name": "June",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "6",
+      "Month Name": "June",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "6",
+      "Month Name": "June",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "7",
+      "Month Name": "July",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "7",
+      "Month Name": "July",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "7",
+      "Month Name": "July",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "7",
+      "Month Name": "July",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "7",
+      "Month Name": "July",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "7",
+      "Month Name": "July",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "8",
+      "Month Name": "August",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "8",
+      "Month Name": "August",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "8",
+      "Month Name": "August",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "8",
+      "Month Name": "August",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "8",
+      "Month Name": "August",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "8",
+      "Month Name": "August",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "9",
+      "Month Name": "September",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "9",
+      "Month Name": "September",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "9",
+      "Month Name": "September",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "9",
+      "Month Name": "September",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "9",
+      "Month Name": "September",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "9",
+      "Month Name": "September",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "10",
+      "Month Name": "October",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "10",
+      "Month Name": "October",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "10",
+      "Month Name": "October",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "10",
+      "Month Name": "October",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "10",
+      "Month Name": "October",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "10",
+      "Month Name": "October",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "11",
+      "Month Name": "November",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "11",
+      "Month Name": "November",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "11",
+      "Month Name": "November",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "11",
+      "Month Name": "November",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "11",
+      "Month Name": "November",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "11",
+      "Month Name": "November",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2019",
+      "Month": "12",
+      "Month Name": "December",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2019",
+      "Month": "12",
+      "Month Name": "December",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2019",
+      "Month": "12",
+      "Month Name": "December",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2019",
+      "Month": "12",
+      "Month Name": "December",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2019",
+      "Month": "12",
+      "Month Name": "December",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2019",
+      "Month": "12",
+      "Month Name": "December",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/27566",
+      "Project": "Data Connector 1.2",
+      "year": "2020",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "6627"
+    },
+    {
+      "SAPID": "MKT/17761",
+      "Project": "Z DO NOT USE - IBM LI",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "504144.04"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.0",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "eInstants 4.1",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/22253",
+      "Project": "Game Development - GA/KY",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "310748.21"
+    },
+    {
+      "SAPID": "MKT/24620",
+      "Project": "eInstants 5.4",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "184912"
+    },
+    {
+      "SAPID": "MKT/25422",
+      "Project": "eInstants 6.2.0.0",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "181554.92"
+    },
+    {
+      "SAPID": "MKT/27566",
+      "Project": "Data Connector 1.2",
+      "year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "0",
+      "Actual Cost": "0"
+    }
+  ]
+}

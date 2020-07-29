@@ -1,0 +1,150 @@
+<div class="container-fluid" *ngIf="gameProjectData">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="page-title">{{ pageTitle }}</h2>
+    </div>
+    <div class="col-md-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn text-white"
+      [ngbPopover]="projectContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #projectContent
+      ><p>
+        These charts reflect only projects in the NV PPM Business Vertical:
+        Client Deliveries – VLT, or VLT, with an OBS of Gaming PMO, Client
+        Delivery PMO, or Null.
+      </p>
+      <strong>VLT System Delivery</strong>
+      <ul>
+        <li>
+          Active = Projects with a work status of Active, On Hold, or Requested,
+          and a PMO Category of Active, or Scheduling, with a Finish Date in the
+          future.
+        </li>
+        <li>
+          Closed = Projects with work status of Active, Scheduling, Requested,
+          or Completed, with Finish Date in the past (within 2020).
+        </li>
+        <li>
+          Planned = Projects with a work status of Requested, and a PMO Category
+          of Pipeline.
+        </li>
+      </ul>
+    </ng-template>
+    <div class="col-md-4">
+      <app-project-category
+        chartTitle="Total Projects"
+        [data]="totalProjectsData"
+        height="200"
+      ></app-project-category>
+    </div>
+    <div class="col-md-4">
+      <app-budget-chart
+        chartTitle="Total Budget"
+        [data]="totalBudgetData"
+      ></app-budget-chart>
+    </div>
+    <div class="col-md-4">
+      <app-budget-chart
+        chartTitle="RAG Status"
+        [data]="totalRiskData"
+        [labelFormatter]="'{c}'"
+        [totalText]="false"
+        [color]="[
+          'rgba(255,91,86,0.85)',
+          'rgba(245,156,26,0.85)',
+          'rgba(0,191,165,0.85)'
+        ]"
+      ></app-budget-chart>
+    </div>
+  </div>
+
+  <div class="row mt-4 info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="projectListContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #projectListContent
+      ><p>
+        This section displays the specific VLT System Delivery projects that are
+        included as either Planned, Active, or Closed. This data is updated
+        daily.
+      </p>
+    </ng-template>
+    <div class="col-md-4">
+      <app-project-card
+        [cardTitle]="'Planned Projects'"
+        [projectList]="plannedProjectData"
+      ></app-project-card>
+    </div>
+    <div class="col-md-4">
+      <app-project-card
+        [cardTitle]="'Active Projects'"
+        [projectList]="activeProjectDetails"
+      ></app-project-card>
+    </div>
+    <div class="col-md-4">
+      <app-project-card
+        [cardTitle]="'Closed Projects'"
+        [projectList]="closedProjectData"
+      ></app-project-card>
+    </div>
+  </div>
+
+  <div class="row mt-4 info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="goliveContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #goliveContent
+      ><p>
+        The calendar graphic displays only Active (in delivery) VLT System
+        Delivery projects.
+      </p>
+      <p>
+        The triangles are positioned under the month of go live with the color
+        representing the risk level of project as indicated in the RAG status
+        section. Hovering over a triangle reveals the exact go live date. Note:
+        VLT System Delivery projects are not tracking status in NV PPM or RI
+        Clarity and are therefore defaulting to Low risk (green).
+      </p>
+      <!-- <p>
+        *drc – this calendar does not behave like the overall Dashboards to
+        isolate projects per RAG status, is there are reason for that?
+      </p> -->
+    </ng-template>
+    <div class="col-12">
+      <app-go-live-calendar
+        [scheduleData]="scheduleData"
+        [calendarTitle]="'Go-Live Calendar'"
+        [ragFilter]="true"
+      ></app-go-live-calendar>
+    </div>
+  </div>
+</div>

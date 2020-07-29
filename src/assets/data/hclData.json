@@ -1,0 +1,384 @@
+{
+    "br_yoy": {
+      "2017": "35.61",
+      "2018": "36.25",
+      "2019": "33.46",
+      "2020": "33.96"
+    },
+    "br_cy_no_debit": [
+      {
+        "Month": "Jan'19",
+        "Rev": "1674953.58 ",
+        "Effort": "49515.05 ",
+        "Blender rate": " 33.83 "
+      },
+      {
+        "Month": "Feb'19",
+        "Rev": "1616004.10 ",
+        "Effort": "49348.40 ",
+        "Blender rate": " 32.75 "
+      },
+      {
+        "Month": "Mar'19",
+        "Rev": "1722962.80 ",
+        "Effort": "52423.20 ",
+        "Blender rate": " 32.87 "
+      },
+      {
+        "Month": "Apr'19",
+        "Rev": "1752797.28 ",
+        "Effort": "52778.85 ",
+        "Blender rate": " 33.21 "
+      },
+      {
+        "Month": "May'19",
+        "Rev": "1781605.75 ",
+        "Effort": "53976.00 ",
+        "Blender rate": " 33.01 "
+      },
+      {
+        "Month": "Jun'19",
+        "Rev": "1695141.23 ",
+        "Effort": "51733.65 ",
+        "Blender rate": " 32.77 "
+      },
+      {
+        "Month": "Jul'19",
+        "Rev": "1865789.03 ",
+        "Effort": "56965.85 ",
+        "Blender rate": " 32.75 "
+      },
+      {
+        "Month": "Aug'19",
+        "Rev": "1783921.75 ",
+        "Effort": "54027.50 ",
+        "Blender rate": " 33.02 "
+      },
+      {
+        "Month": "Sep'19",
+        "Rev": "1729382.88 ",
+        "Effort": "52727.25 ",
+        "Blender rate": " 32.80 "
+      },
+      {
+        "Month": "Oct'19",
+        "Rev": "1751397.00 ",
+        "Effort": "52987.00 ",
+        "Blender rate": " 33.05 "
+      },
+      {
+        "Month": "Nov'19",
+        "Rev": "1660825.38 ",
+        "Effort": "51801.25 ",
+        "Blender rate": " 32.06 "
+      },
+      {
+        "Month": "Dec'19",
+        "Rev": "1742717.83 ",
+        "Effort": "54280.05 ",
+        "Blender rate": " 32.11 "
+      }
+    ],
+    "br_cy_debit": [
+      {
+        "Month": "Jan'19",
+        "Rev": "1648297.13 ",
+        "Effort": "49515.05 ",
+        "Blender rate": " 33.29 "
+      },
+      {
+        "Month": "Feb'19",
+        "Rev": "1620896.79 ",
+        "Effort": "49348.40 ",
+        "Blender rate": " 32.85 "
+      },
+      {
+        "Month": "Mar'19",
+        "Rev": "1776478.61 ",
+        "Effort": "52423.20 ",
+        "Blender rate": " 33.89 "
+      },
+      {
+        "Month": "Apr'19",
+        "Rev": "1778664.90 ",
+        "Effort": "52778.85 ",
+        "Blender rate": " 33.70 "
+      },
+      {
+        "Month": "May'19",
+        "Rev": "1789447.58 ",
+        "Effort": "53976.00 ",
+        "Blender rate": " 33.15 "
+      },
+      {
+        "Month": "Jun'19",
+        "Rev": "1696248.43 ",
+        "Effort": "51733.65 ",
+        "Blender rate": " 32.79 "
+      },
+      {
+        "Month": "Jul'19",
+        "Rev": "1911919.03 ",
+        "Effort": "56965.85 ",
+        "Blender rate": " 33.56 "
+      },
+      {
+        "Month": "Aug'19",
+        "Rev": "1798469.91 ",
+        "Effort": "54027.50 ",
+        "Blender rate": " 33.29 "
+      },
+      {
+        "Month": "Sep'19",
+        "Rev": "1741241.82 ",
+        "Effort": "52727.25 ",
+        "Blender rate": " 33.02 "
+      },
+      {
+        "Month": "Oct'19",
+        "Rev": "1760757.58 ",
+        "Effort": "52987.00 ",
+        "Blender rate": " 33.23 "
+      },
+      {
+        "Month": "Nov'19",
+        "Rev": "1704699.11 ",
+        "Effort": "51801.25 ",
+        "Blender rate": " 32.91 "
+      },
+      {
+        "Month": "Dec'19",
+        "Rev": "1747487.83 ",
+        "Effort": "54280.05 ",
+        "Blender rate": " 32.19 "
+      }
+    ],
+    "ras": [
+      {
+        "Location": "Chennai",
+        "Lottery": "194",
+        "Play Digital": "32",
+        "Spielo": "3",
+        "Tools": "9",
+        "Grand Total": "238"
+      },
+      {
+        "Location": "Hyderabad",
+        "Lottery": "27",
+        "Play Digital": "11",
+        "Spielo": "10",
+        "Grand Total": "48"
+      },
+      {
+        "Location": "Madurai",
+        "Lottery": "47",
+        "Grand Total": "47"
+      },
+      {
+        "Location": "Canada",
+        "Lottery": "12",
+        "Play Digital": "4",
+        "Spielo": "12",
+        "Tools": "1",
+        "Grand Total": "29"
+      },
+      {
+        "Location": "Mexico",
+        "Lottery": "23",
+        "Play Digital": "4",
+        "Grand Total": "27"
+      },
+      {
+        "Location": "New Zealand",
+        "Play Digital": "1",
+        "Grand Total": "1"
+      },
+      {
+        "Location": "UK",
+        "Lottery": "4",
+        "Grand Total": "4"
+      },
+      {
+        "Location": "USA",
+        "Lottery": "22",
+        "Grand Total": "22"
+      }
+    ],
+    "effort_mom": [
+      {
+        "IGT & Spielo": "Jan'18",
+        "Nearshore": "5812 ",
+        "Offshore": "34530 ",
+        "Onsite": "9084 ",
+        "Grand Total": "49425 "
+      },
+      {
+        "IGT & Spielo": "Feb'18",
+        "Nearshore": "5715 ",
+        "Offshore": "39239 ",
+        "Onsite": "8710 ",
+        "Grand Total": "53664 "
+      },
+      {
+        "IGT & Spielo": "Mar'18",
+        "Nearshore": "5339 ",
+        "Offshore": "43116 ",
+        "Onsite": "10460 ",
+        "Grand Total": "58915 "
+      },
+      {
+        "IGT & Spielo": "Apr'18",
+        "Nearshore": "5402 ",
+        "Offshore": "41364 ",
+        "Onsite": "10166 ",
+        "Grand Total": "56932 "
+      },
+      {
+        "IGT & Spielo": "May'18",
+        "Nearshore": "5760 ",
+        "Offshore": "41753 ",
+        "Onsite": "10187 ",
+        "Grand Total": "57699 "
+      },
+      {
+        "IGT & Spielo": "Jun'18",
+        "Nearshore": "5283 ",
+        "Offshore": "37088 ",
+        "Onsite": "9162 ",
+        "Grand Total": "51533 "
+      },
+      {
+        "IGT & Spielo": "Jul'18",
+        "Nearshore": "4963 ",
+        "Offshore": "39994 ",
+        "Onsite": "9422 ",
+        "Grand Total": "54379 "
+      },
+      {
+        "IGT & Spielo": "Aug'18",
+        "Nearshore": "5549 ",
+        "Offshore": "42779 ",
+        "Onsite": "10532 ",
+        "Grand Total": "58859 "
+      },
+      {
+        "IGT & Spielo": "Sep'18",
+        "Nearshore": "4046 ",
+        "Offshore": "38023 ",
+        "Onsite": "8399 ",
+        "Grand Total": "50468 "
+      },
+      {
+        "IGT & Spielo": "Oct'18",
+        "Nearshore": "6643 ",
+        "Offshore": "41481 ",
+        "Onsite": "7772 ",
+        "Grand Total": "55896 "
+      },
+      {
+        "IGT & Spielo": "Nov'18",
+        "Nearshore": "5889 ",
+        "Offshore": "39117 ",
+        "Onsite": "6533 ",
+        "Grand Total": "51539 "
+      },
+      {
+        "IGT & Spielo": "Dec'18",
+        "Nearshore": "5738 ",
+        "Offshore": "36462 ",
+        "Onsite": "6049 ",
+        "Grand Total": "48249 "
+      },
+      {
+        "IGT & Spielo": "Jan'19",
+        "Nearshore": "6332 ",
+        "Offshore": "37228 ",
+        "Onsite": "5956 ",
+        "Grand Total": "49515 "
+      },
+      {
+        "IGT & Spielo": "Feb'19",
+        "Nearshore": "5401 ",
+        "Offshore": "38893 ",
+        "Onsite": "5054 ",
+        "Grand Total": "49348 "
+      },
+      {
+        "IGT & Spielo": "Mar'19",
+        "Nearshore": "5884 ",
+        "Offshore": "41079 ",
+        "Onsite": "5460 ",
+        "Grand Total": "52423 "
+      },
+      {
+        "IGT & Spielo": "Apr'19",
+        "Nearshore": "5762 ",
+        "Offshore": "41121 ",
+        "Onsite": "5896 ",
+        "Grand Total": "52779 "
+      },
+      {
+        "IGT & Spielo": "May'19",
+        "Nearshore": "7433 ",
+        "Offshore": "41193 ",
+        "Onsite": "5351 ",
+        "Grand Total": "53976 "
+      },
+      {
+        "IGT & Spielo": "Jun'19",
+        "Nearshore": "6580 ",
+        "Offshore": "40126 ",
+        "Onsite": "5029 ",
+        "Grand Total": "51734 "
+      },
+      {
+        "IGT & Spielo": "Jul'19",
+        "Nearshore": "7887 ",
+        "Offshore": "43926 ",
+        "Onsite": "5315 ",
+        "Grand Total": "57128 "
+      },
+      {
+        "IGT & Spielo": "Aug'19",
+        "Nearshore": "7928 ",
+        "Offshore": "40766 ",
+        "Onsite": "5334 ",
+        "Grand Total": "54028 "
+      },
+      {
+        "IGT & Spielo": "Sep'19",
+        "Nearshore": "7373 ",
+        "Offshore": "40245 ",
+        "Onsite": "5110 ",
+        "Grand Total": "52727 "
+      },
+      {
+        "IGT & Spielo": "Oct'19",
+        "Nearshore": "8371 ",
+        "Offshore": "39476 ",
+        "Onsite": "5140 ",
+        "Grand Total": "52987 "
+      },
+      {
+        "IGT & Spielo": "Nov'19",
+        "Nearshore": "7130 ",
+        "Offshore": "40455 ",
+        "Onsite": "4217 ",
+        "Grand Total": "51801 "
+      },
+      {
+        "IGT & Spielo": "Dec'19",
+        "Nearshore": "8042 ",
+        "Offshore": "41977 ",
+        "Onsite": "4261 ",
+        "Grand Total": "54280 "
+      },
+      {
+        "IGT & Spielo": "Jan'20",
+        "Nearshore": "8811 ",
+        "Offshore": "41253 ",
+        "Onsite": "4596 ",
+        "Grand Total": "54660 "
+      }
+    ]
+  }

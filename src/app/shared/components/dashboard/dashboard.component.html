@@ -1,0 +1,250 @@
+<div class="container-fluid" *ngIf="DataLists.length">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="page-title">{{ pageTitle }}</h2>
+    </div>
+    <div class="col-md-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="row info-container">
+    <button
+      type="button"
+      mat-icon-button
+      class="text-white info-btn"
+      triggers="mouseenter:mouseleave"
+      ngbPopover="These charts reflect the number of projects in the combined CTOGL portfolios and individual business unit portfolios.  Active (in delivery), Planned (in plan probability level, forecasted opportunities), and Closed (projects that have gone live in 2020)."
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <div class="col-xl-3 col-md-6 mb-4">
+      <app-project-category
+        chartTitle="Total Projects"
+        [data]="totalProjectsData"
+      ></app-project-category>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+      <app-project-category
+        chartTitle="Lottery Projects"
+        [data]="lotteryProjectsData"
+        info="Lottery Project data originates from RI Clarity and is updated daily. 
+        Includes SD, SV, and PD (R&D) business types (excluding Non-Projects)."
+      ></app-project-category>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+      <app-project-category
+        chartTitle="Casino Projects"
+        [data]="casinoProjectsData"
+        info="Casino Project data originates from NV PPM and is updated daily. 
+        Includes Casino System Deliveries and R&D projects that are within the CTOGL Casino Portfolio."
+      ></app-project-category>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4">
+      <app-project-category
+        chartTitle="VLT Projects"
+        [data]="vltProjectsData"
+        info="VLT Project data originates from NV PPM and is updated daily.
+        Includes VLT System Delivery, VLT Services, and VLT R&D projects that are within the CTOGL Casino Portfolio."
+      ></app-project-category>
+    </div>
+  </div>
+
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      [ngbPopover]="budgetContent"
+      class="info-btn"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #budgetContent
+      ><p>
+        This section represents approved budgets for the combined CTOGL
+        portfolio and individual business unit portfolios. Active (full project
+        budgets for projects in delivery), Planned (approved budget forecasts
+        for in plan probability level opportunities), and Closed (full project
+        budgets for projects that have gone live in 2020).
+      </p>
+      <!-- <p class="text-danger-tooltip">
+        *drc – Please confirm this section is pulling approved budgets for in
+        delivery and closed project and approved forecast for Planned projects
+        (Planed projects generally do not have a budget noted in the Cost plan
+        or As Negotiated field in RI Clarity, only Current forecast field is
+        updated).
+      </p> -->
+    </ng-template>
+    <div class="col-md-5 mb-4">
+      <app-budget-chart
+        chartTitle="Portfolio Budget"
+        [data]="totalBudgetData"
+        height="250"
+      ></app-budget-chart>
+    </div>
+    <div class="col-md-7 mb-4" *ngIf="budgetSeriesData">
+      <app-budget-bar-chart
+        chartTitle="Budget Portfolio"
+        [seriesData]="budgetSeriesData"
+        yAxisName=""
+        [xAxisData]="budgetXaxis"
+      ></app-budget-bar-chart>
+    </div>
+  </div>
+
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="forecastContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #forecastContent
+      ><p>
+        This section represents the budget performance for each individual
+        business unit portfolio, broken down by Active, and Closed projects.
+        Cost Planning indicates the approved budget or cost plan per project.
+        Current Forecast represents the Actuals + ETC.
+      </p>
+      <!-- <p class="text-danger-tooltip">
+        *drc- Maybe instead of “Current Forecast” we can call it “Current
+        Forecast” since this represent actual + ETC, not just actuals to date.
+      </p> -->
+      Exception:
+      <ul>
+        <li>
+          The VLT portfolio labor actuals are collected via RI Clarity and may
+          not be fully represented in the Current Forecast displayed. Pending
+          further confirmation.
+        </li>
+      </ul>
+    </ng-template>
+    <div class="col-12 mb-4" *ngIf="forecastSeriesData">
+      <app-forecast-chart
+        [seriesData]="forecastSeriesData"
+        yAxisName=""
+        [gridLeft]="'10%'"
+      ></app-forecast-chart>
+    </div>
+  </div>
+
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="ragContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #ragContent
+      ><p>
+        This section represents the Overall Risk Status for the Active projects
+        in the combined CTOGL portfolio and individual business unit portfolios
+        as currently set in RI Clarity or NV PPM.
+      </p>
+      <p>
+        Projects that are not tracking a status in these tools are defaulting to
+        low risk (green). Process streamlining is currently under review in
+        these areas to resolve the defaults and gather true RAG status data
+        across all portfolios.
+      </p>
+      Exception:
+      <ul>
+        <li>
+          The Casino R&D portfolio is not currently tracking a status indicator
+          in NV PPM.
+        </li>
+        <li>
+          The VLT portfolio (including System Delivery, Service Delivery, and
+          R&D) are not currently tracking a status indicator in NV PPM or RI
+          Clarity.
+        </li>
+      </ul>
+    </ng-template>
+    <div class="col-md-5 mb-4">
+      <app-budget-chart
+        chartTitle="Portfolio Projects RAG Status"
+        [data]="totalRiskData"
+        [labelFormatter]="'{c}'"
+        [color]="['rgba(255,91,86,0.85)', 'rgba(245,156,26,0.85)', '#fcc201']"
+        [totalText]="false"
+        height="250"
+      ></app-budget-chart>
+    </div>
+    <div class="col-md-7 mb-4">
+      <app-budget-bar-chart
+        chartTitle="Portfolio Projects Risk Profile"
+        [seriesData]="riskProfileData"
+        [labelFormatter]="'{c}'"
+        [yAxisFormat]="'{value}'"
+        [color]="[
+          'rgba(255,91,86,0.85)',
+          'rgba(245,156,26,0.85)',
+          'rgba(0,191,165,0.85)'
+        ]"
+        yAxisName="No. of Projects"
+        [xAxisData]="budgetXaxis"
+      ></app-budget-bar-chart>
+    </div>
+  </div>
+
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="goLiveContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #goLiveContent
+      ><p>
+        This section displays the calendar of go live dates across the CTOGL
+        portfolio as derived from applicable fields in RI Clarity or NV PPM. The
+        color shading represents the different business units. Click on any of
+        the business unit buttons to display only those project types.
+      </p>
+      <p>
+        The triangles are positioned under the month of go live with the color
+        representing the risk level of project as indicated in the RAG status
+        section. Hovering over a triangle reveals the exact go live date.
+      </p>
+      <p>
+        * Select the values from <strong>RAG Status</strong> and
+        <strong>Business</strong> dropdown buttons to isolate those projects in
+        the calendar view. Select <strong>All</strong> in both the dropdowns to
+        display all statuses.
+        <!-- *Click on any color in the RAG Status pie chart to isolate those
+        projects in the calendar view. (Refresh to return the display to all
+        statuses.) -->
+      </p>
+      <!-- <p class="text-danger-tooltip">
+        *drc – when you isolate the calendar by RAG status there is no way to go
+        back to showing all without refreshing the screen. Should we add a help
+        text for that?
+      </p> -->
+    </ng-template>
+    <div class="col-12" *ngIf="calendarData">
+      <app-go-live-calendar
+        [scheduleData]="calendarData"
+        [calendarTitle]="'Portfolio Projects Go-Live Calendar'"
+        [legends]="true"
+        [ragFilter]="true"
+        [businessFilter]="'vertical|VERTICAL'"
+      ></app-go-live-calendar>
+    </div>
+  </div>
+</div>

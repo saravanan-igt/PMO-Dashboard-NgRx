@@ -1,0 +1,5705 @@
+{
+  "Active_Projects": [
+    {
+      "SAP_ID": "CA/18105",
+      "Project": "GTECH Printing Development",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "3746647.4",
+      "Actual Cost": "3172827"
+    },
+    {
+      "SAP_ID": "CA/21462",
+      "Project": "Reporting Open",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "174000.12",
+      "Actual Cost": "163008.5"
+    },
+    {
+      "SAP_ID": "CA/22262",
+      "Project": "CA Aurora Conversion",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "99679122.16",
+      "Actual Cost": "39088623.38"
+    },
+    {
+      "SAP_ID": "CA/22407",
+      "Project": "Retailer Portal Unscheduled",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "2671725.96",
+      "Actual Cost": "2361241.56"
+    },
+    {
+      "SAP_ID": "CA/23837",
+      "Project": "2nd Chance EBFs",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "489963.96",
+      "Actual Cost": "480380.87"
+    },
+    {
+      "SAP_ID": "CA/24272",
+      "Project": "Aurora",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "3821887.08",
+      "Actual Cost": "3566391.62"
+    },
+    {
+      "SAP_ID": "LIT/25891",
+      "Project": "CY20 HOA",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "117400.04",
+      "Actual Cost": "8118"
+    },
+    {
+      "SAP_ID": "LPZ/22432",
+      "Project": "Saxony Maintenance",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "200300.08",
+      "Actual Cost": "176266.07"
+    },
+    {
+      "SAP_ID": "LPZ/22634",
+      "Project": "Saxony Opportunities",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "42700.46",
+      "Actual Cost": "40886.78"
+    },
+    {
+      "SAP_ID": "LPZ/24405",
+      "Project": "SLG Archive TCs",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "516650.12",
+      "Actual Cost": "393488.76"
+    },
+    {
+      "SAP_ID": "NE/18124",
+      "Project": "Documentation",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "1053710.6",
+      "Actual Cost": "865083.81"
+    },
+    {
+      "SAP_ID": "NJ/18125",
+      "Project": "mtv_temp",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "1503125.94",
+      "Actual Cost": "1464865.93"
+    },
+    {
+      "SAP_ID": "NY/22445",
+      "Project": "NYL Backlog",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "635418.2",
+      "Actual Cost": "533650.91"
+    },
+    {
+      "SAP_ID": "NY/23302",
+      "Project": "2019 Get Well Plan",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "14618056.3",
+      "Actual Cost": "11467658.1"
+    },
+    {
+      "SAP_ID": "NY/25905",
+      "Project": "2020 NY Batch 1",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "186639",
+      "Actual Cost": "6243.5"
+    },
+    {
+      "SAP_ID": "NY/26088",
+      "Project": "NY 2019 Batch 4 P2",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "49775.12",
+      "Actual Cost": "16923"
+    },
+    {
+      "SAP_ID": "POR/26049",
+      "Project": "CY19 Horse Race",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "351525.92",
+      "Actual Cost": "42252.02"
+    },
+    {
+      "SAP_ID": "SAF/18777",
+      "Project": " SAF Maintenance",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "20275000.44",
+      "Actual Cost": "18759785.08"
+    },
+    {
+      "SAP_ID": "SLO/25914",
+      "Project": "CY20 HOA",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "117400.04",
+      "Actual Cost": "20487"
+    },
+    {
+      "SAP_ID": "THU/24858",
+      "Project": "LTG B33 MTN",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "180000",
+      "Actual Cost": "18547.5"
+    },
+    {
+      "SAP_ID": "VA/22468",
+      "Project": "Backlog",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "753809.24",
+      "Actual Cost": "674118.15"
+    },
+    {
+      "SAP_ID": "VA/24991",
+      "Project": "Site_Regression_Testing ",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "49529.52",
+      "Actual Cost": "79952.5"
+    },
+    {
+      "SAP_ID": "WL/25011",
+      "Project": "WestLotto B44 G AND E",
+      "Year": "2019",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "192554",
+      "Actual Cost": "14774.5"
+    },
+    {
+      "SAP_ID": "CA/25869",
+      "Project": "EBF 2020",
+      "Year": "2019",
+      "Mmonth": "2",
+      "Month Name": "February",
+      "Planned Cost": "719590",
+      "Actual Cost": "218244.13"
+    },
+    {
+      "SAP_ID": "SLO/23164",
+      "Project": "Lottery & Instants RFP",
+      "Year": "2019",
+      "Mmonth": "2",
+      "Month Name": "February",
+      "Planned Cost": "50000",
+      "Actual Cost": "90313.57"
+    },
+    {
+      "SAP_ID": "WL/25930",
+      "Project": "WestLotto Non-software",
+      "Year": "2019",
+      "Mmonth": "2",
+      "Month Name": "February",
+      "Planned Cost": "216509.96",
+      "Actual Cost": "13958.18"
+    },
+    {
+      "SAP_ID": "TX/26907",
+      "Project": "TX GT20 Phase 2 Post Live Rel 2",
+      "Year": "2019",
+      "Mmonth": "3",
+      "Month Name": "March",
+      "Planned Cost": "49941",
+      "Actual Cost": "24630"
+    },
+    {
+      "SAP_ID": "CA/26995",
+      "Project": "CY1906 Mini Batch 6",
+      "Year": "2019",
+      "Mmonth": "4",
+      "Month Name": "April",
+      "Planned Cost": "49809.92",
+      "Actual Cost": "11626.02"
+    },
+    {
+      "SAP_ID": "SD/25913",
+      "Project": "SD HOA",
+      "Year": "2019",
+      "Mmonth": "4",
+      "Month Name": "April",
+      "Planned Cost": "171537",
+      "Actual Cost": "39678.5"
+    },
+    {
+      "SAP_ID": "TN/25992",
+      "Project": "CY1902 PYON 4 Digit & Tableau",
+      "Year": "2019",
+      "Mmonth": "4",
+      "Month Name": "April",
+      "Planned Cost": "49733.04",
+      "Actual Cost": "588"
+    },
+    {
+      "SAP_ID": "TX/25923",
+      "Project": "EBF_2020",
+      "Year": "2019",
+      "Mmonth": "4",
+      "Month Name": "April",
+      "Planned Cost": "1038881",
+      "Actual Cost": "378813.12"
+    },
+    {
+      "SAP_ID": "VA/25925",
+      "Project": "EBF",
+      "Year": "2019",
+      "Mmonth": "4",
+      "Month Name": "April",
+      "Planned Cost": "380950",
+      "Actual Cost": "88927.14"
+    },
+    {
+      "SAP_ID": "LPZ/23736",
+      "Project": "SLG B28 Maintenance",
+      "Year": "2019",
+      "Mmonth": "5",
+      "Month Name": "May",
+      "Planned Cost": "172000",
+      "Actual Cost": "39832.5"
+    },
+    {
+      "SAP_ID": "LPZ/23915",
+      "Project": "SLG B28 GE",
+      "Year": "2019",
+      "Mmonth": "5",
+      "Month Name": "May",
+      "Planned Cost": "28035.96",
+      "Actual Cost": "1086.5"
+    },
+    {
+      "SAP_ID": "CZH/26661",
+      "Project": "CY19 Release 5:  Winchecker2",
+      "Year": "2019",
+      "Mmonth": "6",
+      "Month Name": "June",
+      "Planned Cost": "49860.88",
+      "Actual Cost": "40125.25"
+    },
+    {
+      "SAP_ID": "CO/22254",
+      "Project": "CO IPS/Back-Office Conversion",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "162428",
+      "Actual Cost": "212838.44"
+    },
+    {
+      "SAP_ID": "FL/25881",
+      "Project": "FL Emergency Bug Fix 2020",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "385265",
+      "Actual Cost": "148735.5"
+    },
+    {
+      "SAP_ID": "FL/26116",
+      "Project": "CY2020-02 March Batch",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "49543.12",
+      "Actual Cost": "48543.5"
+    },
+    {
+      "SAP_ID": "IN/24813",
+      "Project": "IN CY18 Cash Pop",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "405159.92",
+      "Actual Cost": "232363.6"
+    },
+    {
+      "SAP_ID": "IN/27027",
+      "Project": "IN CY19 Revenue B - Phase 2",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "49790",
+      "Actual Cost": "0"
+    },
+    {
+      "SAP_ID": "MS/27209",
+      "Project": "Touch 28",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "5352001.18",
+      "Actual Cost": "327882.45"
+    },
+    {
+      "SAP_ID": "WA/26114",
+      "Project": "CY1902 Quincy Jones Winter 19 Maint ",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "47495.14",
+      "Actual Cost": "8575"
+    },
+    {
+      "SAP_ID": "WL/25273",
+      "Project": "WestLotto B45 G AND E",
+      "Year": "2019",
+      "Mmonth": "7",
+      "Month Name": "July",
+      "Planned Cost": "268745.04",
+      "Actual Cost": "348.5"
+    },
+    {
+      "SAP_ID": "GA/25987",
+      "Project": "CY20_GA_Maintenance_GA25987",
+      "Year": "2019",
+      "Mmonth": "8",
+      "Month Name": "August",
+      "Planned Cost": "49504.12",
+      "Actual Cost": "1116"
+    },
+    {
+      "SAP_ID": "SWZ/26340",
+      "Project": "Aurora Migration",
+      "Year": "2019",
+      "Mmonth": "8",
+      "Month Name": "August",
+      "Planned Cost": "161212.04",
+      "Actual Cost": "170738.88"
+    },
+    {
+      "SAP_ID": "SNG/25950",
+      "Project": "CY19 B17 Maint Q2 Batch",
+      "Year": "2019",
+      "Mmonth": "9",
+      "Month Name": "September",
+      "Planned Cost": "77000",
+      "Actual Cost": "17763.69"
+    },
+    {
+      "SAP_ID": "TT/27582",
+      "Project": "FastCash, Instants, Pick2 Enhancement",
+      "Year": "2019",
+      "Mmonth": "9",
+      "Month Name": "September",
+      "Planned Cost": "14999.96",
+      "Actual Cost": "0"
+    },
+    {
+      "SAP_ID": "KY/26942",
+      "Project": "Remote Planogram 2019",
+      "Year": "2019",
+      "Mmonth": "10",
+      "Month Name": "October",
+      "Planned Cost": "545466.96",
+      "Actual Cost": "24836.75"
+    },
+    {
+      "SAP_ID": "KY/27339",
+      "Project": "CY1904 Cash Pop",
+      "Year": "2019",
+      "Mmonth": "10",
+      "Month Name": "October",
+      "Planned Cost": "48930.06",
+      "Actual Cost": "7835.25"
+    },
+    {
+      "SAP_ID": "NC/27522",
+      "Project": "CY1903 Fast Play",
+      "Year": "2019",
+      "Mmonth": "10",
+      "Month Name": "October",
+      "Planned Cost": "49385",
+      "Actual Cost": "2185.5"
+    },
+    {
+      "SAP_ID": "SPO/25983",
+      "Project": "CY19 My Day",
+      "Year": "2019",
+      "Mmonth": "10",
+      "Month Name": "October",
+      "Planned Cost": "49327.88",
+      "Actual Cost": "10916.25"
+    },
+    {
+      "SAP_ID": "ALC/27775",
+      "Project": "CY19 CR1 QR codes for draw games",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "37482.04",
+      "Actual Cost": "7643.5"
+    },
+    {
+      "SAP_ID": "IN/27117",
+      "Project": "CY19 Double Play",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "36770",
+      "Actual Cost": "2092.5"
+    },
+    {
+      "SAP_ID": "JAM/26693",
+      "Project": "JAM CY19 GemIntelligence",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "21580.26",
+      "Actual Cost": "3968.5"
+    },
+    {
+      "SAP_ID": "KY/26121",
+      "Project": "CY 1905 NewFastPlayGames1",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "48929.79",
+      "Actual Cost": "11266.75"
+    },
+    {
+      "SAP_ID": "LPZ/25278",
+      "Project": "SLG B29 GE",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "256839.84",
+      "Actual Cost": "106849.45"
+    },
+    {
+      "SAP_ID": "MAU/26064",
+      "Project": "MAU Maintenance",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "26028.6",
+      "Actual Cost": "12518.55"
+    },
+    {
+      "SAP_ID": "MAU/26946",
+      "Project": "MAU CY19 Batch 17",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "158504.04",
+      "Actual Cost": "101786.5"
+    },
+    {
+      "SAP_ID": "SNG/25951",
+      "Project": "CY19 B18 Maint Q3 Batch",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "85000.08",
+      "Actual Cost": "4272"
+    },
+    {
+      "SAP_ID": "THU/25269",
+      "Project": "LTG B33 GE",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "30793.88",
+      "Actual Cost": "25865.5"
+    },
+    {
+      "SAP_ID": "TT/25832",
+      "Project": "TT CY1902 Maintenance Batch B",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "7459.96",
+      "Actual Cost": "0"
+    },
+    {
+      "SAP_ID": "TX/26062",
+      "Project": "TX MPS - 2.5.0",
+      "Year": "2019",
+      "Mmonth": "11",
+      "Month Name": "November",
+      "Planned Cost": "49607.96",
+      "Actual Cost": "26478"
+    },
+    {
+      "SAP_ID": "CO/25871",
+      "Project": "2020 ESMM",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "176749",
+      "Actual Cost": "132231.83"
+    },
+    {
+      "SAP_ID": "CZH/27652",
+      "Project": "CY20 Rel1 Extra Renta",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "49971.96",
+      "Actual Cost": "0"
+    },
+    {
+      "SAP_ID": "IN/27113",
+      "Project": "IN CY20 Fast Play Phase 29",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "91120.04",
+      "Actual Cost": "0"
+    },
+    {
+      "SAP_ID": "KY/27598",
+      "Project": "KY CY1906 Win Place Show Statewide",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "119895.8",
+      "Actual Cost": "35507.5"
+    },
+    {
+      "SAP_ID": "MEX/26106",
+      "Project": "CY19 Maintenance Batch A",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "7000",
+      "Actual Cost": "13818"
+    },
+    {
+      "SAP_ID": "MI/26017",
+      "Project": "MI CY1903 Maintenance Batch",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "191774.99",
+      "Actual Cost": "116751.5"
+    },
+    {
+      "SAP_ID": "NC/27830",
+      "Project": "CY1904 Keno Multiplier",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "86425.34",
+      "Actual Cost": "17029.5"
+    },
+    {
+      "SAP_ID": "NJ/26053",
+      "Project": "CY1904 MM DoublePlay",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "47372.26",
+      "Actual Cost": "29434.24"
+    },
+    {
+      "SAP_ID": "SC/25912",
+      "Project": "2020 EBF",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "447467",
+      "Actual Cost": "460703.48"
+    },
+    {
+      "SAP_ID": "THU/27070",
+      "Project": "LTG B34 MTN",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "155800.04",
+      "Actual Cost": "0"
+    },
+    {
+      "SAP_ID": "WI/26099",
+      "Project": "CY1903 Midday draw",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "62444.96",
+      "Actual Cost": "20886"
+    },
+    {
+      "SAP_ID": "WI/27424",
+      "Project": "WI GT20s Project",
+      "Year": "2019",
+      "Mmonth": "12",
+      "Month Name": "December",
+      "Planned Cost": "1635192.76",
+      "Actual Cost": "13252.5"
+    },
+    {
+      "SAP_ID": "BEL/27807",
+      "Project": "PLB20",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "183081.92",
+      "Actual Cost": "11830"
+    },
+    {
+      "SAP_ID": "BLX/27855",
+      "Project": "BLX-Conversion",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "8048182.86",
+      "Actual Cost": "184023.25"
+    },
+    {
+      "SAP_ID": "MAU/27185",
+      "Project": "MAU CY20 Batch 18",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "52058.8",
+      "Actual Cost": "168"
+    },
+    {
+      "SAP_ID": "MI/27486",
+      "Project": "MI CY2001 MM/PB Double Play",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "48191.92",
+      "Actual Cost": "15137"
+    },
+    {
+      "SAP_ID": "NC/27629",
+      "Project": "NCEL Game Card",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "83576.96",
+      "Actual Cost": "5407"
+    },
+    {
+      "SAP_ID": "NY/27119",
+      "Project": "NY 2020 Deleted or Closed RFSS's",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "265806.84",
+      "Actual Cost": "116701"
+    },
+    {
+      "SAP_ID": "RI/27219",
+      "Project": "CY20 MM Double Play",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "74159.8",
+      "Actual Cost": "756"
+    },
+    {
+      "SAP_ID": "SC/26664",
+      "Project": "Sales Wizard",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "254302.68",
+      "Actual Cost": "59768.01"
+    },
+    {
+      "SAP_ID": "SC/27204",
+      "Project": "CY2001 Maint Batch",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "49159.76",
+      "Actual Cost": "12611"
+    },
+    {
+      "SAP_ID": "SD/24467",
+      "Project": "SD Phase 2 Gemini Ultra",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "9989998.69",
+      "Actual Cost": "8528966.47"
+    },
+    {
+      "SAP_ID": "SPO/27088",
+      "Project": "CY20 Batch MR12",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "60000.04",
+      "Actual Cost": "1764"
+    },
+    {
+      "SAP_ID": "SWZ/27554",
+      "Project": "CY19 Small Batches",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "7871.88",
+      "Actual Cost": "6541"
+    },
+    {
+      "SAP_ID": "WV/27482",
+      "Project": "WV CY20 Keno Draw Frequency and Licensing",
+      "Year": "2020",
+      "Mmonth": "1",
+      "Month Name": "January",
+      "Planned Cost": "138170.56",
+      "Actual Cost": "8770"
+    },
+    {
+      "SAP_ID": "FL/27261",
+      "Project": "CY2020-03 Batch",
+      "Year": "2020",
+      "Mmonth": "2",
+      "Month Name": "February",
+      "Planned Cost": "156360.04",
+      "Actual Cost": "55542"
+    },
+    {
+      "SAP_ID": "NY/28091",
+      "Project": "NY 2020 A/R Enhancements",
+      "Year": "2020",
+      "Mmonth": "2",
+      "Month Name": "February",
+      "Planned Cost": "49859.88",
+      "Actual Cost": "686"
+    },
+    {
+      "SAP_ID": "TX/27465",
+      "Project": "TX TP66 In Lane BHN",
+      "Year": "2020",
+      "Mmonth": "2",
+      "Month Name": "February",
+      "Planned Cost": "48172",
+      "Actual Cost": "7702"
+    }
+  ],
+  "Planned_Projects": [
+    {
+      "SAPID": "CA/25869",
+      "Project": "Aurora Wish List",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "2094550.96",
+      "Actual Cost": "1174766.12"
+    },
+    {
+      "SAPID": "IN/25857",
+      "Project": "IN HOA",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "438542.72",
+      "Actual Cost": "239843.69"
+    },
+    {
+      "SAPID": "IN/27110",
+      "Project": "IN CY20 Mobile",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "54294",
+      "Actual Cost": "784"
+    },
+    {
+      "SAPID": "IN/27111",
+      "Project": "IN CY20 ESMM",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "63000.04",
+      "Actual Cost": "1439"
+    },
+    {
+      "SAPID": "IN/27112",
+      "Project": "IN CY20 ESBI",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "66220",
+      "Actual Cost": "1855"
+    },
+    {
+      "SAPID": "POL/25244",
+      "Project": "Batch 22 - 2018",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "493999.96",
+      "Actual Cost": "345919.9"
+    },
+    {
+      "SAPID": "VA/22468",
+      "Project": "Evaluated",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "753809.24",
+      "Actual Cost": "674118.15"
+    },
+    {
+      "SAPID": "VA/25925",
+      "Project": "Triage",
+      "Year": "2020",
+      "Month": "2",
+      "Month Name": "February",
+      "Planned Cost": "761698.04",
+      "Actual Cost": "449280.15"
+    }
+  ],
+  "Completed_Projects": [
+    {
+      "SAPID": "ALC/19382",
+      "Project": "Next GENe CAT Release -  9/27/2013",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "100000.04",
+      "Actual Cost": "96192.75"
+    },
+    {
+      "SAPID": "ALC/19716",
+      "Project": "Next GENe Release - Release 1/17/14",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "74613.84",
+      "Actual Cost": "39949"
+    },
+    {
+      "SAPID": "ALC/21666",
+      "Project": "ALC CY14 Poker Lotto Game",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "85350.88",
+      "Actual Cost": "85906"
+    },
+    {
+      "SAPID": "ALC/22946",
+      "Project": "CY15 GT1200 Development",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "626918.16",
+      "Actual Cost": "620666.54"
+    },
+    {
+      "SAPID": "ALC/25571",
+      "Project": "CR131 - Release 6/6",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "61968.04",
+      "Actual Cost": "58342.55"
+    },
+    {
+      "SAPID": "ALC/25697",
+      "Project": "CY18 Lotto Max 2 & Twist",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49990.08",
+      "Actual Cost": "45696.75"
+    },
+    {
+      "SAPID": "ALC/25748",
+      "Project": "CY18 Sports Mobile App",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49998.04",
+      "Actual Cost": "42921.4"
+    },
+    {
+      "SAPID": "ARB/16855",
+      "Project": "CY14 QNLA Instantanea",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "156671.42",
+      "Actual Cost": "159067.25"
+    },
+    {
+      "SAPID": "ARB/18101",
+      "Project": "IPLC PRODE 14 Re-Activation",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "328962.02",
+      "Actual Cost": "336686.24"
+    },
+    {
+      "SAPID": "ARB/20355",
+      "Project": "Argentina IPLC CY1401 Maint Batch 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "117669.82",
+      "Actual Cost": "124672.5"
+    },
+    {
+      "SAPID": "ARB/20618",
+      "Project": "Argentina IPLC CY1402 Maint Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "36925.08",
+      "Actual Cost": "35473.5"
+    },
+    {
+      "SAPID": "ARB/21441",
+      "Project": "IPLC CY15 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "79563.48",
+      "Actual Cost": "79462.5"
+    },
+    {
+      "SAPID": "ARB/21442",
+      "Project": "IPLC CY1502 Maintenance Batch B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "73719.92",
+      "Actual Cost": "81383.85"
+    },
+    {
+      "SAPID": "ARB/22321",
+      "Project": "IPLC Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "4045134.12",
+      "Actual Cost": "3538688.2"
+    },
+    {
+      "SAPID": "ARB/22401",
+      "Project": "IPLC RFSS ARBA-515",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "59200",
+      "Actual Cost": "43527.45"
+    },
+    {
+      "SAPID": "ARB/22645",
+      "Project": "IPLC CY1601 Maintenance Batch 1 - Phase I",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "129885",
+      "Actual Cost": "115529.75"
+    },
+    {
+      "SAPID": "ARB/22955",
+      "Project": "IPLC CY16 Game Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "145292.04",
+      "Actual Cost": "127240.5"
+    },
+    {
+      "SAPID": "ARB/23208",
+      "Project": "IPLC CY16 Loto Game Updates",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "72692.96",
+      "Actual Cost": "70892.5"
+    },
+    {
+      "SAPID": "ARB/23794",
+      "Project": "CY1701 Maint Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49453.1",
+      "Actual Cost": "45867.5"
+    },
+    {
+      "SAPID": "ARB/24952",
+      "Project": "CY1801 Maint Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "137031.19",
+      "Actual Cost": "137688"
+    },
+    {
+      "SAPID": "ARB/25251",
+      "Project": "EBF QUI6 JUL 2018",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "94424",
+      "Actual Cost": "95025"
+    },
+    {
+      "SAPID": "ARB/26167",
+      "Project": "CY18 Trad Lottery Enhancement",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "21000.04",
+      "Actual Cost": "28609"
+    },
+    {
+      "SAPID": "ASA/17644",
+      "Project": "PL 2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "3162021.56",
+      "Actual Cost": "2860114.92"
+    },
+    {
+      "SAPID": "ASA/18865",
+      "Project": "Global #717",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "477004.76",
+      "Actual Cost": "458273.82"
+    },
+    {
+      "SAPID": "ASA/18866",
+      "Project": "Batch CY1201",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "214723.88",
+      "Actual Cost": "221644.96"
+    },
+    {
+      "SAPID": "ASA/18880",
+      "Project": "CY13 Game Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "74357.24",
+      "Actual Cost": "44237"
+    },
+    {
+      "SAPID": "ASA/19353",
+      "Project": "CY1301 Maint Batch 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "123676.04",
+      "Actual Cost": "134472"
+    },
+    {
+      "SAPID": "ASA/19683",
+      "Project": "CY12 Quiniela Instantanea",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "249895.16",
+      "Actual Cost": "250309"
+    },
+    {
+      "SAPID": "ASA/21553",
+      "Project": "CY14 Promotions and Off Line Games",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "167828.96",
+      "Actual Cost": "164329.4"
+    },
+    {
+      "SAPID": "ASA/21906",
+      "Project": "CY15 Games Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "671919.82",
+      "Actual Cost": "821629.31"
+    },
+    {
+      "SAPID": "ASA/22402",
+      "Project": "EBF ARJA-2676",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "176164",
+      "Actual Cost": "143800.29"
+    },
+    {
+      "SAPID": "ASA/22958",
+      "Project": "CY16 Promo and Loto Update Phase II",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "174759.24",
+      "Actual Cost": "167515.25"
+    },
+    {
+      "SAPID": "ASA/23795",
+      "Project": "CY1701 Maint Batch A Phase I",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "157082.84",
+      "Actual Cost": "159842"
+    },
+    {
+      "SAPID": "ASA/24045",
+      "Project": "CY17 Game and Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "215737.02",
+      "Actual Cost": "239872.5"
+    },
+    {
+      "SAPID": "ASA/24954",
+      "Project": "CY1801 Maint Phase I",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "142084.2",
+      "Actual Cost": "151391"
+    },
+    {
+      "SAPID": "ASA/25252",
+      "Project": "SL EBF 26-Jan-2018",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "94424",
+      "Actual Cost": "78351"
+    },
+    {
+      "SAPID": "AZ/18103",
+      "Project": "1801 Non Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "622057.92",
+      "Actual Cost": "594140.29"
+    },
+    {
+      "SAPID": "AZ/19415",
+      "Project": "4-Digit Instant Game (Phase1)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "24710.04",
+      "Actual Cost": "64616.5"
+    },
+    {
+      "SAPID": "AZ/19622",
+      "Project": "AZ CY1301 - Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "222951.96",
+      "Actual Cost": "212202.67"
+    },
+    {
+      "SAPID": "AZ/20500",
+      "Project": "4-Digit / All or Nothing MPI",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "228697.12",
+      "Actual Cost": "271961.44"
+    },
+    {
+      "SAPID": "AZ/20501",
+      "Project": "AZ CY1403 Monopoly",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "235371.96",
+      "Actual Cost": "252726.48"
+    },
+    {
+      "SAPID": "AZ/21746",
+      "Project": "AZ CY1502 5 Card Cash and Powerball ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "272796.87",
+      "Actual Cost": "263075.34"
+    },
+    {
+      "SAPID": "AZ/21747",
+      "Project": "AZ CY1501 2nd Chance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "73991.12",
+      "Actual Cost": "91028.5"
+    },
+    {
+      "SAPID": "AZ/22586",
+      "Project": "AZ | SG Transition EBFs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "575175.12",
+      "Actual Cost": "459948.57"
+    },
+    {
+      "SAPID": "AZ/23111",
+      "Project": "CY1601 Gemini Ultra ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "587269.88",
+      "Actual Cost": "772560.02"
+    },
+    {
+      "SAPID": "AZ/23866",
+      "Project": "AZ CY1701 Mega Millions ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "220639.84",
+      "Actual Cost": "256931.04"
+    },
+    {
+      "SAPID": "AZ/23867",
+      "Project": "CY1702 Fast Play",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "108245.28",
+      "Actual Cost": "152240.5"
+    },
+    {
+      "SAPID": "AZ/24824",
+      "Project": "CY1801 Triple Twist",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "37046.48",
+      "Actual Cost": "69509"
+    },
+    {
+      "SAPID": "BEI/18138",
+      "Project": "HOA Year 2013",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "584499.46",
+      "Actual Cost": "417437.4"
+    },
+    {
+      "SAPID": "BEI/18587",
+      "Project": "Batch 12",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "111720",
+      "Actual Cost": "109619.5"
+    },
+    {
+      "SAPID": "BEI/18588",
+      "Project": "Batch 13",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "248980.1",
+      "Actual Cost": "252911.41"
+    },
+    {
+      "SAPID": "BEI/18762",
+      "Project": "Handheld",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "328300",
+      "Actual Cost": "285505.6"
+    },
+    {
+      "SAPID": "BEI/18813",
+      "Project": "OLAP",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "9150816.36",
+      "Actual Cost": "8952949.77"
+    },
+    {
+      "SAPID": "BEI/19901",
+      "Project": "Batch 14 Terminal Patch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "96286.92",
+      "Actual Cost": "97859.26"
+    },
+    {
+      "SAPID": "BEI/19902",
+      "Project": "Beijing CNAS",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "96200.59",
+      "Actual Cost": "83689.85"
+    },
+    {
+      "SAPID": "BEI/19937",
+      "Project": "Batch 15",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "180089.4",
+      "Actual Cost": "174973.31"
+    },
+    {
+      "SAPID": "BEI/20185",
+      "Project": "CWLIC Real Time Transaction",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "102083.4",
+      "Actual Cost": "102495.56"
+    },
+    {
+      "SAPID": "BEI/20200",
+      "Project": "Batch 16",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "246528.3",
+      "Actual Cost": "236889.2"
+    },
+    {
+      "SAPID": "BEI/20492",
+      "Project": "Batch 17",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "225271.88",
+      "Actual Cost": "223218.64"
+    },
+    {
+      "SAPID": "BEI/21404",
+      "Project": "CY1501 B01 Enh Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "129667.88",
+      "Actual Cost": "106291.88"
+    },
+    {
+      "SAPID": "BEI/21405",
+      "Project": "Batch 19",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "253362.04",
+      "Actual Cost": "236257.45"
+    },
+    {
+      "SAPID": "BEI/21766",
+      "Project": "ESPD & eInstant Project",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2969062.2",
+      "Actual Cost": "2234310.1"
+    },
+    {
+      "SAPID": "BEI/22405",
+      "Project": "HOA Year 2018",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "369600.04",
+      "Actual Cost": "330601.12"
+    },
+    {
+      "SAPID": "BEI/22724",
+      "Project": "CY1601 Batch 20",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "23226.04",
+      "Actual Cost": "22761"
+    },
+    {
+      "SAPID": "BEI/22725",
+      "Project": "Batch 21",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "40789.04",
+      "Actual Cost": "37203.42"
+    },
+    {
+      "SAPID": "BEI/22726",
+      "Project": "Batch 22",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "115860",
+      "Actual Cost": "110364.37"
+    },
+    {
+      "SAPID": "BEI/23661",
+      "Project": "CY16 Retailer Expansion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "232354.96",
+      "Actual Cost": "163358.97"
+    },
+    {
+      "SAPID": "BEI/23971",
+      "Project": "Batch 23_SLTO",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "56452.2",
+      "Actual Cost": "54127.46"
+    },
+    {
+      "SAPID": "BEI/23972",
+      "Project": "CY1702 Batch24 Game Animation",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "89938.04",
+      "Actual Cost": "81725"
+    },
+    {
+      "SAPID": "BEI/23973",
+      "Project": "Batch 25 - Game show rolling text",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "156404.07",
+      "Actual Cost": "150055.36"
+    },
+    {
+      "SAPID": "BEI/24052",
+      "Project": "CWLIC Centralized IPS Validation",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "535459.24",
+      "Actual Cost": "340391.11"
+    },
+    {
+      "SAPID": "BEI/24412",
+      "Project": "JD QR Code",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "90040.28",
+      "Actual Cost": "91203.84"
+    },
+    {
+      "SAPID": "BEI/24741",
+      "Project": "CWLIC_RealTime_2017",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "108799.88",
+      "Actual Cost": "106027.12"
+    },
+    {
+      "SAPID": "BEI/25038",
+      "Project": "Batch 26_3D new bet type and promo prize",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "117350.84",
+      "Actual Cost": "111930.79"
+    },
+    {
+      "SAPID": "BEI/25039",
+      "Project": "Batch 27 - CWLIC New IPS Interface",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "208500.08",
+      "Actual Cost": "204840.4"
+    },
+    {
+      "SAPID": "BEL/16943",
+      "Project": "CONV",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "27417341.48",
+      "Actual Cost": "23194522.63"
+    },
+    {
+      "SAPID": "BEL/18189",
+      "Project": "Production",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1252370.56",
+      "Actual Cost": "1161105.49"
+    },
+    {
+      "SAPID": "BEL/21217",
+      "Project": "ITVM_pilot",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "373641.08",
+      "Actual Cost": "324378.88"
+    },
+    {
+      "SAPID": "BEL/21561",
+      "Project": "Gaming Commission Prosys ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "37463.08",
+      "Actual Cost": "29806.44"
+    },
+    {
+      "SAPID": "BEL/21844",
+      "Project": "Gemini Ultra with ePayment",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2508213.34",
+      "Actual Cost": "2041872.45"
+    },
+    {
+      "SAPID": "BEL/22169",
+      "Project": "Joker+ Daily (Prosys)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "48244.7",
+      "Actual Cost": "51498"
+    },
+    {
+      "SAPID": "BEL/22736",
+      "Project": "PLB01",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "65384",
+      "Actual Cost": "64010.49"
+    },
+    {
+      "SAPID": "BEL/23017",
+      "Project": "EUML",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "619759.02",
+      "Actual Cost": "576766.69"
+    },
+    {
+      "SAPID": "BEL/23286",
+      "Project": "BEL_TCM",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "531182.73"
+    },
+    {
+      "SAPID": "BEL/23612",
+      "Project": "Lotto_Surprise",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "7864",
+      "Actual Cost": "8536"
+    },
+    {
+      "SAPID": "BEL/23985",
+      "Project": "BEL_TBT",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86831.94",
+      "Actual Cost": "83896.08"
+    },
+    {
+      "SAPID": "BEL/24006",
+      "Project": "PLB02",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "26763.96",
+      "Actual Cost": "24414"
+    },
+    {
+      "SAPID": "BEL/24030",
+      "Project": "PLB19",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "175823.96",
+      "Actual Cost": "116291.17"
+    },
+    {
+      "SAPID": "BEL/24195",
+      "Project": "BEL_Agent_Merge",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "20696",
+      "Actual Cost": "20504"
+    },
+    {
+      "SAPID": "BEL/24253",
+      "Project": "PLB03",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "54333.96",
+      "Actual Cost": "54582"
+    },
+    {
+      "SAPID": "BEL/24275",
+      "Project": "PLB05",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "119973.04",
+      "Actual Cost": "130451"
+    },
+    {
+      "SAPID": "BEL/24290",
+      "Project": "BEL_NRS",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "15852.18",
+      "Actual Cost": "14032"
+    },
+    {
+      "SAPID": "BEL/24640",
+      "Project": "PLB06",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "241306.08",
+      "Actual Cost": "240913"
+    },
+    {
+      "SAPID": "BEL/24676",
+      "Project": "PLB05.5",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "28312.16",
+      "Actual Cost": "26638.5"
+    },
+    {
+      "SAPID": "BEL/24777",
+      "Project": "BEL_NRS_2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "10608",
+      "Actual Cost": "11118"
+    },
+    {
+      "SAPID": "BEL/24950",
+      "Project": "PLB08",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "15284.34",
+      "Actual Cost": "15114"
+    },
+    {
+      "SAPID": "BEL/25122",
+      "Project": "PLB12",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49231.88",
+      "Actual Cost": "33115"
+    },
+    {
+      "SAPID": "BEL/25384",
+      "Project": "PLB09",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "365133.92",
+      "Actual Cost": "353357.96"
+    },
+    {
+      "SAPID": "BEL/25389",
+      "Project": "PLB10",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "133309.92",
+      "Actual Cost": "126117.7"
+    },
+    {
+      "SAPID": "BEL/25443",
+      "Project": "PLB_TC56",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "33120.36",
+      "Actual Cost": "27454.32"
+    },
+    {
+      "SAPID": "BEL/25844",
+      "Project": "PLB11",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "284518.2",
+      "Actual Cost": "214916.37"
+    },
+    {
+      "SAPID": "BEL/26582",
+      "Project": "IGT_Command_Phase1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "93993.26"
+    },
+    {
+      "SAPID": "BEL/26595",
+      "Project": "PLB12.5",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "59216.76",
+      "Actual Cost": "51900.5"
+    },
+    {
+      "SAPID": "CA/17590",
+      "Project": "Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "11450417.7",
+      "Actual Cost": "11646421.53"
+    },
+    {
+      "SAPID": "CA/18105",
+      "Project": "April 2014 Promotions Mini-Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "3746647.4",
+      "Actual Cost": "3172827"
+    },
+    {
+      "SAPID": "CA/18356",
+      "Project": "CY12 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "346325",
+      "Actual Cost": "350061.75"
+    },
+    {
+      "SAPID": "CA/18358",
+      "Project": "CY12 Reporting Batch 2 ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49081.64",
+      "Actual Cost": "56348.02"
+    },
+    {
+      "SAPID": "CA/18465",
+      "Project": "CY1201 Powerball",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "594263.64",
+      "Actual Cost": "672259.39"
+    },
+    {
+      "SAPID": "CA/19432",
+      "Project": "CY1303 - February Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "184430.04",
+      "Actual Cost": "250316"
+    },
+    {
+      "SAPID": "CA/19434",
+      "Project": "CY13 Reporting Batch 3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49050.16",
+      "Actual Cost": "49503"
+    },
+    {
+      "SAPID": "CA/19464",
+      "Project": "2nd chance Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "4279091.74",
+      "Actual Cost": "3778005.03"
+    },
+    {
+      "SAPID": "CA/19585",
+      "Project": "CY1301 $20 Game Enhancements - July",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "366175.08",
+      "Actual Cost": "375383.24"
+    },
+    {
+      "SAPID": "CA/19748",
+      "Project": "CY12 New Equipment SW",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "605226",
+      "Actual Cost": "628682.54"
+    },
+    {
+      "SAPID": "CA/19820",
+      "Project": "Linq3 Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "651574.01",
+      "Actual Cost": "382778.73"
+    },
+    {
+      "SAPID": "CA/20254",
+      "Project": "CY1401 - May Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "352798.2",
+      "Actual Cost": "366152.68"
+    },
+    {
+      "SAPID": "CA/20255",
+      "Project": "CY1402 - September 2014 Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "347040.74",
+      "Actual Cost": "349003"
+    },
+    {
+      "SAPID": "CA/20257",
+      "Project": "Scratchers Barcodes CY14",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "187499.98",
+      "Actual Cost": "212636.5"
+    },
+    {
+      "SAPID": "CA/20258",
+      "Project": "Reporting Batch 6",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "175300.08",
+      "Actual Cost": "157324"
+    },
+    {
+      "SAPID": "CA/20449",
+      "Project": "CY1403 Monopoly",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "512120.32",
+      "Actual Cost": "197129.18"
+    },
+    {
+      "SAPID": "CA/20526",
+      "Project": "CY1302 - October Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "569406.04",
+      "Actual Cost": "747750.26"
+    },
+    {
+      "SAPID": "CA/20541",
+      "Project": "Gemini Software",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "163560.16",
+      "Actual Cost": "176981.98"
+    },
+    {
+      "SAPID": "CA/20989",
+      "Project": "2nd Chance Batch 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "317874",
+      "Actual Cost": "381325.67"
+    },
+    {
+      "SAPID": "CA/21227",
+      "Project": "2nd Chance Multiple entries",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "46400.08",
+      "Actual Cost": "28599"
+    },
+    {
+      "SAPID": "CA/21334",
+      "Project": "Reporting Improvements 2014",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86199.82",
+      "Actual Cost": "45871.5"
+    },
+    {
+      "SAPID": "CA/21384",
+      "Project": "2nd Chance Batch 6",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "115559.96",
+      "Actual Cost": "57280.18"
+    },
+    {
+      "SAPID": "CA/21462",
+      "Project": "OnePlace",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "174000.12",
+      "Actual Cost": "163008.5"
+    },
+    {
+      "SAPID": "CA/21464",
+      "Project": "CY1501 April 2015 Maint Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "261761.92",
+      "Actual Cost": "149147"
+    },
+    {
+      "SAPID": "CA/21465",
+      "Project": "CA CY1504 February 2016 Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "440315.16",
+      "Actual Cost": "428758.76"
+    },
+    {
+      "SAPID": "CA/21748",
+      "Project": "CY1502 July 2015",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "274163.2",
+      "Actual Cost": "215933.5"
+    },
+    {
+      "SAPID": "CA/21749",
+      "Project": "CA CY1503 Powerball",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "432408.12",
+      "Actual Cost": "474706.65"
+    },
+    {
+      "SAPID": "CA/22262",
+      "Project": "CA Aurora Emulation",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "99679122.16",
+      "Actual Cost": "39088623.38"
+    },
+    {
+      "SAPID": "CA/22351",
+      "Project": "2nd Chance Batch 12",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "119284.32",
+      "Actual Cost": "106619"
+    },
+    {
+      "SAPID": "CA/22407",
+      "Project": "EBF 2016",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2671725.96",
+      "Actual Cost": "2361241.56"
+    },
+    {
+      "SAPID": "CA/22662",
+      "Project": "CA CY1601 Mt Whitney",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "347595.16",
+      "Actual Cost": "318763.36"
+    },
+    {
+      "SAPID": "CA/22663",
+      "Project": "CY1602 Mt Williamson ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "314570.08",
+      "Actual Cost": "300401.79"
+    },
+    {
+      "SAPID": "CA/22665",
+      "Project": "2nd Chance CY16 Release 2 - John Adams",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "318933.58",
+      "Actual Cost": "321766.5"
+    },
+    {
+      "SAPID": "CA/22757",
+      "Project": "2nd Chance Batch 11",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "100832.28",
+      "Actual Cost": "53829.5"
+    },
+    {
+      "SAPID": "CA/22758",
+      "Project": "CY1603 White Mt Peak 2016 Gaming Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "312026.08",
+      "Actual Cost": "324662.08"
+    },
+    {
+      "SAPID": "CA/22759",
+      "Project": "CY1604 North Palisade",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "269408.04",
+      "Actual Cost": "261921.86"
+    },
+    {
+      "SAPID": "CA/22761",
+      "Project": "CA Compact Lottery Terminal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "101300.52",
+      "Actual Cost": "48668.5"
+    },
+    {
+      "SAPID": "CA/23066",
+      "Project": "2nd Chance CY16 Release 1 - George Washington",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86419.96",
+      "Actual Cost": "65266.25"
+    },
+    {
+      "SAPID": "CA/23289",
+      "Project": "2nd Chance Batch 13",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "116832.12",
+      "Actual Cost": "81528.62"
+    },
+    {
+      "SAPID": "CA/23293",
+      "Project": "CY16 ESMM Content Tool Development",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "164705.96",
+      "Actual Cost": "172198.44"
+    },
+    {
+      "SAPID": "CA/23833",
+      "Project": "CY1701 Mt Shasta 2017 Gaming",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "339630.96",
+      "Actual Cost": "325434.53"
+    },
+    {
+      "SAPID": "CA/23834",
+      "Project": "CY1702 Mt Humphreys 2017 Gaming",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "251190",
+      "Actual Cost": "246657.79"
+    },
+    {
+      "SAPID": "CA/23836",
+      "Project": "Reporting Batch 14",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "134208.08",
+      "Actual Cost": "75617.77"
+    },
+    {
+      "SAPID": "CA/23837",
+      "Project": "2nd Chance CY17 Release 3 - Thomas Jefferson",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "489963.96",
+      "Actual Cost": "480380.87"
+    },
+    {
+      "SAPID": "CA/24109",
+      "Project": "CY1704 Mini-Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "133123.92",
+      "Actual Cost": "102532"
+    },
+    {
+      "SAPID": "CA/24110",
+      "Project": "CY1703 Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "491996.08",
+      "Actual Cost": "465962.66"
+    },
+    {
+      "SAPID": "CA/24272",
+      "Project": "BO Upgrade (Phase 1 Release 1)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "3821887.08",
+      "Actual Cost": "3566391.62"
+    },
+    {
+      "SAPID": "CA/24907",
+      "Project": "2nd Chance - Digital Ecosystem",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "157680",
+      "Actual Cost": "114168.11"
+    },
+    {
+      "SAPID": "CA/24908",
+      "Project": "CY1801 Mt Keith",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "132950.04",
+      "Actual Cost": "126667.05"
+    },
+    {
+      "SAPID": "CA/24909",
+      "Project": "CY1802 Mt Darwin",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49850.04",
+      "Actual Cost": "35384"
+    },
+    {
+      "SAPID": "CA/25207",
+      "Project": "IPS Scratchers Validation Changes",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "324800",
+      "Actual Cost": "330076.42"
+    },
+    {
+      "SAPID": "CA/26349",
+      "Project": "2nd Chance CY18 Release 3 - William Henry Harrison",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "179211",
+      "Actual Cost": "8270"
+    },
+    {
+      "SAPID": "CHL/19814",
+      "Project": "CY1303 Polla4 Second Daily Draw",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "269592.78",
+      "Actual Cost": "261698.25"
+    },
+    {
+      "SAPID": "CHL/20359",
+      "Project": "CY1404 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "113606.04",
+      "Actual Cost": "112302.75"
+    },
+    {
+      "SAPID": "CHL/20885",
+      "Project": "CY1402 Racha Modifications",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "139443.04",
+      "Actual Cost": "106066.18"
+    },
+    {
+      "SAPID": "CHL/20886",
+      "Project": "CY1401 PB Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "157125.04",
+      "Actual Cost": "163826"
+    },
+    {
+      "SAPID": "CHL/21554",
+      "Project": "CY1403 Loto: Price Modification",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49715.12",
+      "Actual Cost": "38837"
+    },
+    {
+      "SAPID": "CHL/21819",
+      "Project": "CY1501 Loto 4&5 Addon",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "398752.32",
+      "Actual Cost": "405254.59"
+    },
+    {
+      "SAPID": "CHL/23892",
+      "Project": "CY16 Polla Transition",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "129781.08",
+      "Actual Cost": "155760"
+    },
+    {
+      "SAPID": "CO/17756",
+      "Project": "Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "22885240",
+      "Actual Cost": "21496348.76"
+    },
+    {
+      "SAPID": "CO/20582",
+      "Project": "2015 ESMM",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "511149.88",
+      "Actual Cost": "365262.57"
+    },
+    {
+      "SAPID": "CO/21470",
+      "Project": "CO CY1501 Release 1 - May",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "58135.08",
+      "Actual Cost": "125419"
+    },
+    {
+      "SAPID": "CO/21792",
+      "Project": "CY1503 Powerball Release",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "110755",
+      "Actual Cost": "94396.55"
+    },
+    {
+      "SAPID": "CO/22410",
+      "Project": "2016 ESMM",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "618367",
+      "Actual Cost": "490584.59"
+    },
+    {
+      "SAPID": "CO/22657",
+      "Project": "CO CY1602 Wal-Mart",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "66145.04",
+      "Actual Cost": "69783.25"
+    },
+    {
+      "SAPID": "CO/23116",
+      "Project": "CO CY1504 Barr Lake",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "118195.28",
+      "Actual Cost": "126305.99"
+    },
+    {
+      "SAPID": "CO/23190",
+      "Project": "CO CY1601 Lucky for Life",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "177325.16",
+      "Actual Cost": "180750.72"
+    },
+    {
+      "SAPID": "CO/23868",
+      "Project": "CO CY1701 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "64125.64",
+      "Actual Cost": "59637.85"
+    },
+    {
+      "SAPID": "CO/23869",
+      "Project": "CO CY1702 Winter Maintenance Batch ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86379.96",
+      "Actual Cost": "88828.5"
+    },
+    {
+      "SAPID": "CO/23978",
+      "Project": "CO CY1603 Pick3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "116795.04",
+      "Actual Cost": "150901.45"
+    },
+    {
+      "SAPID": "CO/24134",
+      "Project": "CO CY1604 EZ Match",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "254063.1",
+      "Actual Cost": "275300.36"
+    },
+    {
+      "SAPID": "CO/24135",
+      "Project": "CO CY17 Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "250158.32",
+      "Actual Cost": "191759.44"
+    },
+    {
+      "SAPID": "CO/24838",
+      "Project": "CY1801 Barcode",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "91075.88",
+      "Actual Cost": "87927.02"
+    },
+    {
+      "SAPID": "CO/24839",
+      "Project": "CY1802 Mount Blanca Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "120902.24",
+      "Actual Cost": "111701.16"
+    },
+    {
+      "SAPID": "CO/25052",
+      "Project": "CO CY17 Powerball",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "120980.12",
+      "Actual Cost": "51123.37"
+    },
+    {
+      "SAPID": "CO/26110",
+      "Project": "CY1901 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "48312.77",
+      "Actual Cost": "13738.5"
+    },
+    {
+      "SAPID": "CO/26438",
+      "Project": "CY1803 Snowmass Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "61496.16",
+      "Actual Cost": "54828"
+    },
+    {
+      "SAPID": "COL/20360",
+      "Project": "CY1401 Maint Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "118771.29",
+      "Actual Cost": "118461.5"
+    },
+    {
+      "SAPID": "COL/20559",
+      "Project": "Colpensiones",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "225202.4",
+      "Actual Cost": "206592.32"
+    },
+    {
+      "SAPID": "COL/20893",
+      "Project": "Imagine Terminals",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2977005.4",
+      "Actual Cost": "2446154.2"
+    },
+    {
+      "SAPID": "COL/21600",
+      "Project": "Game Expansion & new Chance Game Boyaca",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "59592.12",
+      "Actual Cost": "59247.9"
+    },
+    {
+      "SAPID": "COL/21606",
+      "Project": "Billpayment Falabella Online",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "28185.08",
+      "Actual Cost": "28499"
+    },
+    {
+      "SAPID": "COL/21846",
+      "Project": "Colombia Technology Upgrade Phase I",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "5511611.68",
+      "Actual Cost": "5073771.01"
+    },
+    {
+      "SAPID": "COL/22386",
+      "Project": "Q2-CY15 Commercial Services Batch - Release 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "279905.08",
+      "Actual Cost": "271408.11"
+    },
+    {
+      "SAPID": "COL/22387",
+      "Project": "Q3 CS - Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "125158.32",
+      "Actual Cost": "125176.5"
+    },
+    {
+      "SAPID": "COL/23279",
+      "Project": "Columbia Technology Upgrade Phase II",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1002974.84",
+      "Actual Cost": "1129631.51"
+    },
+    {
+      "SAPID": "COL/23280",
+      "Project": "Q2-CY16 CS Batch Release 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "137863.96",
+      "Actual Cost": "137868"
+    },
+    {
+      "SAPID": "COL/23414",
+      "Project": "Colombia Technology Upgrade Baloto RFP",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1282712",
+      "Actual Cost": "1109319.65"
+    },
+    {
+      "SAPID": "COL/24103",
+      "Project": "CY17 Q2 CS Service Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "147098",
+      "Actual Cost": "152352.1"
+    },
+    {
+      "SAPID": "COL/24104",
+      "Project": "CY17 Q4 CS Service Batch Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "40365.08",
+      "Actual Cost": "36770.5"
+    },
+    {
+      "SAPID": "COL/24691",
+      "Project": "CY17 Baloto Promos - rel1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "12800.1",
+      "Actual Cost": "14410"
+    },
+    {
+      "SAPID": "COL/24928",
+      "Project": "Chance B2B Gelsa CS Golive 2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "596944.91",
+      "Actual Cost": "697818.12"
+    },
+    {
+      "SAPID": "COL/24929",
+      "Project": "Chanceros Network Baloto B2B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "15770.04",
+      "Actual Cost": "18166.5"
+    },
+    {
+      "SAPID": "COL/24931",
+      "Project": "CY17 Baloto B2B - rel1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "41592.3",
+      "Actual Cost": "45444.5"
+    },
+    {
+      "SAPID": "COL/24938",
+      "Project": "CY18 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "56613.6",
+      "Actual Cost": "55914.5"
+    },
+    {
+      "SAPID": "COL/24940",
+      "Project": "CY18 Maintenance Batch A CS",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "12620.04",
+      "Actual Cost": "13416"
+    },
+    {
+      "SAPID": "COL/25288",
+      "Project": "CY18 Commercial Services Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "93724.04",
+      "Actual Cost": "95905"
+    },
+    {
+      "SAPID": "COL/25289",
+      "Project": "CY18 Commercial Service Batch B Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "83581.46",
+      "Actual Cost": "83078"
+    },
+    {
+      "SAPID": "COL/25367",
+      "Project": "CY17 CS Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "34166.92",
+      "Actual Cost": "33053.5"
+    },
+    {
+      "SAPID": "COL/26367",
+      "Project": "CY19 CS Services - Rel1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "19500",
+      "Actual Cost": "3875"
+    },
+    {
+      "SAPID": "CRB/18110",
+      "Project": "CY14 ANT EBFs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "721662.6",
+      "Actual Cost": "648795.26"
+    },
+    {
+      "SAPID": "CRB/19939",
+      "Project": "CY1302 New Loteka game",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "183272.08",
+      "Actual Cost": "160801.79"
+    },
+    {
+      "SAPID": "CRB/20362",
+      "Project": "CY1401 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "19792.28",
+      "Actual Cost": "8701.5"
+    },
+    {
+      "SAPID": "CRB/20488",
+      "Project": "CY13 Mega Millions Matrix Change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "167091.16",
+      "Actual Cost": "136383.54"
+    },
+    {
+      "SAPID": "CRB/20854",
+      "Project": "CY13 New Lotto Game batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "206172.8",
+      "Actual Cost": "225948.25"
+    },
+    {
+      "SAPID": "CRB/22413",
+      "Project": "Antilles EBFs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "458949",
+      "Actual Cost": "339655.37"
+    },
+    {
+      "SAPID": "CRB/22548",
+      "Project": "CY1601 Maint Batch 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "75005.98",
+      "Actual Cost": "73239.08"
+    },
+    {
+      "SAPID": "CRB/22764",
+      "Project": "CY15 ANT Powerball Matrix Change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "103802.12",
+      "Actual Cost": "79726.5"
+    },
+    {
+      "SAPID": "CRB/23141",
+      "Project": "CY16 Social Space Games",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "215832.92",
+      "Actual Cost": "236458"
+    },
+    {
+      "SAPID": "CRB/23982",
+      "Project": "CY18 Double Draw MegaBall",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "98892.6",
+      "Actual Cost": "100472"
+    },
+    {
+      "SAPID": "CRB/24849",
+      "Project": "CY17 Mega Millions Matrix Change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "97307.92",
+      "Actual Cost": "99147.25"
+    },
+    {
+      "SAPID": "CRB/25226",
+      "Project": "CY17 Powerball Game Changes",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "24808.18",
+      "Actual Cost": "23352.25"
+    },
+    {
+      "SAPID": "CRB/26375",
+      "Project": "CY18 Enable 604 for ES Antilles",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "194102.76",
+      "Actual Cost": "156972.09"
+    },
+    {
+      "SAPID": "CRI/16851",
+      "Project": "ESTE_BTC1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "9655932.2",
+      "Actual Cost": "9657480.57"
+    },
+    {
+      "SAPID": "CRI/19360",
+      "Project": "CY13 Maint Batch ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "100045.04",
+      "Actual Cost": "103776"
+    },
+    {
+      "SAPID": "CRI/21590",
+      "Project": "CY1401 Lotto Matrix Change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "63557.4",
+      "Actual Cost": "25825.5"
+    },
+    {
+      "SAPID": "CRI/22488",
+      "Project": "CY15 Service Enhancement Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "165332.08",
+      "Actual Cost": "164009.75"
+    },
+    {
+      "SAPID": "CRI/23223",
+      "Project": "CY16Q3 Game Enhancement",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "80070.58",
+      "Actual Cost": "80526.5"
+    },
+    {
+      "SAPID": "CRI/23802",
+      "Project": "CY1701 Maint Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "82364.04",
+      "Actual Cost": "85097.5"
+    },
+    {
+      "SAPID": "CRI/24198",
+      "Project": "CY18 Game Enh A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "126907.84",
+      "Actual Cost": "101344.75"
+    },
+    {
+      "SAPID": "CRI/25302",
+      "Project": "CY18 Game Enh C",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "192986.24",
+      "Actual Cost": "199724.6"
+    },
+    {
+      "SAPID": "CZH/14165",
+      "Project": "Lottery Inside",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "768250.08",
+      "Actual Cost": "691062.22"
+    },
+    {
+      "SAPID": "CZH/19628",
+      "Project": "Eurojackpot",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "201776.48",
+      "Actual Cost": "177053.6"
+    },
+    {
+      "SAPID": "CZH/19943",
+      "Project": "Christmas Voucher (HOA)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "832645.64",
+      "Actual Cost": "851264.17"
+    },
+    {
+      "SAPID": "CZH/20080",
+      "Project": "Interactive",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "4774439.02",
+      "Actual Cost": "3541863.02"
+    },
+    {
+      "SAPID": "CZH/20112",
+      "Project": "AV Upgrade (ESMM)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "614000",
+      "Actual Cost": "613073.75"
+    },
+    {
+      "SAPID": "CZH/20153",
+      "Project": "Euromiliony Reformulation",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "154379.86",
+      "Actual Cost": "141795.68"
+    },
+    {
+      "SAPID": "CZH/20516",
+      "Project": "Sportka Draw Unification",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "164580.04",
+      "Actual Cost": "156873.89"
+    },
+    {
+      "SAPID": "CZH/20533",
+      "Project": "Microloans",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "72790",
+      "Actual Cost": "62885.01"
+    },
+    {
+      "SAPID": "CZH/20660",
+      "Project": "SAZKAmobil",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "256432.44",
+      "Actual Cost": "264115.12"
+    },
+    {
+      "SAPID": "CZH/21049",
+      "Project": "5min Keno Relaunch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "53289.92",
+      "Actual Cost": "50477.59"
+    },
+    {
+      "SAPID": "CZH/21234",
+      "Project": "GT1200 / 2014",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1380486.16",
+      "Actual Cost": "1207661.34"
+    },
+    {
+      "SAPID": "CZH/21297",
+      "Project": "HOA 2014 - SW Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "271500",
+      "Actual Cost": "236914.42"
+    },
+    {
+      "SAPID": "CZH/21419",
+      "Project": "ETS4 - Ticketing Packages",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "58240.04",
+      "Actual Cost": "58923.32"
+    },
+    {
+      "SAPID": "CZH/21760",
+      "Project": "Prepaid Card Recharge Co97",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "108220.04",
+      "Actual Cost": "106898.68"
+    },
+    {
+      "SAPID": "CZH/21981",
+      "Project": "Lottery Inside Phase 2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "90304.94",
+      "Actual Cost": "86958.62"
+    },
+    {
+      "SAPID": "CZH/22041",
+      "Project": "Itanium Upgrade",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "359107",
+      "Actual Cost": "214115.32"
+    },
+    {
+      "SAPID": "CZH/22133",
+      "Project": "FTS",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "117012",
+      "Actual Cost": "107557.62"
+    },
+    {
+      "SAPID": "CZH/22320",
+      "Project": "Mobile Postpaid",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "84880.12",
+      "Actual Cost": "79020.41"
+    },
+    {
+      "SAPID": "CZH/22415",
+      "Project": "HOA : CY13-CY16",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "949805.16",
+      "Actual Cost": "852322.89"
+    },
+    {
+      "SAPID": "CZH/22997",
+      "Project": "CY15 POS functions for Interactive",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "188827.38",
+      "Actual Cost": "109114.11"
+    },
+    {
+      "SAPID": "CZH/23237",
+      "Project": "CY15 2nd Draw on Daily Keno",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "205350.92",
+      "Actual Cost": "223128.78"
+    },
+    {
+      "SAPID": "CZH/23242",
+      "Project": "CY16 GSM e-TopUp Voucher",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "134680",
+      "Actual Cost": "201252.44"
+    },
+    {
+      "SAPID": "CZH/24041",
+      "Project": "CY16 SAZKA Player Card KaSa",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "299662.9",
+      "Actual Cost": "384761.7"
+    },
+    {
+      "SAPID": "CZH/24058",
+      "Project": "CY16 Interactive Fast Draw Games",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "311957.82",
+      "Actual Cost": "310952.52"
+    },
+    {
+      "SAPID": "CZH/25058",
+      "Project": "CY17 PaySafe Card",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "199679.96",
+      "Actual Cost": "219430.58"
+    },
+    {
+      "SAPID": "CZH/25072",
+      "Project": "CY17 EET",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "432946.86",
+      "Actual Cost": "553535.75"
+    },
+    {
+      "SAPID": "CZH/25630",
+      "Project": "CY18 QR Barcode",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "502978.12",
+      "Actual Cost": "402170.82"
+    },
+    {
+      "SAPID": "CZH/25633",
+      "Project": "CY18 Spring Batch Ph 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "68119.88",
+      "Actual Cost": "70623.62"
+    },
+    {
+      "SAPID": "CZH/25876",
+      "Project": "CY19 HOA",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "355550.16",
+      "Actual Cost": "14992.5"
+    },
+    {
+      "SAPID": "CZH/26328",
+      "Project": "SAZKA Parcel Point",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "130667.8",
+      "Actual Cost": "120093.12"
+    },
+    {
+      "SAPID": "DEN/12916",
+      "Project": "DKT12R00_21_UserDb",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "254141.12",
+      "Actual Cost": "168633.25"
+    },
+    {
+      "SAPID": "DEN/18191",
+      "Project": "DKT-TRASH",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "739788.96",
+      "Actual Cost": "558247.55"
+    },
+    {
+      "SAPID": "DEN/18335",
+      "Project": "DKT12R00_28_Firewall&SpeedUp",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "93873",
+      "Actual Cost": "85287.6"
+    },
+    {
+      "SAPID": "DEN/18336",
+      "Project": "DKT12R00",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "141580.04",
+      "Actual Cost": "157176.22"
+    },
+    {
+      "SAPID": "DEN/18337",
+      "Project": "DKT-SOW / Estimation Request",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "369735.16",
+      "Actual Cost": "354014.5"
+    },
+    {
+      "SAPID": "DEN/18338",
+      "Project": "BATCH1202-EULO",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "88839.92",
+      "Actual Cost": "88612.45"
+    },
+    {
+      "SAPID": "DEN/18339",
+      "Project": "DKT12R04-RetailerAcquirer",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1100170.96",
+      "Actual Cost": "1010086.29"
+    },
+    {
+      "SAPID": "DEN/18341",
+      "Project": "DKT12R07-GenericCoupon",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "23236.04",
+      "Actual Cost": "19405.4"
+    },
+    {
+      "SAPID": "DEN/18911",
+      "Project": "BATCH1105-WeeklyBalance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "28665.08",
+      "Actual Cost": "34245"
+    },
+    {
+      "SAPID": "DEN/19451",
+      "Project": "DKT13R02-Keno",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "269017.8",
+      "Actual Cost": "260697.8"
+    },
+    {
+      "SAPID": "DEN/19452",
+      "Project": "DKT13R01-MaintBatch1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "28630.96",
+      "Actual Cost": "24597.9"
+    },
+    {
+      "SAPID": "DEN/19454",
+      "Project": "DKT13R03",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "96344.96",
+      "Actual Cost": "88653.25"
+    },
+    {
+      "SAPID": "DEN/20193",
+      "Project": "DKT14R01",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "63419.84",
+      "Actual Cost": "37102.75"
+    },
+    {
+      "SAPID": "DEN/20195",
+      "Project": "DKT14R05",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "41577.96",
+      "Actual Cost": "36211.1"
+    },
+    {
+      "SAPID": "DEN/20643",
+      "Project": "DKT13R05",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "323773.31",
+      "Actual Cost": "368817.69"
+    },
+    {
+      "SAPID": "DEN/21394",
+      "Project": "DKT15R01",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "171820.16",
+      "Actual Cost": "187950.45"
+    },
+    {
+      "SAPID": "DEN/22023",
+      "Project": "Denmark Lottery Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "552402.65"
+    },
+    {
+      "SAPID": "DEN/23369",
+      "Project": "DKT16R01",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "101802.04",
+      "Actual Cost": "67589.5"
+    },
+    {
+      "SAPID": "DMR/21119",
+      "Project": "Commercial Services",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1094093.18",
+      "Actual Cost": "1146589.07"
+    },
+    {
+      "SAPID": "DMR/21821",
+      "Project": "CY15 VIA CS Expansion – Sprint 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "133455.12",
+      "Actual Cost": "132240.55"
+    },
+    {
+      "SAPID": "DMR/22082",
+      "Project": "CY14 Loteria Nacional",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "35708.44",
+      "Actual Cost": "16812"
+    },
+    {
+      "SAPID": "DMR/22417",
+      "Project": "Customer Hold - DR",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "67415",
+      "Actual Cost": "51860"
+    },
+    {
+      "SAPID": "DMR/22767",
+      "Project": "CY15 VIA CS Expansion 2 – Sprint 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "107590.16",
+      "Actual Cost": "104875.25"
+    },
+    {
+      "SAPID": "DMR/23062",
+      "Project": "DR CY17 Int to VIA - rel1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "24944.12",
+      "Actual Cost": "4157"
+    },
+    {
+      "SAPID": "DMR/23234",
+      "Project": "CY16 VIA CS Expansion 3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "94821.01",
+      "Actual Cost": "86289.72"
+    },
+    {
+      "SAPID": "DMR/24121",
+      "Project": "CY17 DMR ORNG Direct - Multiseguros",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "62011.04",
+      "Actual Cost": "61227.83"
+    },
+    {
+      "SAPID": "DMR/24122",
+      "Project": "CY17 GCS and ORNG Direct Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "70203.04",
+      "Actual Cost": "70222.07"
+    },
+    {
+      "SAPID": "DMR/24123",
+      "Project": "CY18 Expansion 6 Phase I",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "69046.04",
+      "Actual Cost": "67387.74"
+    },
+    {
+      "SAPID": "DMR/25241",
+      "Project": "DMR EBFs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "21299.92",
+      "Actual Cost": "11604"
+    },
+    {
+      "SAPID": "FIB/23365",
+      "Project": "R-00287 MatkaPeli",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "0",
+      "Actual Cost": "322393.5"
+    },
+    {
+      "SAPID": "FIN/14719",
+      "Project": "Extended Services",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1732023",
+      "Actual Cost": "2971295.8"
+    },
+    {
+      "SAPID": "FIN/15445",
+      "Project": "Batch 1 2009",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1673250.24",
+      "Actual Cost": "1795060.2"
+    },
+    {
+      "SAPID": "FIN/15446",
+      "Project": "Batch 2 2009",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1597887.76",
+      "Actual Cost": "1717403.25"
+    },
+    {
+      "SAPID": "FIN/15778",
+      "Project": "OpenAPI",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1058901.06",
+      "Actual Cost": "1036839.75"
+    },
+    {
+      "SAPID": "FIN/15901",
+      "Project": "Release 3 2009",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "682502.96",
+      "Actual Cost": "898740.76"
+    },
+    {
+      "SAPID": "FIN/15902",
+      "Project": "Release 1 2010",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "583217.01",
+      "Actual Cost": "884605.94"
+    },
+    {
+      "SAPID": "FIN/15903",
+      "Project": "Release 2 2010",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "454297",
+      "Actual Cost": "561746.45"
+    },
+    {
+      "SAPID": "FIN/16011",
+      "Project": "Gooal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "150800.12",
+      "Actual Cost": "14851.5"
+    },
+    {
+      "SAPID": "FIN/16704",
+      "Project": "Release 3 2010",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1354955.08",
+      "Actual Cost": "1006627.78"
+    },
+    {
+      "SAPID": "FIN/16705",
+      "Project": "Release 1 2011",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "796860.8",
+      "Actual Cost": "586320"
+    },
+    {
+      "SAPID": "FIN/16706",
+      "Project": "Release 2 2011",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "591336.6",
+      "Actual Cost": "488983.48"
+    },
+    {
+      "SAPID": "FIN/16707",
+      "Project": "Release 3 2011",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1376443.28",
+      "Actual Cost": "1249356.3"
+    },
+    {
+      "SAPID": "FIN/17513",
+      "Project": "Emergency Bug Fixes",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1596900",
+      "Actual Cost": "1706772.52"
+    },
+    {
+      "SAPID": "FIN/17515",
+      "Project": "R1_12 Code Merge",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "780203.46",
+      "Actual Cost": "841755.38"
+    },
+    {
+      "SAPID": "FIN/18016",
+      "Project": "Bingo Open API",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "491325",
+      "Actual Cost": "452559.52"
+    },
+    {
+      "SAPID": "FIN/18361",
+      "Project": "eInstants",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "394550.04",
+      "Actual Cost": "190475.5"
+    },
+    {
+      "SAPID": "FIN/18363",
+      "Project": "CXA HotFix release",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2029990.16",
+      "Actual Cost": "1825911.31"
+    },
+    {
+      "SAPID": "FIN/18364",
+      "Project": "Release 1 2013",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "797632.14",
+      "Actual Cost": "739333.82"
+    },
+    {
+      "SAPID": "FIN/18365",
+      "Project": "Release 2 2013",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "596224.04",
+      "Actual Cost": "549614.69"
+    },
+    {
+      "SAPID": "FIN/18419",
+      "Project": "IGS DB Redesign",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1705931.16",
+      "Actual Cost": "1532701.07"
+    },
+    {
+      "SAPID": "FIN/18600",
+      "Project": "Bingo 2.5 Upgrade",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "630537.56",
+      "Actual Cost": "542466.91"
+    },
+    {
+      "SAPID": "FIN/18878",
+      "Project": "Player Services",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "730620.18",
+      "Actual Cost": "709681.32"
+    },
+    {
+      "SAPID": "FIN/19046",
+      "Project": "SC5 Mobile Integration",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "133980.12",
+      "Actual Cost": "170176.07"
+    },
+    {
+      "SAPID": "FIN/19141",
+      "Project": "abc",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "613064.88",
+      "Actual Cost": "513007.56"
+    },
+    {
+      "SAPID": "FIN/19299",
+      "Project": "Viking Lotto COP",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "388746.04",
+      "Actual Cost": "332744.11"
+    },
+    {
+      "SAPID": "FIN/19306",
+      "Project": "PEVA 2 ESTE",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "219028",
+      "Actual Cost": "224730.5"
+    },
+    {
+      "SAPID": "FIN/19501",
+      "Project": "MP10",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1606635.4",
+      "Actual Cost": "1438642.23"
+    },
+    {
+      "SAPID": "FIN/19502",
+      "Project": "Release 1 2014",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1020240.64",
+      "Actual Cost": "1051909.06"
+    },
+    {
+      "SAPID": "FIN/19503",
+      "Project": "Moniveto Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "169820.52",
+      "Actual Cost": "164100.2"
+    },
+    {
+      "SAPID": "FIN/19851",
+      "Project": "Extended Sales",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "172609.84",
+      "Actual Cost": "487083.02"
+    },
+    {
+      "SAPID": "FIN/19853",
+      "Project": "Keno Rex",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "304192.24",
+      "Actual Cost": "278397.33"
+    },
+    {
+      "SAPID": "FIN/19855",
+      "Project": "Strong Authentication",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "176366.96",
+      "Actual Cost": "131159.32"
+    },
+    {
+      "SAPID": "FIN/19972",
+      "Project": "Customer & Account DB",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "170770.52",
+      "Actual Cost": "194312.67"
+    },
+    {
+      "SAPID": "FIN/20231",
+      "Project": "MP16",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1387660.12",
+      "Actual Cost": "1401375.43"
+    },
+    {
+      "SAPID": "FIN/20418",
+      "Project": "Pitkaveto Renewal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "651953.46",
+      "Actual Cost": "680541.09"
+    },
+    {
+      "SAPID": "FIN/20425",
+      "Project": "Inlane Expansion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "62592.72",
+      "Actual Cost": "51257.03"
+    },
+    {
+      "SAPID": "FIN/20466",
+      "Project": "Instant 2nd Chance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "130392.8",
+      "Actual Cost": "130841.52"
+    },
+    {
+      "SAPID": "FIN/20467",
+      "Project": "Proxi Lotto",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "577318.76",
+      "Actual Cost": "575233.46"
+    },
+    {
+      "SAPID": "FIN/21005",
+      "Project": "Lotto Reneval",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "322200.08",
+      "Actual Cost": "307121.73"
+    },
+    {
+      "SAPID": "FIN/21006",
+      "Project": "Raffle",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "463056.96",
+      "Actual Cost": "209562.68"
+    },
+    {
+      "SAPID": "FIN/21009",
+      "Project": "Tamro Sunset",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "25075",
+      "Actual Cost": "22987.25"
+    },
+    {
+      "SAPID": "FIN/21117",
+      "Project": "Capacity QA",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "344419",
+      "Actual Cost": "300090.75"
+    },
+    {
+      "SAPID": "FIN/21155",
+      "Project": "WoW",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86160.08",
+      "Actual Cost": "38741.98"
+    },
+    {
+      "SAPID": "FIN/21435",
+      "Project": "MP 13/2015 mother ticket ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1340339.9",
+      "Actual Cost": "1000745.27"
+    },
+    {
+      "SAPID": "FIN/21709",
+      "Project": "Finland Stash and JIRA",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "170399.19",
+      "Actual Cost": "181256.44"
+    },
+    {
+      "SAPID": "FIN/21715",
+      "Project": "R-00227 Vakio Renewal Phase 2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "649799.76",
+      "Actual Cost": "611198.9"
+    },
+    {
+      "SAPID": "FIN/22060",
+      "Project": "Suppo Sunset",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "326076.83",
+      "Actual Cost": "291217"
+    },
+    {
+      "SAPID": "FIN/22132",
+      "Project": "CVT Terminal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "191687.96",
+      "Actual Cost": "180789.79"
+    },
+    {
+      "SAPID": "FIN/22170",
+      "Project": "Jokeri",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "308925.2",
+      "Actual Cost": "274946.29"
+    },
+    {
+      "SAPID": "FIN/22171",
+      "Project": "R-00222 Viking Lotto Renewal Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "267020",
+      "Actual Cost": "171482.61"
+    },
+    {
+      "SAPID": "FIN/22178",
+      "Project": "Keno Renewal CY15",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "161125.96",
+      "Actual Cost": "132960.87"
+    },
+    {
+      "SAPID": "FIN/22191",
+      "Project": "Player Services Infra",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1723857.36",
+      "Actual Cost": "838725.43"
+    },
+    {
+      "SAPID": "FIN/22355",
+      "Project": "Player Services Knowledge Transfer",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "297289.2",
+      "Actual Cost": "247036.08"
+    },
+    {
+      "SAPID": "FIN/22925",
+      "Project": "R-00248 Keno 3rd Draw",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "234494.84",
+      "Actual Cost": "188190.68"
+    },
+    {
+      "SAPID": "FIN/23163",
+      "Project": "R-00290 NetFractions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "350654.96",
+      "Actual Cost": "330499.82"
+    },
+    {
+      "SAPID": "FIN/23169",
+      "Project": "R-00286 Pitkaveto 2.0",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "433800.12",
+      "Actual Cost": "428313"
+    },
+    {
+      "SAPID": "FIN/23170",
+      "Project": "R-00285 Naapurit Renewal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "273419.56",
+      "Actual Cost": "291333.5"
+    },
+    {
+      "SAPID": "FIN/23199",
+      "Project": "R-00249 Lomatonni",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "338018.26",
+      "Actual Cost": "324768.76"
+    },
+    {
+      "SAPID": "FIN/23619",
+      "Project": "CR-568 Lotto Renewal 2016",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "236572.99",
+      "Actual Cost": "199607.28"
+    },
+    {
+      "SAPID": "FIN/23632",
+      "Project": "CR-788 All or Nothing",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "364669.38",
+      "Actual Cost": "362774.62"
+    },
+    {
+      "SAPID": "FIN/23776",
+      "Project": "Office Move",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "569968.04",
+      "Actual Cost": "544440.69"
+    },
+    {
+      "SAPID": "FIN/23992",
+      "Project": "Vikinglotto 2017",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "288597.54",
+      "Actual Cost": "291468.09"
+    },
+    {
+      "SAPID": "FL/18112",
+      "Project": "1303.1 Voucher Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1391721.46",
+      "Actual Cost": "1301496.81"
+    },
+    {
+      "SAPID": "FL/19386",
+      "Project": "FL CY1303 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "142552.08",
+      "Actual Cost": "132833.65"
+    },
+    {
+      "SAPID": "FL/20278",
+      "Project": "FL CY1404 Pro-Lite Signs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "42181.08",
+      "Actual Cost": "6829"
+    },
+    {
+      "SAPID": "FL/20437",
+      "Project": "FL CY14 Game Change Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "261314.12",
+      "Actual Cost": "340867.61"
+    },
+    {
+      "SAPID": "FL/21298",
+      "Project": "FL CY1402 Chain Interface Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "130890.08",
+      "Actual Cost": "134005"
+    },
+    {
+      "SAPID": "FL/21502",
+      "Project": "FL CY1501 Reporting Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "119190.4",
+      "Actual Cost": "69208.1"
+    },
+    {
+      "SAPID": "FL/21745",
+      "Project": "FL CY1502 Powerball Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "324977.16",
+      "Actual Cost": "272989.15"
+    },
+    {
+      "SAPID": "FL/21838",
+      "Project": "FL CY1403 Monopoly Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "266626.92",
+      "Actual Cost": "312250.87"
+    },
+    {
+      "SAPID": "FL/22120",
+      "Project": "FL CY1405 Powerball Plus Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "124813.92",
+      "Actual Cost": "109098.09"
+    },
+    {
+      "SAPID": "FL/22154",
+      "Project": "FL CY1406 Winter 1-Off Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "147265.76",
+      "Actual Cost": "174665.7"
+    },
+    {
+      "SAPID": "FL/22360",
+      "Project": "CNV Post Live",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "94171264",
+      "Actual Cost": "77589906.6"
+    },
+    {
+      "SAPID": "FL/22419",
+      "Project": "CY16 Terminal Mini-Release",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1020613.47",
+      "Actual Cost": "641673.18"
+    },
+    {
+      "SAPID": "FL/22574",
+      "Project": "FL CY1602 New Game",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "340553.68",
+      "Actual Cost": "327550.16"
+    },
+    {
+      "SAPID": "FL/22826",
+      "Project": "FL CY1601 Numbers Game Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "444405.08",
+      "Actual Cost": "443716.67"
+    },
+    {
+      "SAPID": "FL/23838",
+      "Project": "FL CY1703 Workflow Enhancement",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "48007.72",
+      "Actual Cost": "11744.5"
+    },
+    {
+      "SAPID": "FL/24737",
+      "Project": "CY1701 Fast Play Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "274869.08",
+      "Actual Cost": "196125.72"
+    },
+    {
+      "SAPID": "FL/24785",
+      "Project": "FL CY1702 Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "301895.8",
+      "Actual Cost": "263726.1"
+    },
+    {
+      "SAPID": "FL/24992",
+      "Project": "CY1801 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "152691",
+      "Actual Cost": "132817.8"
+    },
+    {
+      "SAPID": "FL/24993",
+      "Project": "CY1802 October Fast Play Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "47959.84",
+      "Actual Cost": "36249.5"
+    },
+    {
+      "SAPID": "FL/25225",
+      "Project": "FL CY1705 Powerball Batch (EN0)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "48447.96",
+      "Actual Cost": "14815"
+    },
+    {
+      "SAPID": "FL/25310",
+      "Project": "FL CY1704 Enhancement",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "125821.56",
+      "Actual Cost": "130229.45"
+    },
+    {
+      "SAPID": "FL/26566",
+      "Project": "CY1803 Jackpot Triple Play",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "201131.74",
+      "Actual Cost": "273714.5"
+    },
+    {
+      "SAPID": "FR/24060",
+      "Project": "2017- ES Tech Stack",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "769447.2",
+      "Actual Cost": "635134.66"
+    },
+    {
+      "SAPID": "GA/17651",
+      "Project": "Georgia Extension",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "18326315.96",
+      "Actual Cost": "19707477.87"
+    },
+    {
+      "SAPID": "GA/19389",
+      "Project": "CY1301 - NextGen",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "178751.24",
+      "Actual Cost": "220230.99"
+    },
+    {
+      "SAPID": "GA/19695",
+      "Project": "Portal Enhancement",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2297011.04",
+      "Actual Cost": "3189757.12"
+    },
+    {
+      "SAPID": "GA/20507",
+      "Project": "CY1302 - Mega Matrix",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "267213",
+      "Actual Cost": "211113.81"
+    },
+    {
+      "SAPID": "GA/20633",
+      "Project": "CY1404 Powerball Batch Oct 2015",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "394247.48",
+      "Actual Cost": "399688.59"
+    },
+    {
+      "SAPID": "GA/20700",
+      "Project": "CY1304 - All or Nothing",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "445871.64",
+      "Actual Cost": "468008.39"
+    },
+    {
+      "SAPID": "GA/21350",
+      "Project": "CY1403 Jumbo Bucks Lotto",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "491894.2",
+      "Actual Cost": "449596.64"
+    },
+    {
+      "SAPID": "GA/21351",
+      "Project": "CY1401 - KENO Addon",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "413749",
+      "Actual Cost": "428293.54"
+    },
+    {
+      "SAPID": "GA/21505",
+      "Project": "GA Interactive Sprints",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "432416.92",
+      "Actual Cost": "423745.5"
+    },
+    {
+      "SAPID": "GA/21506",
+      "Project": "CY15 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "110515.28",
+      "Actual Cost": "103876.45"
+    },
+    {
+      "SAPID": "GA/21670",
+      "Project": "CY1402 - Monopoly",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "416600.96",
+      "Actual Cost": "393761.17"
+    },
+    {
+      "SAPID": "GA/21771",
+      "Project": "GA Mobile - Phase 2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1282567.54",
+      "Actual Cost": "1256630.01"
+    },
+    {
+      "SAPID": "GA/21967",
+      "Project": "C3C4 1-Off",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "498200.16",
+      "Actual Cost": "517710.72"
+    },
+    {
+      "SAPID": "GA/21968",
+      "Project": "5 Card Cash ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "292883.2",
+      "Actual Cost": "292246.4"
+    },
+    {
+      "SAPID": "GA/22131",
+      "Project": "OneSite",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1152690.81",
+      "Actual Cost": "993458.29"
+    },
+    {
+      "SAPID": "GA/22422",
+      "Project": "CY17 MUSL draw sales XML Update",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1402927.26",
+      "Actual Cost": "911566.03"
+    },
+    {
+      "SAPID": "GA/23229",
+      "Project": "CASH4LIFE",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "492754.44",
+      "Actual Cost": "528983.79"
+    },
+    {
+      "SAPID": "GA/23599",
+      "Project": "Print N Play (old do not use)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "367060.04",
+      "Actual Cost": "421818.5"
+    },
+    {
+      "SAPID": "GA/23687",
+      "Project": "OneSite",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "38959159.76",
+      "Actual Cost": "36017701.03"
+    },
+    {
+      "SAPID": "GA/24237",
+      "Project": "3rd Draw and Reskins",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "589665.32",
+      "Actual Cost": "555219.39"
+    },
+    {
+      "SAPID": "GA/24248",
+      "Project": "CY16 Print n Play Games",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "187659.92",
+      "Actual Cost": "142539.65"
+    },
+    {
+      "SAPID": "GA/24715",
+      "Project": "Linq3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "118443.49",
+      "Actual Cost": "104167.5"
+    },
+    {
+      "SAPID": "GA/24772",
+      "Project": "CY17 Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "312859.96",
+      "Actual Cost": "229844.27"
+    },
+    {
+      "SAPID": "GS/20151",
+      "Project": "PD BDC",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2475336",
+      "Actual Cost": "2736608.18"
+    },
+    {
+      "SAPID": "GTG/25202",
+      "Project": "CY18 Game Touch Draw Pilot",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "2024390.3",
+      "Actual Cost": "1644742.52"
+    },
+    {
+      "SAPID": "IL/19377",
+      "Project": "BATCH - IL CY1306 Maintenance Batch B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "697018.76",
+      "Actual Cost": "680404.04"
+    },
+    {
+      "SAPID": "IL/20259",
+      "Project": "BATCH - IL CY14 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "144925.12",
+      "Actual Cost": "146241"
+    },
+    {
+      "SAPID": "IL/20502",
+      "Project": "BATCH - IL CY14 - Powerball Game Changes",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "314216.28",
+      "Actual Cost": "274983.61"
+    },
+    {
+      "SAPID": "IL/20505",
+      "Project": "BATCH - IL CY14 Monopoly Game",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "419535.16",
+      "Actual Cost": "220952.99"
+    },
+    {
+      "SAPID": "IL/20581",
+      "Project": "IL Internet Initiatives",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "486499.92",
+      "Actual Cost": "396127.57"
+    },
+    {
+      "SAPID": "IL/20996",
+      "Project": "BATCH - IL CY14 Mobile 1.5",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "432974",
+      "Actual Cost": "682426.25"
+    },
+    {
+      "SAPID": "IL/21305",
+      "Project": "BATCH - IL CY14 Daily Games Add Subs to Player Portal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "776936.16",
+      "Actual Cost": "991690.44"
+    },
+    {
+      "SAPID": "IL/21306",
+      "Project": "BATCH - IL PD 3.1.0 Maintenance release",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "348260",
+      "Actual Cost": "248984"
+    },
+    {
+      "SAPID": "IL/21317",
+      "Project": "BATCH - IL CY14 LDL Matrix Change Sub Modifications",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "644660",
+      "Actual Cost": "402755.05"
+    },
+    {
+      "SAPID": "IL/21473",
+      "Project": "BATCH - IL PD 4.2.0 Maintenance release",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "215750.62",
+      "Actual Cost": "226328"
+    },
+    {
+      "SAPID": "IL/21476",
+      "Project": "BATCH - IL CY15 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "280172.04",
+      "Actual Cost": "204471.52"
+    },
+    {
+      "SAPID": "IL/21477",
+      "Project": "BATCH - IL CY15 Maintenance Batch B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "283175.04",
+      "Actual Cost": "283963.94"
+    },
+    {
+      "SAPID": "IL/21707",
+      "Project": "BATCH - IL PD 4.1.0 Maintenance release",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "201249.92",
+      "Actual Cost": "125340.5"
+    },
+    {
+      "SAPID": "IL/22668",
+      "Project": "Batch - IL CY1601 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86000.12",
+      "Actual Cost": "61434"
+    },
+    {
+      "SAPID": "IL/22669",
+      "Project": "Batch - IL CY1602 Maintenance Batch B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "220000.12",
+      "Actual Cost": "198041.5"
+    },
+    {
+      "SAPID": "IL/23527",
+      "Project": "Interactive - CY16 PD Email Notification",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "120949.8",
+      "Actual Cost": "72487.58"
+    },
+    {
+      "SAPID": "IL/23633",
+      "Project": "BATCH - IL CY16 Walmart Pilot Program",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "62500.16",
+      "Actual Cost": "77541.29"
+    },
+    {
+      "SAPID": "IL/23675",
+      "Project": "Interactive - CY16 Additional Subs Durations",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "20000.92",
+      "Actual Cost": "20430"
+    },
+    {
+      "SAPID": "IL/23768",
+      "Project": "CY17 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49999.96",
+      "Actual Cost": "15078"
+    },
+    {
+      "SAPID": "IL/23812",
+      "Project": "IBR for Visa",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "113999.88",
+      "Actual Cost": "124850.85"
+    },
+    {
+      "SAPID": "IL/23950",
+      "Project": "Batch - IL CY17 IBR A ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "33930.04",
+      "Actual Cost": "35789"
+    },
+    {
+      "SAPID": "IL/23951",
+      "Project": "BATCH - IL CY17 IBR B (PD)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "39900",
+      "Actual Cost": "35186"
+    },
+    {
+      "SAPID": "IL/23952",
+      "Project": "Batch - CY17 IBR C",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "17999.88",
+      "Actual Cost": "3418"
+    },
+    {
+      "SAPID": "IL/23956",
+      "Project": "CY17 Mega Millions Matrix Change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "486370.12",
+      "Actual Cost": "336914.96"
+    },
+    {
+      "SAPID": "IL/23957",
+      "Project": "CY17 Powerball Winner Take All",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49999.56",
+      "Actual Cost": "41591"
+    },
+    {
+      "SAPID": "IL/24313",
+      "Project": "BATCH - CY16 ThreatMetrix",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "69000.08",
+      "Actual Cost": "67843"
+    },
+    {
+      "SAPID": "IL/24889",
+      "Project": "CY18 Camelot/Intralot Transition",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "392210",
+      "Actual Cost": "410708"
+    },
+    {
+      "SAPID": "IL/24890",
+      "Project": "CY18 IBR B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "16519.96",
+      "Actual Cost": "10292"
+    },
+    {
+      "SAPID": "IN/19556",
+      "Project": "Emergency Releases - 2013",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "11102348.98",
+      "Actual Cost": "10285585.72"
+    },
+    {
+      "SAPID": "IN/19800",
+      "Project": "CY1301 Raffle Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "365272.08",
+      "Actual Cost": "220270.6"
+    },
+    {
+      "SAPID": "IN/19801",
+      "Project": "CY1302 Daily3 and Daily 4 Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "309306.12",
+      "Actual Cost": "238270.93"
+    },
+    {
+      "SAPID": "IN/20288",
+      "Project": "CY1402 IPS Terminal Ordering Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "110250.08",
+      "Actual Cost": "123589.5"
+    },
+    {
+      "SAPID": "IN/20289",
+      "Project": "CY1403 Maintenance Batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "120340.12",
+      "Actual Cost": "118369.5"
+    },
+    {
+      "SAPID": "IN/20292",
+      "Project": "CY14 ESMM Show Releases",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "85559.8",
+      "Actual Cost": "52941"
+    },
+    {
+      "SAPID": "IN/20294",
+      "Project": "CY14 BI",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "155162.01",
+      "Actual Cost": "178779.25"
+    },
+    {
+      "SAPID": "IN/20528",
+      "Project": "CY1303 Poker Lotto",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "239606.12",
+      "Actual Cost": "225925.81"
+    },
+    {
+      "SAPID": "IN/20530",
+      "Project": "CY1305 Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "237358.16",
+      "Actual Cost": "239175.86"
+    },
+    {
+      "SAPID": "IN/20537",
+      "Project": "CY1307 Quick Draw",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "484260.32",
+      "Actual Cost": "384240.32"
+    },
+    {
+      "SAPID": "IN/20609",
+      "Project": "IN CY1405 Monopoly National Game",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "299690.12",
+      "Actual Cost": "290177"
+    },
+    {
+      "SAPID": "IN/20920",
+      "Project": "CY1306 PowerBall Power Play",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "331684.12",
+      "Actual Cost": "211544.93"
+    },
+    {
+      "SAPID": "IN/21360",
+      "Project": "IN CY1406 CLT",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1291987.74",
+      "Actual Cost": "946745.63"
+    },
+    {
+      "SAPID": "IN/21512",
+      "Project": "IN CY15 Mobile Betslip & Promo Screen",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "72240.16",
+      "Actual Cost": "72570"
+    },
+    {
+      "SAPID": "IN/21646",
+      "Project": "IN CY1507 D3 and D4 One Off",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "347700.16",
+      "Actual Cost": "342621.49"
+    },
+    {
+      "SAPID": "IN/22602",
+      "Project": "IN CY16 Bingo To Go Removal",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "103370.28",
+      "Actual Cost": "95649.5"
+    },
+    {
+      "SAPID": "IN/22809",
+      "Project": "IN CY1509 Fast Play Progressive JP",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "254130.32",
+      "Actual Cost": "242895.51"
+    },
+    {
+      "SAPID": "IN/22810",
+      "Project": "IN CY1510 Hoosier Lotto Game Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "268125.96",
+      "Actual Cost": "260210.64"
+    },
+    {
+      "SAPID": "IN/23814",
+      "Project": "IN CY1704 Maintenance Batch B",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "109660.12",
+      "Actual Cost": "108860.5"
+    },
+    {
+      "SAPID": "IN/25860",
+      "Project": "IN CY19 Fast Play Events",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "101288",
+      "Actual Cost": "27877.4"
+    },
+    {
+      "SAPID": "IRE/12928",
+      "Project": "Live Hotfixes 2011",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "1866746.27",
+      "Actual Cost": "2461222.88"
+    },
+    {
+      "SAPID": "IRE/17339",
+      "Project": "CY11 Raffle and IPS Val Release ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "219900.04",
+      "Actual Cost": "217838.5"
+    },
+    {
+      "SAPID": "IRE/17340",
+      "Project": "CY1101 ESI Maintenance - Release 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "183720.04",
+      "Actual Cost": "164255.5"
+    },
+    {
+      "SAPID": "IRE/18020",
+      "Project": "CY11 Full Digital Signage",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "126200.08",
+      "Actual Cost": "125065"
+    },
+    {
+      "SAPID": "IRE/18022",
+      "Project": "ESI Mobile Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "64939.92",
+      "Actual Cost": "64841"
+    },
+    {
+      "SAPID": "IRE/18142",
+      "Project": "Live Hotfixes 2014",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "713114",
+      "Actual Cost": "688137.84"
+    },
+    {
+      "SAPID": "IRE/18204",
+      "Project": "CY12 ESI Maint Batch 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "144420",
+      "Actual Cost": "144185"
+    },
+    {
+      "SAPID": "IRE/18205",
+      "Project": "CY1202 ESI Maint Batch 2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "128600",
+      "Actual Cost": "125503"
+    },
+    {
+      "SAPID": "IRE/18544",
+      "Project": "CY12 Telly Bingo Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "240730.04",
+      "Actual Cost": "240488.5"
+    },
+    {
+      "SAPID": "IRE/18545",
+      "Project": "CY12 Daily Million ESI",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "493080.04",
+      "Actual Cost": "493085.75"
+    },
+    {
+      "SAPID": "IRE/19347",
+      "Project": "CY13 ESI Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "230639.58",
+      "Actual Cost": "230487"
+    },
+    {
+      "SAPID": "IRE/20472",
+      "Project": "CY14 TellyBingo Updates",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "237600",
+      "Actual Cost": "170791"
+    },
+    {
+      "SAPID": "JAM/16664",
+      "Project": "CY14 Social Space Game,",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "298802.58",
+      "Actual Cost": "282488.04"
+    },
+    {
+      "SAPID": "JAM/17845",
+      "Project": "CY1401 Cash Pot Matrix Change - Sprint 1 ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "161252.2",
+      "Actual Cost": "149064.8"
+    },
+    {
+      "SAPID": "JAM/18115",
+      "Project": "CY14 JAM EBFs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "344946.16",
+      "Actual Cost": "291806.66"
+    },
+    {
+      "SAPID": "JAM/19998",
+      "Project": "GT-1200 Expansion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "505983.47",
+      "Actual Cost": "445995.95"
+    },
+    {
+      "SAPID": "JAM/20465",
+      "Project": "CY13 Pick4/Pick3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "95043.04",
+      "Actual Cost": "97410.66"
+    },
+    {
+      "SAPID": "JAM/20906",
+      "Project": "ES Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "4947551.8",
+      "Actual Cost": "4609918.07"
+    },
+    {
+      "SAPID": "JAM/20909",
+      "Project": "CY13 Dollaz- Increased Draws",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "88845.14",
+      "Actual Cost": "72094.5"
+    },
+    {
+      "SAPID": "JAM/21453",
+      "Project": "CY15 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "69971.76",
+      "Actual Cost": "61784.5"
+    },
+    {
+      "SAPID": "JAM/22369",
+      "Project": "JAM CY16 Digicel Direct Top Up",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "234642.64",
+      "Actual Cost": "210970"
+    },
+    {
+      "SAPID": "JAM/22427",
+      "Project": "Jamaica EBFs",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "302890.88",
+      "Actual Cost": "263275.93"
+    },
+    {
+      "SAPID": "JAM/23089",
+      "Project": "CY15 CAR Raffle sprint 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "98340.11",
+      "Actual Cost": "96101.75"
+    },
+    {
+      "SAPID": "JAM/23804",
+      "Project": "CY1701 Maintenance Batch A",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "26269",
+      "Actual Cost": "31952"
+    },
+    {
+      "SAPID": "JAM/24180",
+      "Project": "CY1701 Money Time Megaball",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "86091.04",
+      "Actual Cost": "86320.3"
+    },
+    {
+      "SAPID": "JAM/24959",
+      "Project": "JAM CY1801 Maint Batch 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "44992.64",
+      "Actual Cost": "44752.5"
+    },
+    {
+      "SAPID": "JAM/25210",
+      "Project": "CY18 Game Enh and Promo ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "64967.96",
+      "Actual Cost": "63988.1"
+    },
+    {
+      "SAPID": "JAM/25682",
+      "Project": "JAM CY18 Digicel Top Up",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "121997.88",
+      "Actual Cost": "134472.5"
+    },
+    {
+      "SAPID": "JAM/26154",
+      "Project": "Jamaica Mobile Gaming Solution Phase 1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "396608.79",
+      "Actual Cost": "340199.18"
+    },
+    {
+      "SAPID": "KS/18116",
+      "Project": "KS 2013 Emergency Releases",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "448734.6",
+      "Actual Cost": "362043.35"
+    },
+    {
+      "SAPID": "KS/20452",
+      "Project": "KS CY1401",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "137554.88",
+      "Actual Cost": "156246.25"
+    },
+    {
+      "SAPID": "KS/21375",
+      "Project": "KS CY1502 Powerball",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "97966.08",
+      "Actual Cost": "94066.69"
+    },
+    {
+      "SAPID": "KS/21376",
+      "Project": "KS CY1503 Mid-Day Pick3 Draw",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "109310.24",
+      "Actual Cost": "127717.25"
+    },
+    {
+      "SAPID": "KS/21638",
+      "Project": "KS CY1402 MMC",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "121409.88",
+      "Actual Cost": "120849.14"
+    },
+    {
+      "SAPID": "KS/22224",
+      "Project": "KS CY1501 SmartCount",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "143180.04",
+      "Actual Cost": "153278.79"
+    },
+    {
+      "SAPID": "KS/22428",
+      "Project": "KS 2016 Emergency Releases",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "286552.56",
+      "Actual Cost": "164570.39"
+    },
+    {
+      "SAPID": "KS/22589",
+      "Project": "KS CY1601 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "87124.04",
+      "Actual Cost": "63770.5"
+    },
+    {
+      "SAPID": "KS/23006",
+      "Project": "KS CY1602 L4L",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "111689.24",
+      "Actual Cost": "117314.82"
+    },
+    {
+      "SAPID": "KS/23007",
+      "Project": "KS CY1603 Player Loyalty",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "54674.91",
+      "Actual Cost": "45935"
+    },
+    {
+      "SAPID": "KS/23818",
+      "Project": "KS CY1701 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "91720.32",
+      "Actual Cost": "86440.5"
+    },
+    {
+      "SAPID": "KS/24126",
+      "Project": "KS CY1702  Mega Millions",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "128074",
+      "Actual Cost": "128606.94"
+    },
+    {
+      "SAPID": "KS/24127",
+      "Project": "KS CY1703 Powerball WTA",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "48205.04",
+      "Actual Cost": "3410.5"
+    },
+    {
+      "SAPID": "KS/24826",
+      "Project": "KS CY1801 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "41090",
+      "Actual Cost": "41425"
+    },
+    {
+      "SAPID": "KY/18117",
+      "Project": "EBF/Non-Batch 2014",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "631811.2",
+      "Actual Cost": "474242.26"
+    },
+    {
+      "SAPID": "KY/19513",
+      "Project": "KY CY1302 Mega Changes",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "91425.08",
+      "Actual Cost": "97487.9"
+    },
+    {
+      "SAPID": "KY/20235",
+      "Project": "KY iLottery",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "4661957.32",
+      "Actual Cost": "5923812.78"
+    },
+    {
+      "SAPID": "KY/20285",
+      "Project": "KY CY1401 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "95588.04",
+      "Actual Cost": "95204.25"
+    },
+    {
+      "SAPID": "KY/20374",
+      "Project": "KY Keno 2013 Project",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "3374089.06",
+      "Actual Cost": "3147922.63"
+    },
+    {
+      "SAPID": "KY/20531",
+      "Project": "KY CY1402",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "187540.2",
+      "Actual Cost": "195941.44"
+    },
+    {
+      "SAPID": "KY/20913",
+      "Project": "KY CY1303 Powerball",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "31155.08",
+      "Actual Cost": "26103.75"
+    },
+    {
+      "SAPID": "KY/21004",
+      "Project": "KY CY1403 Lucky For Life",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "112985.04",
+      "Actual Cost": "116115.42"
+    },
+    {
+      "SAPID": "KY/21641",
+      "Project": "KY CY15 Powerball Change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "106329.76",
+      "Actual Cost": "103718.37"
+    },
+    {
+      "SAPID": "KY/21642",
+      "Project": "KY CY15 Sunday Midday Draw",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "64625.36",
+      "Actual Cost": "65722.25"
+    },
+    {
+      "SAPID": "KY/22429",
+      "Project": "CY1706 Retailer Confirmation mini batch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "527554.76",
+      "Actual Cost": "605461.82"
+    },
+    {
+      "SAPID": "KY/23167",
+      "Project": "KY CY1601 Keno",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "34840.08",
+      "Actual Cost": "38871"
+    },
+    {
+      "SAPID": "KY/23251",
+      "Project": "CY1602 iLottery LFL ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "97949.88",
+      "Actual Cost": "104325.25"
+    },
+    {
+      "SAPID": "KY/23252",
+      "Project": "CY1603 Cash Ball Optimization",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "175625.66",
+      "Actual Cost": "190793.85"
+    },
+    {
+      "SAPID": "KY/23870",
+      "Project": "CY 1701 Summer maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "171881.16",
+      "Actual Cost": "194131.75"
+    },
+    {
+      "SAPID": "KY/24291",
+      "Project": "CY1704 Gemini Touch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "427290.88",
+      "Actual Cost": "5080520.12"
+    },
+    {
+      "SAPID": "KY/24347",
+      "Project": "CY1605 Keno Multiplier",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "192496.06",
+      "Actual Cost": "134175.42"
+    },
+    {
+      "SAPID": "KY/24728",
+      "Project": "CY1703 iKeno (EN1) ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "360298.84",
+      "Actual Cost": "384492.75"
+    },
+    {
+      "SAPID": "KY/24828",
+      "Project": "CY1804 ACH Replacement",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "122309.04",
+      "Actual Cost": "119420"
+    },
+    {
+      "SAPID": "KY/24831",
+      "Project": "KY CY2018 Sprint 23",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "120010.2",
+      "Actual Cost": "131348"
+    },
+    {
+      "SAPID": "KY/24911",
+      "Project": "CY1702 Mega Millions (EN0)",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "201506.72",
+      "Actual Cost": "181134.49"
+    },
+    {
+      "SAPID": "KY/25312",
+      "Project": "KY Equilottery Pilot",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "581180.08",
+      "Actual Cost": "401354.45"
+    },
+    {
+      "SAPID": "KY/25425",
+      "Project": "CY1801 Linq3 ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "116782.16",
+      "Actual Cost": "104116.62"
+    },
+    {
+      "SAPID": "KY/26289",
+      "Project": "CY1807 CashBall EZMatch",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "293594.1",
+      "Actual Cost": "52387"
+    },
+    {
+      "SAPID": "KY/26290",
+      "Project": "CY1901 GameTouch 20 ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "49999.49",
+      "Actual Cost": "16113.75"
+    },
+    {
+      "SAPID": "KY/26440",
+      "Project": "CY1806 Quick Bucks",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "241908.88",
+      "Actual Cost": "163613"
+    },
+    {
+      "SAPID": "LIT/16576",
+      "Project": "CY11 Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "4055979.4",
+      "Actual Cost": "3576472.08"
+    },
+    {
+      "SAPID": "LIT/18144",
+      "Project": "CY14 HOA",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "429008.92",
+      "Actual Cost": "413940.74"
+    },
+    {
+      "SAPID": "LIT/19537",
+      "Project": "CY12 Eurojackpot",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "225726.96",
+      "Actual Cost": "190669.07"
+    },
+    {
+      "SAPID": "LIT/19774",
+      "Project": "CY12 Insurance SW",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "245301.08",
+      "Actual Cost": "246215.03"
+    },
+    {
+      "SAPID": "LIT/20100",
+      "Project": "CY13  Batch2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "76558.04",
+      "Actual Cost": "76613.24"
+    },
+    {
+      "SAPID": "LIT/20513",
+      "Project": "CY13 Batch3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "111700.04",
+      "Actual Cost": "115299.1"
+    },
+    {
+      "SAPID": "LIT/20603",
+      "Project": "CY16 Central System Upgrade",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "151645.04",
+      "Actual Cost": "105260.31"
+    },
+    {
+      "SAPID": "LIT/20921",
+      "Project": "CY14 Batch4",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "60509.96",
+      "Actual Cost": "60498"
+    },
+    {
+      "SAPID": "LIT/21039",
+      "Project": "CY14 Euro Conversion",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "352528.88",
+      "Actual Cost": "369382.58"
+    },
+    {
+      "SAPID": "LIT/21156",
+      "Project": "CY14 Site Maintenance ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "117360.12",
+      "Actual Cost": "88845.41"
+    },
+    {
+      "SAPID": "LIT/21252",
+      "Project": "CY14 EuroJackpot Game change",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "29790.08",
+      "Actual Cost": "27867.5"
+    },
+    {
+      "SAPID": "LIT/21314",
+      "Project": "CY14 Batch 5",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "24100.18",
+      "Actual Cost": "20444"
+    },
+    {
+      "SAPID": "LIT/22431",
+      "Project": "CY16 HOA ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "358319.8",
+      "Actual Cost": "339300.61"
+    },
+    {
+      "SAPID": "LIT/23275",
+      "Project": "CY15/ 16 Batch1",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "77679.48",
+      "Actual Cost": "79799"
+    },
+    {
+      "SAPID": "LIT/23767",
+      "Project": "CY16 Batch2",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "50080",
+      "Actual Cost": "47240.74"
+    },
+    {
+      "SAPID": "LIT/24039",
+      "Project": "CY16 Batch 3",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "19600",
+      "Actual Cost": "13266"
+    },
+    {
+      "SAPID": "LIT/24310",
+      "Project": "CY16 Viking Lotto",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "81316.96",
+      "Actual Cost": "82460.33"
+    },
+    {
+      "SAPID": "LIT/25442",
+      "Project": "CY18 Keno and Jega Changes",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "47220",
+      "Actual Cost": "45723"
+    },
+    {
+      "SAPID": "LIT/25891",
+      "Project": "CY19 HOA",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "117400.04",
+      "Actual Cost": "8118"
+    },
+    {
+      "SAPID": "LPZ/17331",
+      "Project": "SLG CY1103 B10 JBoss Upgrade",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "441853.96",
+      "Actual Cost": "465851.02"
+    },
+    {
+      "SAPID": "LPZ/17361",
+      "Project": "SLG CY1103 B10 Enhancements",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "51585.8",
+      "Actual Cost": "33286.6"
+    },
+    {
+      "SAPID": "LPZ/18386",
+      "Project": "SLG CY1201 B11 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "61389.04",
+      "Actual Cost": "61943"
+    },
+    {
+      "SAPID": "LPZ/18387",
+      "Project": "SLG CY1202 B12 Maintenance ",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "41500.12",
+      "Actual Cost": "52810.25"
+    },
+    {
+      "SAPID": "LPZ/18388",
+      "Project": "SLG CY1302 B13 Maintenance",
+      "year": "2019",
+      "Month": "1",
+      "Month Name": "January",
+      "Planned Cost": "70618",
+      "Actual Cost": "89957.8"
+    }
+  ]
+}

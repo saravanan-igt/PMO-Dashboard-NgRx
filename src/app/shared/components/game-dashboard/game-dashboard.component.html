@@ -1,0 +1,254 @@
+<div class="container-fluid" *ngIf="gameProjectData">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="page-title">{{ pageTitle }}</h2>
+    </div>
+    <div class="col-md-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn text-white"
+      [ngbPopover]="projectContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #projectContent
+      ><p>
+        These charts reflect the number of projects in the combined Casino
+        Portfolio and individual Casino portfolios by project type. Active (in
+        delivery), Planned (opportunities active in PPM only), and Closed
+        (projects that have gone live in 2020).
+      </p>
+      <p>
+        Note: Due to the nature of the business model for the Casino portfolio,
+        there are no Service Delivery projects represented in this dashboard.
+      </p>
+      <p>
+        The Work Status field in NV PPM is being used to indicate whether
+        active, completed, or planned.
+      </p>
+    </ng-template>
+    <div class="col-md-4">
+      <app-project-category
+        chartTitle="Total Projects"
+        [data]="totalProjectsData"
+      ></app-project-category>
+    </div>
+    <div class="col-md-4">
+      <app-project-category
+        chartTitle="System Delivery Projects"
+        [data]="customerProjectsData"
+      ></app-project-category>
+    </div>
+    <div class="col-md-4">
+      <app-project-category
+        chartTitle="R & D Projects"
+        [data]="rndProjectsData"
+      ></app-project-category>
+    </div>
+  </div>
+
+  <div class="row mt-4 info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="budgetContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #budgetContent
+      ><p>
+        These charts reflect combined Casino portfolio and individual Casino
+        portfolio budget figures from different fields in NV PPM depending upon
+        the project type. The numbers reflected are as of the latest forecast
+        revision.
+      </p>
+      <strong>Casino System Delivery </strong>
+      <ul>
+        <li>
+          Active project budgets = The current amount in the ACTUAL_COST field.
+        </li>
+        <li>
+          Closed project budgets = The current amount in the ACTUAL_COST field.
+        </li>
+        <li>
+          Planned project budgets = the current amount in the FORECAST_COST
+          field
+        </li>
+      </ul>
+      <strong>Casino R&D </strong>
+      <ul>
+        <li>
+          Active project budgets = The current amount in the ACTUAL_COST field.
+        </li>
+        <li>
+          Closed project budgets = The current amount in the ACTUAL_COST field.
+        </li>
+        <li>
+          Planned project budgets = the current amount in the FORECAST_COST
+          field
+        </li>
+      </ul>
+    </ng-template>
+    <div class="col-md-5 mb-4">
+      <app-budget-chart
+        chartTitle="Casino Budget"
+        [data]="totalBudgetData"
+        height="250"
+      ></app-budget-chart>
+    </div>
+
+    <div class="col-md-7 mb-4">
+      <app-budget-bar-chart
+        chartTitle="Casino Budget Portfolio"
+        [seriesData]="budgetSeriesData"
+        yAxisName=""
+        [xAxisData]="xAxisData"
+      ></app-budget-bar-chart>
+    </div>
+  </div>
+
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="forecastContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #forecastContent
+      ><p>
+        This section represents the budget performance by Active and Closed
+        projects in the Casino portfolio, further broken down project type.
+      </p>
+      <p>
+        Cost Planning indicates the approved budget or cost plan per project.
+        Current Forecast represents the Actuals + ETC.
+      </p>
+      <!-- <p class="text-danger-tooltip">
+        *drc- Maybe instead of “Current Forecast” we can call it “Current
+        Forecast” since this represent actual + ETC, not just actuals to date.
+      </p> -->
+    </ng-template>
+    <div class="col-12 mb-4">
+      <app-forecast-chart
+        [seriesData]="forecastSeriesData"
+        yAxisName=""
+        [xAxisData]="forecastLegend"
+        [gridLeft]="'10%'"
+        chartTitle="Casino"
+      ></app-forecast-chart>
+    </div>
+  </div>
+
+  <div class="row info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="ragContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #ragContent
+      ><p>
+        The RAG status displayed for the Active projects in the combined Casino
+        portfolio as well as by individual project types represents the Overall
+        Project Status field in NV PPM.
+      </p>
+      <strong>Exception</strong>
+      <p>
+        If no status indicator is available for a project then it defaults to
+        Low risk, (green). Casino R&D projects do not use the Overall Project
+        Status field in NV PPM and are therefore defaulting to Low risk (green).
+      </p>
+    </ng-template>
+    <div class="col-md-4">
+      <!-- (onChartEvent)="chartEvent($event)" -->
+      <app-budget-chart
+        chartTitle="Casino Projects RAG Status"
+        [data]="totalRiskData"
+        [labelFormatter]="'{c}'"
+        [totalText]="false"
+        [color]="[
+          'rgba(255,91,86,0.85)',
+          'rgba(245,156,26,0.85)',
+          'rgba(0,191,165,0.85)'
+        ]"
+        height="250"
+      ></app-budget-chart>
+    </div>
+    <div class="col-md-8">
+      <app-budget-bar-chart
+        chartTitle="Casino Projects Risk Profile"
+        [seriesData]="riskProfileData"
+        [labelFormatter]="'{c}'"
+        [yAxisFormat]="'{value}'"
+        [color]="[
+          'rgba(255,91,86,0.85)',
+          'rgba(245,156,26,0.85)',
+          'rgba(0,191,165,0.85)'
+        ]"
+        yAxisName="No. of Projects"
+        [xAxisData]="xAxisData"
+      ></app-budget-bar-chart>
+    </div>
+  </div>
+
+  <div class="row mt-4 info-container">
+    <button
+      type="button"
+      triggers="mouseenter:mouseleave"
+      mat-icon-button
+      class="info-btn"
+      [ngbPopover]="goliveContent"
+    >
+      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+    </button>
+    <ng-template #goliveContent
+      ><p>
+        The calendar graphic displays only Active (in delivery) Casino projects.
+      </p>
+      <p>
+        The triangles are positioned under the month of go live with the color
+        representing the risk level of project as indicated in the RAG status
+        section. Hovering over a triangle reveals the exact go live date.
+      </p>
+      <p>
+        * Select the values from <strong>RAG Status</strong> and
+        <strong>Business</strong> dropdown buttons to isolate those projects in
+        the calendar view. Select <strong>All</strong> in both the dropdowns to
+        display all statuses.
+        <!-- *Click on any color in the RAG Status pie chart to isolate those
+        projects in the calendar view. (Refresh to return the display to all
+        statuses.) -->
+      </p>
+    </ng-template>
+    <div class="col-12">
+      <!-- [ragState]="ragState" -->
+      <app-go-live-calendar
+        [scheduleData]="calendarData"
+        [calendarTitle]="'Casino Projects RAG Status'"
+        [ragFilter]="true"
+        [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
+      ></app-go-live-calendar>
+    </div>
+  </div>
+</div>
