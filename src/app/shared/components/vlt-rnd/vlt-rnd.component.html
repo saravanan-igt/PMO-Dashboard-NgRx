@@ -25,25 +25,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectContent>
-      <p>
-        These charts reflect only projects in the NV PPM Business Vertical of
-        VLT, with an OBS of Client Deliveries VLT, R&D PMO, Distributed Systems
-        Dev, Intelligen Global Services, VLT Systems, Null, Platform
-        Engineering, or AWP.
-      </p>
-      <strong>VLT R&D</strong>
-      <ul>
-        <li>
-          Active = Projects with a work status of Active, and a PMO Category of
-          Active, or Scheduling, with a Finish Date in the future.
-        </li>
-        <li>
-          Closed = Projects with Finish Date in the past (within 2020).
-        </li>
-        <li>
-          Planned = Projects with a work status of Requested.
-        </li>
-      </ul>
+      <div [innerHTML]="helpText.vrdProject"></div>
     </ng-template>
     <div class="col-md-4">
       <app-project-category
@@ -84,10 +66,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectListContent>
-      <p>
-        This section displays the specific VLT R&D projects that are included as
-        either Planned, Active, or Closed. This data is updated daily.
-      </p>
+      <div [innerHTML]="helpText.vrdProjectList"></div>
     </ng-template>
     <div class="col-md-4">
       <app-project-card
@@ -120,17 +99,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #goliveContent>
-      <p>
-        The calendar graphic displays only Active (in delivery) VLT R&D
-        projects.
-      </p>
-      <p>
-        The triangles are positioned under the month of go live with the color
-        representing the risk level of project as indicated in the RAG status
-        section. Hovering over a triangle reveals the exact go live date. Note:
-        VLT R&D projects are not tracking status in NV PPM or RI Clarity and are
-        therefore defaulting to Low risk (green).
-      </p>
+      <div [innerHTML]="helpText.vrdGoLive"></div>
     </ng-template>
     <div class="col-12">
       <app-go-live-calendar

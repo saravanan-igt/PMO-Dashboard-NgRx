@@ -25,16 +25,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectContent>
-      <p>
-        These charts reflect the number of projects in the combined Lottery
-        Portfolio and individual Lottery portfolios by business type. Active (in
-        delivery), Planned (0,1,2 probability, forecasted opportunities), and
-        Closed (projects that have gone live in 2020).
-      </p>
-      <p>
-        A combination of data fields per business type in RI Clarity are being
-        used to indicate whether a project is active, completed, or planned.
-      </p>
+      <div [innerHTML]="helpText.ldProject"></div>
     </ng-template>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
@@ -77,42 +68,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #budgetContent>
-      <p>
-        These charts reflect combined Lottery portfolio and individual Lottery
-        portfolio budget figures from different fields in RI Clarity depending
-        upon the business type. The numbers reflected are as of the latest
-        forecast revision.
-      </p>
-      <strong>System and Services Delivery</strong>
-      <ul>
-        <li>
-          Active project budgets = The current amount in the Cost Plan Version 0
-          field in RI Clarity.
-        </li>
-        <li>
-          Closed project budgets = The current amount in the Actuals To Date
-          field in Clarity.
-        </li>
-        <li>
-          Planned project budgets = The current amount in the Current Forecast
-          field.
-        </li>
-      </ul>
-      <strong>R&D</strong>
-      <ul>
-        <li>
-          Active project budgets = The current amount in the As Negotiated
-          Budget field.
-        </li>
-        <li>
-          Closed project budgets = The current amount in the Actuals to Date
-          field.
-        </li>
-        <li>
-          Planned project budgets = The current amount in the Current Forecast
-          field.
-        </li>
-      </ul>
+      <div [innerHTML]="helpText.ldBudget"></div>
     </ng-template>
     <div class="col-xl-4 col-md-5 mb-4">
       <app-budget-chart
@@ -143,14 +99,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #forecastContent>
-      <p>
-        This section represents the budget performance by Active and Closed
-        projects in the Lottery portfolio, further broken down business type.
-      </p>
-      <p>
-        Cost Planning indicates the approved budget or cost plan per project.
-        Current Forecast represents the Actuals + ETC.
-      </p>
+      <div [innerHTML]="helpText.ldForecast"></div>
     </ng-template>
     <div class="col-12 mb-4">
       <app-forecast-chart
@@ -175,40 +124,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #ragContent>
-      <p>
-        The RAG status displayed for the Active projects in the combined Lottery
-        portfolio as well as by individual business types represents the Overall
-        Project Status indicator from the most current submitted RI Clarity
-        Project Status Reports.
-      </p>
-      <p>
-        Based upon Scope/Schedule/Budget/Quality/CSAT activity, the calculation
-        criteria for the Overall Status indicator per project is:
-      </p>
-      <ul>
-        <li>
-          If either Schedule, Scope, or Budget = High or Med, then Overall
-          Status reflects same
-        </li>
-        <li>
-          If both quality and CSAT = High or Med, then Overall Status reflects
-          same
-        </li>
-        <li>
-          Budget Status is a calculated field based upon current project
-          variance:
-          <ul>
-            <li>0% - 1.9% variance = Green</li>
-            <li>2% - 4.9% variance = Yellow</li>
-            <li>5% or greater variance = Red</li>
-          </ul>
-        </li>
-      </ul>
-      <strong>Exception</strong>
-      <p>
-        If no status indicator is available for a project then it defaults to
-        Low risk, (green).
-      </p>
+      <div [innerHTML]="helpText.ldRAG"></div>
     </ng-template>
     <div class="col-md-4 mb-4">
       <!-- (onChartEvent)="chartEvent($event)" -->
@@ -253,21 +169,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #goLiveContent>
-      <p>
-        The calendar graphic displays only Active (in delivery) Lottery
-        projects.
-      </p>
-      <p>
-        The triangles are positioned under the month of go live with the color
-        representing the risk level of project as indicated in the RAG status
-        section. Hovering over a triangle reveals the exact go live date.
-      </p>
-      <p>
-        * Select the values from <strong>RAG Status</strong> and
-        <strong>Business</strong> dropdown buttons to isolate those projects in
-        the calendar view. Select <strong>All</strong> in both the dropdowns to
-        display all statuses.
-      </p>
+      <div [innerHTML]="helpText.ldGoLive"></div>
     </ng-template>
     <div class="col-12" *ngIf="calendarData">
       <app-go-live-calendar

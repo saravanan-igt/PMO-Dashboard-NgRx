@@ -52,7 +52,6 @@ export class DashboardComponent implements OnInit {
         if (data.Data.length) {
           this.DataLists = data.Data;
           this.helpText = this.DataLists[3];
-          console.log("this.helpText", this.helpText);
           this.customerProjects = this.DataLists[0].customer;
           this.rndProjects = this.DataLists[0].rnd;
           this.customerActiveProjects = this.customerProjects.projectList.Active;

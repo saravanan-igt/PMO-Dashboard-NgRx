@@ -20,11 +20,12 @@ export class LotterySDComponent implements OnInit {
   lotteryProjectsData = [];
   totalBudgetData = [];
   totalRiskData = [];
-
   dataList$: Observable<DataState>;
   DataSubscription: Subscription;
   DataLists: any[] = [];
   dataError;
+  helpText;
+
   constructor(private store: Store<{ data: DataState }>) {
     this.dataList$ = store.pipe(select("data"));
   }
@@ -35,6 +36,7 @@ export class LotterySDComponent implements OnInit {
       .subscribe((data) => {
         if (data.Data.length) {
           this.DataLists = data.Data;
+          this.helpText = this.DataLists[3];
           this.customerData = this.DataLists[0].customer.sd;
           this.plannedProjects = this.customerData.plannedProjects;
           this.activeProjects = this.customerData.activeProjects;

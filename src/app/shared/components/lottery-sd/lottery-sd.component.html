@@ -25,24 +25,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectContent>
-      <p>
-        These charts depict only Lottery System Delivery projects.
-      </p>
-      <strong>Lottery System Delivery</strong>
-      <ul>
-        <li>
-          Active = Active/Approved projects with a work status of Active or On
-          Hold.
-        </li>
-        <li>
-          Closed = Active or Inactive projects with a go live date in the past
-          (within 2020), and a work status of Completed.
-        </li>
-        <li>
-          Planned = Active/Unapproved projects with a 0,1,2 probability, and a
-          forecast greater than 0.
-        </li>
-      </ul>
+      <div [innerHTML]="helpText.lsdProject"></div>
     </ng-template>
     <div class="col-md-4">
       <app-project-category
@@ -83,11 +66,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectListContent>
-      <p>
-        This section displays the specific Lottery System Delivery projects that
-        are included as either Planned, Active, or Closed. This data is updated
-        daily.
-      </p>
+      <div [innerHTML]="helpText.lsdProjectList"></div>
     </ng-template>
     <div class="col-md-4">
       <app-project-card
@@ -120,15 +99,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #goLiveContent>
-      <p>
-        The calendar graphic displays only Active (in delivery) Lottery System
-        Delivery projects.
-      </p>
-      <p>
-        The triangles are positioned under the month of go live with the color
-        representing the risk level of project as indicated in the RAG status
-        section. Hovering over a triangle reveals the exact go live date.
-      </p>
+      <div [innerHTML]="helpText.lsdGoLive"></div>
     </ng-template>
     <div class="col-12">
       <app-go-live-calendar

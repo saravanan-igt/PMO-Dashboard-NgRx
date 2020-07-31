@@ -24,6 +24,7 @@ export class GoLiveComponent implements OnInit {
   DataSubscription: Subscription;
   DataLists: any[] = [];
   dataError;
+  helpText;
   constructor(private store: Store<{ data: DataState }>) {
     this.dataList$ = store.pipe(select("data"));
   }
@@ -34,6 +35,7 @@ export class GoLiveComponent implements OnInit {
       .subscribe((data) => {
         if (data.Data.length) {
           this.DataLists = data.Data;
+          this.helpText = this.DataLists[3];
           this.customerActiveProjects = this.DataLists[0].customer.projectList.Active;
           this.rndProjects = this.DataLists[0].rnd.projectList.Active;
           let lotteryProjects = [

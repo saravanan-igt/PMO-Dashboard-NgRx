@@ -1,13 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { HelpTextService } from "../_services/help-text.service";
-// import {
-//   ToolbarService,
-//   LinkService,
-//   ImageService,
-//   HtmlEditorService,
-//   RichTextEditorComponent,
-// } from "@syncfusion/ej2-angular-richtexteditor";
+import { Observable, Subscription } from "rxjs";
+import { map } from "rxjs/operators";
+import { select, Store } from "@ngrx/store";
+import * as DataActions from "../Store/data.action";
+import DataState from "../Store/data.state";
+import Swal from "sweetalert2";
 
 @Component({
   selector: "app-dc-form",
@@ -18,7 +17,12 @@ export class DcFormComponent implements OnInit {
   pageTitle: string = "Update Help Text";
   rteForm: FormGroup;
   helpTextData: any;
+  dataList$: Observable<DataState>;
+  DataSubscription: Subscription;
+  DataLists: any[] = [];
+  dataError;
   public tools: object = {
+    enableFloating: false,
     items: [
       "Bold",
       "Italic",
@@ -33,73 +37,156 @@ export class DcFormComponent implements OnInit {
     ],
   };
 
-  constructor(private formBuilder: FormBuilder, private api: HelpTextService) {}
-
-  ngOnInit() {
-    this.api.getHelpText().subscribe((res) => {
-      console.log("res", res);
-      this.helpTextData = res;
-      this.rteForm = this.formBuilder.group({
-        pdProject: [res["pdProject"], [Validators.required]],
-        pdBudget: [res["pdBudget"], [Validators.required]],
-        pdForecast: [res["pdForecast"], [Validators.required]],
-        pdRAG: [res["pdRAG"], [Validators.required]],
-        pdGoLIve: [res["pdGoLIve"], [Validators.required]],
-        ldProject: [res["ldProject"], [Validators.required]],
-        ldBudget: [res["ldBudget"], [Validators.required]],
-        ldForecast: [res["ldForecast"], [Validators.required]],
-        ldRAG: [res["ldRAG"], [Validators.required]],
-        ldGoLive: [res["ldGoLive"], [Validators.required]],
-        lsvProject: [res["lsvProject"], [Validators.required]],
-        lsvProjectList: [res["lsvProjectList"], [Validators.required]],
-        lsvGoLive: [res["lsvGoLive"], [Validators.required]],
-        lsdProject: [res["lsdProject"], [Validators.required]],
-        lsdProjectList: [res["lsdProjectList"], [Validators.required]],
-        lsdGoLive: [res["lsdGoLive"], [Validators.required]],
-        lrdProject: [res["lrdProject"], [Validators.required]],
-        lrdProjectList: [res["lrdProjectList"], [Validators.required]],
-        lrdGoLive: [res["lrdGoLive"], [Validators.required]],
-        lotGoLive: [res["lotGoLive"], [Validators.required]],
-        cdProject: [res["cdProject"], [Validators.required]],
-        cdBudget: [res["cdBudget"], [Validators.required]],
-        cdForecast: [res["cdForecast"], [Validators.required]],
-        cdRAG: [res["cdRAG"], [Validators.required]],
-        cdGoLive: [res["cdGoLive"], [Validators.required]],
-        csdProject: [res["csdProject"], [Validators.required]],
-        csdProjectList: [res["csdProjectList"], [Validators.required]],
-        csdGoLive: [res["csdGoLive"], [Validators.required]],
-        crdProject: [res["crdProject"], [Validators.required]],
-        crdProjectList: [res["crdProjectList"], [Validators.required]],
-        crdGoLive: [res["crdGoLive"], [Validators.required]],
-        casGoLive: [res["casGoLive"], [Validators.required]],
-        vdProject: [res["vdProject"], [Validators.required]],
-        vdBudget: [res["vdBudget"], [Validators.required]],
-        vdForecast: [res["vdForecast"], [Validators.required]],
-        vdRAG: [res["vdRAG"], [Validators.required]],
-        vdGoLive: [res["vdGoLive"], [Validators.required]],
-        vsvProject: [res["vsvProject"], [Validators.required]],
-        vsvProjectList: [res["vsvProjectList"], [Validators.required]],
-        vsvGoLive: [res["vsvGoLive"], [Validators.required]],
-        vsdProject: [res["vsdProject"], [Validators.required]],
-        vsdProjectList: [res["vsdProjectList"], [Validators.required]],
-        vsdGoLive: [res["vsdGoLive"], [Validators.required]],
-        vrdProject: [res["vrdProject"], [Validators.required]],
-        vrdProjectList: [res["vrdProjectList"], [Validators.required]],
-        vrdGoLive: [res["vrdGoLive"], [Validators.required]],
-        vltGoLive: [res["vltGoLive"], [Validators.required]],
-      });
-    });
+  constructor(
+    private formBuilder: FormBuilder,
+    private api: HelpTextService,
+    private store: Store<{ data: DataState }>
+  ) {
+    this.dataList$ = store.pipe(select("data"));
   }
 
-  // rteCreated(): void {
-  //   this.rteEle.element.focus();
-  // }
+  ngOnInit() {
+    this.rteForm = this.formBuilder.group({
+      pdProject: [null, [Validators.required]],
+      pdBudget: [null, [Validators.required]],
+      pdForecast: [null, [Validators.required]],
+      pdRAG: [null, [Validators.required]],
+      pdGoLIve: [null, [Validators.required]],
+      ldProject: [null, [Validators.required]],
+      ldBudget: [null, [Validators.required]],
+      ldForecast: [null, [Validators.required]],
+      ldRAG: [null, [Validators.required]],
+      ldGoLive: [null, [Validators.required]],
+      lsvProject: [null, [Validators.required]],
+      lsvProjectList: [null, [Validators.required]],
+      lsvGoLive: [null, [Validators.required]],
+      lsdProject: [null, [Validators.required]],
+      lsdProjectList: [null, [Validators.required]],
+      lsdGoLive: [null, [Validators.required]],
+      lrdProject: [null, [Validators.required]],
+      lrdProjectList: [null, [Validators.required]],
+      lrdGoLive: [null, [Validators.required]],
+      lotGoLive: [null, [Validators.required]],
+      cdProject: [null, [Validators.required]],
+      cdBudget: [null, [Validators.required]],
+      cdForecast: [null, [Validators.required]],
+      cdRAG: [null, [Validators.required]],
+      cdGoLive: [null, [Validators.required]],
+      csdProject: [null, [Validators.required]],
+      csdProjectList: [null, [Validators.required]],
+      csdGoLive: [null, [Validators.required]],
+      crdProject: [null, [Validators.required]],
+      crdProjectList: [null, [Validators.required]],
+      crdGoLive: [null, [Validators.required]],
+      casGoLive: [null, [Validators.required]],
+      vdProject: [null, [Validators.required]],
+      vdBudget: [null, [Validators.required]],
+      vdForecast: [null, [Validators.required]],
+      vdRAG: [null, [Validators.required]],
+      vdGoLive: [null, [Validators.required]],
+      vsvProject: [null, [Validators.required]],
+      vsvProjectList: [null, [Validators.required]],
+      vsvGoLive: [null, [Validators.required]],
+      vsdProject: [null, [Validators.required]],
+      vsdProjectList: [null, [Validators.required]],
+      vsdGoLive: [null, [Validators.required]],
+      vrdProject: [null, [Validators.required]],
+      vrdProjectList: [null, [Validators.required]],
+      vrdGoLive: [null, [Validators.required]],
+      vltGoLive: [null, [Validators.required]],
+    });
+    this.DataSubscription = this.dataList$
+      .pipe(map((x) => x))
+      .subscribe((data) => {
+        if (data.Data.length) {
+          this.DataLists = { ...data.Data[3] };
+
+          // this.rteForm.setValue({
+          this.rteForm = this.formBuilder.group({
+            pdProject: [this.DataLists["pdProject"], [Validators.required]],
+            pdBudget: [this.DataLists["pdBudget"], [Validators.required]],
+            pdForecast: [this.DataLists["pdForecast"], [Validators.required]],
+            pdRAG: [this.DataLists["pdRAG"], [Validators.required]],
+            pdGoLIve: [this.DataLists["pdGoLIve"], [Validators.required]],
+            ldProject: [this.DataLists["ldProject"], [Validators.required]],
+            ldBudget: [this.DataLists["ldBudget"], [Validators.required]],
+            ldForecast: [this.DataLists["ldForecast"], [Validators.required]],
+            ldRAG: [this.DataLists["ldRAG"], [Validators.required]],
+            ldGoLive: [this.DataLists["ldGoLive"], [Validators.required]],
+            lsvProject: [this.DataLists["lsvProject"], [Validators.required]],
+            lsvProjectList: [
+              this.DataLists["lsvProjectList"],
+              [Validators.required],
+            ],
+            lsvGoLive: [this.DataLists["lsvGoLive"], [Validators.required]],
+            lsdProjectList: [
+              this.DataLists["lsdProjectList"],
+              [Validators.required],
+            ],
+            lsdProject: [this.DataLists["lsdProject"], [Validators.required]],
+
+            lsdGoLive: [this.DataLists["lsdGoLive"], [Validators.required]],
+            lrdProject: [this.DataLists["lrdProject"], [Validators.required]],
+            lrdProjectList: [
+              this.DataLists["lrdProjectList"],
+              [Validators.required],
+            ],
+            lrdGoLive: [this.DataLists["lrdGoLive"], [Validators.required]],
+            lotGoLive: [this.DataLists["lotGoLive"], [Validators.required]],
+            cdProject: [this.DataLists["cdProject"], [Validators.required]],
+            cdBudget: [this.DataLists["cdBudget"], [Validators.required]],
+            cdForecast: [this.DataLists["cdForecast"], [Validators.required]],
+            cdRAG: [this.DataLists["cdRAG"], [Validators.required]],
+            cdGoLive: [this.DataLists["cdGoLive"], [Validators.required]],
+            csdProject: [this.DataLists["csdProject"], [Validators.required]],
+            csdProjectList: [
+              this.DataLists["csdProjectList"],
+              [Validators.required],
+            ],
+            csdGoLive: [this.DataLists["csdGoLive"], [Validators.required]],
+            crdProject: [this.DataLists["crdProject"], [Validators.required]],
+            crdProjectList: [
+              this.DataLists["crdProjectList"],
+              [Validators.required],
+            ],
+            crdGoLive: [this.DataLists["crdGoLive"], [Validators.required]],
+            casGoLive: [this.DataLists["casGoLive"], [Validators.required]],
+            vdProject: [this.DataLists["vdProject"], [Validators.required]],
+            vdBudget: [this.DataLists["vdBudget"], [Validators.required]],
+            vdForecast: [this.DataLists["vdForecast"], [Validators.required]],
+            vdRAG: [this.DataLists["vdRAG"], [Validators.required]],
+            vdGoLive: [this.DataLists["vdGoLive"], [Validators.required]],
+            vsvProject: [this.DataLists["vsvProject"], [Validators.required]],
+            vsvProjectList: [
+              this.DataLists["vsvProjectList"],
+              [Validators.required],
+            ],
+            vsvGoLive: [this.DataLists["vsvGoLive"], [Validators.required]],
+            vsdProject: [this.DataLists["vsdProject"], [Validators.required]],
+            vsdProjectList: [
+              this.DataLists["vsdProjectList"],
+              [Validators.required],
+            ],
+            vsdGoLive: [this.DataLists["vsdGoLive"], [Validators.required]],
+            vrdProject: [this.DataLists["vrdProject"], [Validators.required]],
+            vrdProjectList: [
+              this.DataLists["vrdProjectList"],
+              [Validators.required],
+            ],
+            vrdGoLive: [this.DataLists["vrdGoLive"], [Validators.required]],
+            vltGoLive: [this.DataLists["vltGoLive"], [Validators.required]],
+          });
+        }
+      });
+  }
 
   onSubmit(): void {
     if (!this.rteForm.valid) {
       return;
     }
-    console.log("this.rteForm.value", JSON.stringify(this.rteForm.value));
-    alert("Form submitted successfully");
+    this.api.updateHelpText(this.rteForm.value).subscribe((res) => {
+      this.store.dispatch(DataActions.BeginGetDataAction());
+      Swal.fire("Success!", "Help text updated successfully!", "success");
+    });
   }
 }

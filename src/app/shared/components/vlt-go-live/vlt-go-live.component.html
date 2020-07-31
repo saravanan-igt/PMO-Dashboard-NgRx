@@ -25,23 +25,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectContent>
-      <p>
-        The calendar page displays only Active (in delivery) VLT projects (all
-        project types).
-      </p>
-      <p>
-        The triangles are positioned under the month of go live with the color
-        representing the risk level of project as indicated in the RAG status
-        section. Hovering over a triangle reveals the exact go live date. Note:
-        VLT projects are not tracking status in NV PPM or RI Clarity and are
-        therefore defaulting to Low risk (green).
-      </p>
-      <p>
-        * Select the values from <strong>RAG Status</strong> and
-        <strong>Business</strong> dropdown buttons to isolate those projects in
-        the calendar view. Select <strong>All</strong> in both the dropdowns to
-        display all statuses.
-      </p>
+      <div [innerHTML]="helpText.vltGoLive"></div>
     </ng-template>
     <div class="col-12">
       <app-go-live-calendar

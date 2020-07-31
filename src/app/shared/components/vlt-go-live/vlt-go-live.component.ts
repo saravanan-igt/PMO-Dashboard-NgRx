@@ -17,6 +17,7 @@ export class VltGoLiveComponent implements OnInit {
   DataSubscription: Subscription;
   DataLists: any[] = [];
   dataError;
+  helpText;
   constructor(private store: Store<{ data: DataState }>) {
     this.dataList$ = store.pipe(select("data"));
   }
@@ -27,6 +28,7 @@ export class VltGoLiveComponent implements OnInit {
       .subscribe((data) => {
         if (data.Data.length) {
           this.DataLists = data.Data;
+          this.helpText = this.DataLists[3];
           this.gameProjectData = this.DataLists[2];
 
           let gamingProjects = [

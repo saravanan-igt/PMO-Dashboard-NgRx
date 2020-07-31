@@ -25,7 +25,7 @@
         mat-list-item
         routerLink="/dcForm"
         routerLinkActive="active"
-        *ngIf="currentUser.roleid === 1"
+        *ngIf="currentUser && currentUser['roleid'] === 2"
       >
         <mat-icon>help_outline</mat-icon>
         Update Help Text

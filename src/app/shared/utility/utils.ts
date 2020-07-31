@@ -16,6 +16,11 @@ export default class Utils {
     return Number(total.toFixed(2));
   }
 
+  static decompressResponse(response) {
+    console.log("cjson", cjson.decompress(response)[0]);
+    return cjson.decompress(response)[0];
+  }
+
   static createLotteryData(response) {
     let data = [...cjson.decompress(response)].map((item) => {
       item.RAG = item.RAG === null ? "G" : item.RAG;
