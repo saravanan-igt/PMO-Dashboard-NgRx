@@ -100,11 +100,11 @@ export class ForecastChartComponent implements OnInit {
             ? this.xAxisData
             : [
                 "Lottery Active",
-                "Lottery Closed",
+                "Lottery Completed",
                 "Casino Active",
-                "Casino Closed",
+                "Casino Completed",
                 "VLT Active",
-                "VLT Closed",
+                "VLT Completed",
               ],
           axisPointer: {
             type: "shadow",

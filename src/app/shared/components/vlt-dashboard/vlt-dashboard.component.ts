@@ -65,7 +65,7 @@ export class VltDashboardComponent implements OnInit {
                 this.gameProjectData.sd.projects.closed.length +
                 this.gameProjectData.sv.projects.closed.length +
                 this.gameProjectData.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.customerProjectsData = [
@@ -79,7 +79,7 @@ export class VltDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.svdProjectsData = [
@@ -93,7 +93,7 @@ export class VltDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sv.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.rndProjectsData = [
@@ -107,7 +107,7 @@ export class VltDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalBudgetData = [
@@ -130,7 +130,7 @@ export class VltDashboardComponent implements OnInit {
                 this.gameProjectData.sd.budget.closed +
                 this.gameProjectData.sv.budget.closed +
                 this.gameProjectData.rnd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.customerBudgetData = [
@@ -144,7 +144,7 @@ export class VltDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.rndBudgetData = [
@@ -158,7 +158,7 @@ export class VltDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sv.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.budgetSeriesData = [
@@ -184,7 +184,7 @@ export class VltDashboardComponent implements OnInit {
               ],
             },
             {
-              name: "Closed",
+              name: "Completed",
               type: "bar",
               barMaxWidth: 40,
               data: [
@@ -197,11 +197,11 @@ export class VltDashboardComponent implements OnInit {
 
           this.forecastLegend = [
             "SD Active",
-            "SD Closed",
+            "SD Completed",
             "SV Active",
-            "SV Closed",
+            "SV Completed",
             "R&D Active",
-            "R&D Closed",
+            "R&D Completed",
           ];
 
           this.forecastSeriesData = [

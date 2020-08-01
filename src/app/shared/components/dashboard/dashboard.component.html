@@ -37,24 +37,21 @@
       <app-project-category
         chartTitle="Lottery Projects"
         [data]="lotteryProjectsData"
-        info="Lottery Project data originates from RI Clarity and is updated daily. 
-        Includes SD, SV, and PD (R&D) business types (excluding Non-Projects)."
+        [info]="helpText.pdLotProject"
       ></app-project-category>
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
         chartTitle="Casino Projects"
         [data]="casinoProjectsData"
-        info="Casino Project data originates from NV PPM and is updated daily. 
-        Includes Casino System Deliveries and R&D projects that are within the CTOGL Casino Portfolio."
+        [info]="helpText.pdCasProject"
       ></app-project-category>
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
         chartTitle="VLT Projects"
         [data]="vltProjectsData"
-        info="VLT Project data originates from NV PPM and is updated daily.
-        Includes VLT System Delivery, VLT Services, and VLT R&D projects that are within the CTOGL Casino Portfolio."
+        [info]="helpText.pdVltProject"
       ></app-project-category>
     </div>
   </div>
@@ -84,6 +81,7 @@
         chartTitle="Budget Portfolio"
         [seriesData]="budgetSeriesData"
         yAxisName=""
+        [legend]="budgetPortfolioLegend"
         [xAxisData]="budgetXaxis"
       ></app-budget-bar-chart>
     </div>

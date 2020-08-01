@@ -5,146 +5,153 @@
     [opened]="sidenavOpen"
     role="navigation"
     *ngIf="currentUser"
+    class="theme-blue"
   >
     <a class="navbar-brand" href="index.html">
       <img
-        src="./assets/img/logo-igt.png"
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNTguNiAxMzMuMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzU4LjYgMTMzLjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDp1cmwoI1NWR0lEXzFfKTt9Cgkuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8yXyk7fQoJLnN0MntmaWxsOnVybCgjU1ZHSURfM18pO30KCS5zdDN7ZmlsbDp1cmwoI1NWR0lEXzRfKTt9Cgkuc3Q0e2ZpbGw6dXJsKCNTVkdJRF81Xyk7fQoJLnN0NXtmaWxsOnVybCgjU1ZHSURfNl8pO30KCS5zdDZ7ZmlsbDojRkZGRkZGO30KCS5zdDd7ZmlsbDp1cmwoI1NWR0lEXzdfKTt9Cjwvc3R5bGU+CjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iOC4wOTI0OTRlLTAzIiB5MT0iMTMzLjI1MDkiIHgyPSIxLjAwNzciIHkyPSIxMzMuMjUwOSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCg0Ny40MzUyIDQ3LjQzNTIgNDcuNDM1MiAtNDcuNDM1MiAtNjI2Mi44MTQgNjM5NC41NzgxKSI+Cgk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA5QUQ5Ii8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjM5MjYiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDlBRDkiLz4KCTxzdG9wICBvZmZzZXQ9IjAuNjIxNiIgc3R5bGU9InN0b3AtY29sb3I6IzAwNkZCQSIvPgoJPHN0b3AgIG9mZnNldD0iMC45NTc1IiBzdHlsZT0ic3RvcC1jb2xvcjojMDA1RjlFIi8+Cgk8c3RvcCAgb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA1RjlFIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05OCw5OS4xbC0yLjEsMjcuNGM2LjItMywxMS45LTcsMTYuOC0xMS44TDk4LDk5LjF6Ii8+CjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMl8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNy43MjAxMzllLTAzIiB5MT0iMTMzLjI1MDkiIHgyPSIxLjAwODciIHkyPSIxMzMuMjUwOSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCg0Ny40MzUyIDQ3LjQzNTIgNDcuNDM1MiAtNDcuNDM1MiAtNjIyNS41NjQgNjM1Ny4zMjYyKSI+Cgk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA5QUQ5Ii8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjM5MjYiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDlBRDkiLz4KCTxzdG9wICBvZmZzZXQ9IjAuNjIxNiIgc3R5bGU9InN0b3AtY29sb3I6IzAwNkZCQSIvPgoJPHN0b3AgIG9mZnNldD0iMC45NTc1IiBzdHlsZT0ic3RvcC1jb2xvcjojMDA1RjlFIi8+Cgk8c3RvcCAgb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA1RjlFIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xMDQuNSw4MS4zbDI4LjEtNi4xYzAuNC0yLjgsMC42LTUuNywwLjYtOC43YzAtMTguNi03LjYtMzUuMy0xOS45LTQ3LjRjMC4zLDMsMC40LDYsMC40LDkuMQoJYzAsMTYuNC00LjQsMzEuOC0xMiw0NS4xbDIxLjUtMjEuN2MwLjEtMC4xLDAuMy0wLjEsMC40LDBjMC4xLDAuMSwwLjIsMC4zLDAuMSwwLjRMMTA0LjUsODEuM3oiLz4KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8zXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI4Ljk1MDg2N2UtMDMiIHkxPSIxMzMuMjUwOCIgeDI9IjEuMDA4NSIgeTI9IjEzMy4yNTA4IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQ3LjQzNTIgNDcuNDM1MiA0Ny40MzUyIC00Ny40MzUyIC02MjQ4LjAwMiA2Mzc5Ljc4MTIpIj4KCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDlBRDkiLz4KCTxzdG9wICBvZmZzZXQ9IjAuMzkyNiIgc3R5bGU9InN0b3AtY29sb3I6IzAwOUFEOSIvPgoJPHN0b3AgIG9mZnNldD0iMC42MjE2IiBzdHlsZT0ic3RvcC1jb2xvcjojMDA2RkJBIi8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjk1NzUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDVGOUUiLz4KCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDVGOUUiLz4KPC9saW5lYXJHcmFkaWVudD4KPHBhdGggY2xhc3M9InN0MiIgZD0iTTEwNC40LDk1bDEwLjgsMTcuMmMzLjUtMy44LDYuNi03LjksOS4yLTEyLjRMMTA0LjQsOTVMMTA0LjQsOTV6Ii8+CjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfNF8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iOC42NDIzOTllLTAzIiB5MT0iMTMzLjI1MDgiIHgyPSIxLjAwODIiIHkyPSIxMzMuMjUwOCIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCg0Ny40MzUyIDQ3LjQzNTIgNDcuNDM1MiAtNDcuNDM1MiAtNjI4MC40NDkyIDY0MTIuMjIyNykiPgoJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzAwOUFEOSIvPgoJPHN0b3AgIG9mZnNldD0iMC4zOTI2IiBzdHlsZT0ic3RvcC1jb2xvcjojMDA5QUQ5Ii8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjYyMTYiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDZGQkEiLz4KCTxzdG9wICBvZmZzZXQ9IjAuOTU3NSIgc3R5bGU9InN0b3AtY29sb3I6IzAwNUY5RSIvPgoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwNUY5RSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0aCBjbGFzcz0ic3QzIiBkPSJNODIuMSw5Ny41Yy0xNS4xLDEzLTM0LjUsMjEuMi01NS44LDIyLjFjMTEuMiw4LjYsMjUuMiwxMy43LDQwLjQsMTMuN2M4LjksMCwxNy4zLTEuNywyNS00LjlMOTAuMSw5OQoJbC0yNC45LDI1LjJjLTAuMSwwLjEtMC4zLDAuMS0wLjUsMGMtMC4xLTAuMS0wLjItMC4zLTAuMS0wLjRMODIuMSw5Ny41eiIvPgo8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzVfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjkuMzY2MzY2ZS0wMyIgeTE9IjEzMy4yNTA2IiB4Mj0iMS4wMDc3IiB5Mj0iMTMzLjI1MDYiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoNDcuNDM1MiA0Ny40MzUyIDQ3LjQzNTIgLTQ3LjQzNTIgLTYyMzcuMDAyIDYzNjguNzk4OCkiPgoJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6IzAwOUFEOSIvPgoJPHN0b3AgIG9mZnNldD0iMC4zOTI2IiBzdHlsZT0ic3RvcC1jb2xvcjojMDA5QUQ5Ii8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjYyMTYiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDZGQkEiLz4KCTxzdG9wICBvZmZzZXQ9IjAuOTU3NSIgc3R5bGU9InN0b3AtY29sb3I6IzAwNUY5RSIvPgoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzAwNUY5RSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMTI2LjYsOTUuN2MyLjUtNS4xLDQuMy0xMC42LDUuNS0xNi40bC0yNS4xLDguOUwxMjYuNiw5NS43eiIvPgo8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzZfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjIuODYzNzIxZS0wMyIgeTE9IjEzMy4yNDUxIiB4Mj0iMS4wMDMzIiB5Mj0iMTMzLjI0NTEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoNjguMTY5OSA2OC4xNjk5IDY4LjE2OTkgLTY4LjE2OTkgLTkwNjQuMDY1NCA5MTAyLjcwMDIpIj4KCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkYyMDAiLz4KCTxzdG9wICBvZmZzZXQ9IjQuMTMyMDAwZS0wMyIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRjIwMCIvPgoJPHN0b3AgIG9mZnNldD0iMC4yOTM0IiBzdHlsZT0ic3RvcC1jb2xvcjojRkZENDAwIi8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjU1MDkiIHN0eWxlPSJzdG9wLWNvbG9yOiNGNTg0MUYiLz4KCTxzdG9wICBvZmZzZXQ9IjAuNjg1OSIgc3R5bGU9InN0b3AtY29sb3I6I0YxNUEyMiIvPgoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6I0YxNUEyMiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cGF0aCBjbGFzcz0ic3Q1IiBkPSJNMzMuNywxMDUuNmMtMC4yLDAtMC4zLTAuMS0wLjQtMC4yYzAtMC4yLDAtMC4zLDAuMi0wLjRsNDcuOS0xN0wzMy45LDY5LjhjLTAuMi0wLjEtMC4zLTAuMy0wLjItMC40CgljMC4xLTAuMSwwLjItMC4yLDAuNC0wLjJsNDkuOSwxMkw2NS4yLDUxLjRjLTAuMS0wLjEsMC0wLjMsMC4xLTAuNGMwLjEtMC4xLDAuMy0wLjEsMC41LDBsMjQuNiwyNmw0LjMtNTYuNWMwLTAuMiwwLjItMC4zLDAuMy0wLjMKCWMwLjIsMCwwLjMsMC4xLDAuMywwLjNsMi44LDUzLjFjNy45LTEzLjIsMTIuNS0yOC43LDEyLjUtNDUuM2MwLTQuMi0wLjMtOC40LTAuOS0xMi41Qzk4LjEsNiw4My4xLDAsNjYuNiwwQzI5LjgsMCwwLDI5LjgsMCw2Ni42CgljMCwxOS44LDguNywzNy42LDIyLjQsNDkuOGMwLDAsMCwwLDAuMSwwYzIxLjYsMCw0MS4zLTcuOCw1Ni43LTIwLjZMMzMuNywxMDUuNnoiLz4KPGc+Cgk8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNOTguMSw3My42bC0yLjgtNTMuMWMwLTAuMi0wLjEtMC4zLTAuMy0wLjNjLTAuMiwwLTAuMywwLjEtMC4zLDAuM0w5MC40LDc3TDY1LjcsNTFjLTAuMS0wLjEtMC4zLTAuMi0wLjUsMAoJCWMtMC4xLDAuMS0wLjIsMC4zLTAuMSwwLjRMODQsODEuMWwtNDkuOS0xMmMtMC4yLDAtMC4zLDAuMS0wLjQsMC4yYy0wLjEsMC4yLDAsMC40LDAuMiwwLjRsNDcuNSwxOC4xbC00Ny45LDE3CgkJYy0wLjIsMC0wLjMsMC4yLTAuMiwwLjRjMCwwLjIsMC4yLDAuMywwLjQsMC4ybDQ1LjQtOS44Qzg2LjYsODkuNSw5Myw4Miw5OC4xLDczLjYiLz4KCTxyZWN0IHg9IjE2My40IiB5PSIyMS42IiBjbGFzcz0ic3Q2IiB3aWR0aD0iMTYuMiIgaGVpZ2h0PSI5NC43Ii8+Cgk8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMjc2LjgsNjYuMnY0MS40Yy0xMC4xLDYuNi0yMS4xLDEwLjMtMzUuMywxMC4zYy0yNywwLTUwLjMtMTkuNi01MC4zLTQ4LjhjMC0yOS41LDIzLjYtNDksNTAuMy00OQoJCWMxNCwwLDIzLjksMy45LDMzLjYsOS44bC03LjQsMTIuOWMtNy42LTQuOS0xNi43LTcuOS0yNS41LTcuOWMtMjEuNiwwLTMzLjcsMTUuMi0zMy43LDM0LjFjMCwyMC4yLDE0LjksMzQuNSwzMy42LDM0LjUKCQljOC4xLDAsMTMuNi0xLjQsMTkuMS00LjVWODAuNGgtMjIuMVY2Ni4ySDI3Ni44eiIvPgoJPHBvbHlnb24gY2xhc3M9InN0NiIgcG9pbnRzPSIzMjguNiwzNi4zIDMyOC42LDExNi4zIDMxMi40LDExNi4zIDMxMi40LDM2LjMgMjgyLjMsMzYuMyAyODIuMywyMS42IDM1OC42LDIxLjYgMzU4LjYsMzYuMyAJIi8+CjwvZz4KPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF83XyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyLjg2MzcyMWUtMDMiIHkxPSIxMzMuMjQ1MSIgeDI9IjEuMDAyOSIgeTI9IjEzMy4yNDUxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDY4LjE2OTkgNjguMTY5OSA2OC4xNjk5IC02OC4xNjk5IC05MDY0LjA2NTQgOTEwMi43MDAyKSI+Cgk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZGMjAwIi8+Cgk8c3RvcCAgb2Zmc2V0PSI0LjEzMjAwMGUtMDMiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkYyMDAiLz4KCTxzdG9wICBvZmZzZXQ9IjAuMjkzNCIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDQwMCIvPgoJPHN0b3AgIG9mZnNldD0iMC41NTA5IiBzdHlsZT0ic3RvcC1jb2xvcjojRjU4NDFGIi8+Cgk8c3RvcCAgb2Zmc2V0PSIwLjY4NTkiIHN0eWxlPSJzdG9wLWNvbG9yOiNGMTVBMjIiLz4KCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGMTVBMjIiLz4KPC9saW5lYXJHcmFkaWVudD4KPHBhdGggY2xhc3M9InN0NyIgZD0iTTExMC42LDI4LjNjMC00LjItMC4zLTguNC0wLjktMTIuNUM5OC4xLDYsODMuMSwwLDY2LjYsMEMyOS44LDAsMCwyOS44LDAsNjYuNmMwLDE5LjgsOC43LDM3LjYsMjIuNCw0OS44CgljMCwwLDAsMCwwLjEsMEM3MS4xLDExNi40LDExMC42LDc3LDExMC42LDI4LjN6Ii8+CjxnPgoJPHBhdGggY2xhc3M9InN0NiIgZD0iTTEzMi43LDc1LjNsLTI4LjEsNi4xbDE5LjMtMjkuMmMwLjEtMC4xLDAuMS0wLjMtMC4xLTAuNGMtMC4xLTAuMS0wLjMtMC4xLTAuNCwwbC0yMS41LDIxLjcKCQljNy42LTEzLjMsMTItMjguNywxMi00NS4xYzAtMy4xLTAuMi02LjEtMC40LTkuMWMtMS4yLTEuMi0yLjQtMi4zLTMuNy0zLjRjMC42LDQuMSwwLjksOC4yLDAuOSwxMi40YzAsMTYuNi00LjYsMzIuMS0xMi41LDQ1LjMKCQlsLTIuOC01My4xYzAtMC4yLTAuMS0wLjMtMC4zLTAuM2MtMC4yLDAtMC4zLDAuMS0wLjMsMC4zTDkwLjQsNzdMNjUuNyw1MWMtMC4xLTAuMS0wLjMtMC4yLTAuNSwwYy0wLjEsMC4xLTAuMiwwLjMtMC4xLDAuNAoJCUw4NCw4MS4xbC00OS45LTEyYy0wLjIsMC0wLjMsMC4xLTAuNCwwLjJjLTAuMSwwLjIsMCwwLjQsMC4yLDAuNGw0Ny41LDE4LjFsLTQ3LjksMTdjLTAuMiwwLTAuMywwLjItMC4yLDAuNAoJCWMwLDAuMiwwLjIsMC4zLDAuNCwwLjJsNDUuNC05LjhjLTE1LjMsMTIuOS0zNS4xLDIwLjYtNTYuNywyMC42YzAsMCwwLDAtMC4xLDBjMS4yLDEuMSwyLjUsMi4xLDMuOCwzLjIKCQljMjEuMy0wLjksNDAuNy05LjEsNTUuOC0yMi4xbC0xNy40LDI2LjNjLTAuMSwwLjEtMC4xLDAuMywwLjEsMC40YzAuMSwwLjEsMC4zLDAuMSwwLjUsMEw5MC4xLDk5bDEuNSwyOS40CgkJYzEuNS0wLjYsMi45LTEuMiw0LjMtMS45TDk4LDk5LjFsMTQuNywxNS42YzAuOC0wLjgsMS43LTEuNiwyLjUtMi41TDEwNC40LDk1bDIwLDQuOGMwLjgtMS4zLDEuNS0yLjcsMi4yLTQuMWwtMTkuNi03LjVsMjUuMS04LjkKCQlDMTMyLjMsNzgsMTMyLjUsNzYuNiwxMzIuNyw3NS4zIi8+Cgk8cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMzQwLjcsMTA5LjJ2Ni44aC0xLjR2LTYuOGgtMi41VjEwOGg2LjR2MS4ySDM0MC43eiBNMzUxLjcsMTE2LjFsLTAuMS01bC0yLjYsNGgtMC4xbC0yLjYtNGwwLDVoLTEuM2wwLjMtOC4yCgkJaDAuMmwzLjYsNS4zbDMuNS01LjNoMC4ybDAuMyw4LjJIMzUxLjd6Ii8+CjwvZz4KPC9zdmc+Cg=="
         alt="homepage"
         class="dark-logo"
         height="45"
       />
     </a>
+    <perfect-scrollbar [config]="config">
+      <mat-nav-list>
+        <p class="sidenav-header">IGT - Leadership Board</p>
+        <a mat-list-item routerLink="/home" routerLinkActive="active">
+          <mat-icon>settings_input_svideo</mat-icon>
+          Dashboard
+        </a>
+        <a
+          mat-list-item
+          routerLink="/dcForm"
+          routerLinkActive="active"
+          *ngIf="currentUser && currentUser['roleid'] === 2"
+        >
+          <mat-icon>help_outline</mat-icon>
+          Update Help Text
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <p class="sidenav-header">Lottery</p>
+        <a
+          mat-list-item
+          routerLink="/lotteryDashboard"
+          routerLinkActive="active"
+        >
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            >settings_input_svideo</mat-icon
+          >
+          Dashboard
+        </a>
+        <a mat-list-item routerLink="/lotterySv" routerLinkActive="active">
+          <mat-icon fontSet="material-icons-outlined"> loyalty</mat-icon>Service
+          Delivery
+        </a>
+        <a mat-list-item routerLink="/lotterySd" routerLinkActive="active">
+          <mat-icon fontSet="material-icons-outlined">
+            important_devices</mat-icon
+          >System Delivery
+        </a>
+        <a mat-list-item routerLink="/rndDashboard" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            emoji_objects</mat-icon
+          >R & D
+        </a>
+        <a mat-list-item routerLink="/goLive" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            date_range</mat-icon
+          >Go-Live Calendar
+        </a>
+      </mat-nav-list>
+      <mat-nav-list>
+        <p class="sidenav-header">Casino</p>
+        <a mat-list-item routerLink="/gameDashboard" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            >settings_input_svideo</mat-icon
+          >
+          Dashboard
+        </a>
+        <a mat-list-item routerLink="/gameCustomer" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            important_devices</mat-icon
+          >System Delivery
+        </a>
+        <a mat-list-item routerLink="/gameRnd" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            emoji_objects</mat-icon
+          >R & D
+        </a>
+        <a mat-list-item routerLink="/gameGoLive" routerLinkActive="active">
+          <mat-icon fontSet="material-icons-outlined"> date_range</mat-icon
+          >Go-Live Calendar
+        </a>
+      </mat-nav-list>
 
-    <mat-nav-list>
-      <p class="sidenav-header">IGT - Leadership Board</p>
-      <a mat-list-item routerLink="/home" routerLinkActive="active">
-        <mat-icon>settings_input_svideo</mat-icon>
-        Dashboard
-      </a>
-      <a
-        mat-list-item
-        routerLink="/dcForm"
-        routerLinkActive="active"
-        *ngIf="currentUser && currentUser['roleid'] === 2"
-      >
-        <mat-icon>help_outline</mat-icon>
-        Update Help Text
-      </a>
-    </mat-nav-list>
-    <mat-nav-list>
-      <p class="sidenav-header">Lottery</p>
-      <a mat-list-item routerLink="/lotteryDashboard" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          >settings_input_svideo</mat-icon
-        >
-        Dashboard
-      </a>
-      <a mat-list-item routerLink="/lotterySv" routerLinkActive="active">
-        <mat-icon fontSet="material-icons-outlined"> loyalty</mat-icon>Service
-        Delivery
-      </a>
-      <a mat-list-item routerLink="/lotterySd" routerLinkActive="active">
-        <mat-icon fontSet="material-icons-outlined"> important_devices</mat-icon
-        >System Delivery
-      </a>
-      <a mat-list-item routerLink="/rndDashboard" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          emoji_objects</mat-icon
-        >R & D
-      </a>
-      <a mat-list-item routerLink="/goLive" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          date_range</mat-icon
-        >Go-Live Calendar
-      </a>
-    </mat-nav-list>
-    <mat-nav-list>
-      <p class="sidenav-header">Casino</p>
-      <a mat-list-item routerLink="/gameDashboard" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          >settings_input_svideo</mat-icon
-        >
-        Dashboard
-      </a>
-      <a mat-list-item routerLink="/gameCustomer" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          important_devices</mat-icon
-        >System Delivery
-      </a>
-      <a mat-list-item routerLink="/gameRnd" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          emoji_objects</mat-icon
-        >R & D
-      </a>
-      <a mat-list-item routerLink="/gameGoLive" routerLinkActive="active">
-        <mat-icon fontSet="material-icons-outlined"> date_range</mat-icon
-        >Go-Live Calendar
-      </a>
-    </mat-nav-list>
+      <mat-nav-list>
+        <p class="sidenav-header">VLT</p>
+        <a mat-list-item routerLink="/vltDashboard" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            >settings_input_svideo</mat-icon
+          >
+          Dashboard
+        </a>
+        <a mat-list-item routerLink="/vltSv" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            loyalty</mat-icon
+          >Service Delivery
+        </a>
+        <a mat-list-item routerLink="/vltCustomer" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            important_devices</mat-icon
+          >System Delivery
+        </a>
+        <a mat-list-item routerLink="/vltRnd" routerLinkActive="active">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example settings_input_svideo icon"
+            fontSet="material-icons-outlined"
+          >
+            emoji_objects</mat-icon
+          >R & D
+        </a>
 
-    <mat-nav-list>
-      <p class="sidenav-header">VLT</p>
-      <a mat-list-item routerLink="/vltDashboard" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          >settings_input_svideo</mat-icon
-        >
-        Dashboard
-      </a>
-      <a mat-list-item routerLink="/vltSv" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          loyalty</mat-icon
-        >Service Delivery
-      </a>
-      <a mat-list-item routerLink="/vltCustomer" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          important_devices</mat-icon
-        >System Delivery
-      </a>
-      <a mat-list-item routerLink="/vltRnd" routerLinkActive="active">
-        <mat-icon
-          aria-hidden="false"
-          aria-label="Example settings_input_svideo icon"
-          fontSet="material-icons-outlined"
-        >
-          emoji_objects</mat-icon
-        >R & D
-      </a>
-
-      <a mat-list-item routerLink="/vltGoLive" routerLinkActive="active">
-        <mat-icon fontSet="material-icons-outlined"> date_range</mat-icon
-        >Go-Live Calendar
-      </a>
-    </mat-nav-list>
+        <a mat-list-item routerLink="/vltGoLive" routerLinkActive="active">
+          <mat-icon fontSet="material-icons-outlined"> date_range</mat-icon
+          >Go-Live Calendar
+        </a>
+      </mat-nav-list>
+    </perfect-scrollbar>
   </mat-sidenav>
   <mat-sidenav-content ngClass="sidenavOpen ? 'sidenavOpen' : ''">
     <mat-toolbar *ngIf="currentUser">

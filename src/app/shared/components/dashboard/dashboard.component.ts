@@ -33,6 +33,7 @@ export class DashboardComponent implements OnInit {
   DataLists: any[] = [];
   dataError;
   helpText;
+  budgetPortfolioLegend = ["Active", "Planned", "Completed"];
 
   calculateTotal(data) {
     let total = data.reduce((total, currentValue) => {
@@ -90,7 +91,7 @@ export class DashboardComponent implements OnInit {
                 this.vltProjects.sd.projects.closed.length +
                 this.vltProjects.sv.projects.closed.length +
                 this.vltProjects.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.lotteryProjectsData = [
@@ -110,7 +111,7 @@ export class DashboardComponent implements OnInit {
               value:
                 this.customerProjects.projectList.Completed.length +
                 this.rndProjects.projectList.Completed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.casinoProjectsData = [
@@ -130,7 +131,7 @@ export class DashboardComponent implements OnInit {
               value:
                 this.gameProjects.sd.projects.closed.length +
                 this.gameProjects.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.vltProjectsData = [
@@ -153,7 +154,7 @@ export class DashboardComponent implements OnInit {
                 this.vltProjects.sd.projects.closed.length +
                 this.vltProjects.sv.projects.closed.length +
                 this.vltProjects.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 
@@ -198,7 +199,7 @@ export class DashboardComponent implements OnInit {
               ],
             },
             {
-              name: "Closed",
+              name: "Completed",
               type: "bar",
               barMaxWidth: 40,
               data: [
@@ -223,7 +224,7 @@ export class DashboardComponent implements OnInit {
             },
             {
               value: this.calculateTotal(this.budgetSeriesData[2].data),
-              name: "Closed",
+              name: "Completed",
             },
           ];
 

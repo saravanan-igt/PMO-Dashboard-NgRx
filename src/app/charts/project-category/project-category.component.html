@@ -6,12 +6,15 @@
       type="button"
       mat-icon-button
       class="info-btn"
-      [ngbPopover]="info"
+      [ngbPopover]="tooltipContent"
       triggers="mouseenter:mouseleave"
     >
       <!-- triggers="mouseenter:mouseleave" -->
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
+    <ng-template #tooltipContent>
+      <div [innerHTML]="info"></div>
+    </ng-template>
   </mat-card-header>
   <mat-card-content>
     <div

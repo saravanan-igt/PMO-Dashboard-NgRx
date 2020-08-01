@@ -84,7 +84,7 @@ export class LotteryDashboardComponent implements OnInit {
               value:
                 this.customerProjects.projectList.Completed.length +
                 this.rndProjects.projectList.Completed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 
@@ -99,7 +99,7 @@ export class LotteryDashboardComponent implements OnInit {
             },
             {
               value: this.customerProjects.sv.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.lotterySDProjectsData = [
@@ -113,7 +113,7 @@ export class LotteryDashboardComponent implements OnInit {
             },
             {
               value: this.customerProjects.sd.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.lotteryPlannedProjectsData = [
@@ -127,7 +127,7 @@ export class LotteryDashboardComponent implements OnInit {
             },
             {
               value: this.rndProjects.projectList.Completed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 
@@ -148,7 +148,7 @@ export class LotteryDashboardComponent implements OnInit {
               value:
                 this.customerProjects.closedBudget +
                 this.rndProjects.closedBudget,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 
@@ -175,7 +175,7 @@ export class LotteryDashboardComponent implements OnInit {
               ],
             },
             {
-              name: "Closed",
+              name: "Completed",
               type: "bar",
               barMaxWidth: 40,
               data: [
@@ -195,18 +195,18 @@ export class LotteryDashboardComponent implements OnInit {
               value: this.rndProjects.plannedBudget,
             },
             {
-              name: "Closed",
+              name: "Completed",
               value: this.rndProjects.closedBudget,
             },
           ];
 
           this.forecastLegend = [
             "SV Active",
-            "SV Closed",
+            "SV Completed",
             "SD Active",
-            "SD Closed",
+            "SD Completed",
             "R&D Active",
-            "R&D Closed",
+            "R&D Completed",
           ];
 
           this.forecastSeriesData = [

@@ -49,7 +49,7 @@ export class GameRndComponent implements OnInit {
             },
             {
               value: this.gameProjectData.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalBudgetData = [
@@ -63,7 +63,7 @@ export class GameRndComponent implements OnInit {
             },
             {
               value: this.gameProjectData.rnd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 

@@ -45,13 +45,13 @@ export class RndComponent implements OnInit {
           this.lotteryProjectsData = [
             { value: this.activeProjects.length, name: "Active" },
             { value: this.plannedProjects.length, name: "Planned" },
-            { value: this.closedProjects.length, name: "Closed" },
+            { value: this.closedProjects.length, name: "Completed" },
           ];
 
           this.totalBudgetData = [
             { value: this.rndProjects.activeBudget, name: "Active" },
             { value: this.rndProjects.plannedBudget, name: "Planned" },
-            { value: this.rndProjects.closedBudget, name: "Closed" },
+            { value: this.rndProjects.closedBudget, name: "Completed" },
           ];
 
           this.totalRiskData = [

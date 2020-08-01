@@ -48,6 +48,9 @@ export class DcFormComponent implements OnInit {
   ngOnInit() {
     this.rteForm = this.formBuilder.group({
       pdProject: [null, [Validators.required]],
+      pdLotProject: [null, [Validators.required]],
+      pdCasProject: [null, [Validators.required]],
+      pdVltProject: [null, [Validators.required]],
       pdBudget: [null, [Validators.required]],
       pdForecast: [null, [Validators.required]],
       pdRAG: [null, [Validators.required]],
@@ -100,10 +103,20 @@ export class DcFormComponent implements OnInit {
       .subscribe((data) => {
         if (data.Data.length) {
           this.DataLists = { ...data.Data[3] };
-
-          // this.rteForm.setValue({
           this.rteForm = this.formBuilder.group({
             pdProject: [this.DataLists["pdProject"], [Validators.required]],
+            pdLotProject: [
+              this.DataLists["pdLotProject"],
+              [Validators.required],
+            ],
+            pdCasProject: [
+              this.DataLists["pdCasProject"],
+              [Validators.required],
+            ],
+            pdVltProject: [
+              this.DataLists["pdVltProject"],
+              [Validators.required],
+            ],
             pdBudget: [this.DataLists["pdBudget"], [Validators.required]],
             pdForecast: [this.DataLists["pdForecast"], [Validators.required]],
             pdRAG: [this.DataLists["pdRAG"], [Validators.required]],

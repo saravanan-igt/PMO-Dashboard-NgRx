@@ -49,7 +49,7 @@ export class VltSDComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sv.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalBudgetData = [
@@ -63,7 +63,7 @@ export class VltSDComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sv.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 

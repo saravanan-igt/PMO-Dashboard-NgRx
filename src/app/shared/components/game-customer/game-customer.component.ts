@@ -50,7 +50,7 @@ export class GameCustomerComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalBudgetData = [
@@ -64,7 +64,7 @@ export class GameCustomerComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 

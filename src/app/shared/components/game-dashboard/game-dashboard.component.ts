@@ -63,7 +63,7 @@ export class GameDashboardComponent implements OnInit {
               value:
                 this.gameProjectData.sd.projects.closed.length +
                 this.gameProjectData.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.customerProjectsData = [
@@ -77,7 +77,7 @@ export class GameDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.rndProjectsData = [
@@ -91,7 +91,7 @@ export class GameDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.rnd.projects.closed.length,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalBudgetData = [
@@ -111,7 +111,7 @@ export class GameDashboardComponent implements OnInit {
               value:
                 this.gameProjectData.sd.budget.closed +
                 this.gameProjectData.rnd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.customerBudgetData = [
@@ -125,7 +125,7 @@ export class GameDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.sd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.rndBudgetData = [
@@ -139,7 +139,7 @@ export class GameDashboardComponent implements OnInit {
             },
             {
               value: this.gameProjectData.rnd.budget.closed,
-              name: "Closed",
+              name: "Completed",
             },
           ];
 
@@ -164,7 +164,7 @@ export class GameDashboardComponent implements OnInit {
               ],
             },
             {
-              name: "Closed",
+              name: "Completed",
               type: "bar",
               barMaxWidth: 40,
               data: [
@@ -176,9 +176,9 @@ export class GameDashboardComponent implements OnInit {
 
           this.forecastLegend = [
             "SD Active",
-            "SD Closed",
+            "SD Completed",
             "R&D Active",
-            "R&D Closed",
+            "R&D Completed",
           ];
 
           this.forecastSeriesData = [

@@ -23,7 +23,7 @@ export class LotterySVComponent implements OnInit {
   totalRiskData = [
     { value: 54, name: "Active" },
     { value: 62, name: "Planned" },
-    { value: 87, name: "Closed" },
+    { value: 87, name: "Completed" },
   ];
   dataList$: Observable<DataState>;
   DataSubscription: Subscription;
@@ -54,7 +54,7 @@ export class LotterySVComponent implements OnInit {
           this.lotteryProjectsData = [
             { value: this.activeProjects.length, name: "Active" },
             { value: this.plannedProjects.length, name: "Planned" },
-            { value: this.closedProjects.length, name: "Closed" },
+            { value: this.closedProjects.length, name: "Completed" },
           ];
 
           this.totalBudgetData = [
@@ -68,7 +68,7 @@ export class LotterySVComponent implements OnInit {
             },
             {
               value: this.customerData.closedBudget,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalRiskData = [

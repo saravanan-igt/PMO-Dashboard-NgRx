@@ -28,6 +28,7 @@ $igtPmoDashboard-theme: mat-light-theme(
 
 $sidenavWidth: 190px;
 $grad1: #303f9f;
+// $grad2: #168cb9;
 $grad2: rgb(0, 189, 174);
 $fontFamily: "Muli", sans-serif;
 // $fontFamily: 'Montserrat', sans-serif;
@@ -182,6 +183,51 @@ mat-sidenav-container.sidenav-container {
         .mat-expansion-panel-header.mat-expanded:focus,
         .mat-expansion-panel-header.mat-expanded:hover {
           background: rgba(0, 0, 0, 0) !important;
+        }
+      }
+    }
+    &.theme-blue {
+      // background: #2659a2;
+      // background: linear-gradient(#006eb7, #006eb7) !important;
+      background: linear-gradient(-3deg, $grad1, #168cb9) !important;
+      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.52);
+      perfect-scrollbar .ps-content {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // bottom: 0;
+        // right: 0;
+        background: url("./assets/img/sidebar-4.34aa4bc1.jpg") no-repeat center
+          center;
+        background-attachment: fixed;
+      }
+      .sidenav-header {
+        color: #fff;
+        font-size: 0.6rem;
+      }
+      .mat-list-item {
+        color: #fff;
+        .mat-icon {
+          color: #fff;
+        }
+        &.active {
+          &,
+          & .mat-icon {
+            color: rgb(20, 84, 145);
+          }
+
+          &::before {
+            background: #fff;
+          }
+        }
+      }
+      .navbar-brand {
+        background: #168cb9;
+        box-shadow: 0 1px 1px 0 rgb(0 0 0 / 0.2);
+      }
+      mat-nav-list {
+        &.mat-list-base {
+          box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
         }
       }
     }
@@ -419,8 +465,9 @@ mat-card-title.calendar-title {
   .calendar-badge-group {
     .badge {
       color: #fff;
-      font-size: 0.75rem;
-      font-weight: 500;
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 5px 5px 3px;
       &.badge-lottery {
         background: rgb(84, 110, 122);
       }
@@ -507,7 +554,7 @@ mat-card-title.calendar-title {
   flex-grow: 4;
   border-right: 1px dashed rgba(0, 0, 0, 0.2);
   margin-right: 15px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.87);
   position: relative;
   z-index: 10;

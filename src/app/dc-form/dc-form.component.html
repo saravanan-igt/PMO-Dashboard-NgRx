@@ -28,7 +28,7 @@
                   <div class="row help-form-cantainer">
                     <div class="col-md-6">
                       <mat-card-title class="helptext-form-title"
-                        >Portfolio Dashboard Project details</mat-card-title
+                        >Portfolio Dashboard Total Projects</mat-card-title
                       >
                       <div class="form-group">
                         <ejs-richtexteditor
@@ -53,7 +53,88 @@
                     </div>
                     <div class="col-md-6">
                       <mat-card-title class="helptext-form-title"
-                        >Portfolio Dashboard Budget details</mat-card-title
+                        >Portfolio Dashboard Lottery Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdLotProject"
+                          [toolbarSettings]="tools"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdLotProject.invalid &&
+                            rteForm.controls.pdLotProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.pdLotProject.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Casino Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdCasProject"
+                          [toolbarSettings]="tools"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdCasProject.invalid &&
+                            rteForm.controls.pdCasProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.pdCasProject.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard VLT Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdVltProject"
+                          [toolbarSettings]="tools"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdVltProject.invalid &&
+                            rteForm.controls.pdVltProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.pdVltProject.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Budget</mat-card-title
                       >
                       <div class="form-group">
                         <ejs-richtexteditor
@@ -79,7 +160,7 @@
 
                     <div class="col-md-6">
                       <mat-card-title class="helptext-form-title"
-                        >Portfolio Dashboard Forecast details</mat-card-title
+                        >Portfolio Dashboard Forecast</mat-card-title
                       >
                       <div class="form-group">
                         <ejs-richtexteditor
@@ -105,7 +186,7 @@
 
                     <div class="col-md-6">
                       <mat-card-title class="helptext-form-title"
-                        >Portfolio Dashboard RAG details</mat-card-title
+                        >Portfolio Dashboard RAG</mat-card-title
                       >
                       <div class="form-group">
                         <ejs-richtexteditor
@@ -127,11 +208,10 @@
                       </div>
                     </div>
 
-                    <div class="col-md-12">
-                      <mat-card-title class="helptext-form-title"
-                        >Portfolio Dashboard Go Live Caelndar
-                        details</mat-card-title
-                      >
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Portfolio Dashboard Go Live Caelndar
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="pdGoLIve"
@@ -155,9 +235,9 @@
                     </div>
 
                     <div class="col-md-6">
-                      <mat-card-title class="helptext-form-title"
-                        >Lottery Dashboard Project details</mat-card-title
-                      >
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Project
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="ldProject"
@@ -181,9 +261,9 @@
                     </div>
 
                     <div class="col-md-6">
-                      <mat-card-title class="helptext-form-title"
-                        >Lottery Dashboard Budget details</mat-card-title
-                      >
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Budget
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="ldBudget"
@@ -207,9 +287,9 @@
                     </div>
 
                     <div class="col-md-6">
-                      <mat-card-title class="helptext-form-title"
-                        >Lottery Dashboard Forecast details</mat-card-title
-                      >
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Forecast
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="ldForecast"
@@ -233,9 +313,9 @@
                     </div>
 
                     <div class="col-md-6">
-                      <mat-card-title class="helptext-form-title"
-                        >Lottery Dashboard RAG details</mat-card-title
-                      >
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard RAG
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="ldRAG"
@@ -257,10 +337,9 @@
                     </div>
 
                     <div class="col-md-12">
-                      <mat-card-title class="helptext-form-title"
-                        >Lottery Dashboard Go Live Calendar
-                        details</mat-card-title
-                      >
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Go Live Calendar
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="ldGoLive"
@@ -284,9 +363,9 @@
                     </div>
 
                     <div class="col-md-6">
-                      <mat-card-title class="helptext-form-title"
-                        >Lottery SV Project details</mat-card-title
-                      >
+                      <mat-card-title class="helptext-form-title">
+                        Lottery SV Projects
+                      </mat-card-title>
                       <div class="form-group">
                         <ejs-richtexteditor
                           formControlName="lsvProject"

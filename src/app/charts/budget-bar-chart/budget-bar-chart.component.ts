@@ -92,7 +92,7 @@ export class BudgetBarChartComponent implements OnInit {
         },
       },
       legend: {
-        data: this.legend ? this.legend : ["Active", "Planned", "Closed"],
+        data: this.legend ? this.legend : ["Active", "Planned", "Completed"],
         bottom: -5,
       },
       xAxis: [

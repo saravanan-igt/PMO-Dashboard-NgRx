@@ -44,6 +44,13 @@ import { StoreModule } from "@ngrx/store";
 import { DataEffects } from "./Store/data.effects";
 import { DataReducer } from "./Store/data.reducer";
 import { DcFormComponent } from "./dc-form/dc-form.component";
+import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
+import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
+import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true,
+};
 
 @NgModule({
   declarations: [
@@ -89,12 +96,17 @@ import { DcFormComponent } from "./dc-form/dc-form.component";
     NgbModule,
     StoreModule.forRoot({ data: DataReducer }),
     EffectsModule.forRoot([DataEffects]),
+    PerfectScrollbarModule,
   ],
   providers: [
     LoaderService,
     PageLoaderService,
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    {
+      provide: PERFECT_SCROLLBAR_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
+    },
   ],
   bootstrap: [AppComponent],
 })

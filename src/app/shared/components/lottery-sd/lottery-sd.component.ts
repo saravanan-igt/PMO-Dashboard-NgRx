@@ -48,7 +48,7 @@ export class LotterySDComponent implements OnInit {
           this.lotteryProjectsData = [
             { value: this.activeProjects.length, name: "Active" },
             { value: this.plannedProjects.length, name: "Planned" },
-            { value: this.closedProjects.length, name: "Closed" },
+            { value: this.closedProjects.length, name: "Completed" },
           ];
 
           this.totalBudgetData = [
@@ -62,7 +62,7 @@ export class LotterySDComponent implements OnInit {
             },
             {
               value: this.customerData.closedBudget,
-              name: "Closed",
+              name: "Completed",
             },
           ];
           this.totalRiskData = [

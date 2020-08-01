@@ -57,7 +57,8 @@ export class AppComponent implements OnInit {
       routerEvent instanceof NavigationCancel ||
       routerEvent instanceof NavigationError
     ) {
-      document.getElementsByClassName("mat-drawer-content")[0].scrollTo(0, 0);
+      // document.getElementsByClassName("mat-drawer-content")[0].scrollTo(0, 0);
+      document.getElementsByClassName("mat-drawer-content")[0].scrollTop = 0;
       if (window.innerWidth <= 768) {
         this.sidenavOpen = false;
       }
