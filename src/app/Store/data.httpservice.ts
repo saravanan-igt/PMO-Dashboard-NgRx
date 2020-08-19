@@ -22,7 +22,10 @@ export class DataHttpService {
   );
   // http://10.2.230.128:4010/Gethelptext/s
   //../assets/data/helpText.json
-  private helpTextURL = this.httpclient.get(`${this.baseUrl}/Gethelptext/s`);
+  private helpTextURL = this.httpclient.get(`${this.baseUrl}/Gethelptext/s,1`);
+  private prevHelpTextURL = this.httpclient.get(
+    `${this.baseUrl}/Gethelptext/s,0`
+  );
 
   constructor(private httpclient: HttpClient) {}
 
@@ -32,6 +35,7 @@ export class DataHttpService {
       this.CasinoApiURL,
       this.VltApiURL,
       this.helpTextURL,
+      this.prevHelpTextURL,
     ]);
   }
   public getDatas() {
@@ -42,6 +46,7 @@ export class DataHttpService {
           Utils.createCasinoData(response[1]),
           Utils.createVltData(response[2]),
           response[3][0],
+          response[4],
         ];
       })
     );

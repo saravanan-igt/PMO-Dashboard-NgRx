@@ -85,7 +85,17 @@
                 >{{ row[column] }}
               </mat-icon>
               <span *ngIf="column === 'Project'">
-                {{ row[column] }}
+                <a
+                  [href]="row.ProjectURL"
+                  target="_blank"
+                  rel="noopener"
+                  *ngIf="row['ProjectURL'] !== null"
+                >
+                  {{ row[column] }}
+                </a>
+                <span *ngIf="row['ProjectURL'] === null">
+                  {{ row[column] }}
+                </span>
                 <!-- <small class="sub-text">Go Live: {{ row["liveDate"] }}</small> -->
                 <small class="sub-text">{{ row["ID"] }}</small>
               </span>

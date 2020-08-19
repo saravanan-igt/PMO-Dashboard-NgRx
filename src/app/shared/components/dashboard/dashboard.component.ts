@@ -160,13 +160,16 @@ export class DashboardComponent implements OnInit {
 
           let budgetData = {
             active:
-              this.customerProjects.activeBudget +
+              this.customerProjects.sd.activeBudget +
+              this.customerProjects.sv.activeBudget +
               this.rndProjects.activeBudget,
             planned:
-              this.customerProjects.plannedBudget +
+              this.customerProjects.sd.plannedBudget +
+              this.customerProjects.sv.plannedBudget +
               this.rndProjects.plannedBudget,
             closed:
-              this.customerProjects.closedBudget +
+              this.customerProjects.sd.closedBudget +
+              this.customerProjects.sv.closedBudget +
               this.rndProjects.closedBudget,
           };
 
@@ -233,9 +236,11 @@ export class DashboardComponent implements OnInit {
               name: "Cost Planning",
               type: "line",
               data: [
-                this.customerProjects.activeBudgetF +
+                this.customerProjects.sd.activeBudgetF +
+                  this.customerProjects.sv.activeBudgetF +
                   this.rndProjects.activeBudgetF,
-                this.customerProjects.closedBudgetF +
+                this.customerProjects.sd.closedBudgetF +
+                  this.customerProjects.sv.closedBudgetF +
                   this.rndProjects.closedBudgetF,
                 this.gameProjects.sd.budget.active +
                   this.gameProjects.rnd.budget.active,
@@ -255,11 +260,13 @@ export class DashboardComponent implements OnInit {
               data: [
                 Number(
                   this.customerProjects.sd.activeForecast +
-                    this.customerProjects.sv.activeForecast
+                    this.customerProjects.sv.activeForecast +
+                    this.rndProjects.activeForecast
                 ).toFixed(2),
                 Number(
                   this.customerProjects.sd.closedForecast +
-                    this.customerProjects.sv.closedForecast
+                    this.customerProjects.sv.closedForecast +
+                    this.rndProjects.closedForecast
                 ).toFixed(2),
                 this.gameProjects.sd.budget.activeForecast +
                   this.gameProjects.rnd.budget.activeForecast,

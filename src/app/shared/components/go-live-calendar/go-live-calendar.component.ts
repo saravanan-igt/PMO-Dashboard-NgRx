@@ -74,10 +74,23 @@ export class GoLiveCalendarComponent implements OnInit, OnChanges {
         obj[col] = item.Project;
         obj["liveDate"] = item.LiveDate;
         obj["component"] = item.Component;
-        // console.log("item.RAG", item.Project, item.RAG);
         obj["workStatus"] = item["RAG"];
         obj["BusinessType"] = item["BusinessType"];
         obj["ID"] = item["ID"] !== undefined ? item["ID"] : item["PROJECT_ID"];
+        obj["ProjectURL"] = item["ProjectURL"] ? item["ProjectURL"] : null;
+        // obj["ProjectURL"] = item["ProjectURL"]
+        //   ? "https://clarity.igt.com:8043/niku/nu#action:odf.projectstatusProperties&grandparent_odf_view&odf_concrete_parent_object_code=project&odf_pk=6443020&odf_code=projectstatus&ui.page.space=mainnav.work&parent_odf_view=projectCreate.subObjList.projectstatus"
+        //   : null;
+
+        // obj["ProjectURL"] = item["ProjectURL"]
+        //   ? "https://clarity.igt.com:8043/niku/nu#action:projmgr.projectDefaultTab&id=" +
+        //     item["ProjectURL"]
+        //   : null;
+        // obj["ProjectURL"] = item["ProjectURL"]
+        //   ? "http://clarity.igt.com/niku/nu#action:odf.projectstatusProperties&grandparent_odf_view&odf_concrete_parent_object_code=project&odf_pk=" +
+        //     item["ProjectURL"] +
+        //     "&odf_code=projectstatus&ui.page.space=mainnav.work&parent_odf_view=projectCreate.subObjList.projectstatus"
+        //   : null;
       }
     });
 
@@ -97,6 +110,10 @@ export class GoLiveCalendarComponent implements OnInit, OnChanges {
     { value: "G", viewValue: "Green" },
   ];
   businessVerticals;
+
+  goToStatusLink(url: string) {
+    window.open(url, "_blank");
+  }
 
   filterChange() {
     let businessKey = this.businessFilter.split("|");

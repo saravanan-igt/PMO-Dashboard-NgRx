@@ -134,19 +134,22 @@ export class LotteryDashboardComponent implements OnInit {
           this.totalBudgetData = [
             {
               value:
-                this.customerProjects.activeBudget +
+                this.customerProjects.sd.activeBudget +
+                this.customerProjects.sv.activeBudget +
                 this.rndProjects.activeBudget,
               name: "Active",
             },
             {
               value:
-                this.customerProjects.plannedBudget +
+                this.customerProjects.sd.plannedBudget +
+                this.customerProjects.sv.plannedBudget +
                 this.rndProjects.plannedBudget,
               name: "Planned",
             },
             {
               value:
-                this.customerProjects.closedBudget +
+                this.customerProjects.sd.closedBudget +
+                this.customerProjects.sv.closedBudget +
                 this.rndProjects.closedBudget,
               name: "Completed",
             },

@@ -19,6 +19,7 @@ export class DataEffects {
             return DataActions.SuccessGetDataAction({ payload: data });
           }),
           catchError((error: Error) => {
+            console.log("error", error);
             return of(DataActions.ErrorDataAction(error));
           })
         )

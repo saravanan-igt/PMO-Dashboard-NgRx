@@ -17,7 +17,6 @@ export default class Utils {
   }
 
   static decompressResponse(response) {
-    console.log("cjson", cjson.decompress(response)[0]);
     return cjson.decompress(response)[0];
   }
 
@@ -30,9 +29,11 @@ export default class Utils {
       (item) =>
         item["BusinessTypeCode"] === "SD" || item["BusinessTypeCode"] === "SV"
     );
+
     let cActiveProjects = cData.filter(
       (item) => item["ProjectStatus"] === "Active"
     );
+
     let cPlannedProjects = cData.filter(
       (item) => item["ProjectStatus"] === "Planned"
     );
@@ -68,6 +69,7 @@ export default class Utils {
 
     //R & D
     let rData = data.filter((item) => item["BusinessTypeCode"] === "PD");
+    // console.log("rData", rData);
 
     let rActiveProjects = rData.filter(
       (item) => item["ProjectStatus"] === "Active"
@@ -106,28 +108,23 @@ export default class Utils {
             this.calculateBudget(sdPlanned, "ForecastDollars") +
             this.calculateBudget(
               sdClosed.filter((item) => item.Years === currentYear),
-              "ActualsToDate"
+              "CostPlan"
             ),
           activeBudget: this.calculateBudget(sdActive, "CostPlan"),
           plannedBudget: this.calculateBudget(sdPlanned, "ForecastDollars"),
           closedBudget: this.calculateBudget(
             sdClosed.filter((item) => item.Years === currentYear),
-            "ActualsToDate"
+            "CostPlan"
           ),
           activeBudgetF: this.calculateBudget(sdActive, "CostPlan"),
           closedBudgetF: this.calculateBudget(
             sdClosed.filter((item) => item.Years === currentYear),
             "CostPlan"
           ),
-          activeForecast: this.calculateForecast(
-            sdActive,
-            "ActualsToDate",
-            "ETC_Cost"
-          ),
-          closedForecast: this.calculateForecast(
+          activeForecast: this.calculateBudget(sdActive, "ForecastDollars"),
+          closedForecast: this.calculateBudget(
             sdClosed.filter((item) => item.Years === currentYear),
-            "ActualsToDate",
-            "ETC_Cost"
+            "ForecastDollars"
           ),
           red: sdActive.filter((item) => item.RAG === "R").length,
           green: sdActive.filter((item) => item.RAG === "G").length,
@@ -151,22 +148,17 @@ export default class Utils {
           plannedBudget: this.calculateBudget(svPlanned, "ForecastDollars"),
           closedBudget: this.calculateBudget(
             svClosed.filter((item) => item.Years === currentYear),
-            "ActualsToDate"
+            "CostPlan"
           ),
           activeBudgetF: this.calculateBudget(svActive, "CostPlan"),
           closedBudgetF: this.calculateBudget(
             svClosed.filter((item) => item.Years === currentYear),
             "CostPlan"
           ),
-          activeForecast: this.calculateForecast(
-            svActive,
-            "ActualsToDate",
-            "ETC_Cost"
-          ),
-          closedForecast: this.calculateForecast(
+          activeForecast: this.calculateBudget(svActive, "ForecastDollars"),
+          closedForecast: this.calculateBudget(
             svClosed.filter((item) => item.Years === currentYear),
-            "ActualsToDate",
-            "ETC_Cost"
+            "ForecastDollars"
           ),
           red: svActive.filter((item) => item.RAG === "R").length,
           green: svActive.filter((item) => item.RAG === "G").length,
@@ -185,22 +177,20 @@ export default class Utils {
         ),
         closedBudget: this.calculateBudget(
           cClosedProjects.filter((item) => item.Years === currentYear),
-          "ActualsToDate"
+          "CostPlan"
         ),
         activeBudgetF: this.calculateBudget(cActiveProjects, "CostPlan"),
         closedBudgetF: this.calculateBudget(
           cClosedProjects.filter((item) => item.Years === currentYear),
           "CostPlan"
         ),
-        activeForecast: this.calculateForecast(
+        activeForecast: this.calculateBudget(
           cActiveProjects,
-          "ActualsToDate",
-          "ETC_Cost"
+          "ForecastDollars"
         ),
-        closedForecast: this.calculateForecast(
+        closedForecast: this.calculateBudget(
           cClosedProjects.filter((item) => item.Years === currentYear),
-          "ActualsToDate",
-          "ETC_Cost"
+          "ForecastDollars"
         ),
       },
       ///R & D
@@ -227,7 +217,7 @@ export default class Utils {
         ),
         closedBudget: this.calculateBudget(
           rClosedProjects.filter((item) => item.Years === currentYear),
-          "ActualsToDate"
+          "ForecastDollars"
         ),
         activeBudgetF: this.calculateBudget(
           rActiveProjects,
@@ -251,8 +241,14 @@ export default class Utils {
 
   static createCasinoData(response) {
     let data = [...cjson.decompress(response)];
-    let sdProjects = data.filter((item) => item.BUSINESS_TYPE.includes("SD"));
-    let rndProjects = data.filter((item) => item.BUSINESS_TYPE.includes("R&D"));
+    let sdProjects = data.filter((item) => item.BUSINESS_TYPE === "SD");
+    let rndProjects = data.filter((item) => item.BUSINESS_TYPE === "R&D");
+    // sdProjects
+    //   .filter((item) => item.Progress === "Active")
+    //   .map((item) => {
+    //     console.log("sdProjects BUDGET_COST", item.BUDGET_COST);
+    //     console.log("sdProjects ACTUAL_COST", item.ACTUAL_COST);
+    //   });
 
     return {
       sd: {
@@ -296,7 +292,7 @@ export default class Utils {
               (item) =>
                 item.Progress === "Completed" && item.YEARS === currentYear
             ),
-            "ACTUAL_COST"
+            "FORECAST_COST"
           ),
         },
         rag: {
@@ -352,7 +348,7 @@ export default class Utils {
               (item) =>
                 item.Progress === "Completed" && item.YEARS === currentYear
             ),
-            "ACTUAL_COST"
+            "FORECAST_COST"
           ),
         },
         rag: {
@@ -372,7 +368,7 @@ export default class Utils {
 
   static createVltData(response) {
     let data = [...cjson.decompress(response)];
-    let sdProjects = data.filter((item) => item.BUSINESS_TYPE.includes("SD"));
+    let sdProjects = data.filter((item) => item.BUSINESS_TYPE === "SD");
     let totalSdBudget =
       this.calculateBudget(
         sdProjects.filter((item) => item.Progress === "Active"),
@@ -386,7 +382,7 @@ export default class Utils {
         sdProjects.filter((item) => item.Progress === "Completed"),
         "ACTUAL_COST"
       );
-    let svProjects = data.filter((item) => item.BUSINESS_TYPE.includes("SV"));
+    let svProjects = data.filter((item) => item.BUSINESS_TYPE === "SV");
     let totalSvBudget =
       this.calculateBudget(
         svProjects.filter((item) => item.Progress === "Active"),
@@ -401,7 +397,7 @@ export default class Utils {
         "ACTUAL_COST"
       );
     let rndProjects = data.filter(
-      (item) => item.BUSINESS_TYPE.includes("R&D") && item.YEARS >= 2020
+      (item) => item.BUSINESS_TYPE === "R&D" && item.YEARS >= currentYear
     );
 
     let totalRndBudget =
@@ -451,7 +447,7 @@ export default class Utils {
               (item) =>
                 item.Progress === "Completed" && item.YEARS === currentYear
             ),
-            "ACTUAL_COST"
+            "FORECAST_COST"
           ),
         },
         rag: {
@@ -496,7 +492,7 @@ export default class Utils {
               (item) =>
                 item.Progress === "Completed" && item.YEARS === currentYear
             ),
-            "ACTUAL_COST"
+            "FORECAST_COST"
           ),
         },
         rag: {
@@ -547,7 +543,7 @@ export default class Utils {
               (item) =>
                 item.Progress === "Completed" && item.YEARS === currentYear
             ),
-            "ACTUAL_COST"
+            "FORECAST_COST"
           ),
         },
         rag: {
