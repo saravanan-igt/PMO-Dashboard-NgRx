@@ -174,23 +174,34 @@
             >home</mat-icon
           >
         </button>-->
+        <!--  -->
         <!-- <button
           type="button"
-          mat-icon-button
-          matTooltip="Help"
-          (click)="openForm()"
+          mat-button
+          class="text-white user-account-name"
+          *ngIf="currentUser['user']"
         >
-          <mat-icon fontSet="material-icons-outlined">article </mat-icon>
+          <mat-icon fontSet="material-icons-outlined">account_circle</mat-icon>
+          <span>{{ currentUser.user.displayName }}</span>
+          <small *ngIf="lastUpdatedDate">
+            Last Updated On: {{ lastUpdatedDate }}
+          </small>
         </button> -->
+        <button
+          type="button"
+          mat-button
+          class="text-white lastupdate-btn"
+          *ngIf="lastUpdatedDate"
+        >
+          Last update on: <span>{{ lastUpdatedDate }}</span>
+        </button>
         <button
           type="button"
           mat-icon-button
           (click)="logout()"
           matTooltip="Logout"
         >
-          <mat-icon
-            fontSet="material-icons-outlined"
-            aria-label="help_outline icon"
+          <mat-icon fontSet="material-icons-outlined"
             >power_settings_new</mat-icon
           >
         </button>

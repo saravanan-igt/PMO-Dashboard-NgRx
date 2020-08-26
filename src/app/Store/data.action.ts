@@ -9,6 +9,15 @@ export const CreateDataAction = createAction(
 
 export const BeginGetDataAction = createAction("[PMO] Begin Get Data");
 
+export const SetLastUpdatedDateAction = createAction(
+  "[PMO] Get Last Updated Date",
+  props<{ payload: any }>()
+);
+
+export const GetLastUpdatedDateAction = createAction(
+  "[PMO] Get Last Updated Date"
+);
+
 export const SuccessGetDataAction = createAction(
   "[PMO] Success Get Data",
   props<{ payload: any[] }>()

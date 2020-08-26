@@ -8,13 +8,14 @@ import {
   NavigationCancel,
   ResolveEnd,
 } from "@angular/router";
-import { Store } from "@ngrx/store";
+import { select, Store } from "@ngrx/store";
 import { AuthenticationService } from "./_services";
 import { User } from "./_models";
 import { MatSidenav } from "@angular/material/sidenav";
 import * as DataActions from "./Store/data.action";
 import DataState from "./Store/data.state";
 import { PageLoaderService } from "./services/page-loader.service";
+import { map } from "rxjs/operators";
 
 @Component({
   selector: "app-root",
@@ -30,6 +31,8 @@ export class AppComponent implements OnInit {
   particleHeight: number = 100;
   sidenavMode: string = "side";
   currentUser: User;
+  dataList$;
+  lastUpdatedDate: string;
   @ViewChild("drawer", { static: false }) drawer: MatSidenav;
   constructor(
     private router: Router,
@@ -86,6 +89,16 @@ export class AppComponent implements OnInit {
     if (window.innerWidth <= 768) {
       this.sidenavMode = "over";
       this.sidenavOpen = false;
+    }
+    this.dataList$ = this.store.pipe(select("data"));
+    if (this.dataList$) {
+      this.dataList$.pipe(map((x) => x)).subscribe((data) => {
+        console.log("data", data);
+        if (data.Data.length) {
+          this.lastUpdatedDate =
+            data.Data[2].sd.projects.active[0].LastUpdatedDate;
+        }
+      });
     }
 
     this.particleStyle = {

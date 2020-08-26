@@ -1,0 +1,18 @@
+.user-account-name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  .mat-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.lastupdate-btn {
+  font-weight: 400;
+  span {
+    font-weight: 500;
+  }
+}

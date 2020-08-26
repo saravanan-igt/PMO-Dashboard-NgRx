@@ -7,6 +7,12 @@ export const intialState = initializeState();
 const reducer = createReducer(
   intialState,
   on(DataActions.GetDataAction, (state) => state),
+  on(DataActions.SetLastUpdatedDateAction, (state: DataState, { payload }) => {
+    return { ...state, LastUpdatedDate: payload };
+  }),
+  on(DataActions.GetLastUpdatedDateAction, (state: DataState) => {
+    return { ...state };
+  }),
   on(DataActions.CreateDataAction, (state: DataState, todo: any) => {
     return { ...state, Data: [...state.Data, todo], DataError: null };
   }),
