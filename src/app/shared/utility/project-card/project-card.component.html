@@ -2,7 +2,7 @@
   <mat-card-title class="px-3 pb-1">{{ cardTitle }}</mat-card-title>
   <mat-divider></mat-divider>
   <div class="pt-1">
-    <cdk-virtual-scroll-viewport itemSize="20" class="list-card-scroll">
+    <cdk-virtual-scroll-viewport itemSize="100" class="list-card-scroll">
       <mat-card-content
         class="container-fluid mb-2 border-bottom"
         *cdkVirtualFor="let project of projectList; trackBy: trackByFn"
@@ -10,13 +10,13 @@
         <div class="container-fluid">
           <div class="row py-2">
             <div class="col-12 px-0">
-              <p class="mb-2">
+              <p class="mb-1">
                 <a class="proTitle"
                   >{{ project.Project
                   }}<i class="fas fa-chevron-circle-right"></i
                 ></a>
               </p>
-              <p class="mb-2">
+              <p class="mb-1">
                 Project ID: <span class="amount-text">{{ project.ID }}</span>
               </p>
               <p class="mb-1">
