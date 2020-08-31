@@ -16,6 +16,8 @@ import * as DataActions from "./Store/data.action";
 import DataState from "./Store/data.state";
 import { PageLoaderService } from "./services/page-loader.service";
 import { map } from "rxjs/operators";
+import { MatDialog } from "@angular/material/dialog";
+import { AboutComponent } from "./about/about.component";
 
 @Component({
   selector: "app-root",
@@ -38,7 +40,8 @@ export class AppComponent implements OnInit {
     private router: Router,
     private authenticationService: AuthenticationService,
     private store: Store<{ data: DataState }>,
-    private pageLoaderService: PageLoaderService
+    private pageLoaderService: PageLoaderService,
+    public dialog: MatDialog
   ) {
     router.events.subscribe((routerEvent: RouterEvent) => {
       this.checkRouterEvent(routerEvent);
@@ -83,6 +86,15 @@ export class AppComponent implements OnInit {
 
   openForm() {
     this.router.navigate(["/dcForm"]);
+  }
+
+  openDialog($event) {
+    $event.preventDefault();
+    const dialogRef = this.dialog.open(AboutComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
   ngOnInit() {

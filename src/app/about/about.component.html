@@ -1,0 +1,39 @@
+<h2 mat-dialog-title class="mb-2">CTO Dashboard <small>v1.0</small></h2>
+<mat-divider class="mb-2"></mat-divider>
+<mat-dialog-content class="mat-typography">
+  <h3><strong>Best Practices</strong></h3>
+  <ul>
+    <li>
+      Application is designed with Atomic design pattern by creating small
+      reusable components.
+    </li>
+    <li>Services has been isolated from the components for invoking APIs.</li>
+    <li>
+      NgRx state management has been utilized to share data across the
+      application. This also reduced multiple API calls.
+    </li>
+    <li>Backend request will be sent only once after login.</li>
+    <li>
+      CDK Virtual Scroll has been used which enables a performant way to
+      simulate all items being rendered by making the height of the container
+      element the same as the height of the total number of elements to be
+      rendered, and then only rendering the items in view.
+    </li>
+    <li>
+      <pre class="d-inline">ng build --prod</pre>
+      should be used for Production build.
+    </li>
+    <li>
+      Used GZip compression at the backend which reduces response data size from
+      400kb to 34kb and also reduces the size of .js, .css, image files by 70%.
+    </li>
+    <li>
+      Cached the static files like .js, .css, images. Caching will reduce the
+      loading time of these files eventually increases performance.
+    </li>
+  </ul>
+</mat-dialog-content>
+<mat-divider></mat-divider>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

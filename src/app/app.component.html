@@ -226,6 +226,9 @@
     </main>
     <footer class="page-footer" *ngIf="currentUser">
       <p>Copyrights &copy; 2020 IGT</p>
+      <p class="release-text">
+        <a href="#" (click)="openDialog($event)">Release v1.0</a>
+      </p>
     </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -679,17 +679,25 @@ mat-header-row.mat-header-row {
 }
 .page-footer {
   text-align: center;
-  padding: 8px 0;
+  padding: 8px 30px 8px 15px;
   margin-bottom: 0;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: $sidenavWidth;
   right: 0;
   background: #fff;
   box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.075);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - $sidenavWidth);
   p {
     margin-bottom: 0;
     font-size: 80%;
+  }
+  .release-text {
+    color: #007bff;
+    font-weight: 700;
   }
   z-index: 101;
 }
@@ -796,6 +804,15 @@ mat-header-row.mat-header-row {
     font-family: $fontFamily;
     font-weight: 700;
   }
+}
+.mat-body,
+.mat-body-1,
+.mat-typography,
+.mat-dialog-title {
+  font-family: $fontFamily;
+}
+.mat-dialog-title {
+  font-weight: 600;
 }
 $popoverBg: rgba(22, 51, 71, 0.95);
 .popover {

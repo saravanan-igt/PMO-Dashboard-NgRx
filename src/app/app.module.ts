@@ -47,6 +47,7 @@ import { DcFormComponent } from "./dc-form/dc-form.component";
 import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
+import { AboutComponent } from "./about/about.component";
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -80,6 +81,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     VltSDComponent,
     LoginComponent,
     DcFormComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -109,5 +111,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     },
   ],
   bootstrap: [AppComponent],
+  entryComponents: [AboutComponent],
 })
 export class AppModule {}
