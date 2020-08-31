@@ -105,10 +105,10 @@ export class AppComponent implements OnInit {
     this.dataList$ = this.store.pipe(select("data"));
     if (this.dataList$) {
       this.dataList$.pipe(map((x) => x)).subscribe((data) => {
-        console.log("data", data);
         if (data.Data.length) {
-          this.lastUpdatedDate =
-            data.Data[2].sd.projects.active[0].LastUpdatedDate;
+          this.lastUpdatedDate = data.Data[2].sd.projects.active.length
+            ? data.Data[2].sd.projects.active[0].LastUpdatedDate
+            : data.Data[0].customer.projectList.Active[0].LastUpdatedDate;
         }
       });
     }
