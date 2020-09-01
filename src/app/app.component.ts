@@ -109,6 +109,7 @@ export class AppComponent implements OnInit {
           this.lastUpdatedDate = data.Data[2].sd.projects.active.length
             ? data.Data[2].sd.projects.active[0].LastUpdatedDate
             : data.Data[0].customer.projectList.Active[0].LastUpdatedDate;
+          console.log("this.lastUpdatedDate", this.lastUpdatedDate);
         }
       });
     }
