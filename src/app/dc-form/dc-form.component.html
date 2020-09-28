@@ -24,7 +24,7 @@
           </mat-card-title>
           <mat-card-actions>
             <div class="switch-toggle">
-              <span class="switcher switcher-1">
+              <span class="switcher switcher-1" [ngClass]="{'checked': isChecked, 'unchecked':!isChecked}">
                 <input
                   type="checkbox"
                   [(ngModel)]="isChecked"

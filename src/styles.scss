@@ -863,3 +863,8 @@ $popoverBg: rgba(22, 51, 71, 0.95);
 .list-card-scroll .cdk-virtual-scroll-content-wrapper {
   max-width: 100%;
 }
+.particles {
+  .particles-container {
+    width: calc(100% - 30px) !important;
+  }
+}

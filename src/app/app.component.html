@@ -26,7 +26,7 @@
           mat-list-item
           routerLink="/dcForm"
           routerLinkActive="active"
-          *ngIf="currentUser && currentUser['roleid'] === 1"
+          *ngIf="currentUser && currentUser['roleid'] === 2"
         >
           <mat-icon>help_outline</mat-icon>
           Update Help Text
@@ -214,6 +214,7 @@
         *ngIf="currentUser"
       >
         <particles
+          class="particles"
           [params]="particleParams"
           [style]="particleStyle"
           [width]="particleWidth"

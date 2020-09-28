@@ -61,7 +61,11 @@ export default class Utils {
       svClosed = cClosedProjects.filter(
         (item) => item["BusinessTypeCode"] === "SV"
       );
-
+    console.log("sdActive", sdActive);
+    console.log(
+      "Green",
+      sdActive.filter((item) => item.RAG === "G")
+    );
     let cTotalBudget =
       this.calculateBudget(cActiveProjects, "CostPlan") +
       this.calculateBudget(cPlannedProjects, "ForecastDollars") +

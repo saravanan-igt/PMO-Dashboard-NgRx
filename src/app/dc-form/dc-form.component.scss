@@ -48,6 +48,8 @@ $bgGrad: linear-gradient(45deg, #303f9f, #168cb9);
     margin: 0;
     input {
       appearance: none;
+      -ms-appearance: none;
+      -webkit-appearance: none;
       position: relative;
       width: 200px;
       height: 30px;
@@ -176,6 +178,72 @@ $bgGrad: linear-gradient(45deg, #303f9f, #168cb9);
         width: 200px;
         height: 50px;
         border-radius: 25px;
+      }
+    }
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .switch-toggle {
+    span.switcher {
+      width: 220px;
+      &:before,
+      &:after {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $white;
+        cursor: pointer;
+        font-family: "Oswald", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.035rem;
+      }
+      input {
+        width: 220px;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+        &:checked {
+          & + label {
+            right: 130px !important;
+          }
+        }
+        &:not(:checked) {
+          & + label {
+            left: 108px !important;
+          }
+        }
+      }
+      &::before {
+        content: "New Text";
+        left: 23px;
+      }
+      &::after {
+        content: "Previous Text";
+        right: 20px;
+      }
+      &.checked {
+        &::before {
+          color: #2755a1;
+        }
+        &::after {
+          color: #fff;
+        }
+      }
+      &.unchecked {
+        &::before {
+          color: #fff;
+        }
+        &::after {
+          color: #2755a1;
+        }
+      }
+      &.switcher-2 {
+        label {
+          width: 220px;
+        }
       }
     }
   }
