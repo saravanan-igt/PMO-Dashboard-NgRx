@@ -49,6 +49,7 @@ export class AppComponent implements OnInit {
     this.authenticationService.currentUser.subscribe((x) => {
       this.currentUser = x;
       if (x !== null) {
+        this.sidenavOpen = true;
         this.store.dispatch(DataActions.BeginGetDataAction());
       }
     });
