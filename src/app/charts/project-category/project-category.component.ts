@@ -17,6 +17,7 @@ export class ProjectCategoryComponent implements OnInit {
   @Input() height;
   @Input() info;
   chartOption;
+  echartsInstance;
 
   totalProjects;
   constructor() {}
