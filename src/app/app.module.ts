@@ -18,6 +18,7 @@ import { GameCustomerComponent } from "./shared/components/game-customer/game-cu
 import { GameRndComponent } from "./shared/components/game-rnd/game-rnd.component";
 import { LoaderComponent } from "./shared/loader/loader.component";
 import { LoaderService } from "./services/loader.service";
+import { CommonService } from "./services/common.service";
 import { PageLoaderService } from "./services/page-loader.service";
 import { HTTP_INTERCEPTORS, HttpClient } from "@angular/common/http";
 import { LoaderInterceptor } from "./loader.interceptor";
@@ -103,6 +104,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   providers: [
     LoaderService,
     PageLoaderService,
+    CommonService,
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     {

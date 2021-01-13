@@ -2,28 +2,29 @@
   <mat-card-header>
     <mat-card-title>{{ chartTitle }}</mat-card-title>
     <button
-      *ngIf="info"
-      type="button"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="tooltipContent"
-      triggers="mouseenter:mouseleave"
+    *ngIf="info"
+    type="button"
+    mat-icon-button
+    class="info-btn"
+    [ngbPopover]="tooltipContent"
+    triggers="mouseenter:mouseleave"
     >
-      <!-- triggers="mouseenter:mouseleave" -->
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #tooltipContent>
-      <div [innerHTML]="info"></div>
-    </ng-template>
+    
   </mat-card-header>
   <mat-card-content>
     <div
       echarts
       [options]="chartOption"
       class="demo-chart"
+      (chartInit)="onChartInit($event)"
       style="width: 100%; height: 150px;"
       [style.height]="height + 'px'"
     ></div>
     <p class="total-text">{{ totalProjects }}</p>
   </mat-card-content>
 </mat-card>
+<ng-template #tooltipContent>
+  <div [innerHTML]="info"></div>
+</ng-template>

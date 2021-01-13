@@ -18,7 +18,7 @@ import { PageLoaderService } from "./services/page-loader.service";
 import { map } from "rxjs/operators";
 import { MatDialog } from "@angular/material/dialog";
 import { AboutComponent } from "./about/about.component";
-
+import { CommonService } from "./services/common.service";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     private authenticationService: AuthenticationService,
     private store: Store<{ data: DataState }>,
     private pageLoaderService: PageLoaderService,
-    public dialog: MatDialog
+    public dialog: MatDialog, public commonService: CommonService
   ) {
     router.events.subscribe((routerEvent: RouterEvent) => {
       this.checkRouterEvent(routerEvent);
@@ -76,13 +76,16 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
+    this.drawer.toggle();
     this.authenticationService.logout();
     this.router.navigate(["/login"]);
+    window.location.reload();
   }
 
   toggleLeftNav() {
     this.drawer.toggle();
     this.sidenavOpen = !this.sidenavOpen;
+    this.commonService.SidebarClick('clicked');
   }
 
   openForm() {

@@ -2,9 +2,10 @@ import {
   Component,
   OnInit,
   Input,
-  ChangeDetectionStrategy,
+  ChangeDetectionStrategy,HostListener
 } from "@angular/core";
-
+import { delay } from 'rxjs/operators';
+import { CommonService } from "../../services/common.service";
 @Component({
   selector: "app-project-category",
   templateUrl: "./project-category.component.html",
@@ -17,12 +18,24 @@ export class ProjectCategoryComponent implements OnInit {
   @Input() height;
   @Input() info;
   chartOption;
-
+  echartsInstance;
   totalProjects;
-  constructor() {}
+  constructor(
+    public commonService: CommonService
+  ) {}
 
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.commonService.getChangeEmitter().pipe(
+      delay(500)
+    ).subscribe(item => {
+        if(item==="clicked" && this.echartsInstance){
+          this.echartsInstance.resize();
+        }
+      })
+  }
+  onChartInit(ec) {
+    this.echartsInstance = ec;
+  }
   ngOnChanges() {
     this.chartOption = {
       tooltip: {
