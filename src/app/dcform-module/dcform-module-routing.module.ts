@@ -4,7 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { AuthGuard } from "../_helpers";
 import { DcFormComponent } from "../dc-form/dc-form.component";
 const routes: Routes = [
-  { path: "" , component: DcFormComponent},
+  { path: "dcForm" , component: DcFormComponent},
 ]
 
 @NgModule({

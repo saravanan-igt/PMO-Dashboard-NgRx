@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DcformModuleRoutingModule } from './dcform-module-routing.module';
 // import { DcFormComponent } from "../dc-form/dc-form.component";
 // import { RichTextEditorAllModule } from "@syncfusion/ej2-angular-richtexteditor";
 // import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    CommonModule,DcformModuleRoutingModule
   ]
 })
 export class DcformModuleModule { }

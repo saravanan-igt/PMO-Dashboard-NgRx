@@ -38,13 +38,13 @@ import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.co
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
 import { ForecastChartComponent } from "./charts/forecast-chart/forecast-chart.component";
 import { VltSDComponent } from "./shared/components/vlt-sd/vlt-sd.component";
-// import { LoginComponent } from "./login/login.component";
+import { LoginComponent } from "./login/login.component";
 import { ErrorInterceptor } from "./_helpers";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
 import { DataEffects } from "./Store/data.effects";
 import { DataReducer } from "./Store/data.reducer";
-// import { DcFormComponent } from "./dc-form/dc-form.component";
+import { DcFormComponent } from "./dc-form/dc-form.component";
 import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
@@ -83,8 +83,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     LotterySVComponent,
     ForecastChartComponent,
     VltSDComponent,
-    // LoginComponent,
-    // DcFormComponent,
+    LoginComponent,
+    DcFormComponent,
     AboutComponent,
   ],
   imports: [
