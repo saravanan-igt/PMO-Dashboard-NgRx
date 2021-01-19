@@ -9,7 +9,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { MaterialModule } from "./shared/material-module";
 import { ParticlesModule } from "angular-particle";
 import { DashboardComponent } from "./shared/components/dashboard/dashboard.component";
-import { LotteryDashboardComponent } from "./shared/components/lottery-dashboard/lottery-dashboard.component";
+// import { LotteryDashboardComponent } from "./shared/components/lottery-dashboard/lottery-dashboard.component";
 import { AmountPipe } from "./pipes/amount.pipe";
 import { HttpClientModule } from "@angular/common/http";
 import { RndComponent } from "./shared/components/rnd/rnd.component";
@@ -38,6 +38,7 @@ import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.co
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
 import { ForecastChartComponent } from "./charts/forecast-chart/forecast-chart.component";
 import { VltSDComponent } from "./shared/components/vlt-sd/vlt-sd.component";
+// import { LoginComponent } from "./login/login.component";
 import { ErrorInterceptor } from "./_helpers";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
@@ -48,9 +49,12 @@ import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
 import { AboutComponent } from "./about/about.component";
-import { AdminLoginModule } from "./admin-login/admin-login.module";
-import { DcformModuleModule } from './dcform-module/dcform-module.module';
-// import { LoginComponent } from "./login/login.component";
+import { LotteryDashboardComponent } from "./shared/components/lottery-dashboard/lottery-dashboard.component";
+import { LotteryDashboardModule } from "./CommonModules/lottery-dashboard/lottery-dashboard.module";
+import { LotteryServiceDeliveryModule } from "./CommonModules/lottery-service-delivery/lottery-service-delivery.module";
+import { LotterySystemDeliveryModule } from "./CommonModules/lottery-system-delivery/lottery-system-delivery.module";
+import { LotteryRnDModule } from "./CommonModules/lottery-rn-d/lottery-rn-d.module";
+import { LotteryGoLiveCalenderModule } from "./CommonModules/lottery-go-live-calender/lottery-go-live-calender.module";
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };
@@ -60,7 +64,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AppComponent,
     DashboardComponent,
     LotteryDashboardComponent,
-    AmountPipe,
+     AmountPipe,
     RndComponent,
     GameDashboardComponent,
     GameCustomerComponent,
@@ -86,6 +90,11 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AboutComponent,
   ],
   imports: [
+    LotteryDashboardModule,
+    LotteryServiceDeliveryModule,
+    LotterySystemDeliveryModule ,
+    LotteryRnDModule,
+    LotteryGoLiveCalenderModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -100,7 +109,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgbModule,
     StoreModule.forRoot({ data: DataReducer }),
     EffectsModule.forRoot([DataEffects]),
-    PerfectScrollbarModule,AdminLoginModule,DcformModuleModule
+    PerfectScrollbarModule,
   ],
   providers: [
     LoaderService,
