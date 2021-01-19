@@ -18,9 +18,10 @@ import { VltGoLiveComponent } from "./shared/components/vlt-go-live/vlt-go-live.
 import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.component";
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
 
-import { LoginComponent } from "./login/login.component";
-import { DcFormComponent } from "./dc-form/dc-form.component";
+// import { LoginComponent } from "./login/login.component";
+// import { DcFormComponent } from "./dc-form/dc-form.component";
 import { AuthGuard } from "./_helpers";
+// import { AdminLoginModule } from "./admin-login/admin-login.module"
 
 const routes: Routes = [
   {
@@ -98,9 +99,14 @@ const routes: Routes = [
     component: VltGoLiveComponent,
     canActivate: [AuthGuard],
   },
-  { path: "dcForm", component: DcFormComponent, canActivate: [AuthGuard] },
-  { path: "login", component: LoginComponent },
-
+  // { path: "dcForm", component: DcFormComponent, canActivate: [AuthGuard] },
+  // {
+  //   path: "login",
+  //   loadChildren: './admin-login/admin-login.module#AdminLoginModule'
+  // },
+  // { path:'login', loadChildren: () => import(`./admin-login/admin-login.module`).then(m => m.AdminLoginModule), canActivate: [AuthGuard] },
+  // { path: "login", component: LoginComponent },
+  { path: "dcForm", loadChildren: './dcform-module/dcform-module.module#DcformModuleModule', canActivate: [AuthGuard] },
   {
     path: "",
     redirectTo: "/home",
