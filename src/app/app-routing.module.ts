@@ -149,8 +149,15 @@ const routes: Routes = [
     component: VltGoLiveComponent,
     canActivate: [AuthGuard],
   },
-  { path: "dcForm", component: DcFormComponent, canActivate: [AuthGuard] },
-  { path: "login", component: LoginComponent },
+  {
+    path:"login",
+    loadChildren:'./CommonModules/login/login.module#LoginModule',
+  },
+  {
+    path:"dcForm",
+    loadChildren:'./CommonModules/dcform/dcform.module#DcformModule',
+    canActivate: [AuthGuard]
+  },
 
   {
     path: "",
