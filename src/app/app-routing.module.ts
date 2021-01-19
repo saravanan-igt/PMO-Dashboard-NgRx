@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { DashboardComponent } from "./shared/components/dashboard/dashboard.component";
-import { LotteryDashboardComponent } from "./shared/components/lottery-dashboard/lottery-dashboard.component";
+
 import { RndComponent } from "./shared/components/rnd/rnd.component";
 import { GameDashboardComponent } from "./shared/components/game-dashboard/game-dashboard.component";
 import { GameCustomerComponent } from "./shared/components/game-customer/game-customer.component";
@@ -21,6 +21,7 @@ import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.co
 import { LoginComponent } from "./login/login.component";
 import { DcFormComponent } from "./dc-form/dc-form.component";
 import { AuthGuard } from "./_helpers";
+import { LotteryDashboardComponent } from "./shared/components/lottery-dashboard/lottery-dashboard.component";
 
 const routes: Routes = [
   {
@@ -28,25 +29,65 @@ const routes: Routes = [
     component: DashboardComponent,
     canActivate: [AuthGuard],
   },
+  // {
+  //   path: "lotteryDashboard",
+  //   component: LotteryDashboardComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path:"lotteryDashboard",
+  //   loadChildren:'./lottery/lottery.module#LotteryModule',
+  //   canActivate: [AuthGuard]
+  // },
   {
-    path: "lotteryDashboard",
-    component: LotteryDashboardComponent,
-    canActivate: [AuthGuard],
+    path:"lotteryDashboard",
+    loadChildren:'./CommonModules/lottery-dashboard/lottery-dashboard.module#LotteryDashboardModule',
+    canActivate:[AuthGuard]
   },
+  // {
+  //   path: "lotterySd",
+  //   component: LotterySDComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path:"lotterySd",
+  //   loadChildren:'./system-delivery/system-delivery.module#SystemDeliveryModule',
+  //   canActivate: [AuthGuard]
+  // },
   {
-    path: "lotterySd",
-    component: LotterySDComponent,
-    canActivate: [AuthGuard],
+    path:"lotterySv",
+    loadChildren:'./CommonModules/lottery-service-delivery/lottery-service-delivery.module#LotteryServiceDeliveryModule',
+    canActivate:[AuthGuard]
   },
-  {
-    path: "lotterySv",
-    component: LotterySVComponent,
-    canActivate: [AuthGuard],
+  { 
+    path:"lotterySd",
+    loadChildren:"./CommonModules/lottery-system-delivery/lottery-system-delivery.module#LotterySystemDeliveryModule",
+    canActivate:[AuthGuard]
   },
+  // {
+  //   path: "lotterySv",
+  //   component: LotterySVComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path:"lotterySv",
+  //   loadChildren:'./service-delivery/service-delivery.module#ServiceDeliveryModule',
+  //   canActivate: [AuthGuard]
+  // },
+  // {
+  //   path: "rndDashboard",
+  //   component: RndComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path:"rndDashboard",
+  //   loadChildren:'./rand-d/rand-d.module#RandDModule',
+  //   canActivate: [AuthGuard],
+  // },
   {
-    path: "rndDashboard",
-    component: RndComponent,
-    canActivate: [AuthGuard],
+    path:"rndDashboard",
+    loadChildren:'./CommonModules/lottery-rn-d/lottery-rn-d.module#LotteryRnDModule',
+    canActivate:[AuthGuard]
   },
   {
     path: "gameDashboard",
@@ -63,9 +104,19 @@ const routes: Routes = [
     component: GameRndComponent,
     canActivate: [AuthGuard],
   },
+  // {
+  //   path: "goLive",
+  //   component: GoLiveComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path:"goLive",
+  //   loadChildren:'./golivecalender/golivecalender.module#GolivecalenderModule',
+  //   canActivate: [AuthGuard]
+  // },
   {
-    path: "goLive",
-    component: GoLiveComponent,
+    path:"goLive",
+    loadChildren:'./CommonModules/lottery-go-live-calender/lottery-go-live-calender.module#LotteryGoLiveCalenderModule',
     canActivate: [AuthGuard],
   },
   {
