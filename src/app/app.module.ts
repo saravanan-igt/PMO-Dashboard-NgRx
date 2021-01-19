@@ -38,21 +38,19 @@ import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.co
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
 import { ForecastChartComponent } from "./charts/forecast-chart/forecast-chart.component";
 import { VltSDComponent } from "./shared/components/vlt-sd/vlt-sd.component";
-import { LoginComponent } from "./login/login.component";
 import { ErrorInterceptor } from "./_helpers";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
 import { DataEffects } from "./Store/data.effects";
 import { DataReducer } from "./Store/data.reducer";
-import { DcFormComponent } from "./dc-form/dc-form.component";
+// import { DcFormComponent } from "./dc-form/dc-form.component";
 import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
 import { AboutComponent } from "./about/about.component";
 import { AdminLoginModule } from "./admin-login/admin-login.module";
-import { AdminLoginRoutingModule } from './admin-login/admin-login-routing.module';
 import { DcformModuleModule } from './dcform-module/dcform-module.module';
-import { DcformModuleRoutingModule } from './dcform-module/dcform-module-routing.module';
+// import { LoginComponent } from "./login/login.component";
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };
@@ -83,8 +81,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     LotterySVComponent,
     ForecastChartComponent,
     VltSDComponent,
-    LoginComponent,
-    DcFormComponent,
+    // LoginComponent,
+    // DcFormComponent,
     AboutComponent,
   ],
   imports: [
@@ -102,7 +100,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgbModule,
     StoreModule.forRoot({ data: DataReducer }),
     EffectsModule.forRoot([DataEffects]),
-    PerfectScrollbarModule,AdminLoginModule, AdminLoginRoutingModule, DcformModuleRoutingModule,DcformModuleModule
+    PerfectScrollbarModule,AdminLoginModule,DcformModuleModule
   ],
   providers: [
     LoaderService,

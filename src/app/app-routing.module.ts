@@ -100,10 +100,10 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   // { path: "dcForm", component: DcFormComponent, canActivate: [AuthGuard] },
-  {
-    path: "login",
-    loadChildren: './admin-login/admin-login.module#AdminLoginModule', canActivate: [AuthGuard]
-  },
+  // {
+  //   path: "login",
+  //   loadChildren: './admin-login/admin-login.module#AdminLoginModule', canActivate: [AuthGuard]
+  // },
   // { path:'login', loadChildren: () => import(`./admin-login/admin-login.module`).then(m => m.AdminLoginModule), canActivate: [AuthGuard] },
   // { path: "login", component: LoginComponent },
   { path: "dcForm", loadChildren: './dcform-module/dcform-module.module#DcformModuleModule', canActivate: [AuthGuard] },
