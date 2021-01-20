@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LotterySVComponent } from 'src/app/shared/components/lottery-sv/lottery-sv.component';
+import { LotterySVComponent } from './lottery-sv.component';
 
 
 const routes: Routes = [
-  {path:'lotterySv',
+  {path:'',
 component:LotterySVComponent}
 ];
 

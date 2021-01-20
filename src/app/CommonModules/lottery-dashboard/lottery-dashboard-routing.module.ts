@@ -4,7 +4,7 @@ import { LotteryDashboardComponent } from './lottery-dashboard.component';
 
 
 const routes: Routes = [
-  {path:'lotteryDashboard',
+  {path:'',
   component:LotteryDashboardComponent}
 ];
 

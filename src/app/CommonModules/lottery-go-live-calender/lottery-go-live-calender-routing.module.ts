@@ -5,7 +5,7 @@ import { GoLiveComponent } from './go-live.component';
 
 const routes: Routes = [
   {
-    path:'goLive',
+    path:'',
     component:GoLiveComponent
   }
 ];

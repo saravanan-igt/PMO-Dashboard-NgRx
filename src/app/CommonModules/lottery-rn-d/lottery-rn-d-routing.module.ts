@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RndComponent } from 'src/app/shared/components/rnd/rnd.component';
+import { RndComponent } from './rnd.component';
 
 
 const routes: Routes = [
   {
-    path:'rndDashboard',
+    path:'',
     component:RndComponent
   }
 ];

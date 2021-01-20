@@ -34,21 +34,21 @@ const routes: Routes = [
     loadChildren: () => import('./CommonModules/lottery-dashboard/lottery-dashboard.module').then(m => m.LotteryDashboardModule),
     canActivate:[AuthGuard]
   },
-  // {
-  //   path:"lotterySv",
-  //   loadChildren:'./CommonModules/lottery-service-delivery/lottery-service-delivery.module#LotteryServiceDeliveryModule',
-  //   canActivate:[AuthGuard]
-  // },
-  // { 
-  //   path:"lotterySd",
-  //   loadChildren:"./CommonModules/lottery-system-delivery/lottery-system-delivery.module#LotterySystemDeliveryModule",
-  //   canActivate:[AuthGuard]
-  // },
-  // {
-  //   path:"rndDashboard",
-  //   loadChildren:'./CommonModules/lottery-rn-d/lottery-rn-d.module#LotteryRnDModule',
-  //   canActivate:[AuthGuard]
-  // },
+  {
+    path:"lotterySv",
+    loadChildren: () => import('./CommonModules/lottery-service-delivery/lottery-service-delivery.module').then(m => m.LotteryServiceDeliveryModule),
+    canActivate:[AuthGuard]
+  },
+  { 
+    path:"lotterySd",
+    loadChildren: () => import('./CommonModules/lottery-system-delivery/lottery-system-delivery.module').then(m => m.LotterySystemDeliveryModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"rndDashboard",
+    loadChildren: () => import('./CommonModules/lottery-rn-d/lottery-rn-d.module').then(m => m.LotteryRnDModule),
+    canActivate:[AuthGuard]
+  },
   // {
   //   path: "gameDashboard",
   //   component: GameDashboardComponent,
