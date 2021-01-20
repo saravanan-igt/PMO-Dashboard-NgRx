@@ -48,6 +48,9 @@ import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
 import { AboutComponent } from "./about/about.component";
+import { TestModule } from "projects/calendar/src/lib/test/test.module";
+import { CalendarModule } from "projects/calendar/src/libraries";
+import { GoogleMapsModule } from '@angular/google-maps'
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -84,7 +87,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AboutComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule ,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
@@ -99,6 +102,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     StoreModule.forRoot({ data: DataReducer }),
     EffectsModule.forRoot([DataEffects]),
     PerfectScrollbarModule,
+    TestModule,CalendarModule,GoogleMapsModule
+    
   ],
   providers: [
     LoaderService,
@@ -113,4 +118,4 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   bootstrap: [AppComponent],
   entryComponents: [AboutComponent],
 })
-export class AppModule {}
+export class AppModule { }

@@ -17,6 +17,7 @@
     "@angular/compiler": "~8.2.9",
     "@angular/core": "~8.2.9",
     "@angular/forms": "~8.2.9",
+    "@angular/google-maps": "^11.0.4",
     "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.9",
     "@angular/platform-browser-dynamic": "~8.2.9",
@@ -25,6 +26,7 @@
     "@ngrx/effects": "^9.2.0",
     "@ngrx/store": "^9.2.0",
     "@syncfusion/ej2-angular-richtexteditor": "^18.2.46",
+    "@types/googlemaps": "^3.43.2",
     "angular-particle": "^1.0.4",
     "bootstrap": "^4.5.0",
     "compressed-json": "^1.0.15",
@@ -39,6 +41,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.803.20",
+    "@angular-devkit/build-ng-packagr": "~0.803.20",
     "@angular/cli": "8.3.20",
     "@angular/compiler-cli": "~8.2.9",
     "@angular/language-service": "~8.2.9",
@@ -54,9 +57,11 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "ng-packagr": "^5.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "^3.5.3"
   }
 }

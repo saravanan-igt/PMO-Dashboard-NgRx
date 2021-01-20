@@ -17,7 +17,27 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "calendar": [
+        "dist/calendar"
+      ],
+      "calendar/*": [
+        "dist/calendar/*"
+      ],
+      "charts": [
+        "dist/charts"
+      ],
+      "charts/*": [
+        "dist/charts/*"
+      ],
+      "google-maps": [
+        "dist/google-maps"
+      ],
+      "google-maps/*": [
+        "dist/google-maps/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
