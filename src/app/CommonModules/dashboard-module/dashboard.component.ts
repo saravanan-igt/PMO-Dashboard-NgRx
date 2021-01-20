@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
-import DataState from "../../../Store/data.state";
+import DataState from "../../Store/data.state";
 
 @Component({
   selector: "app-dashboard",

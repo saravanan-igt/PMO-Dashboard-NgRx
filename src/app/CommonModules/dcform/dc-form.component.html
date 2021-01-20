@@ -1,0 +1,1444 @@
+<div class="container-fluid">
+  <!-- <div class="row">
+    <div class="col-md-6">
+      <h2 class="page-title">{{ pageTitle }}</h2>
+    </div>
+    <div class="col-md-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ pageTitle }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col-12">
+      <mat-card class="form-card pt-1" *ngIf="DataLists">
+        <mat-card-header>
+          <mat-card-title class="form-card-title">
+            {{ pageTitle }}
+          </mat-card-title>
+          <mat-card-actions>
+            <div class="switch-toggle">
+              <span class="switcher switcher-1" [ngClass]="{'checked': isChecked, 'unchecked':!isChecked}">
+                <input
+                  type="checkbox"
+                  [(ngModel)]="isChecked"
+                  (change)="checkValue(isChecked)"
+                  id="switcher-1"
+                />
+                <label for="switcher-1"></label>
+              </span>
+            </div>
+          </mat-card-actions>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <div class="control-section">
+            <div class="content-wrapper">
+              <div id="content" class="box-form">
+                <form [formGroup]="rteForm" (ngSubmit)="onSubmit()">
+                  <div class="row help-form-cantainer">
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Total Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdProject.invalid &&
+                            rteForm.controls.pdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.pdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Lottery Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdLotProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdLotProject.invalid &&
+                            rteForm.controls.pdLotProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.pdLotProject.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Casino Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdCasProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdCasProject.invalid &&
+                            rteForm.controls.pdCasProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.pdCasProject.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard VLT Projects</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdVltProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdVltProject.invalid &&
+                            rteForm.controls.pdVltProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.pdVltProject.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Budget</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdBudget"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdBudget.invalid &&
+                            rteForm.controls.pdBudget.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.pdBudget.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard Forecast</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdForecast"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdForecast.invalid &&
+                            rteForm.controls.pdForecast.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.pdForecast.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Portfolio Dashboard RAG</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdRAG"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdRAG.invalid &&
+                            rteForm.controls.pdRAG.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div *ngIf="rteForm.controls.pdRAG.errors.required">
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Portfolio Dashboard Go Live Caelndar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="pdGoLIve"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.pdGoLIve.invalid &&
+                            rteForm.controls.pdGoLIve.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.pdGoLIve.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Project
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="ldProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.ldProject.invalid &&
+                            rteForm.controls.ldProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.ldProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Budget
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="ldBudget"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.ldBudget.invalid &&
+                            rteForm.controls.ldBudget.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.ldBudget.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Forecast
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="ldForecast"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.ldForecast.invalid &&
+                            rteForm.controls.ldForecast.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.ldForecast.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard RAG
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="ldRAG"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.ldRAG.invalid &&
+                            rteForm.controls.ldRAG.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div *ngIf="rteForm.controls.ldRAG.errors.required">
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Dashboard Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="ldGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.ldGoLive.invalid &&
+                            rteForm.controls.ldGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.ldGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery SV Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsvProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsvProject.invalid &&
+                            rteForm.controls.lsvProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lsvProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Lottery SV Project Listing</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsvProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsvProjectList.invalid &&
+                            rteForm.controls.lsvProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.lsvProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title"
+                        >Lottery SV Go Live Calendar</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsvGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsvGoLive.invalid &&
+                            rteForm.controls.lsvGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lsvGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery SD Project Details
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsdProject.invalid &&
+                            rteForm.controls.lsdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lsdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery SD Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsdProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsdProjectList.invalid &&
+                            rteForm.controls.lsdProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.lsdProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery SD Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsdGoLive.invalid &&
+                            rteForm.controls.lsdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lsdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery R&D Project Details
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lrdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lrdProject.invalid &&
+                            rteForm.controls.lrdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lrdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery R&D Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lrdProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lrdProjectList.invalid &&
+                            rteForm.controls.lrdProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.lrdProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery R&D Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lrdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lrdGoLive.invalid &&
+                            rteForm.controls.lrdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lrdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Lottery Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lotGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lotGoLive.invalid &&
+                            rteForm.controls.lotGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lotGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino Dashboard Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="cdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.cdProject.invalid &&
+                            rteForm.controls.cdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.cdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino Dashboard Budget
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="cdBudget"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.cdBudget.invalid &&
+                            rteForm.controls.cdBudget.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.cdBudget.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino Dashboard Forecast
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="cdForecast"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.cdForecast.invalid &&
+                            rteForm.controls.cdForecast.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.cdForecast.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino Dashboard RAG
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="cdRAG"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.cdRAG.invalid &&
+                            rteForm.controls.cdRAG.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div *ngIf="rteForm.controls.cdRAG.errors.required">
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Casino Dashboard Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="cdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.cdGoLive.invalid &&
+                            rteForm.controls.cdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.cdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino SD Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="csdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.csdProject.invalid &&
+                            rteForm.controls.csdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.csdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino SD Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="csdProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.csdProjectList.invalid &&
+                            rteForm.controls.csdProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.csdProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Casino SD Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="csdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.csdGoLive.invalid &&
+                            rteForm.controls.csdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.csdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino R&D Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="crdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.crdProject.invalid &&
+                            rteForm.controls.crdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.crdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        Casino R&D Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="crdProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.crdProjectList.invalid &&
+                            rteForm.controls.crdProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.crdProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Casino R&D Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="crdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.crdGoLive.invalid &&
+                            rteForm.controls.crdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.crdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        Casino Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="casGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.casGoLive.invalid &&
+                            rteForm.controls.casGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.casGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT Dashboard Project
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vdProject.invalid &&
+                            rteForm.controls.vdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT Dashboard Budget
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vdBudget"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vdBudget.invalid &&
+                            rteForm.controls.vdBudget.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vdBudget.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT Dashboard Forecast
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vdForecast"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vdForecast.invalid &&
+                            rteForm.controls.vdForecast.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vdForecast.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT Dashboard RAG
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vdRAG"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vdRAG.invalid &&
+                            rteForm.controls.vdRAG.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div *ngIf="rteForm.controls.vdRAG.errors.required">
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        VLT Dashboard Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vdGoLive.invalid &&
+                            rteForm.controls.vdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT SV Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vsvProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vsvProject.invalid &&
+                            rteForm.controls.vsvProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vsvProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT SV Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vsvProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vsvProjectList.invalid &&
+                            rteForm.controls.vsvProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.vsvProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        VLT SV Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vsvGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vsvGoLive.invalid &&
+                            rteForm.controls.vsvGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vsvGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT SD Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vsdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vsdProject.invalid &&
+                            rteForm.controls.vsdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vsdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT SD Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vsdProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vsdProjectList.invalid &&
+                            rteForm.controls.vsdProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.vsdProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        VLT SD Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vsdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vsdGoLive.invalid &&
+                            rteForm.controls.vsdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vsdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT R&D Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vrdProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vrdProject.invalid &&
+                            rteForm.controls.vrdProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vrdProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
+                        VLT R&D Project Listing
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vrdProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vrdProjectList.invalid &&
+                            rteForm.controls.vrdProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.vrdProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        VLT R&D Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vrdGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vrdGoLive.invalid &&
+                            rteForm.controls.vrdGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vrdGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title">
+                        VLT Go Live Calendar
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="vltGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.vltGoLive.invalid &&
+                            rteForm.controls.vltGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.vltGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <mat-divider></mat-divider>
+                  <div class="text-center pt-2">
+                    <button
+                      mat-raised-button
+                      color="primary"
+                      type="submit"
+                      [disabled]="!isChecked"
+                    >
+                      Submit
+                    </button>
+                    <!-- <button
+                      type="reset"
+                      mat-raised-button
+                      (click)="rteForm.reset()"
+                      style="margin-left: 10px;"
+                    >
+                      Reset
+                    </button> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- <form [formGroup]="updateTextForm" (submit)="submit()">
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label> Portfolio Dashboard Project details </mat-label>
+              <textarea matInput formControlName="updateText"></textarea>
+              
+              <mat-error
+                *ngIf="
+                  updateTextForm.controls.updateText.touched &&
+                  updateTextForm.controls.updateText.invalid
+                "
+              >
+                <span
+                  *ngIf="updateTextForm.controls.updateText.errors.required"
+                >
+                  This field is mandatory.
+                </span>
+              </mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">
+              Submit
+            </button>
+          </form> -->
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

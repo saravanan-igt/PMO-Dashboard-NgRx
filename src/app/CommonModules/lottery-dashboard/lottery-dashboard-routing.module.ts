@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LotteryDashboardComponent } from 'src/app/shared/components/lottery-dashboard/lottery-dashboard.component';
+import { LotteryDashboardComponent } from './lottery-dashboard.component';
 
 
 const routes: Routes = [

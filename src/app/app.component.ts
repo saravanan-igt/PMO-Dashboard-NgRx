@@ -17,7 +17,7 @@ import DataState from "./Store/data.state";
 import { PageLoaderService } from "./services/page-loader.service";
 import { map } from "rxjs/operators";
 import { MatDialog } from "@angular/material/dialog";
-import { AboutComponent } from "./about/about.component";
+// import { AboutComponent } from "./about/about.component";
 import { CommonService } from "./services/common.service";
 @Component({
   selector: "app-root",
@@ -92,14 +92,14 @@ export class AppComponent implements OnInit {
     this.router.navigate(["/dcForm"]);
   }
 
-  openDialog($event) {
-    $event.preventDefault();
-    const dialogRef = this.dialog.open(AboutComponent);
+  // openDialog($event) {
+  //   $event.preventDefault();
+  //   const dialogRef = this.dialog.open(AboutComponent);
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
+  //   dialogRef.afterClosed().subscribe((result) => {
+  //     console.log(`Dialog result: ${result}`);
+  //   });
+  // }
 
   ngOnInit() {
     if (window.innerWidth <= 768) {

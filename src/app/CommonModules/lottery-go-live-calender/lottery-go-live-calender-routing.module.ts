@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GoLiveComponent } from 'src/app/shared/components/go-live/go-live.component';
+import { GoLiveComponent } from './go-live.component';
 
 
 const routes: Routes = [

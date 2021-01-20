@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DcFormComponent } from "../../dc-form/dc-form.component";
+import { DcFormComponent } from "./dc-form.component";
 
 const routes: Routes = [
   {path:'',
