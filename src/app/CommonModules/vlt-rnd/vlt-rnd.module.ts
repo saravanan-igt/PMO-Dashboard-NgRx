@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { LotteryGoLiveCalenderRoutingModule } from './lottery-go-live-calender-routing.module';
+import{vltRndRoutingModule} from'./vlt-rnd-routing.module';
+import { RouterModule } from '@angular/router';
 import {CommonShareModule} from '../common-share/common-share.module';
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    LotteryGoLiveCalenderRoutingModule,
+    vltRndRoutingModule,
+    RouterModule,
     CommonShareModule
   ]
 })
-export class LotteryGoLiveCalenderModule { }
+export class VltRndModule { }

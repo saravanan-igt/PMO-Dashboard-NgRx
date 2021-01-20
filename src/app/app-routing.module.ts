@@ -89,6 +89,55 @@ const routes: Routes = [
     loadChildren:'./CommonModules/lottery-rn-d/lottery-rn-d.module#LotteryRnDModule',
     canActivate:[AuthGuard]
   },
+
+  {path: 'game-dashboard', 
+  loadChildren: () => import('./CommonModules/casino-dashboard/casino-dashboard.module').then(m => m.CasinoDashboardModule),
+  canActivate:[AuthGuard],
+  },
+
+{path: 'game-go-live', 
+loadChildren: () => import('./CommonModules/casino-go-live/casino-go-live.module').then(m => m.CasinoGoLiveModule),
+canActivate:[AuthGuard],
+},
+
+{path: 'game-rnd', 
+loadChildren: () => import('./CommonModules/casino-rnd/casino-rnd.module').then(m => m.CasinoRndModule),
+canActivate:[AuthGuard],
+},
+
+{path: 'game-customer', 
+loadChildren: () => import('./CommonModules/casino-sd/casino-sd.module').then(m => m.CasinoSdModule),
+canActivate:[AuthGuard],
+},
+
+
+{path: 'vlt-customer', 
+loadChildren: () => import('./CommonModules/vlt-customer/vlt-customer.module').then(m => m.VltCustomerModule),
+canActivate:[AuthGuard],
+},
+
+{path: 'vlt-dashboard', 
+loadChildren: () => import('./CommonModules/vlt-dashboard/vlt-dashboard.module').then(m => m.VltDashboardModule),
+canActivate:[AuthGuard],
+},
+
+{path: 'vlt-go-live', 
+loadChildren: () => import('./CommonModules/vlt-go-live/vlt-go-live.module').then(m => m.VltGoLiveModule),
+canActivate:[AuthGuard],
+},
+
+{path: 'vlt-rnd', 
+loadChildren: () => import('./CommonModules/vlt-rnd/vlt-rnd.module').then(m => m.VltRndModule),
+canActivate:[AuthGuard],
+},
+
+{path: 'vlt-sv', 
+loadChildren: () => import('./CommonModules/vlt-sd/vlt-sd.module').then(m => m.VltSdModule),
+canActivate:[AuthGuard],
+},
+
+
+  /*
   {
     path: "gameDashboard",
     component: GameDashboardComponent,
@@ -104,6 +153,7 @@ const routes: Routes = [
     component: GameRndComponent,
     canActivate: [AuthGuard],
   },
+  */
   // {
   //   path: "goLive",
   //   component: GoLiveComponent,
@@ -119,7 +169,7 @@ const routes: Routes = [
     loadChildren:'./CommonModules/lottery-go-live-calender/lottery-go-live-calender.module#LotteryGoLiveCalenderModule',
     canActivate: [AuthGuard],
   },
-  {
+ /*{
     path: "gameGoLive",
     component: GamingGoLiveComponent,
     canActivate: [AuthGuard],
@@ -149,6 +199,7 @@ const routes: Routes = [
     component: VltGoLiveComponent,
     canActivate: [AuthGuard],
   },
+  */
   {
     path:"login",
     loadChildren:'./CommonModules/login/login.module#LoginModule',
