@@ -76,10 +76,10 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
-    this.drawer.toggle();
+    // this.drawer.toggle();
     this.authenticationService.logout();
     this.router.navigate(["/login"]);
-    window.location.reload();
+    // window.location.reload();
   }
 
   toggleLeftNav() {
