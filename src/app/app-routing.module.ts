@@ -49,6 +49,56 @@ const routes: Routes = [
     loadChildren: () => import('./CommonModules/lottery-rn-d/lottery-rn-d.module').then(m => m.LotteryRnDModule),
     canActivate:[AuthGuard]
   },
+  {
+    path:"gameDashboard",
+    loadChildren: () => import('./CommonModules/casino-dashboard/casino-dashboard.module').then(m => m.CasinoDashboardModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"gameCustomer",
+    loadChildren: () => import('./CommonModules/casino-customer/casino-customer.module').then(m => m.CasinoCustomerModule),
+    canActivate:[AuthGuard]
+  },
+
+  {
+    path:"gameRnd",
+    loadChildren: () => import('./CommonModules/casino-rnd/casino-rnd.module').then(m => m.CasinoRndModule),
+    canActivate:[AuthGuard]
+  },
+  
+  {
+    path:"gameGoLive",
+    loadChildren: () => import('./CommonModules/casino-go-live/casino-go-live.module').then(m => m.CasinoGoLiveModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"vltDashboard",
+    loadChildren: () => import('./CommonModules/vlt-dashboard/vlt-dashboard.module').then(m => m.VltDashboardModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"vltCustomer",
+    loadChildren: () => import('./CommonModules/vlt-customer/vlt-customer.module').then(m => m.VltCustomerModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"vltRnd",
+    loadChildren: () => import('./CommonModules/vlt-rnd/vlt-rnd.module').then(m => m.VltRndModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"vltGoLive",
+    loadChildren: () => import('./CommonModules/vlt-go-live/vlt-go-live.module').then(m => m.VltGoLiveModule),
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"vltSv",
+    loadChildren: () => import('./CommonModules/vlt-sd/vlt-sd.module').then(m => m.VltSdModule),
+    canActivate:[AuthGuard]
+  },
+
+
+
   // {
   //   path: "gameDashboard",
   //   component: GameDashboardComponent,
