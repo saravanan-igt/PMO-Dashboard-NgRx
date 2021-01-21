@@ -20,7 +20,6 @@ export class ErrorInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     return next.handle(request).pipe(
       catchError((err) => {
-        console.log("err", err);
         if (err.status === 401 || err.status === 0) {
           // auto logout if 401 response returned from api
           this.authenticationService.logout();
@@ -28,7 +27,6 @@ export class ErrorInterceptor implements HttpInterceptor {
         }
         let errMessage =
           err.error.message === undefined ? "Login Failed" : err.error.message;
-        console.log("errMessage", errMessage);
         const error =
           errMessage + ". Invalid Username or Password." || err.statusText;
         return throwError(error);

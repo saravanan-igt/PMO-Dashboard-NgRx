@@ -23,7 +23,6 @@ const reducer = createReducer(
     return { ...state, Data: [...state.Data, payload], DataError: null };
   }),
   on(DataActions.ErrorDataAction, (state: DataState, error: Error) => {
-    console.log(error);
     return { ...state, DataError: error };
   })
 );

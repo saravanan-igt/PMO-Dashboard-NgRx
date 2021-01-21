@@ -3,7 +3,7 @@ import { LoaderService } from "../../services/loader.service";
 import { PageLoaderService } from "../../services/page-loader.service";
 import { combineLatest } from "rxjs";
 import { map } from "rxjs/operators";
-
+import { Router, RouterModule, NavigationEnd   } from "@angular/router";
 @Component({
   selector: "app-loader",
   templateUrl: "./loader.component.html",
@@ -13,7 +13,7 @@ export class LoaderComponent implements OnInit {
   loading: boolean;
   constructor(
     private loaderService: LoaderService,
-    private pageLoaderService: PageLoaderService
+    private pageLoaderService: PageLoaderService,private router: Router
   ) {
     // this.loaderService.isLoading.subscribe((v) => {
     //   this.loading = v;
@@ -31,13 +31,15 @@ export class LoaderComponent implements OnInit {
         })
       )
       .subscribe((res) => {
-        if (res.first === true || res.second === true) {
+        if ((res.first === true || res.second === true)) {
           this.loading = true;
-        } else {
+        }
+         else {
           this.loading = false;
         }
       });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 }

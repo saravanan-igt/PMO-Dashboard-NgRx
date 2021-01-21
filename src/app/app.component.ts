@@ -76,10 +76,8 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
-    // this.drawer.toggle();
     this.authenticationService.logout();
     this.router.navigate(["/login"]);
-    // window.location.reload();
   }
 
   toggleLeftNav() {
@@ -97,7 +95,6 @@ export class AppComponent implements OnInit {
     const dialogRef = this.dialog.open(AboutComponent);
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
     });
   }
 
@@ -113,7 +110,6 @@ export class AppComponent implements OnInit {
           this.lastUpdatedDate = data.Data[2].sd.projects.active.length
             ? data.Data[2].sd.projects.active[0].LastUpdatedDate
             : data.Data[0].customer.projectList.Active[0].LastUpdatedDate;
-          console.log("this.lastUpdatedDate", this.lastUpdatedDate);
         }
       });
     }

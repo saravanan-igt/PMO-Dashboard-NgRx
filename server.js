@@ -23,14 +23,10 @@ function sendJsonResult(res, obj) {
 app.post('/authenticate', (req, res) => {
 	var params = req.body;
 	//request.post({url:'http://service.com/upload', form: {key:'value'}}, function(err,httpResponse,body){ /* ... */ })
-	console.log('params',params);
 	request.post({
         url: 'http://10.2.230.128/IGTPMODashboard/api/values/login',
         form: params
     }, function (error, response, body) {
-        
-		console.log('body',body);
-		console.log('error',error);
 		//sendJsonResult(res, response);
     });
 	return res.send('Received a POST HTTP method');
