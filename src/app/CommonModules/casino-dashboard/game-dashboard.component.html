@@ -1,0 +1,175 @@
+<div class="container-fluid" *ngIf="gameProjectData">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="page-title">{{ pageTitle }}</h2>
+      </div>
+      <div class="col-md-6">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              {{ pageTitle }}
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="row info-container">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn text-white"
+        [ngbPopover]="projectContent"
+      >
+        <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      </button>
+      <ng-template #projectContent>
+        <div [innerHTML]="helpText.cdProject"></div>
+      </ng-template>
+      <div class="col-md-4">
+        <app-project-category
+          chartTitle="Total Projects"
+          [data]="totalProjectsData"
+        ></app-project-category>
+      </div>
+      <div class="col-md-4">
+        <app-project-category
+          chartTitle="System Delivery Projects"
+          [data]="customerProjectsData"
+        ></app-project-category>
+      </div>
+      <div class="col-md-4">
+        <app-project-category
+          chartTitle="R & D Projects"
+          [data]="rndProjectsData"
+        ></app-project-category>
+      </div>
+    </div>
+  
+    <div class="row mt-4 info-container">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn"
+        [ngbPopover]="budgetContent"
+        placement="right"
+      >
+        <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      </button>
+      <ng-template #budgetContent>
+        <div [innerHTML]="helpText.cdBudget"></div>
+      </ng-template>
+      <div class="col-md-5 mb-4">
+        <app-budget-chart
+          chartTitle="Casino Budget"
+          [data]="totalBudgetData"
+          height="250"
+        ></app-budget-chart>
+      </div>
+  
+      <div class="col-md-7 mb-4">
+        <app-budget-bar-chart
+          chartTitle="Casino Budget Portfolio"
+          [seriesData]="budgetSeriesData"
+          yAxisName=""
+          [xAxisData]="xAxisData"
+        ></app-budget-bar-chart>
+      </div>
+    </div>
+  
+    <div class="row info-container">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn"
+        [ngbPopover]="forecastContent"
+      >
+        <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      </button>
+      <ng-template #forecastContent>
+        <div [innerHTML]="helpText.cdForecast"></div>
+      </ng-template>
+      <div class="col-12 mb-4">
+        <app-forecast-chart
+          [seriesData]="forecastSeriesData"
+          yAxisName=""
+          [xAxisData]="forecastLegend"
+          [gridLeft]="'10%'"
+          chartTitle="Casino"
+        ></app-forecast-chart>
+      </div>
+    </div>
+  
+    <div class="row info-container">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn"
+        [ngbPopover]="ragContent"
+      >
+        <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      </button>
+      <ng-template #ragContent>
+        <div [innerHTML]="helpText.cdRAG"></div>
+      </ng-template>
+      <div class="col-md-4">
+        <!-- (onChartEvent)="chartEvent($event)" -->
+        <app-budget-chart
+          chartTitle="Casino Projects RAG Status"
+          [data]="totalRiskData"
+          [labelFormatter]="'{c}'"
+          [totalText]="false"
+          [color]="[
+            'rgba(255,91,86,0.85)',
+            'rgba(245,156,26,0.85)',
+            'rgba(0,191,165,0.85)'
+          ]"
+          height="250"
+        ></app-budget-chart>
+      </div>
+      <div class="col-md-8">
+        <app-budget-bar-chart
+          chartTitle="Casino Projects Risk Profile"
+          [seriesData]="riskProfileData"
+          [labelFormatter]="'{c}'"
+          [yAxisFormat]="'{value}'"
+          [color]="[
+            'rgba(255,91,86,0.85)',
+            'rgba(245,156,26,0.85)',
+            'rgba(0,191,165,0.85)'
+          ]"
+          yAxisName="No. of Projects"
+          [xAxisData]="xAxisData"
+        ></app-budget-bar-chart>
+      </div>
+    </div>
+  
+    <div class="row mt-4 info-container">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn"
+        [ngbPopover]="goliveContent"
+      >
+        <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      </button>
+      <ng-template #goliveContent>
+        <div [innerHTML]="helpText.cdGoLive"></div>
+      </ng-template>
+      <div class="col-12">
+        <!-- [ragState]="ragState" -->
+        <app-go-live-calendar
+          [scheduleData]="calendarData"
+          [calendarTitle]="'Casino Go-Live Calendar'"
+          [ragFilter]="true"
+          [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
+        ></app-go-live-calendar>
+      </div>
+    </div>
+  </div>
+  

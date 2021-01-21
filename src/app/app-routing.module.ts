@@ -3,17 +3,17 @@ import { Routes, RouterModule } from "@angular/router";
 import { DashboardComponent } from "./shared/components/dashboard/dashboard.component";
 
 import { RndComponent } from "./shared/components/rnd/rnd.component";
-import { GameDashboardComponent } from "./shared/components/game-dashboard/game-dashboard.component";
-import { GameCustomerComponent } from "./shared/components/game-customer/game-customer.component";
-import { GameRndComponent } from "./shared/components/game-rnd/game-rnd.component";
+import { GameDashboardComponent } from "./CommonModules/casino-dashboard/game-dashboard.component";
+import { GameCustomerComponent } from "./CommonModules/casino-sd/game-customer.component";
+import { GameRndComponent } from "./CommonModules/casino-rnd/game-rnd.component";
 import { GoLiveComponent } from "./shared/components/go-live/go-live.component";
-import { GamingGoLiveComponent } from "./shared/components/gaming-go-live/gaming-go-live.component";
+import { GamingGoLiveComponent } from "./CommonModules/casino-go-live/gaming-go-live.component";
 
-import { VltDashboardComponent } from "./shared/components/vlt-dashboard/vlt-dashboard.component";
-import { VltCustomerComponent } from "./shared/components/vlt-customer/vlt-customer.component";
-import { VltRndComponent } from "./shared/components/vlt-rnd/vlt-rnd.component";
-import { VltSDComponent } from "./shared/components/vlt-sd/vlt-sd.component";
-import { VltGoLiveComponent } from "./shared/components/vlt-go-live/vlt-go-live.component";
+import { VltDashboardComponent } from "./CommonModules/vlt-dashboard/vlt-dashboard.component";
+import { VltCustomerComponent } from "./CommonModules/vlt-customer/vlt-customer.component";
+import { VltRndComponent } from "./CommonModules/vlt-rnd/vlt-rnd.component";
+import { VltSDComponent } from "./CommonModules/vlt-sd/vlt-sd.component";
+import { VltGoLiveComponent } from "./CommonModules/vlt-go-live/vlt-go-live.component";
 
 import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.component";
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
@@ -39,11 +39,13 @@ const routes: Routes = [
   //   loadChildren:'./lottery/lottery.module#LotteryModule',
   //   canActivate: [AuthGuard]
   // },
-  {
-    path:"lotteryDashboard",
-    loadChildren:'./CommonModules/lottery-dashboard/lottery-dashboard.module#LotteryDashboardModule',
-    canActivate:[AuthGuard]
-  },
+
+
+  //{
+   // path:"lotteryDashboard",
+    //loadChildren:'./CommonModules/lottery-dashboard/lottery-dashboard.module#LotteryDashboardModule',
+    //canActivate:[AuthGuard]
+  //},
   // {
   //   path: "lotterySd",
   //   component: LotterySDComponent,
@@ -54,6 +56,9 @@ const routes: Routes = [
   //   loadChildren:'./system-delivery/system-delivery.module#SystemDeliveryModule',
   //   canActivate: [AuthGuard]
   // },
+
+
+  /*
   {
     path:"lotterySv",
     loadChildren:'./CommonModules/lottery-service-delivery/lottery-service-delivery.module#LotteryServiceDeliveryModule',
@@ -64,6 +69,8 @@ const routes: Routes = [
     loadChildren:"./CommonModules/lottery-system-delivery/lottery-system-delivery.module#LotterySystemDeliveryModule",
     canActivate:[AuthGuard]
   },
+  */
+
   // {
   //   path: "lotterySv",
   //   component: LotterySVComponent,
@@ -84,17 +91,21 @@ const routes: Routes = [
   //   loadChildren:'./rand-d/rand-d.module#RandDModule',
   //   canActivate: [AuthGuard],
   // },
+
+  /*
   {
     path:"rndDashboard",
     loadChildren:'./CommonModules/lottery-rn-d/lottery-rn-d.module#LotteryRnDModule',
     canActivate:[AuthGuard]
   },
+  */
 
   {path: 'game-dashboard', 
   loadChildren: () => import('./CommonModules/casino-dashboard/casino-dashboard.module').then(m => m.CasinoDashboardModule),
   canActivate:[AuthGuard],
   },
 
+  /*
 {path: 'game-go-live', 
 loadChildren: () => import('./CommonModules/casino-go-live/casino-go-live.module').then(m => m.CasinoGoLiveModule),
 canActivate:[AuthGuard],
@@ -135,6 +146,7 @@ canActivate:[AuthGuard],
 loadChildren: () => import('./CommonModules/vlt-sd/vlt-sd.module').then(m => m.VltSdModule),
 canActivate:[AuthGuard],
 },
+*/
 
 
   /*
@@ -164,11 +176,12 @@ canActivate:[AuthGuard],
   //   loadChildren:'./golivecalender/golivecalender.module#GolivecalenderModule',
   //   canActivate: [AuthGuard]
   // },
-  {
+ /* {
     path:"goLive",
     loadChildren:'./CommonModules/lottery-go-live-calender/lottery-go-live-calender.module#LotteryGoLiveCalenderModule',
     canActivate: [AuthGuard],
   },
+  */
  /*{
     path: "gameGoLive",
     component: GamingGoLiveComponent,
@@ -200,15 +213,19 @@ canActivate:[AuthGuard],
     canActivate: [AuthGuard],
   },
   */
+  
   {
     path:"login",
     loadChildren:'./CommonModules/login/login.module#LoginModule',
   },
+  /*
   {
     path:"dcForm",
     loadChildren:'./CommonModules/dcform/dcform.module#DcformModule',
     canActivate: [AuthGuard]
   },
+  */
+  
 
   {
     path: "",
