@@ -28,12 +28,17 @@
       <div [innerHTML]="helpText.lotGoLive"></div>
     </ng-template>
     <div class="col-12">
-      <app-go-live-calendar
+      <!-- <app-go-live-calendar
         [calendarTitle]="'Lottery Projects Go-Live Calendar'"
         [scheduleData]="calendarData"
         [ragFilter]="true"
         [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
-      ></app-go-live-calendar>
+      ></app-go-live-calendar> -->
+      <lib-calender 
+      [calendarTitle]="'Lottery Projects Go-Live Calendar'"
+      [scheduleData]="calendarData"
+      [ragFilter]="true"
+      [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"></lib-calender>
     </div>
   </div>
 </div>

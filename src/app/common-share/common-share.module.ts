@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RichTextEditorAllModule } from "@syncfusion/ej2-angular-richtexteditor";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -26,6 +26,7 @@ import { BudgetChartComponent } from "../charts/budget-chart/budget-chart.compon
 import { BudgetBarChartComponent } from "../charts/budget-bar-chart/budget-bar-chart.component";
 import { ForecastChartComponent } from "../charts/forecast-chart/forecast-chart.component";
 import { ProjectCardComponent } from "src/app/shared/utility/project-card/project-card.component";
+import { CalenderModule } from "igt-calenderchart-lib";
 import { GoLiveCalendarComponent } from "src/app/shared/components/go-live-calendar/go-live-calendar.component";
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
  suppressScrollX: true,
@@ -46,11 +47,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     ParticlesModule,
     HttpClientModule,
     NgxEchartsModule,
-    PerfectScrollbarModule,
+    PerfectScrollbarModule,CalenderModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   exports:[
     AmountPipe,ProjectCategoryComponent,BudgetChartComponent,BudgetBarChartComponent,ForecastChartComponent,
-    GoLiveCalendarComponent,ProjectCardComponent
+    GoLiveCalendarComponent,ProjectCardComponent,CalenderModule
   ]
  
   // providers: [

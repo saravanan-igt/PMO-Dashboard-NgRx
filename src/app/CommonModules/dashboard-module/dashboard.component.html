@@ -163,13 +163,19 @@
       <div [innerHTML]="helpText.pdGoLIve"></div>
     </ng-template>
     <div class="col-12" *ngIf="calendarData">
-      <app-go-live-calendar
+      <!-- <app-go-live-calendar
         [scheduleData]="calendarData"
         [calendarTitle]="'Portfolio Projects Go-Live Calendar'"
         [legends]="true"
         [ragFilter]="true"
         [businessFilter]="'vertical|VERTICAL'"
-      ></app-go-live-calendar>
+      ></app-go-live-calendar> -->
+      <lib-calender [scheduleData]="calendarData"
+      [calendarTitle]="'Portfolio Projects Go-Live Calendar'"
+      [legends]="true"
+      [ragFilter]="true"
+      [businessFilter]="'vertical|VERTICAL'">
+      </lib-calender>
     </div>
   </div>
 </div>

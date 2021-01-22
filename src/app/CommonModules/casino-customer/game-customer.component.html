@@ -102,11 +102,9 @@
       <div [innerHTML]="helpText.csdGoLive"></div>
     </ng-template>
     <div class="col-12">
-      <app-go-live-calendar
-        [scheduleData]="scheduleData"
-        [calendarTitle]="'Go-Live Calendar'"
-        [ragFilter]="true"
-      ></app-go-live-calendar>
+      <lib-calender  [scheduleData]="scheduleData"
+      [calendarTitle]="'Go-Live Calendar'"
+      [ragFilter]="true"></lib-calender>
     </div>
   </div>
 </div>
