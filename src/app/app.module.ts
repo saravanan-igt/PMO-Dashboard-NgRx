@@ -26,9 +26,9 @@ import { GoLiveComponent } from "./shared/components/go-live/go-live.component";
 import { GoLiveCalendarComponent } from "./shared/components/go-live-calendar/go-live-calendar.component";
 import { ProjectCardComponent } from "./shared/utility/project-card/project-card.component";
 import { NgxEchartsModule } from "ngx-echarts";
-import { ProjectCategoryComponent } from "./charts/project-category/project-category.component";
-import { BudgetChartComponent } from "./charts/budget-chart/budget-chart.component";
-import { BudgetBarChartComponent } from "./charts/budget-bar-chart/budget-bar-chart.component";
+// import { ProjectCategoryComponent } from "./charts/project-category/project-category.component";
+// import { BudgetChartComponent } from "./charts/budget-chart/budget-chart.component";
+// import { BudgetBarChartComponent } from "./charts/budget-bar-chart/budget-bar-chart.component";
 import { GamingGoLiveComponent } from "./shared/components/gaming-go-live/gaming-go-live.component";
 import { VltDashboardComponent } from "./shared/components/vlt-dashboard/vlt-dashboard.component";
 import { VltCustomerComponent } from "./shared/components/vlt-customer/vlt-customer.component";
@@ -36,7 +36,7 @@ import { VltRndComponent } from "./shared/components/vlt-rnd/vlt-rnd.component";
 import { VltGoLiveComponent } from "./shared/components/vlt-go-live/vlt-go-live.component";
 import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.component";
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
-import { ForecastChartComponent } from "./charts/forecast-chart/forecast-chart.component";
+// import { ForecastChartComponent } from "./charts/forecast-chart/forecast-chart.component";
 import { VltSDComponent } from "./shared/components/vlt-sd/vlt-sd.component";
 import { LoginComponent } from "./login/login.component";
 import { ErrorInterceptor } from "./_helpers";
@@ -56,6 +56,15 @@ import { LotterySystemDeliveryModule } from "./CommonModules/lottery-system-deli
 import { LotteryRnDModule } from "./CommonModules/lottery-rn-d/lottery-rn-d.module";
 import { LotteryGoLiveCalenderModule } from "./CommonModules/lottery-go-live-calender/lottery-go-live-calender.module";
 
+import {BudgetBarChartComponent} from 'budget-bar-chart-lib';
+import {BudgetChart1Component} from 'budget-chart-lib';
+import {ForecastChartComponent} from 'forecast-chart-lib';
+
+import {ProjectCategory1Component} from 'project-category-lib'
+import {ProjectCategory1Service} from 'project-category-lib';
+
+
+
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };
@@ -74,8 +83,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     GoLiveComponent,
     GoLiveCalendarComponent,
     ProjectCardComponent,
-    ProjectCategoryComponent,
-    BudgetChartComponent,
+    ProjectCategory1Component,
+    BudgetChart1Component,
     BudgetBarChartComponent,
     GamingGoLiveComponent,
     VltDashboardComponent,
@@ -89,6 +98,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     LoginComponent,
     DcFormComponent,
     AboutComponent,
+   
   ],
   imports: [
     LotteryDashboardModule,
@@ -117,6 +127,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     LoaderService,
     PageLoaderService,
     CommonService,
+    ProjectCategory1Service,
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     {
