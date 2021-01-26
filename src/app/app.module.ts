@@ -23,7 +23,6 @@ import { PageLoaderService } from "./services/page-loader.service";
 import { HTTP_INTERCEPTORS, HttpClient } from "@angular/common/http";
 import { LoaderInterceptor } from "./loader.interceptor";
 import { GoLiveComponent } from "./shared/components/go-live/go-live.component";
-import { GoLiveCalendarComponent } from "./shared/components/go-live-calendar/go-live-calendar.component";
 import { ProjectCardComponent } from "./shared/utility/project-card/project-card.component";
 import { NgxEchartsModule } from "ngx-echarts";
 // import { ProjectCategoryComponent } from "./charts/project-category/project-category.component";
@@ -55,14 +54,12 @@ import { LotteryServiceDeliveryModule } from "./CommonModules/lottery-service-de
 import { LotterySystemDeliveryModule } from "./CommonModules/lottery-system-delivery/lottery-system-delivery.module";
 import { LotteryRnDModule } from "./CommonModules/lottery-rn-d/lottery-rn-d.module";
 import { LotteryGoLiveCalenderModule } from "./CommonModules/lottery-go-live-calender/lottery-go-live-calender.module";
-
-import {BudgetBarChartComponent} from 'budget-bar-chart-lib';
-import {BudgetChart1Component} from 'budget-chart-lib';
-import {ForecastChartComponent} from 'forecast-chart-lib';
-
-import {ProjectCategory1Component} from 'project-category-lib'
-import {ProjectCategory1Service} from 'project-category-lib';
-
+import {BudgetBarChartComponent} from 'budget-bar-chart-lib1';
+import {BudgetChart1Component} from 'budget-chart-lib1';
+import {ForecastChartComponent} from 'forecast-chart-lib1';
+import {ProjectCategory1Component} from 'project-category-lib1';
+import {ProjectCategory1Service} from 'project-category-lib1';
+import {CalenderModule} from 'igt-calenderchart-lib';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -81,7 +78,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     GameRndComponent,
     LoaderComponent,
     GoLiveComponent,
-    GoLiveCalendarComponent,
     ProjectCardComponent,
     ProjectCategory1Component,
     BudgetChart1Component,
@@ -121,7 +117,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     StoreModule.forRoot({ data: DataReducer }),
     EffectsModule.forRoot([DataEffects]),
     PerfectScrollbarModule,
-    
+    CalenderModule
   ],
   providers: [
     LoaderService,

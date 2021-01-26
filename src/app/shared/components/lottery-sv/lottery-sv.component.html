@@ -102,12 +102,12 @@
       <div [innerHTML]="helpText.lsvGoLive"></div>
     </ng-template>
     <div class="col-12">
-      <app-go-live-calendar
+      <lib-calender
         *ngIf="scheduleData"
         [scheduleData]="scheduleData"
         [calendarTitle]="'Go-Live Calendar'"
         [ragFilter]="true"
-      ></app-go-live-calendar>
+      ></lib-calender>
     </div>
   </div>
 </div>
