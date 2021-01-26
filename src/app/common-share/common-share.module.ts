@@ -21,13 +21,12 @@ import { DataReducer } from "src/app/store/data.reducer";
 import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
-import { ProjectCategoryComponent } from "../charts/project-category/project-category.component";
-import { BudgetChartComponent } from "../charts/budget-chart/budget-chart.component";
-import { BudgetBarChartComponent } from "../charts/budget-bar-chart/budget-bar-chart.component";
-import { ForecastChartComponent } from "../charts/forecast-chart/forecast-chart.component";
 import { ProjectCardComponent } from "src/app/shared/utility/project-card/project-card.component";
 import { CalenderModule } from "igt-calenderchart-lib";
-import { GoLiveCalendarComponent } from "src/app/shared/components/go-live-calendar/go-live-calendar.component";
+import { BudgetBarChartModule } from "budget-bar-chart-lib1";
+import { BudgetChart1Module } from "budget-chart-lib1";
+import { ForecastChartModule } from "forecast-chart-lib1";
+import { ProjectCategory1Module } from "project-category-lib1";
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
  suppressScrollX: true,
 };
@@ -35,8 +34,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 @NgModule({
   declarations: [
-    AmountPipe,ProjectCategoryComponent,BudgetChartComponent,BudgetBarChartComponent,ForecastChartComponent,
-    GoLiveCalendarComponent,ProjectCardComponent
+    AmountPipe,
+    ProjectCardComponent
   ],
   imports: [
     ReactiveFormsModule,
@@ -47,12 +46,12 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     ParticlesModule,
     HttpClientModule,
     NgxEchartsModule,
-    PerfectScrollbarModule,CalenderModule
+    PerfectScrollbarModule,CalenderModule,BudgetBarChartModule,BudgetChart1Module,ForecastChartModule,ProjectCategory1Module
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   exports:[
-    AmountPipe,ProjectCategoryComponent,BudgetChartComponent,BudgetBarChartComponent,ForecastChartComponent,
-    GoLiveCalendarComponent,ProjectCardComponent,CalenderModule
+    AmountPipe,ProjectCardComponent,CalenderModule,BudgetBarChartModule,
+    BudgetChart1Module,ForecastChartModule,ProjectCategory1Module
   ]
  
   // providers: [

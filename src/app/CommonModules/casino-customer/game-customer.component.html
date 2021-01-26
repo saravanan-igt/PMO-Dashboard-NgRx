@@ -29,9 +29,11 @@
     </ng-template>
     <div class="col-md-4">
       <app-project-category
+      #componentchild1
         chartTitle="Total Projects"
         [data]="totalProjectsData"
         height="200"
+        [resize]="resizeobj"
       ></app-project-category>
     </div>
     <div class="col-md-4">

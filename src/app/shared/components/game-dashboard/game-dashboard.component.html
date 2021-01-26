@@ -25,43 +25,32 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectContent>
-      <div [innerHTML]="helpText.vdProject"></div>
+      <div [innerHTML]="helpText.cdProject"></div>
     </ng-template>
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-md-4">
       <app-project-category
-      #componentchild1
         chartTitle="Total Projects"
         [data]="totalProjectsData"
         [resize]="resizeobj"
       ></app-project-category>
     </div>
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-md-4">
       <app-project-category
-      #componentchild2
         chartTitle="System Delivery Projects"
         [data]="customerProjectsData"
         [resize]="resizeobj"
       ></app-project-category>
     </div>
-    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-md-4">
       <app-project-category
-      #componentchild3
-        chartTitle="Service Delivery Projects"
-        [data]="svdProjectsData"
-        [resize]="resizeobj"
-      ></app-project-category>
-    </div>
-    <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-      #componentchild4
-        chartTitle="R&D Projects"
+        chartTitle="R & D Projects"
         [data]="rndProjectsData"
         [resize]="resizeobj"
       ></app-project-category>
     </div>
   </div>
 
-  <div class="row info-container">
+  <div class="row mt-4 info-container">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -73,11 +62,11 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #budgetContent>
-      <div [innerHTML]="helpText.vdBudget"></div>
+      <div [innerHTML]="helpText.cdBudget"></div>
     </ng-template>
     <div class="col-md-5 mb-4">
       <app-budget-chart
-        chartTitle="VLT Budget"
+        chartTitle="Casino Budget"
         [data]="totalBudgetData"
         height="250"
       ></app-budget-chart>
@@ -85,7 +74,7 @@
 
     <div class="col-md-7 mb-4">
       <app-budget-bar-chart
-        chartTitle="VLT Budget Portfolio"
+        chartTitle="Casino Budget Portfolio"
         [seriesData]="budgetSeriesData"
         yAxisName=""
         [xAxisData]="xAxisData"
@@ -104,7 +93,7 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #forecastContent>
-      <div [innerHTML]="helpText.vdForecast"></div>
+      <div [innerHTML]="helpText.cdForecast"></div>
     </ng-template>
     <div class="col-12 mb-4">
       <app-forecast-chart
@@ -112,7 +101,7 @@
         yAxisName=""
         [xAxisData]="forecastLegend"
         [gridLeft]="'10%'"
-        chartTitle="VLT"
+        chartTitle="Casino"
       ></app-forecast-chart>
     </div>
   </div>
@@ -128,12 +117,12 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #ragContent>
-      <div [innerHTML]="helpText.vdRAG"></div>
+      <div [innerHTML]="helpText.cdRAG"></div>
     </ng-template>
     <div class="col-md-4">
       <!-- (onChartEvent)="chartEvent($event)" -->
       <app-budget-chart
-        chartTitle="VLT Projects RAG Status"
+        chartTitle="Casino Projects RAG Status"
         [data]="totalRiskData"
         [labelFormatter]="'{c}'"
         [totalText]="false"
@@ -147,7 +136,7 @@
     </div>
     <div class="col-md-8">
       <app-budget-bar-chart
-        chartTitle="VLT Projects Risk Profile"
+        chartTitle="Casino Projects Risk Profile"
         [seriesData]="riskProfileData"
         [labelFormatter]="'{c}'"
         [yAxisFormat]="'{value}'"
@@ -173,16 +162,16 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #goliveContent>
-      <div [innerHTML]="helpText.vdGoLive"></div>
+      <div [innerHTML]="helpText.cdGoLive"></div>
     </ng-template>
     <div class="col-12">
       <!-- [ragState]="ragState" -->
-      <lib-calender  [scheduleData]="calendarData"
-      [calendarTitle]="'VLT Go-Live Calendar'"
-      [ragFilter]="true"
-      [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'">
-
-      </lib-calender>
+      <lib-calender
+        [scheduleData]="calendarData"
+        [calendarTitle]="'Casino Go-Live Calendar'"
+        [ragFilter]="true"
+        [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
+      ></lib-calender>
     </div>
   </div>
 </div>

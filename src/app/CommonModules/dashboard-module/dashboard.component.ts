@@ -1,9 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../Store/data.state";
-
+import { CommonService } from '../../services/common.service';
+import { delay } from 'rxjs/operators';
+import { ProjectCategory1Module } from "project-category-lib1";
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
@@ -33,8 +35,12 @@ export class DashboardComponent implements OnInit {
   DataLists: any[] = [];
   dataError;
   helpText;
+  resizeobj;
   budgetPortfolioLegend = ["Active", "Planned", "Completed"];
-
+  @ViewChild('componentchild1', { static: false }) childComponent1: ProjectCategory1Module;
+  @ViewChild('componentchild2', { static: false }) childComponent2: ProjectCategory1Module;
+  @ViewChild('componentchild3', { static: false }) childComponent3: ProjectCategory1Module;
+  @ViewChild('componentchild4', { static: false }) childComponent4: ProjectCategory1Module;
   calculateTotal(data) {
     let total = data.reduce((total, currentValue) => {
       return total + Number(currentValue);
@@ -42,10 +48,22 @@ export class DashboardComponent implements OnInit {
     return Number(total.toFixed(2));
   }
 
-  constructor(private store: Store<{ data: DataState }>) {
+  constructor(private store: Store<{ data: DataState }>,private commonService:CommonService) {
     this.dataList$ = store.pipe(select("data"));
-    // constructor() {
-      console.log('Lazily Loaded : LazyModule');
+    this.commonService.getChangeEmitter().pipe(
+      delay(500)
+    ).subscribe((item: string) => {
+        if(item==="clicked"){
+          this.resizeobj = item;
+          this.childComponent1['echartsInstance'].resize();
+          this.childComponent2['echartsInstance'].resize();
+          this.childComponent3['echartsInstance'].resize();
+          this.childComponent4['echartsInstance'].resize();
+        }
+        else{
+          this.resizeobj = "";
+        }
+      })
   }
 
   ngOnInit() {

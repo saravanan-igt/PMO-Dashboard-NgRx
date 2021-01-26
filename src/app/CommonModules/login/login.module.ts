@@ -4,7 +4,6 @@ import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from "./login.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CommonShareModule } from '../../common-share/common-share.module';
-// import { CalenderModule } from "igt-calenderchart-lib";
 @NgModule({
   declarations: [LoginComponent],
   imports: [
@@ -12,7 +11,6 @@ import { CommonShareModule } from '../../common-share/common-share.module';
     LoginRoutingModule,
     CommonShareModule,
     FormsModule,ReactiveFormsModule,
-    // CalenderModule
   ],
 })
 export class LoginModule { 

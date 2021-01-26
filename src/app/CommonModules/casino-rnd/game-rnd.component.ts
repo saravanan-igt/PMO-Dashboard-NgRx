@@ -1,9 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit,ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "./../../Store/data.state";
-
+import { CommonService } from '../../services/common.service';
+import { delay } from 'rxjs/operators';
+import { ProjectCategory1Module } from "project-category-lib1";
 @Component({
   selector: "app-game-rnd",
   templateUrl: "./game-rnd.component.html",
@@ -20,14 +22,26 @@ export class GameRndComponent implements OnInit {
   totalRiskData;
   closedProjectData;
   scheduleData;
-
+  resizeobj;
   dataList$: Observable<DataState>;
   DataSubscription: Subscription;
   DataLists: any[] = [];
   dataError;
   helpText;
-  constructor(private store: Store<{ data: DataState }>) {
+  @ViewChild('componentchild1', { static: false }) childComponent1: ProjectCategory1Module;
+  constructor(private store: Store<{ data: DataState }>,private commonService:CommonService) {
     this.dataList$ = store.pipe(select("data"));
+    this.commonService.getChangeEmitter().pipe(
+      delay(500)
+    ).subscribe((item: string) => {
+        if(item==="clicked"){
+          this.resizeobj = item;
+          this.childComponent1['echartsInstance'].resize();
+        }
+        else{
+          this.resizeobj = "";
+        }
+      })
   }
 
   ngOnInit() {

@@ -29,29 +29,37 @@
     </ng-template>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
+        #componentchild1
         chartTitle="Total Projects"
         [data]="totalProjectsData"
+        [resize]="resizeobj"
       ></app-project-category>
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
+      #componentchild2
         chartTitle="Lottery Projects"
         [data]="lotteryProjectsData"
         [info]="helpText.pdLotProject"
+        [resize]="resizeobj"
       ></app-project-category>
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
+      #componentchild3
         chartTitle="Casino Projects"
         [data]="casinoProjectsData"
         [info]="helpText.pdCasProject"
+        [resize]="resizeobj"
       ></app-project-category>
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
       <app-project-category
+      #componentchild4
         chartTitle="VLT Projects"
         [data]="vltProjectsData"
         [info]="helpText.pdVltProject"
+        [resize]="resizeobj"
       ></app-project-category>
     </div>
   </div>
@@ -163,13 +171,6 @@
       <div [innerHTML]="helpText.pdGoLIve"></div>
     </ng-template>
     <div class="col-12" *ngIf="calendarData">
-      <!-- <app-go-live-calendar
-        [scheduleData]="calendarData"
-        [calendarTitle]="'Portfolio Projects Go-Live Calendar'"
-        [legends]="true"
-        [ragFilter]="true"
-        [businessFilter]="'vertical|VERTICAL'"
-      ></app-go-live-calendar> -->
       <lib-calender [scheduleData]="calendarData"
       [calendarTitle]="'Portfolio Projects Go-Live Calendar'"
       [legends]="true"

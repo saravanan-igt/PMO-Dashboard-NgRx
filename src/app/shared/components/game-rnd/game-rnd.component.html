@@ -1,4 +1,4 @@
-<div class="container-fluid" *ngIf="DataLists">
+<div class="container-fluid" *ngIf="gameProjectData">
   <div class="row">
     <div class="col-md-6">
       <h2 class="page-title">{{ pageTitle }}</h2>
@@ -25,13 +25,12 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectContent>
-      <div [innerHTML]="helpText.lsvProject"></div>
+      <div [innerHTML]="helpText.crdProject"></div>
     </ng-template>
     <div class="col-md-4">
       <app-project-category
-        #componentchild1
         chartTitle="Total Projects"
-        [data]="lotteryProjectsData"
+        [data]="totalProjectsData"
         height="200"
         [resize]="resizeobj"
       ></app-project-category>
@@ -47,12 +46,12 @@
         chartTitle="RAG Status"
         [data]="totalRiskData"
         [labelFormatter]="'{c}'"
+        [totalText]="false"
         [color]="[
           'rgba(255,91,86,0.85)',
           'rgba(245,156,26,0.85)',
           'rgba(0,191,165,0.85)'
         ]"
-        [totalText]="false"
       ></app-budget-chart>
     </div>
   </div>
@@ -68,24 +67,24 @@
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
     <ng-template #projectListContent>
-      <div [innerHTML]="helpText.lsvProjectList"></div>
+      <div [innerHTML]="helpText.crdProjectList"></div>
     </ng-template>
     <div class="col-md-4">
       <app-project-card
         [cardTitle]="'Planned Projects'"
-        [projectList]="plannedProjects"
+        [projectList]="plannedProjectData"
       ></app-project-card>
     </div>
     <div class="col-md-4">
       <app-project-card
         [cardTitle]="'Active Projects'"
-        [projectList]="activeProjects"
+        [projectList]="activeProjectDetails"
       ></app-project-card>
     </div>
     <div class="col-md-4">
       <app-project-card
         [cardTitle]="'Completed Projects'"
-        [projectList]="closedProjects"
+        [projectList]="closedProjectData"
       ></app-project-card>
     </div>
   </div>
@@ -96,19 +95,19 @@
       triggers="mouseenter:mouseleave"
       mat-icon-button
       class="info-btn"
-      [ngbPopover]="goLiveContent"
+      [ngbPopover]="goliveContent"
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
-    <ng-template #goLiveContent>
-      <div [innerHTML]="helpText.lsvGoLive"></div>
+    <ng-template #goliveContent>
+      <div [innerHTML]="helpText.crdGoLive"></div>
     </ng-template>
     <div class="col-12">
       <lib-calender
-      *ngIf="scheduleData"
         [scheduleData]="scheduleData"
         [calendarTitle]="'Go-Live Calendar'"
-        [ragFilter]="true"></lib-calender>
+        [ragFilter]="true"
+      ></lib-calender>
     </div>
   </div>
 </div>
