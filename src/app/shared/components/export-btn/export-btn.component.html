@@ -1,0 +1,20 @@
+<!-- <div class="export-btn">
+    <div class="export-btn-menu" *ngIf="type === 'menu'">
+        <button mat-raised-button [matMenuTriggerFor]="menu">Export <mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="exportBusinessData('chart')">Business Chart</button>
+            <button mat-menu-item (click)="exportBusinessData('go-live-calendar')">Go-Live-Calendar</button>
+        </mat-menu>
+    </div> -->
+    <div class="export-btn-download" *ngIf="type !== 'menu'">
+        <button data-html2canvas-ignore="true" type="button" triggers="mouseenter:mouseleave" mat-icon-button
+            class="info-btn margin-top-30 custom-btn" (click)="exportBusinessData(id ? 'chart': '')">
+            <mat-icon fontSet="material-icons-outlined" [ngClass]="(id==='business' || id==='Vltbusiness' 
+        || id==='Lotterybusiness' || id==='LotteryServicesbusiness' 
+        || id==='LotterySVCbusiness' || id==='LotterySystemdeliverybusiness' 
+        || id==='RNDbusiness' || id==='gameProjectbusiness' 
+        || id==='gameCustomerbusiness' || id==='gameRNDbusiness' || id==='Vltsdbusiness' || id==='Vltcustomerbusiness' || id==='VltRNDbusiness')?'text-white':'text-dark'">
+                get_app</mat-icon>
+        </button>
+    </div>
+<!-- </div> -->

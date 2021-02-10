@@ -1,9 +1,9 @@
-<div class="container-fluid" *ngIf="gameProjectData">
+<div class="container-fluid" *ngIf="DataLists.length" id="Vltall">
   <div class="row">
     <div class="col-md-6">
       <h2 class="page-title">{{ pageTitle }}</h2>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5" id="topright">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -13,168 +13,120 @@
         </ol>
       </nav>
     </div>
+    <app-export-btn (golivecalendar)="exportGoliveCalendar($event)" data-html2canvas-ignore="true" type="menu"
+      id="Vltall"></app-export-btn>
   </div>
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn text-white"
-      [ngbPopover]="projectContent"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+  <div class="row info-container" id="Vltbusiness">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn text-white"
+      [ngbPopover]="projectContent" data-html2canvas-ignore="true">
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="Vltbusiness"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
     <ng-template #projectContent>
       <div [innerHTML]="helpText.vdProject"></div>
     </ng-template>
+  
     <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        chartTitle="Total Projects"
-        [data]="totalProjectsData"
-      ></app-project-category>
+      <app-project-category chartTitle="Total Projects" [data]="totalProjectsData"></app-project-category>
+    <!-- <div class="d-none canvasonly" [innerHTML]="helpText.vdProject"></div> -->
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        chartTitle="System Delivery Projects"
-        [data]="customerProjectsData"
-      ></app-project-category>
+      <app-project-category chartTitle="System Delivery Projects" [data]="customerProjectsData"></app-project-category>
+    <!-- <div class="d-none canvasonly" [innerHTML]="helpText.vsdProject"></div> -->
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        chartTitle="Service Delivery Projects"
-        [data]="svdProjectsData"
-      ></app-project-category>
+      <app-project-category chartTitle="Service Delivery Projects" [data]="svdProjectsData"></app-project-category>
+    <!-- <div class="d-none canvasonly" [innerHTML]="helpText.vsvProject"></div> -->
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        chartTitle="R&D Projects"
-        [data]="rndProjectsData"
-      ></app-project-category>
-    </div>
+      <app-project-category chartTitle="R&D Projects" [data]="rndProjectsData"></app-project-category>
   </div>
-
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="budgetContent"
-      placement="right"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+  <div class="d-none canvasonly container" [innerHTML]="helpText.vdProject"></div>
+  </div>
+<!-- <br/><br/><br/><br/><br/><br/><br/> -->
+  <div class="row info-container" id="Vltbudget">
+      <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn" [ngbPopover]="budgetContent"
+      placement="right" >
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="Vltbudget"></app-export-btn>
     <ng-template #budgetContent>
       <div [innerHTML]="helpText.vdBudget"></div>
     </ng-template>
     <div class="col-md-5 mb-4">
-      <app-budget-chart
-        chartTitle="VLT Budget"
-        [data]="totalBudgetData"
-        height="250"
-      ></app-budget-chart>
+      <app-budget-chart chartTitle="VLT Budget" [data]="totalBudgetData" height="250"></app-budget-chart>
     </div>
 
     <div class="col-md-7 mb-4">
-      <app-budget-bar-chart
-        chartTitle="VLT Budget Portfolio"
-        [seriesData]="budgetSeriesData"
-        yAxisName=""
-        [xAxisData]="xAxisData"
-      ></app-budget-bar-chart>
+      <app-budget-bar-chart chartTitle="VLT Budget Portfolio" [seriesData]="budgetSeriesData" yAxisName=""
+        [xAxisData]="xAxisData"></app-budget-bar-chart>
     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.vdBudget"></div>
   </div>
 
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="forecastContent"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+  <div class="row info-container" id="VLTforecast">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn"
+      [ngbPopover]="forecastContent">
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="VLTforecast"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
     <ng-template #forecastContent>
       <div [innerHTML]="helpText.vdForecast"></div>
     </ng-template>
     <div class="col-12 mb-4">
-      <app-forecast-chart
-        [seriesData]="forecastSeriesData"
-        yAxisName=""
-        [xAxisData]="forecastLegend"
-        [gridLeft]="'10%'"
-        chartTitle="VLT"
-      ></app-forecast-chart>
+      <app-forecast-chart [seriesData]="forecastSeriesData" yAxisName="" [xAxisData]="forecastLegend" [gridLeft]="'10%'"
+        chartTitle="VLT"></app-forecast-chart>
+        <div class="d-none canvasonly container" [innerHTML]="helpText.vdForecast"></div>
     </div>
-  </div>
+     </div>
 
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="ragContent"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+  <div class="row info-container" id="vltprojects">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn" [ngbPopover]="ragContent">
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true" >info</mat-icon>
     </button>
-    <ng-template #ragContent>
+    <app-export-btn data-html2canvas-ignore="true" id="vltprojects"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
+   <ng-template #ragContent>
       <div [innerHTML]="helpText.vdRAG"></div>
     </ng-template>
     <div class="col-md-4">
       <!-- (onChartEvent)="chartEvent($event)" -->
-      <app-budget-chart
-        chartTitle="VLT Projects RAG Status"
-        [data]="totalRiskData"
-        [labelFormatter]="'{c}'"
-        [totalText]="false"
-        [color]="[
+      <app-budget-chart chartTitle="VLT Projects RAG Status" [data]="totalRiskData" [labelFormatter]="'{c}'"
+        [totalText]="false" [color]="[
           'rgba(255,91,86,0.85)',
           'rgba(245,156,26,0.85)',
           'rgba(0,191,165,0.85)'
-        ]"
-        height="250"
-      ></app-budget-chart>
+        ]" height="250"></app-budget-chart>
+        <!-- <div class="d-none canvasonly" [innerHTML]="helpText.vdRAG"></div> -->
     </div>
     <div class="col-md-8">
-      <app-budget-bar-chart
-        chartTitle="VLT Projects Risk Profile"
-        [seriesData]="riskProfileData"
-        [labelFormatter]="'{c}'"
-        [yAxisFormat]="'{value}'"
-        [color]="[
+      <app-budget-bar-chart chartTitle="VLT Projects Risk Profile" [seriesData]="riskProfileData"
+        [labelFormatter]="'{c}'" [yAxisFormat]="'{value}'" [color]="[
           'rgba(255,91,86,0.85)',
           'rgba(245,156,26,0.85)',
           'rgba(0,191,165,0.85)'
-        ]"
-        yAxisName="No. of Projects"
-        [xAxisData]="xAxisData"
-      ></app-budget-bar-chart>
+        ]" yAxisName="No. of Projects" [xAxisData]="xAxisData"></app-budget-bar-chart>
+        
     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.vdRAG"></div>
   </div>
 
-  <div class="row mt-4 info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="goliveContent"
-    >
+  <div data-html2canvas-ignore="true" class="row mt-4 info-container">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn"
+      [ngbPopover]="goliveContent">
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
     <ng-template #goliveContent>
       <div [innerHTML]="helpText.vdGoLive"></div>
     </ng-template>
-    <div class="col-12">
+    <div class="col-12" *ngIf="calendarData">
       <!-- [ragState]="ragState" -->
-      <app-go-live-calendar
-        [scheduleData]="calendarData"
-        [calendarTitle]="'VLT Go-Live Calendar'"
-        [ragFilter]="true"
-        [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
-      ></app-go-live-calendar>
+      <app-go-live-calendar [scheduleData]="calendarData" [calendarTitle]="'VLT Go-Live Calendar'" [ragFilter]="true"
+        [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"></app-go-live-calendar>
     </div>
   </div>
 </div>

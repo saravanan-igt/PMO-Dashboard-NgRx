@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-vlt-dashboard",
@@ -10,7 +11,11 @@ import DataState from "../../../Store/data.state";
   styleUrls: ["./vlt-dashboard.component.scss"],
 })
 export class VltDashboardComponent implements OnInit {
-  pageTitle: string = "VLT Dashboard";
+
+  pageTitle: string = "VLT Dashboard"; 
+   @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent;    
+  //pageTitle: string = "VLT Dashboard"; 
   gameProjectData: any;
   totalProjectsData;
   customerProjectsData;
@@ -45,6 +50,7 @@ export class VltDashboardComponent implements OnInit {
           this.DataLists = data.Data;
           this.helpText = this.DataLists[3];
           this.gameProjectData = this.DataLists[2];
+          console.log("title");
           this.totalProjectsData = [
             {
               value:
@@ -194,7 +200,6 @@ export class VltDashboardComponent implements OnInit {
               ],
             },
           ];
-
           this.forecastLegend = [
             "SD Active",
             "SD Completed",
@@ -320,5 +325,9 @@ export class VltDashboardComponent implements OnInit {
             : "A",
       };
     });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 }

@@ -1,9 +1,9 @@
-<div class="container-fluid" *ngIf="gameProjectData">
+<div class="container-fluid" *ngIf="gameProjectData" id="gameRNDall">
   <div class="row">
     <div class="col-md-6">
       <h2 class="page-title">{{ pageTitle }}</h2>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5" id="topright">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -13,8 +13,10 @@
         </ol>
       </nav>
     </div>
+    <app-export-btn (golivecalendar)="exportGoliveCalendar($event)" data-html2canvas-ignore="true" type="menu"
+    id="gameRNDall"></app-export-btn>
   </div>
-  <div class="row info-container">
+  <div class="row info-container" id="gameRNDbusiness">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -22,8 +24,10 @@
       class="info-btn text-white"
       [ngbPopover]="projectContent"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="gameRNDbusiness"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2><br/>
     <ng-template #projectContent>
       <div [innerHTML]="helpText.crdProject"></div>
     </ng-template>
@@ -33,12 +37,14 @@
         [data]="totalProjectsData"
         height="200"
       ></app-project-category>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.crdProject"></div> -->
     </div>
     <div class="col-md-4">
       <app-budget-chart
         chartTitle="Total Budget"
         [data]="totalBudgetData"
       ></app-budget-chart>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdBudget"></div> -->
     </div>
     <div class="col-md-4">
       <app-budget-chart
@@ -52,10 +58,12 @@
           'rgba(0,191,165,0.85)'
         ]"
       ></app-budget-chart>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdRAG"></div> -->
     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.crdProject" ></div>
   </div>
 
-  <div class="row mt-4 info-container">
+  <div class="row mt-4 info-container" data-html2canvas-ignore="true">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -63,7 +71,7 @@
       class="info-btn"
       [ngbPopover]="projectListContent"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
     <ng-template #projectListContent>
       <div [innerHTML]="helpText.crdProjectList"></div>
@@ -74,7 +82,7 @@
         [projectList]="plannedProjectData"
       ></app-project-card>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" >
       <app-project-card
         [cardTitle]="'Active Projects'"
         [projectList]="activeProjectDetails"
@@ -88,7 +96,7 @@
     </div>
   </div>
 
-  <div class="row mt-4 info-container">
+  <div data-html2canvas-ignore="true" class="row mt-4 info-container">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -96,9 +104,10 @@
       class="info-btn"
       [ngbPopover]="goliveContent"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
-    <ng-template #goliveContent>
+    <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
+     <ng-template #goliveContent>
       <div [innerHTML]="helpText.crdGoLive"></div>
     </ng-template>
     <div class="col-12">

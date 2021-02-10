@@ -1,9 +1,9 @@
-<div class="container-fluid" *ngIf="gameProjectData">
+<div class="container-fluid" *ngIf="gameProjectData"  id="gameProjectall">
   <div class="row">
     <div class="col-md-6">
       <h2 class="page-title">{{ pageTitle }}</h2>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5" id="topright">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -13,8 +13,10 @@
         </ol>
       </nav>
     </div>
+    <app-export-btn (golivecalendar)="exportGoliveCalendar($event)" data-html2canvas-ignore="true" type="menu"
+      id="gameProjectall"></app-export-btn>
   </div>
-  <div class="row info-container">
+  <div class="row info-container" id="gameProjectbusiness">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -22,8 +24,10 @@
       class="info-btn text-white"
       [ngbPopover]="projectContent"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="gameProjectbusiness"></app-export-btn>
+  <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2><br/>
     <ng-template #projectContent>
       <div [innerHTML]="helpText.cdProject"></div>
     </ng-template>
@@ -32,32 +36,39 @@
         chartTitle="Total Projects"
         [data]="totalProjectsData"
       ></app-project-category>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdProject"></div> -->
     </div>
     <div class="col-md-4">
       <app-project-category
         chartTitle="System Delivery Projects"
         [data]="customerProjectsData"
       ></app-project-category>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.csdProject"></div> -->
     </div>
     <div class="col-md-4">
       <app-project-category
         chartTitle="R & D Projects"
         [data]="rndProjectsData"
       ></app-project-category>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.crdProject"></div> -->
     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.cdProject"></div>
   </div>
 
-  <div class="row mt-4 info-container">
+  <div class="row mt-4 info-container"  id="gameProjectbudget">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
       mat-icon-button
       class="info-btn"
       [ngbPopover]="budgetContent"
-      placement="right"
+      placement="right" data-html2canvas-ignore="true"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="gameProjectbudget"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
+
     <ng-template #budgetContent>
       <div [innerHTML]="helpText.cdBudget"></div>
     </ng-template>
@@ -67,6 +78,7 @@
         [data]="totalBudgetData"
         height="250"
       ></app-budget-chart>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdBudget"></div> -->
     </div>
 
     <div class="col-md-7 mb-4">
@@ -76,19 +88,23 @@
         yAxisName=""
         [xAxisData]="xAxisData"
       ></app-budget-bar-chart>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdBudget"></div> -->
     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.cdBudget"></div>
   </div>
 
-  <div class="row info-container">
+  <div class="row info-container" id="gameProjectplanning">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
       mat-icon-button
       class="info-btn"
-      [ngbPopover]="forecastContent"
+      [ngbPopover]="forecastContent"  data-html2canvas-ignore="true"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="gameProjectplanning"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
     <ng-template #forecastContent>
       <div [innerHTML]="helpText.cdForecast"></div>
     </ng-template>
@@ -100,19 +116,23 @@
         [gridLeft]="'10%'"
         chartTitle="Casino"
       ></app-forecast-chart>
+      <div class="d-none canvasonly container" [innerHTML]="helpText.cdForecast"></div>
     </div>
   </div>
 
-  <div class="row info-container">
+  <div class="row info-container" id="gameProjectRAG">
+   
     <button
       type="button"
       triggers="mouseenter:mouseleave"
       mat-icon-button
       class="info-btn"
-      [ngbPopover]="ragContent"
+      [ngbPopover]="ragContent"  data-html2canvas-ignore="true"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="gameProjectRAG"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
     <ng-template #ragContent>
       <div [innerHTML]="helpText.cdRAG"></div>
     </ng-template>
@@ -130,6 +150,7 @@
         ]"
         height="250"
       ></app-budget-chart>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdRAG"></div> -->
     </div>
     <div class="col-md-8">
       <app-budget-bar-chart
@@ -145,19 +166,24 @@
         yAxisName="No. of Projects"
         [xAxisData]="xAxisData"
       ></app-budget-bar-chart>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.cdProject"></div> -->
     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.cdRAG"></div>
   </div>
 
-  <div class="row mt-4 info-container">
+  <div data-html2canvas-ignore="true" class="row mt-4 info-container">
+    <h2 class="d-none canvasonly page-title col-12">{{ pageTitle }}</h2>
     <button
       type="button"
       triggers="mouseenter:mouseleave"
       mat-icon-button
       class="info-btn"
-      [ngbPopover]="goliveContent"
+      [ngbPopover]="goliveContent" data-html2canvas-ignore="true"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
+   
     <ng-template #goliveContent>
       <div [innerHTML]="helpText.cdGoLive"></div>
     </ng-template>

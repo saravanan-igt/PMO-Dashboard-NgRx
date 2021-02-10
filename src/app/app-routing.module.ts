@@ -17,10 +17,15 @@ import { VltGoLiveComponent } from "./shared/components/vlt-go-live/vlt-go-live.
 
 import { LotterySDComponent } from "./shared/components/lottery-sd/lottery-sd.component";
 import { LotterySVComponent } from "./shared/components/lottery-sv/lottery-sv.component";
+import { LotterySvcComponent } from "./shared/components/lottery-svc/lottery-svc.component";
+
+import { HighVisibilityProjectsComponent } from "./shared/components/high-visibility-projects/high-visibility-projects.component"
 
 import { LoginComponent } from "./login/login.component";
 import { DcFormComponent } from "./dc-form/dc-form.component";
 import { AuthGuard } from "./_helpers";
+import { from } from 'rxjs';
+
 
 const routes: Routes = [
   {
@@ -41,6 +46,11 @@ const routes: Routes = [
   {
     path: "lotterySv",
     component: LotterySVComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: "lotterySvc",
+    component: LotterySvcComponent,
     canActivate: [AuthGuard],
   },
   {
@@ -100,6 +110,12 @@ const routes: Routes = [
   },
   { path: "dcForm", component: DcFormComponent, canActivate: [AuthGuard] },
   { path: "login", component: LoginComponent },
+
+  {
+    path: "highVisibilityProjects",
+    component: HighVisibilityProjectsComponent,
+    canActivate: [AuthGuard],
+  },
 
   {
     path: "",

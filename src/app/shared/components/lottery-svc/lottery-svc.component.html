@@ -1,0 +1,123 @@
+<div class="container-fluid" *ngIf="DataLists" id="lottall-svc">
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="page-title">{{ pageTitle }}</h2>
+      </div>
+      <div class="col-md-5" id="topright">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              {{ pageTitle }}
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <app-export-btn (golivecalendar)="exportGoliveCalendar($event)" data-html2canvas-ignore="true" type="menu" id="lottall-svc"></app-export-btn> 
+    </div>
+    <div class="row info-container" id="LotterySVCbusiness">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn text-white"
+        [ngbPopover]="projectContent"
+      >
+        <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
+      </button>
+      <app-export-btn data-html2canvas-ignore="true" id="LotterySVCbusiness"></app-export-btn>
+      <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
+      <ng-template #projectContent>
+        <div [innerHTML]="helpText.lsvcProject"></div>
+      </ng-template>
+      <div class="col-md-4">
+        <app-project-category
+          chartTitle="Total Projects"
+          [data]="lotteryProjectsData"
+          height="200"
+        ></app-project-category>
+        <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldProject"></div> -->
+       </div>
+      <div class="col-md-4">
+        <app-budget-chart
+          chartTitle="Total Budget"
+          [data]="totalBudgetData"
+        ></app-budget-chart>
+        <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldBudget"></div> -->
+       </div>
+      <div class="col-md-4">
+        <app-budget-chart
+          chartTitle="RAG Status"
+          [data]="totalRiskData"
+          [labelFormatter]="'{c}'"
+          [color]="[
+            'rgba(255,91,86,0.85)',
+            'rgba(245,156,26,0.85)',
+            'rgba(0,191,165,0.85)'
+          ]"
+          [totalText]="false"
+        ></app-budget-chart>
+        <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldRAG"></div> -->
+       </div>
+      <div class="d-none canvasonly container" [innerHTML]="helpText.lsvcProject"></div>
+    </div>
+  
+    <div class="row mt-2 info-container" data-html2canvas-ignore="true">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn"
+        [ngbPopover]="projectListContent">
+        <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
+      </button>
+    
+      <ng-template #projectListContent>
+        <div [innerHTML]="helpText.lsvcProjectList"></div>
+      </ng-template>
+      <div class="col-md-4">
+        <app-project-card
+          [cardTitle]="'Planned Projects'"
+          [projectList]="plannedProjects"
+        ></app-project-card>
+      </div>
+      <div class="col-md-4">
+        <app-project-card
+          [cardTitle]="'Active Projects'"
+          [projectList]="activeProjects"
+        ></app-project-card>
+      </div>
+      <div class="col-md-4">
+        <app-project-card
+          [cardTitle]="'Completed Projects'"
+          [projectList]="closedProjects"
+        ></app-project-card>
+      </div>
+    </div>
+  
+    <div data-html2canvas-ignore="true" class="row mt-4 info-container">
+      <button
+        type="button"
+        triggers="mouseenter:mouseleave"
+        mat-icon-button
+        class="info-btn"
+        [ngbPopover]="goLiveContent"
+      >
+        <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
+      </button>
+      <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
+      <ng-template #goLiveContent>
+        <div [innerHTML]="helpText.lsvcGoLive"></div>
+      </ng-template>
+      <div class="col-12">
+        <app-go-live-calendar
+          *ngIf="scheduleData"
+          [scheduleData]="scheduleData"
+          [calendarTitle]="'Go-Live Calendar'"
+          [ragFilter]="true"
+        ></app-go-live-calendar>
+      </div>
+    </div>
+  </div>
+  

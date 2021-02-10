@@ -1,0 +1,17 @@
+.export-btn-menu {
+  .mat-raised-button {
+    padding: 0 5px 0px 10px;
+    text-align: left;
+  }
+}
+.export-btn-download {
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  .custom-btn {
+    z-index: 10;
+  }
+}
+button:focus {
+  outline: none;
+}

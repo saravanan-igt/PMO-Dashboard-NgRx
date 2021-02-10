@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-go-live",
@@ -10,14 +11,13 @@ import DataState from "../../../Store/data.state";
   styleUrls: ["./go-live.component.scss"],
 })
 export class GoLiveComponent implements OnInit {
+  @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent; 
   public pageTitle: string = "Lottery Go-Live Calendar";
-
   public calendarData: any[];
-
   isSticky(column: string): boolean {
     return column === "Project" ? true : false;
   }
-
   customerActiveProjects;
   rndProjects;
   dataList$: Observable<DataState>;
@@ -54,5 +54,9 @@ export class GoLiveComponent implements OnInit {
           });
         }
       });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 }

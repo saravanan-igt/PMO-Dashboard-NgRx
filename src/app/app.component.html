@@ -31,6 +31,15 @@
           <mat-icon>help_outline</mat-icon>
           Update Help Text
         </a>
+        <a 
+        mat-list-item 
+        routerLink="/highVisibilityProjects" 
+        routerLinkActive="active" 
+        *ngIf="currentUser && currentUser['roleid'] === 2"
+        >
+          <mat-icon>notification_important</mat-icon>
+          High Visibility Projects
+        </a>
       </mat-nav-list>
       <mat-nav-list>
         <p class="sidenav-header">Lottery</p>
@@ -46,10 +55,33 @@
           >
           Dashboard
         </a>
+        <mat-accordion #expandMenu>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="sidenav-header-corrected">
+                 SERVICE DELIVERY
+              </mat-panel-title>
+              <!-- <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+              </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <!-- <p>I'm visible because I am open</p> -->
+            <a mat-list-item routerLink="/lotterySv" routerLinkActive="active">
+              <mat-icon fontSet="material-icons-outlined"> loyalty</mat-icon>Batch Delivery
+            </a>
+            <a mat-list-item routerLink="/lotterySvc" routerLinkActive="active">
+              <mat-icon fontSet="material-icons-outlined"> timeline</mat-icon>Customer Support
+            </a>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <!-- <p class="sidenav-header">Service Delivery</p>
         <a mat-list-item routerLink="/lotterySv" routerLinkActive="active">
-          <mat-icon fontSet="material-icons-outlined"> loyalty</mat-icon>Service
-          Delivery
+          <mat-icon fontSet="material-icons-outlined"> loyalty</mat-icon>Batch Delivery
         </a>
+        <a mat-list-item routerLink="/lotterySvc" routerLinkActive="active">
+          <mat-icon fontSet="material-icons-outlined"> timeline</mat-icon>Customer Support
+        </a> -->
         <a mat-list-item routerLink="/lotterySd" routerLinkActive="active">
           <mat-icon fontSet="material-icons-outlined">
             important_devices</mat-icon
@@ -187,6 +219,11 @@
             Last Updated On: {{ lastUpdatedDate }}
           </small>
         </button> -->
+        <mat-slide-toggle #toggleElement
+        class="text-white lastupdate-btn"
+        style="font-size: 15px;"
+        (change)="highVisibilityProject($event)"
+        >Slide for High Visibility Projects</mat-slide-toggle>
         <button
           type="button"
           mat-button

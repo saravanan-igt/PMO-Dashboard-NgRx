@@ -1,9 +1,9 @@
-<div class="container-fluid" *ngIf="DataLists">
+<div class="container-fluid" *ngIf="DataLists.length" id="lottall">
   <div class="row">
     <div class="col-6">
       <h2 class="page-title">{{ pageTitle }}</h2>
     </div>
-    <div class="col-6">
+    <div class="col-5" id="topright" >
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -13,172 +13,160 @@
         </ol>
       </nav>
     </div>
-  </div>
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn text-white"
-      [ngbPopover]="projectContent"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
-    </button>
-    <ng-template #projectContent>
-      <div [innerHTML]="helpText.ldProject"></div>
-    </ng-template>
-    <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        *ngIf="lotteryProjectsData"
-        chartTitle="Total Projects"
-        [data]="lotteryProjectsData"
-      ></app-project-category>
-    </div>
-    <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        *ngIf="lotterySVProjectsData"
-        chartTitle="Service Delivery Projects"
-        [data]="lotterySVProjectsData"
-      ></app-project-category>
-    </div>
-    <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        *ngIf="lotterySDProjectsData"
-        chartTitle="System Delivery Projects"
-        [data]="lotterySDProjectsData"
-      ></app-project-category>
-    </div>
-    <div class="col-xl-3 col-md-6 mb-4">
-      <app-project-category
-        *ngIf="lotteryPlannedProjectsData"
-        chartTitle="R&D Projects"
-        [data]="lotteryPlannedProjectsData"
-      ></app-project-category>
-    </div>
+    <app-export-btn (golivecalendar)="exportGoliveCalendar($event)" data-html2canvas-ignore="true" type="menu"
+      id="lottall"></app-export-btn>
   </div>
 
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="budgetContent"
-      placement="right"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+  <div id="Lotterybusiness">
+    <div class="row info-container">
+      <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn text-white"
+        [ngbPopover]="projectContent">
+        <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
+      </button>
+      <app-export-btn data-html2canvas-ignore="true" id="Lotterybusiness"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2><br/>
+      <ng-template #projectContent>
+        <div [innerHTML]="helpText.ldProject"></div>
+      </ng-template>
+      <div class="col-xl-4 col-md-6 mb-4">
+        <app-project-category *ngIf="lotteryProjectsData" chartTitle="Total Projects" [data]="lotteryProjectsData">
+        </app-project-category>
+    <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldProject"></div> -->
+
+      </div>
+      <!-- <div class="col-xl-3 col-md-6 mb-4">
+        <app-project-category
+          *ngIf="lotterySVProjectsData"
+          chartTitle="Service Delivery Projects"
+          [data]="lotterySVProjectsData"
+        ></app-project-category>
+      </div> -->
+      <div class="col-xl-4 col-md-6 mb-4">
+        <app-project-category *ngIf="lotterySDProjectsData" chartTitle="System Delivery Projects"
+          [data]="lotterySDProjectsData"></app-project-category>
+   <!-- <div class="d-none canvasonly" [innerHTML]="helpText.lsvProject"></div> -->
+
+      </div>
+      <div class="col-xl-4 col-md-6 mb-4">
+        <app-project-category *ngIf="lotteryPlannedProjectsData" chartTitle="R&D Projects"
+          [data]="lotteryPlannedProjectsData"></app-project-category>
+          <!-- <div class="d-none canvasonly" [innerHTML]="helpText.lrdProject"></div> -->
+
+      </div>
+    </div>
+
+    <div class="row info-container">
+      <div class="col-xl-2 col-md-6 mb-4"></div>
+      <div class="col-xl-8 col-md-6 mb-4">
+        <mat-card class="pie-chart-card" style="padding-bottom: 0px;">
+          <mat-card-header>
+            <mat-card-title> Service Delivery Projects </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-xl-6 col-md-6 mb-4">
+                <app-project-category *ngIf="lotterySVProjectsData" chartTitle="Batch Delivery"
+                  [data]="lotterySVProjectsData" cardLess=true></app-project-category>
+                  <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldBudget"></div> -->
+
+              </div>
+              <div class="col-xl-6 col-md-6 mb-4">
+                <app-project-category *ngIf="lotterySVCProjectsData" chartTitle="Customer Support"
+                  [data]="lotterySVCProjectsData" cardLess=true></app-project-category>
+                  <!-- <div class="d-none canvasonly" [innerHTML]="helpText.lsvProject"></div> -->
+                 </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.ldProject"></div>
+  </div>
+
+
+  <div class="row info-container" id="lotterybudget">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn" [ngbPopover]="budgetContent"
+      placement="right">
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
-    <ng-template #budgetContent>
+    <app-export-btn data-html2canvas-ignore="true" id="lotterybudget"></app-export-btn>
+  <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
+   <ng-template #budgetContent>
       <div [innerHTML]="helpText.ldBudget"></div>
     </ng-template>
     <div class="col-xl-4 col-md-5 mb-4">
-      <app-budget-chart
-        chartTitle="Lottery Budget"
-        [data]="totalBudgetData"
-        height="250"
-        [radius]="'60%'"
-      ></app-budget-chart>
+      <app-budget-chart chartTitle="Lottery Budget" [data]="totalBudgetData" height="250" [radius]="'60%'">
+      </app-budget-chart>
     </div>
     <div class="col-xl-8 col-md-7 mb-4">
-      <app-budget-bar-chart
-        chartTitle="Lottery Budget Portfolio"
-        [seriesData]="budgetSeriesData"
-        yAxisName=""
-        [xAxisData]="xAxisData"
-      ></app-budget-bar-chart>
+      <app-budget-bar-chart chartTitle="Lottery Budget Portfolio" [seriesData]="budgetSeriesData" yAxisName=""
+        [xAxisData]="xAxisData"></app-budget-bar-chart>
+        <div class="d-none canvasonly" [innerHTML]="helpText.ldBudget"></div> 
     </div>
   </div>
 
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="forecastContent"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+  
+  <div class="row info-container" id="LotteryCostplanning">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn"
+      [ngbPopover]="forecastContent">
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="Costplanning"></app-export-btn>
+    <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
     <ng-template #forecastContent>
       <div [innerHTML]="helpText.ldForecast"></div>
     </ng-template>
     <div class="col-12 mb-4">
-      <app-forecast-chart
-        *ngIf="forecastSeriesData"
-        [seriesData]="forecastSeriesData"
-        yAxisName=""
-        [xAxisData]="forecastLegend"
-        [gridLeft]="'10%'"
-        chartTitle="Lottery"
-      ></app-forecast-chart>
-    </div>
-  </div>
-
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="ragContent"
-    >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <app-forecast-chart [seriesData]="forecastSeriesData" yAxisName=""
+        [xAxisData]="forecastLegend" [gridLeft]="'10%'" chartTitle="Lottery"></app-forecast-chart>
+     
+      </div>
+     
+     </div>
+      <div class="d-none canvasonly container" [innerHTML]="helpText.ldForecast"></div>
+    
+  <div class="row info-container" id="Lottery_RAG_status">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn" [ngbPopover]="ragContent">
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" id="Lottery_RAG_status"></app-export-btn>
+  <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
     <ng-template #ragContent>
       <div [innerHTML]="helpText.ldRAG"></div>
     </ng-template>
     <div class="col-md-4 mb-4">
       <!-- (onChartEvent)="chartEvent($event)" -->
-      <app-budget-chart
-        chartTitle="Lottery Projects RAG Status"
-        [data]="totalRiskData"
-        [labelFormatter]="'{c}'"
-        [totalText]="false"
-        [color]="[
+      <app-budget-chart chartTitle="Lottery Projects RAG Status" [data]="totalRiskData" [labelFormatter]="'{c}'"
+        [totalText]="false" [color]="[
           'rgba(255,91,86,0.85)',
           'rgba(245,156,26,0.85)',
           'rgba(0,191,165,0.85)'
-        ]"
-        height="250"
-      ></app-budget-chart>
+        ]" height="250"></app-budget-chart>
     </div>
     <div class="col-md-8 mb-4">
-      <app-budget-bar-chart
-        chartTitle="Lottery Projects Risk Profile"
-        [seriesData]="riskProfileData"
-        [labelFormatter]="'{c}'"
-        [yAxisFormat]="'{value}'"
-        [color]="[
+      <app-budget-bar-chart chartTitle="Lottery Projects Risk Profile" [seriesData]="riskProfileData"
+        [labelFormatter]="'{c}'" [yAxisFormat]="'{value}'" [color]="[
           'rgba(255,91,86,0.85)',
           'rgba(245,156,26,0.85)',
           'rgba(0,191,165,0.85)'
-        ]"
-        yAxisName="No. of Projects"
-        [xAxisData]="xAxisData"
-      ></app-budget-bar-chart>
+        ]" yAxisName="No. of Projects" [xAxisData]="xAxisData"></app-budget-bar-chart>
     </div>
+    <div class="d-none canvasonly  container" [innerHTML]="helpText.ldRAG"></div>
   </div>
 
-  <div class="row info-container">
-    <button
-      type="button"
-      triggers="mouseenter:mouseleave"
-      mat-icon-button
-      class="info-btn"
-      [ngbPopover]="goLiveContent"
-    >
+  <div data-html2canvas-ignore="true" class="row info-container">
+    <button type="button" triggers="mouseenter:mouseleave" mat-icon-button class="info-btn"
+      [ngbPopover]="goLiveContent">
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
     <ng-template #goLiveContent>
       <div [innerHTML]="helpText.ldGoLive"></div>
     </ng-template>
     <div class="col-12" *ngIf="calendarData">
-      <app-go-live-calendar
-        [scheduleData]="calendarData"
-        [calendarTitle]="'Lottery Projects Go-Live Calendar'"
-        [ragFilter]="true"
-        [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"
-      ></app-go-live-calendar>
+      <app-go-live-calendar [scheduleData]="calendarData" [calendarTitle]="'Lottery Projects Go-Live Calendar'"
+        [ragFilter]="true" [businessFilter]="'BusinessTypeCode|BUSINESS_TYPE'"></app-go-live-calendar>
     </div>
+
   </div>
 </div>

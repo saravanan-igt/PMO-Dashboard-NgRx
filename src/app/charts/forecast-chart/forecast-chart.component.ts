@@ -5,6 +5,7 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 
+
 @Component({
   selector: "app-forecast-chart",
   templateUrl: "./forecast-chart.component.html",
@@ -67,6 +68,8 @@ export class ForecastChartComponent implements OnInit {
 
   ngOnInit() {}
 
+  
+
   ngOnChanges() {
     this.chartOption = {
       color: [
@@ -96,6 +99,7 @@ export class ForecastChartComponent implements OnInit {
       xAxis: [
         {
           type: "category",
+          
           data: this.xAxisData
             ? this.xAxisData
             : [

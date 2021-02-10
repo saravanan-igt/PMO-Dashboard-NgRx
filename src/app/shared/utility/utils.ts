@@ -20,14 +20,30 @@ export default class Utils {
     return cjson.decompress(response)[0];
   }
 
-  static createLotteryData(response) {
-    let data = [...cjson.decompress(response)].map((item) => {
+  static createLotteryData(response, flag) {
+    let data;
+    let itemdata = [...cjson.decompress(response)].map((item) => {
       item.RAG = item.RAG === null ? "G" : item.RAG;
+      // if(flag === 1) {
+      //   if(item.KeyProjectIndicator == 1) return item;
+      // }else {
+      //   return item;
+      // }
       return item;
     });
+
+    if(flag === 1) {
+    data = itemdata.filter(
+      (item) => item["KeyProjectIndicator"] === 1
+    );
+    }else {
+      data = itemdata;
+    }
+
+   
     let cData = data.filter(
       (item) =>
-        item["BusinessTypeCode"] === "SD" || item["BusinessTypeCode"] === "SV"
+        item["BusinessTypeCode"] === "SD" || item["BusinessTypeCode"] === "SV" || item["BusinessTypeCode"] === "SVC"
     );
 
     let cActiveProjects = cData.filter(
@@ -60,6 +76,15 @@ export default class Utils {
       ),
       svClosed = cClosedProjects.filter(
         (item) => item["BusinessTypeCode"] === "SV"
+      ),
+      svcActive = cActiveProjects.filter(
+        (item) => item["BusinessTypeCode"] === "SVC"
+      ),
+      svcPlanned = cPlannedProjects.filter(
+        (item) => item["BusinessTypeCode"] === "SVC"
+      ),
+      svcClosed = cClosedProjects.filter(
+        (item) => item["BusinessTypeCode"] === "SVC"
       );
     console.log("sdActive", sdActive);
     console.log(
@@ -168,6 +193,40 @@ export default class Utils {
           green: svActive.filter((item) => item.RAG === "G").length,
           amber: svActive.filter((item) => item.RAG === "A").length,
         },
+        svc: {
+          active: svcActive.length,
+          activeProjects: svcActive,
+          planned: svcPlanned.length,
+          plannedProjects: svcPlanned,
+          closed: svcClosed.length,
+          closedProjects: svcClosed,
+          totalBudget:
+            this.calculateBudget(svcActive, "CostPlan") +
+            this.calculateBudget(svcPlanned, "ForecastDollars") +
+            this.calculateBudget(
+              svcClosed.filter((item) => item.Years === currentYear),
+              "ActualsToDate"
+            ),
+          activeBudget: this.calculateBudget(svcActive, "CostPlan"),
+          plannedBudget: this.calculateBudget(svcPlanned, "ForecastDollars"),
+          closedBudget: this.calculateBudget(
+            svcClosed.filter((item) => item.Years === currentYear),
+            "CostPlan"
+          ),
+          activeBudgetF: this.calculateBudget(svcActive, "CostPlan"),
+          closedBudgetF: this.calculateBudget(
+            svcClosed.filter((item) => item.Years === currentYear),
+            "CostPlan"
+          ),
+          activeForecast: this.calculateBudget(svcActive, "ForecastDollars"),
+          closedForecast: this.calculateBudget(
+            svcClosed.filter((item) => item.Years === currentYear),
+            "ForecastDollars"
+          ),
+          red: svcActive.filter((item) => item.RAG === "R").length,
+          green: svcActive.filter((item) => item.RAG === "G").length,
+          amber: svcActive.filter((item) => item.RAG === "A").length,
+        },
         rag: {
           red: cRagData.filter((item) => item.RAG === "R").length,
           green: cRagData.filter((item) => item.RAG === "G").length,
@@ -243,10 +302,14 @@ export default class Utils {
     };
   }
 
-  static createCasinoData(response) {
+  static createCasinoData(response, flag) {
     let data = [...cjson.decompress(response)];
-    let sdProjects = data.filter((item) => item.BUSINESS_TYPE === "SD");
-    let rndProjects = data.filter((item) => item.BUSINESS_TYPE === "R&D");
+    let itemData = data;
+    if(flag === 1){
+      itemData = data.filter((item) => item.KeyProjectIndicator === 1);
+    }
+    let sdProjects = itemData.filter((item) => item.BUSINESS_TYPE === "SD");
+    let rndProjects = itemData.filter((item) => item.BUSINESS_TYPE === "R&D");
     // sdProjects
     //   .filter((item) => item.Progress === "Active")
     //   .map((item) => {
@@ -370,9 +433,13 @@ export default class Utils {
     };
   }
 
-  static createVltData(response) {
+  static createVltData(response, flag) {
     let data = [...cjson.decompress(response)];
-    let sdProjects = data.filter((item) => item.BUSINESS_TYPE === "SD");
+    let itemData = data;
+    if(flag === 1){
+      itemData = data.filter((item) => item.KeyProjectIndicator === 1);
+    }
+    let sdProjects = itemData.filter((item) => item.BUSINESS_TYPE === "SD");
     let totalSdBudget =
       this.calculateBudget(
         sdProjects.filter((item) => item.Progress === "Active"),
@@ -386,7 +453,7 @@ export default class Utils {
         sdProjects.filter((item) => item.Progress === "Completed"),
         "ACTUAL_COST"
       );
-    let svProjects = data.filter((item) => item.BUSINESS_TYPE === "SV");
+    let svProjects = itemData.filter((item) => item.BUSINESS_TYPE === "SV");
     let totalSvBudget =
       this.calculateBudget(
         svProjects.filter((item) => item.Progress === "Active"),
@@ -400,7 +467,7 @@ export default class Utils {
         svProjects.filter((item) => item.Progress === "Completed"),
         "ACTUAL_COST"
       );
-    let rndProjects = data.filter(
+    let rndProjects = itemData.filter(
       (item) => item.BUSINESS_TYPE === "R&D" && item.YEARS >= currentYear
     );
 
