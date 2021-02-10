@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-vlt-customer",
@@ -19,7 +20,8 @@ export class VltCustomerComponent implements OnInit {
   totalRiskData;
   closedProjectData;
   scheduleData;
-
+  @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent; 
   dataList$: Observable<DataState>;
   DataSubscription: Subscription;
   DataLists: any[] = [];
@@ -131,5 +133,9 @@ export class VltCustomerComponent implements OnInit {
           });
         }
       });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 }

@@ -18,11 +18,7 @@
             <div class="input-group-prepend">
               <span class="input-group-text">RAG Status</span>
             </div>
-            <select
-              class="form-control"
-              [value]="ragStatus"
-              (change)="onRagChange($event.target.value)"
-            >
+            <select class="form-control" [value]="ragStatus" (change)="onRagChange($event.target.value)">
               <option [value]="rag.value" *ngFor="let rag of ragList">{{
                 rag.viewValue
               }}</option>
@@ -32,65 +28,36 @@
             <div class="input-group-prepend">
               <span class="input-group-text">Business</span>
             </div>
-            <select
-              class="form-control"
-              (change)="onBusinessChange($event.target.value)"
-            >
-              <option
-                [value]="item.value"
-                *ngFor="let item of businessVerticals"
-                >{{ item.viewValue }}</option
-              >
+            <select class="form-control" (change)="onBusinessChange($event.target.value)">
+              <option [value]="item.value" *ngFor="let item of businessVerticals">{{ item.viewValue }}</option>
             </select>
-          </div>
+          </div>          
         </div>
+       
       </mat-card-title>
       <mat-card-content class="mat-table-container">
-        <mat-table #table [dataSource]="calendarData" class="calendar-table">
+        <mat-table #table [dataSource]="calendarData" class="calendar-table" id="calender-data">
           <!-- Position Column -->
-          <ng-container
-            *ngFor="let column of displayedColumns"
-            [cdkColumnDef]="column"
-            [sticky]="isSticky(column)"
-          >
-            <mat-header-cell
-              *cdkHeaderCellDef
-              [class.project-cell]="column == 'Project'"
-            >
+          <ng-container *ngFor="let column of displayedColumns" [cdkColumnDef]="column" [sticky]="isSticky(column)">
+            <mat-header-cell *cdkHeaderCellDef [class.project-cell]="column == 'Project'">
               {{ column }}
             </mat-header-cell>
-            <mat-cell
-              *cdkCellDef="let row"
-              [class.project-cell]="column == 'Project'"
-              [ngClass]="{
+            <mat-cell *cdkCellDef="let row" [class.project-cell]="column == 'Project'" [ngClass]="{
                 casinoProject: row['BusinessType'] === 'Casino',
                 vltProject: row['BusinessType'] === 'VLT'
-              }"
-            >
-              <mat-icon
-                matTooltip="{{
+              }">
+              <mat-icon matTooltip="{{
                   row['workStatus'] === 'R'
                     ? 'At Risk ' + row['liveDate']
                     : row['liveDate']
-                }}"
-                class="livedate-icon"
-                *ngIf="row[column] === 'arrow_drop_up'"
-                [ngClass]="{
+                }}" class="livedate-icon" *ngIf="row[column] === 'arrow_drop_up'" [ngClass]="{
                   danger: row['workStatus'] === 'R',
                   warn: row['workStatus'] === 'A'
-                }"
-                aria-hidden="false"
-                aria-label="Example settings_input_svideo icon"
-                fontSet="material-icons-outlined"
-                >{{ row[column] }}
+                }" aria-hidden="false" aria-label="Example settings_input_svideo icon"
+                fontSet="material-icons-outlined">{{ row[column] }}
               </mat-icon>
               <span *ngIf="column === 'Project'">
-                <a
-                  [href]="row.ProjectURL"
-                  target="_blank"
-                  rel="noopener"
-                  *ngIf="row['ProjectURL'] !== null"
-                >
+                <a [href]="row.ProjectURL" target="_blank" rel="noopener" *ngIf="row['ProjectURL'] !== null">
                   {{ row[column] }}
                 </a>
                 <span *ngIf="row['ProjectURL'] === null">
@@ -102,17 +69,11 @@
             </mat-cell>
           </ng-container>
 
-          <mat-header-row
-            *matHeaderRowDef="displayedColumns; sticky: true"
-          ></mat-header-row>
-          <mat-row
-            class="mat-row-small"
-            [ngClass]="{
+          <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+          <mat-row class="mat-row-small" [ngClass]="{
               casinoProject: row['BusinessType'] === 'Casino',
               vltProject: row['BusinessType'] === 'VLT'
-            }"
-            *matRowDef="let row; columns: displayedColumns"
-          ></mat-row>
+            }" *matRowDef="let row; columns: displayedColumns"></mat-row>
         </mat-table>
         <div class="no-data" *ngIf="!calendarData.length">
           <img src="./assets/img/nodata.png" />

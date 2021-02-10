@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-lottery-sv",
@@ -10,11 +11,13 @@ import DataState from "../../../Store/data.state";
   styleUrls: ["./lottery-sv.component.scss"],
 })
 export class LotterySVComponent implements OnInit {
-  pageTitle: string = "Lottery Service Delivery";
+  @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent; 
+  pageTitle: string = "Lottery Services – Batch Delivery";
   public activeProjects;
   public plannedProjects;
   public closedProjects;
-  public scheduleData;
+   scheduleData;
   public customerData;
   public totalProjects;
 
@@ -30,7 +33,7 @@ export class LotterySVComponent implements OnInit {
   DataLists: any[] = [];
   dataError;
   helpText;
-
+  
   constructor(private store: Store<{ data: DataState }>) {
     this.dataList$ = store.pipe(select("data"));
   }
@@ -97,9 +100,14 @@ export class LotterySVComponent implements OnInit {
               LiveDate: data[0] + "/" + data[1] + "/" + year,
               BusinessType: item["BusinessTypeCode"],
               Component: item["Customer"],
+            // item.Component = item["Customer"];
             };
           });
         }
       });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 }

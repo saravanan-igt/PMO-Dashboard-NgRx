@@ -477,6 +477,89 @@
 
                     <div class="col-md-6">
                       <mat-card-title class="helptext-form-title">
+                        Lottery SVC Projects
+                      </mat-card-title>
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsvcProject"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsvcProject.invalid &&
+                            rteForm.controls.lsvcProject.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lsvcProject.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title"
+                        >Lottery SVC Project Listing</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsvcProjectList"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsvcProjectList.invalid &&
+                            rteForm.controls.lsvcProjectList.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="
+                              rteForm.controls.lsvcProjectList.errors.required
+                            "
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <mat-card-title class="helptext-form-title"
+                        >Lottery SVC Go Live Calendar</mat-card-title
+                      >
+                      <div class="form-group">
+                        <ejs-richtexteditor
+                          formControlName="lsvcGoLive"
+                          [toolbarSettings]="tools"
+                          [enabled]="isChecked"
+                        >
+                        </ejs-richtexteditor>
+                        <div
+                          *ngIf="
+                            rteForm.controls.lsvcGoLive.invalid &&
+                            rteForm.controls.lsvcGoLive.touched
+                          "
+                          class="alert alert-danger"
+                        >
+                          <div
+                            *ngIf="rteForm.controls.lsvcGoLive.errors.required"
+                          >
+                            Value is required.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <mat-card-title class="helptext-form-title">
                         Lottery SD Project Details
                       </mat-card-title>
                       <div class="form-group">

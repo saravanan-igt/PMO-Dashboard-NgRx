@@ -73,6 +73,9 @@ export class DcFormComponent implements OnInit {
       lsvProject: [null, [Validators.required]],
       lsvProjectList: [null, [Validators.required]],
       lsvGoLive: [null, [Validators.required]],
+      lsvcProject: [null, [Validators.required]],
+      lsvcProjectList: [null, [Validators.required]],
+      lsvcGoLive: [null, [Validators.required]],
       lsdProject: [null, [Validators.required]],
       lsdProjectList: [null, [Validators.required]],
       lsdGoLive: [null, [Validators.required]],
@@ -136,6 +139,9 @@ export class DcFormComponent implements OnInit {
       lsvProject: [this.DataLists["lsvProject"], [Validators.required]],
       lsvProjectList: [this.DataLists["lsvProjectList"], [Validators.required]],
       lsvGoLive: [this.DataLists["lsvGoLive"], [Validators.required]],
+      lsvcProject: [this.DataLists["lsvcProject"], [Validators.required]],
+      lsvcProjectList: [this.DataLists["lsvcProjectList"], [Validators.required]],
+      lsvcGoLive: [this.DataLists["lsvcGoLive"], [Validators.required]],
       lsdProjectList: [this.DataLists["lsdProjectList"], [Validators.required]],
       lsdProject: [this.DataLists["lsdProject"], [Validators.required]],
       lsdGoLive: [this.DataLists["lsdGoLive"], [Validators.required]],
@@ -177,7 +183,7 @@ export class DcFormComponent implements OnInit {
       return;
     }
     this.api.updateHelpText(this.rteForm.value).subscribe((res) => {
-      this.store.dispatch(DataActions.BeginGetDataAction());
+      this.store.dispatch(DataActions.BeginGetDataAction({ payload: "None" }));
       Swal.fire("Success!", "Help text updated successfully!", "success");
     });
   }

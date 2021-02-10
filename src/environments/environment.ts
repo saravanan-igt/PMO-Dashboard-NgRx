@@ -4,7 +4,7 @@
 //http://10.2.230.128:8086/    http://localhost:4000
 export const environment = {
   production: false,
-  baseUrl: "http://10.2.230.128:4010",
+  baseUrl: "http://10.2.230.128:8086",
 };
 
 /*

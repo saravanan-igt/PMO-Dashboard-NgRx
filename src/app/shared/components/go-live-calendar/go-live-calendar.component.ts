@@ -6,6 +6,8 @@ import {
   ChangeDetectionStrategy,
 } from "@angular/core";
 import { FormControl } from "@angular/forms";
+import { ExportData } from 'src/app/services/export-data';
+
 
 @Component({
   selector: "app-go-live-calendar",
@@ -100,7 +102,7 @@ export class GoLiveCalendarComponent implements OnInit, OnChanges {
   isSticky(column: string): boolean {
     return column === "Project" ? true : false;
   }
-  constructor() {}
+  constructor(private exportData: ExportData) {}
   ragStatus = "All";
   businessStatus = "All";
   ragList = [
@@ -158,6 +160,7 @@ export class GoLiveCalendarComponent implements OnInit, OnChanges {
 
     this.createTableData(fData);
   }
+
   onRagChange(value) {
     this.ragStatus = value;
     this.filterChange();
@@ -209,10 +212,15 @@ export class GoLiveCalendarComponent implements OnInit, OnChanges {
       : [
           { value: "All", viewValue: "All" },
           { value: "SV", viewValue: "SV" },
+          { value: "SVC", viewValue: "SVC" },
           { value: "SD", viewValue: "SD" },
           { value: "PD", viewValue: "PD" },
         ];
   }
+  exportAsExcelFile() {
+    this.exportData.exportAsExcelFile(this.calendarData)
+  }
+ 
 
   ngOnChanges() {
     if (this.scheduleData !== undefined) {

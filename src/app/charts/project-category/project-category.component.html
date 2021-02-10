@@ -1,7 +1,8 @@
-<mat-card class="pie-chart-card">
+
+<mat-card class="pie-chart-card" [class.cardLess]="cardLess">
   <mat-card-header>
     <mat-card-title>{{ chartTitle }}</mat-card-title>
-    <button
+    <button data-html2canvas-ignore="true"
       *ngIf="info"
       type="button"
       mat-icon-button

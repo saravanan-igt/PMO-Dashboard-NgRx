@@ -16,3 +16,22 @@
     font-weight: 500;
   }
 }
+.mat-expansion-panel-header.mat-expanded,.mat-expansion-panel,
+.mat-expansion-panel-header.mat-expanded:hover {
+  background:none;
+  
+}
+
+.sidenav-header-corrected {
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 0px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.mat-expansion-indicator::after, .mat-expansion-panel {
+  color: white;
+}

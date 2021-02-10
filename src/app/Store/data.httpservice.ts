@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable, forkJoin } from "rxjs";
+import { Observable, forkJoin, from } from "rxjs";
 import { map } from "rxjs/operators";
 import Utils from "../shared/utility/utils";
 import { environment } from "../../environments/environment";
@@ -29,6 +29,7 @@ export class DataHttpService {
 
   constructor(private httpclient: HttpClient) {}
 
+  highVisibilityProjectsFlag: number;
   public getAllProjects(): Observable<any[]> {
     return forkJoin([
       this.LotteryApiURL1,
@@ -38,13 +39,21 @@ export class DataHttpService {
       this.prevHelpTextURL,
     ]);
   }
-  public getDatas() {
+  public getDatas(flag) {
     return this.getAllProjects().pipe(
       map((response) => {
+        console.log(flag)
+        console.log(response)
+        if(flag.payload === "Toggle") {
+          console.log("Toggle is on")
+          this.highVisibilityProjectsFlag = 1
+        }else {
+          this.highVisibilityProjectsFlag = 0
+        }
         return [
-          Utils.createLotteryData(response[0]),
-          Utils.createCasinoData(response[1]),
-          Utils.createVltData(response[2]),
+          Utils.createLotteryData(response[0], this.highVisibilityProjectsFlag),
+          Utils.createCasinoData(response[1], this.highVisibilityProjectsFlag),
+          Utils.createVltData(response[2], this.highVisibilityProjectsFlag),
           response[3][0],
           response[4],
         ];

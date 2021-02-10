@@ -14,8 +14,9 @@ export class DataEffects {
     this.action$.pipe(
       ofType(DataActions.BeginGetDataAction),
       mergeMap((action) =>
-        this.dataService.getDatas().pipe(
+        this.dataService.getDatas(action).pipe(
           map((data: any[]) => {
+            console.log("Sixth")
             return DataActions.SuccessGetDataAction({ payload: data });
           }),
           catchError((error: Error) => {

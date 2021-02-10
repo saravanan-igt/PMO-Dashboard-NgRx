@@ -15,6 +15,7 @@ export class ProjectCategoryComponent implements OnInit {
   @Input() data: any;
   @Input() chartTitle: string;
   @Input() height;
+  @Input() cardLess: boolean = false;
   @Input() info;
   chartOption;
 
@@ -24,6 +25,7 @@ export class ProjectCategoryComponent implements OnInit {
   ngOnInit() {}
 
   ngOnChanges() {
+    console.log(this.cardLess)
     this.chartOption = {
       tooltip: {
         trigger: "item",

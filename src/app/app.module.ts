@@ -48,6 +48,10 @@ import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
 import { AboutComponent } from "./about/about.component";
+import { HighVisibilityProjectsComponent } from './shared/components/high-visibility-projects/high-visibility-projects.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { LotterySvcComponent } from "./shared/components/lottery-svc/lottery-svc.component";
+import { ExportBtnComponent } from './shared/components/export-btn/export-btn.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -82,6 +86,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     LoginComponent,
     DcFormComponent,
     AboutComponent,
+    HighVisibilityProjectsComponent,
+    LotterySvcComponent,
+    ExportBtnComponent,
   ],
   imports: [
     BrowserModule,
@@ -99,6 +106,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     StoreModule.forRoot({ data: DataReducer }),
     EffectsModule.forRoot([DataEffects]),
     PerfectScrollbarModule,
+    MatCheckboxModule,
   ],
   providers: [
     LoaderService,

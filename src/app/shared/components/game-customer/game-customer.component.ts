@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-game-customer",
@@ -13,7 +14,8 @@ export class GameCustomerComponent implements OnInit {
   pageTitle: string = "Casino System Delivery";
   public plannedProjectData;
   public activeProjectDetails;
-
+  @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent;
   public dashboardData;
   gameProjectData;
   totalProjectsData;
@@ -136,5 +138,9 @@ export class GameCustomerComponent implements OnInit {
           );
         }
       });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 }

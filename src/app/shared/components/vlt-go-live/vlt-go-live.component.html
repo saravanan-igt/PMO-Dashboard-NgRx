@@ -3,7 +3,7 @@
     <div class="col-md-6">
       <h2 class="page-title mb-1">{{ pageTitle }}</h2>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" id="topright">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -14,7 +14,7 @@
       </nav>
     </div>
   </div>
-  <div class="row info-container">
+  <div data-html2canvas-ignore="true" class="row info-container">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -27,6 +27,7 @@
     <ng-template #projectContent>
       <div [innerHTML]="helpText.vltGoLive"></div>
     </ng-template>
+    <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
     <div class="col-12">
       <app-go-live-calendar
         [scheduleData]="calendarData"

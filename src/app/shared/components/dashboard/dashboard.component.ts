@@ -1,15 +1,20 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from '../go-live-calendar/go-live-calendar.component';
+
 
 @Component({
   selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.scss"],
+
 })
 export class DashboardComponent implements OnInit {
+  @ViewChild(GoLiveCalendarComponent, { static: false })
+  goLiveCalendar: GoLiveCalendarComponent;
   pageTitle: string = "Portfolio Dashboard";
   totalProjectsData = [];
   lotteryProjectsData = [];
@@ -34,6 +39,8 @@ export class DashboardComponent implements OnInit {
   dataError;
   helpText;
   budgetPortfolioLegend = ["Active", "Planned", "Completed"];
+  itemSelected
+
 
   calculateTotal(data) {
     let total = data.reduce((total, currentValue) => {
@@ -58,7 +65,6 @@ export class DashboardComponent implements OnInit {
           this.customerActiveProjects = this.customerProjects.projectList.Active;
           this.gameProjects = this.DataLists[1];
           this.vltProjects = this.DataLists[2];
-
           this.totalProjectsData = [
             {
               value:
@@ -157,22 +163,23 @@ export class DashboardComponent implements OnInit {
               name: "Completed",
             },
           ];
-
           let budgetData = {
             active:
               this.customerProjects.sd.activeBudget +
               this.customerProjects.sv.activeBudget +
+              this.customerProjects.svc.activeBudget +
               this.rndProjects.activeBudget,
             planned:
               this.customerProjects.sd.plannedBudget +
               this.customerProjects.sv.plannedBudget +
+              this.customerProjects.svc.plannedBudget +
               this.rndProjects.plannedBudget,
             closed:
               this.customerProjects.sd.closedBudget +
               this.customerProjects.sv.closedBudget +
+              this.customerProjects.svc.closedBudget +
               this.rndProjects.closedBudget,
           };
-
           this.budgetSeriesData = [
             {
               name: "Active",
@@ -182,10 +189,10 @@ export class DashboardComponent implements OnInit {
               data: [
                 budgetData.active,
                 this.gameProjects.sd.budget.active +
-                  this.gameProjects.rnd.budget.active,
+                this.gameProjects.rnd.budget.active,
                 this.vltProjects.sd.budget.active +
-                  this.vltProjects.sv.budget.active +
-                  this.vltProjects.rnd.budget.active,
+                this.vltProjects.sv.budget.active +
+                this.vltProjects.rnd.budget.active,
               ],
             },
             {
@@ -195,10 +202,10 @@ export class DashboardComponent implements OnInit {
               data: [
                 budgetData.planned,
                 this.gameProjects.sd.budget.planned +
-                  this.gameProjects.rnd.budget.planned,
+                this.gameProjects.rnd.budget.planned,
                 this.vltProjects.sd.budget.planned +
-                  this.vltProjects.sv.budget.planned +
-                  this.vltProjects.rnd.budget.planned,
+                this.vltProjects.sv.budget.planned +
+                this.vltProjects.rnd.budget.planned,
               ],
             },
             {
@@ -208,14 +215,13 @@ export class DashboardComponent implements OnInit {
               data: [
                 budgetData.closed,
                 this.gameProjects.sd.budget.closed +
-                  this.gameProjects.rnd.budget.closed,
+                this.gameProjects.rnd.budget.closed,
                 this.vltProjects.sd.budget.closed +
-                  this.vltProjects.sv.budget.closed +
-                  this.vltProjects.rnd.budget.closed,
+                this.vltProjects.sv.budget.closed +
+                this.vltProjects.rnd.budget.closed,
               ],
             },
           ];
-
           this.totalBudgetData = [
             {
               value: this.calculateTotal(this.budgetSeriesData[0].data),
@@ -230,28 +236,29 @@ export class DashboardComponent implements OnInit {
               name: "Completed",
             },
           ];
-
           this.forecastSeriesData = [
             {
               name: "Cost Planning",
               type: "line",
               data: [
                 this.customerProjects.sd.activeBudgetF +
-                  this.customerProjects.sv.activeBudgetF +
-                  this.rndProjects.activeBudgetF,
+                this.customerProjects.sv.activeBudgetF +
+                this.customerProjects.svc.activeBudgetF +
+                this.rndProjects.activeBudgetF,
                 this.customerProjects.sd.closedBudgetF +
-                  this.customerProjects.sv.closedBudgetF +
-                  this.rndProjects.closedBudgetF,
+                this.customerProjects.sv.closedBudgetF +
+                this.customerProjects.svc.closedBudgetF +
+                this.rndProjects.closedBudgetF,
                 this.gameProjects.sd.budget.active +
-                  this.gameProjects.rnd.budget.active,
+                this.gameProjects.rnd.budget.active,
                 this.gameProjects.sd.budget.closed +
-                  this.gameProjects.rnd.budget.closed,
+                this.gameProjects.rnd.budget.closed,
                 this.vltProjects.sd.budget.active +
-                  this.vltProjects.sv.budget.active +
-                  this.vltProjects.rnd.budget.active,
+                this.vltProjects.sv.budget.active +
+                this.vltProjects.rnd.budget.active,
                 this.vltProjects.sd.budget.closed +
-                  this.vltProjects.sv.budget.closed +
-                  this.vltProjects.rnd.budget.closed,
+                this.vltProjects.sv.budget.closed +
+                this.vltProjects.rnd.budget.closed,
               ],
             },
             {
@@ -260,28 +267,29 @@ export class DashboardComponent implements OnInit {
               data: [
                 Number(
                   this.customerProjects.sd.activeForecast +
-                    this.customerProjects.sv.activeForecast +
-                    this.rndProjects.activeForecast
+                  this.customerProjects.sv.activeForecast +
+                  this.customerProjects.svc.activeForecast +
+                  this.rndProjects.activeForecast
                 ).toFixed(2),
                 Number(
                   this.customerProjects.sd.closedForecast +
-                    this.customerProjects.sv.closedForecast +
-                    this.rndProjects.closedForecast
+                  this.customerProjects.sv.closedForecast +
+                  this.customerProjects.svc.closedForecast +
+                  this.rndProjects.closedForecast
                 ).toFixed(2),
                 this.gameProjects.sd.budget.activeForecast +
-                  this.gameProjects.rnd.budget.activeForecast,
+                this.gameProjects.rnd.budget.activeForecast,
                 this.gameProjects.sd.budget.closedForecast +
-                  this.gameProjects.rnd.budget.closedForecast,
+                this.gameProjects.rnd.budget.closedForecast,
                 this.vltProjects.sd.budget.activeForecast +
-                  this.vltProjects.sv.budget.activeForecast +
-                  this.vltProjects.rnd.budget.activeForecast,
+                this.vltProjects.sv.budget.activeForecast +
+                this.vltProjects.rnd.budget.activeForecast,
                 this.vltProjects.sd.budget.closedForecast +
-                  this.vltProjects.sv.budget.closedForecast +
-                  this.vltProjects.rnd.budget.closedForecast,
+                this.vltProjects.sv.budget.closedForecast +
+                this.vltProjects.rnd.budget.closedForecast,
               ],
             },
           ];
-
           this.totalRiskData = [
             {
               value:
@@ -327,8 +335,8 @@ export class DashboardComponent implements OnInit {
                 this.customerProjects.rag.red + this.rndProjects.rag.red,
                 this.gameProjects.sd.rag.red + this.gameProjects.rnd.rag.red,
                 this.vltProjects.sd.rag.red +
-                  this.vltProjects.sv.rag.red +
-                  this.vltProjects.rnd.rag.red,
+                this.vltProjects.sv.rag.red +
+                this.vltProjects.rnd.rag.red,
               ],
             },
             {
@@ -338,10 +346,10 @@ export class DashboardComponent implements OnInit {
               data: [
                 this.customerProjects.rag.amber + this.rndProjects.rag.amber,
                 this.gameProjects.sd.rag.amber +
-                  this.gameProjects.rnd.rag.amber,
+                this.gameProjects.rnd.rag.amber,
                 this.vltProjects.sd.rag.amber +
-                  this.vltProjects.sv.rag.amber +
-                  this.vltProjects.rnd.rag.amber,
+                this.vltProjects.sv.rag.amber +
+                this.vltProjects.rnd.rag.amber,
               ],
             },
             {
@@ -351,14 +359,15 @@ export class DashboardComponent implements OnInit {
               data: [
                 this.customerProjects.rag.green + this.rndProjects.rag.green,
                 this.gameProjects.sd.rag.green +
-                  this.gameProjects.rnd.rag.green,
+                this.gameProjects.rnd.rag.green,
                 this.vltProjects.sd.rag.green +
-                  this.vltProjects.sv.rag.green +
-                  this.vltProjects.rnd.rag.green,
+                this.vltProjects.sv.rag.green +
+                this.vltProjects.rnd.rag.green,
               ],
             },
           ];
-
+          
+          console.log(this.DataLists);
           let customerActiveProjects = this.customerActiveProjects.map(
             (item) => {
               let data = item.CurrentGoLiveDate.split("/");
@@ -427,12 +436,16 @@ export class DashboardComponent implements OnInit {
         item["RAG"] !== undefined
           ? item["RAG"]
           : item["OVERALL_RISK"] === "Green"
-          ? "G"
-          : item["OVERALL_RISK"] === "Red"
-          ? "R"
-          : "A";
+            ? "G"
+            : item["OVERALL_RISK"] === "Red"
+              ? "R"
+              : "A";
       return item;
     });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 
   ngOnDestroy() {

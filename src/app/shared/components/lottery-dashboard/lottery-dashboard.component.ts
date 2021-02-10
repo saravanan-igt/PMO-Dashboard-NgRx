@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-lottery-dashboard",
@@ -10,15 +11,18 @@ import DataState from "../../../Store/data.state";
   styleUrls: ["./lottery-dashboard.component.scss"],
 })
 export class LotteryDashboardComponent implements OnInit {
+  @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent; 
   pageTitle: string = "Lottery Dashboard";
   lotteryProjectsData = [];
   lotterySVProjectsData = [];
+  lotterySVCProjectsData = [];
   lotterySDProjectsData = [];
   lotteryPlannedProjectsData = [];
   totalBudgetData = [];
   budgetSeriesData = [];
   rndBudgetData = [];
-  xAxisData = ["SV", "SD", "R & D"];
+  xAxisData = ["SV", "SD", "SVC", "R & D"];
   dashboardData: any;
   customerProjects;
   totalProjects;
@@ -102,6 +106,20 @@ export class LotteryDashboardComponent implements OnInit {
               name: "Completed",
             },
           ];
+          this.lotterySVCProjectsData = [
+            {
+              value: this.customerProjects.svc.active,
+              name: "Active",
+            },
+            {
+              value: this.customerProjects.svc.planned,
+              name: "Planned",
+            },
+            {
+              value: this.customerProjects.svc.closed,
+              name: "Completed",
+            },
+          ];
           this.lotterySDProjectsData = [
             {
               value: this.customerProjects.sd.active,
@@ -136,6 +154,7 @@ export class LotteryDashboardComponent implements OnInit {
               value:
                 this.customerProjects.sd.activeBudget +
                 this.customerProjects.sv.activeBudget +
+                this.customerProjects.svc.activeBudget +
                 this.rndProjects.activeBudget,
               name: "Active",
             },
@@ -143,6 +162,7 @@ export class LotteryDashboardComponent implements OnInit {
               value:
                 this.customerProjects.sd.plannedBudget +
                 this.customerProjects.sv.plannedBudget +
+                this.customerProjects.svc.plannedBudget +
                 this.rndProjects.plannedBudget,
               name: "Planned",
             },
@@ -150,6 +170,7 @@ export class LotteryDashboardComponent implements OnInit {
               value:
                 this.customerProjects.sd.closedBudget +
                 this.customerProjects.sv.closedBudget +
+                this.customerProjects.svc.closedBudget +
                 this.rndProjects.closedBudget,
               name: "Completed",
             },
@@ -164,6 +185,7 @@ export class LotteryDashboardComponent implements OnInit {
               data: [
                 this.customerProjects.sv.activeBudget,
                 this.customerProjects.sd.activeBudget,
+                this.customerProjects.svc.activeBudget,
                 this.rndProjects.activeBudget,
               ],
             },
@@ -174,6 +196,7 @@ export class LotteryDashboardComponent implements OnInit {
               data: [
                 this.customerProjects.sv.plannedBudget,
                 this.customerProjects.sd.plannedBudget,
+                this.customerProjects.svc.plannedBudget,
                 this.rndProjects.plannedBudget,
               ],
             },
@@ -184,6 +207,7 @@ export class LotteryDashboardComponent implements OnInit {
               data: [
                 this.customerProjects.sv.closedBudget,
                 this.customerProjects.sd.closedBudget,
+                this.customerProjects.svc.closedBudget,
                 this.rndProjects.closedBudget,
               ],
             },
@@ -205,11 +229,13 @@ export class LotteryDashboardComponent implements OnInit {
 
           this.forecastLegend = [
             "SV Active",
-            "SV Completed",
+            "Completed",
+            "SVC Active",
+            "Completed",
             "SD Active",
-            "SD Completed",
+            "Completed",
             "R&D Active",
-            "R&D Completed",
+            "Completed",
           ];
 
           this.forecastSeriesData = [
@@ -219,6 +245,8 @@ export class LotteryDashboardComponent implements OnInit {
               data: [
                 this.customerProjects.sv.activeBudgetF,
                 this.customerProjects.sv.closedBudgetF,
+                this.customerProjects.svc.activeBudgetF,
+                this.customerProjects.svc.closedBudgetF,
                 this.customerProjects.sd.activeBudgetF,
                 this.customerProjects.sd.closedBudgetF,
                 this.rndProjects.activeBudgetF,
@@ -231,6 +259,8 @@ export class LotteryDashboardComponent implements OnInit {
               data: [
                 this.customerProjects.sv.activeForecast,
                 this.customerProjects.sv.closedForecast,
+                this.customerProjects.svc.activeForecast,
+                this.customerProjects.svc.closedForecast,
                 this.customerProjects.sd.activeForecast,
                 this.customerProjects.sd.closedForecast,
                 this.rndProjects.activeForecast,
@@ -243,6 +273,7 @@ export class LotteryDashboardComponent implements OnInit {
             {
               value:
                 this.customerProjects.sv.red +
+                this.customerProjects.svc.red +
                 this.customerProjects.sd.red +
                 this.rndProjects.rag.red,
               name: "Red",
@@ -250,6 +281,7 @@ export class LotteryDashboardComponent implements OnInit {
             {
               value:
                 this.customerProjects.sv.amber +
+                this.customerProjects.svc.amber +
                 this.customerProjects.sd.amber +
                 this.rndProjects.rag.amber,
               name: "Amber",
@@ -257,6 +289,7 @@ export class LotteryDashboardComponent implements OnInit {
             {
               value:
                 this.customerProjects.sv.green +
+                this.customerProjects.svc.green +
                 this.customerProjects.sd.green +
                 this.rndProjects.rag.green,
               name: "Green",
@@ -270,6 +303,7 @@ export class LotteryDashboardComponent implements OnInit {
               barMaxWidth: 40,
               data: [
                 this.customerProjects.sv.red,
+                this.customerProjects.svc.red,
                 this.customerProjects.sd.red,
                 this.rndProjects.rag.red,
               ],
@@ -280,6 +314,7 @@ export class LotteryDashboardComponent implements OnInit {
               barMaxWidth: 40,
               data: [
                 this.customerProjects.sv.amber,
+                this.customerProjects.svc.amber,
                 this.customerProjects.sd.amber,
                 this.rndProjects.rag.amber,
               ],
@@ -290,6 +325,7 @@ export class LotteryDashboardComponent implements OnInit {
               barMaxWidth: 40,
               data: [
                 this.customerProjects.sv.green,
+                this.customerProjects.svc.green,
                 this.customerProjects.sd.green,
                 this.rndProjects.rag.green,
               ],
@@ -310,5 +346,9 @@ export class LotteryDashboardComponent implements OnInit {
     if (this.DataSubscription) {
       this.DataSubscription.unsubscribe();
     }
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 }

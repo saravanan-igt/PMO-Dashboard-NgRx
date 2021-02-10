@@ -18,14 +18,21 @@ import { PageLoaderService } from "./services/page-loader.service";
 import { map } from "rxjs/operators";
 import { MatDialog } from "@angular/material/dialog";
 import { AboutComponent } from "./about/about.component";
+import { ElementRef } from '@angular/core';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
 })
+
 export class AppComponent implements OnInit {
+  public flag1 = "ToggleOff"
   title = "igtPmoDashboard";
+  panelOpenState = false;
   sidenavOpen: boolean = true;
   particleStyle: object = {};
   particleParams: object = {};
@@ -35,7 +42,11 @@ export class AppComponent implements OnInit {
   currentUser: User;
   dataList$;
   lastUpdatedDate: string;
+
   @ViewChild("drawer", { static: false }) drawer: MatSidenav;
+  @ViewChild("toggleElement", {static: false}) ref: MatSlideToggle;
+  @ViewChild("expandMenu", {static: false}) accordion: MatAccordion;
+
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService,
@@ -43,15 +54,51 @@ export class AppComponent implements OnInit {
     private pageLoaderService: PageLoaderService,
     public dialog: MatDialog
   ) {
+    // this.ref.checked = false;
     router.events.subscribe((routerEvent: RouterEvent) => {
       this.checkRouterEvent(routerEvent);
     });
     this.authenticationService.currentUser.subscribe((x) => {
       this.currentUser = x;
       if (x !== null) {
-        this.store.dispatch(DataActions.BeginGetDataAction());
+        this.sidenavOpen = true;
+        console.log("First")
+        this.flag1 = "ToggleOff"
+        this.store.dispatch(DataActions.BeginGetDataAction({payload: this.flag1}));
       }
     });
+
+    
+  }
+
+  highVisibilityProject(data) {
+    console.log(data)
+    if(data.checked) {
+      // this.authenticationService.currentUser.subscribe((x) => {
+      //   this.currentUser = x;
+      //   if (x !== null) {
+          console.log("Second")
+          this.flag1 = "Toggle"
+          if(data.checked) {this.store.dispatch(DataActions.BeginGetDataAction({payload: this.flag1}));}
+      //   }
+      // });
+    }else {
+      // this.authenticationService.currentUser.subscribe((x) => {
+      //   this.currentUser = x;
+      //   if (x !== null) {
+          console.log("Third")
+          this.flag1 = "ToggleOff"
+          if(data.checked == false) { this.store.dispatch(DataActions.BeginGetDataAction({payload: this.flag1}));}
+      //   }
+      // });
+    }
+  }
+
+  toggleCheckedta(value)
+  {
+    console.log(value)
+    this.ref.checked = value;
+    // return value;
   }
 
   checkRouterEvent(routerEvent: RouterEvent): void {
@@ -75,6 +122,7 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
+    this.flag1 = "ToggleOff"
     this.authenticationService.logout();
     this.router.navigate(["/login"]);
   }
@@ -98,6 +146,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     if (window.innerWidth <= 768) {
       this.sidenavMode = "over";
       this.sidenavOpen = false;

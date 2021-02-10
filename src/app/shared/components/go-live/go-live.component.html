@@ -3,7 +3,7 @@
     <div class="col-md-6">
       <h2 class="page-title mb-1">{{ pageTitle }}</h2>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" id="topright">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -24,6 +24,10 @@
     >
       <mat-icon fontSet="material-icons-outlined">info</mat-icon>
     </button>
+  
+      <app-export-btn data-html2canvas-ignore="true"  (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
+    
+  <h2 class="d-none canvasonly page-title col-12">{{ pageTitle }}</h2>
     <ng-template #projectContent>
       <div [innerHTML]="helpText.lotGoLive"></div>
     </ng-template>

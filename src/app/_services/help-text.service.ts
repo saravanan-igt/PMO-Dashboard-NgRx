@@ -16,4 +16,8 @@ export class HelpTextService {
   updateHelpText(data) {
     return this.http.put(`${this.baseUrl}/UpdateHelptext`, data);
   }
+
+  updateHighVisibilityProject(data) {
+    return this.http.put(`${this.baseUrl}/UpdateKeyProjectIndicator`, data);
+  }
 }

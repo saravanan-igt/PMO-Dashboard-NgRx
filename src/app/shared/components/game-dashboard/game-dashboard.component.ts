@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
 import { select, Store } from "@ngrx/store";
 import DataState from "../../../Store/data.state";
+import { GoLiveCalendarComponent } from "../go-live-calendar/go-live-calendar.component";
 
 @Component({
   selector: "app-game-dashboard",
@@ -34,6 +35,9 @@ export class GameDashboardComponent implements OnInit {
   DataLists: any[] = [];
   dataError;
   helpText;
+  @ViewChild(GoLiveCalendarComponent,  { static: false })
+  goLiveCalendar: GoLiveCalendarComponent; 
+  
   constructor(private store: Store<{ data: DataState }>) {
     this.dataList$ = store.pipe(select("data"));
   }
@@ -285,6 +289,10 @@ export class GameDashboardComponent implements OnInit {
             : "A",
       };
     });
+  }
+
+  exportGoliveCalendar(event) {
+    this.goLiveCalendar.exportAsExcelFile()
   }
 
   ngOnChanges() {}

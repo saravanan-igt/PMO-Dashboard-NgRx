@@ -1,9 +1,9 @@
-<div class="container-fluid" *ngIf="DataLists">
+<div class="container-fluid"  *ngIf="DataLists.length" id="lotterysvall">
   <div class="row">
     <div class="col-md-6">
       <h2 class="page-title">{{ pageTitle }}</h2>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5" id="topright">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -13,18 +13,22 @@
         </ol>
       </nav>
     </div>
+    <app-export-btn (golivecalendar)="exportGoliveCalendar($event)" data-html2canvas-ignore="true" type="menu" id="lotterysvall"></app-export-btn> 
   </div>
-  <div class="row info-container">
+  <div class="row info-container" id="LotteryServicesbusiness">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
       mat-icon-button
       class="info-btn text-white"
-      [ngbPopover]="projectContent"
+      [ngbPopover]="projectContent" 
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
-    <ng-template #projectContent>
+    <app-export-btn data-html2canvas-ignore="true" id="LotteryServicesbusiness">
+    </app-export-btn>
+      <h2 class="d-none canvasonly page-title col-12" style="color:black;text-align:center">{{ pageTitle }}</h2>
+  <ng-template #projectContent>
       <div [innerHTML]="helpText.lsvProject"></div>
     </ng-template>
     <div class="col-md-4">
@@ -33,13 +37,15 @@
         [data]="lotteryProjectsData"
         height="200"
       ></app-project-category>
-    </div>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.lsvProject"></div> -->
+      </div>
     <div class="col-md-4">
       <app-budget-chart
         chartTitle="Total Budget"
         [data]="totalBudgetData"
       ></app-budget-chart>
-    </div>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldBudget"></div> -->
+ </div>
     <div class="col-md-4">
       <app-budget-chart
         chartTitle="RAG Status"
@@ -52,10 +58,12 @@
         ]"
         [totalText]="false"
       ></app-budget-chart>
-    </div>
+      <!-- <div class="d-none canvasonly" [innerHTML]="helpText.ldRAG"></div> -->
+     </div>
+    <div class="d-none canvasonly container" [innerHTML]="helpText.lsvProject"></div>
   </div>
 
-  <div class="row mt-4 info-container">
+  <div class="row mt-4 info-container" data-html2canvas-ignore="true"> 
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -63,7 +71,7 @@
       class="info-btn"
       [ngbPopover]="projectListContent"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
     <ng-template #projectListContent>
       <div [innerHTML]="helpText.lsvProjectList"></div>
@@ -88,7 +96,7 @@
     </div>
   </div>
 
-  <div class="row mt-4 info-container">
+  <div data-html2canvas-ignore="true" class="row mt-4 info-container">
     <button
       type="button"
       triggers="mouseenter:mouseleave"
@@ -96,14 +104,14 @@
       class="info-btn"
       [ngbPopover]="goLiveContent"
     >
-      <mat-icon fontSet="material-icons-outlined">info</mat-icon>
+      <mat-icon fontSet="material-icons-outlined" data-html2canvas-ignore="true">info</mat-icon>
     </button>
+    <app-export-btn data-html2canvas-ignore="true" (golivecalendar)="exportGoliveCalendar($event)"></app-export-btn>
     <ng-template #goLiveContent>
       <div [innerHTML]="helpText.lsvGoLive"></div>
     </ng-template>
-    <div class="col-12">
+    <div class="col-12"  *ngIf="scheduleData">
       <app-go-live-calendar
-        *ngIf="scheduleData"
         [scheduleData]="scheduleData"
         [calendarTitle]="'Go-Live Calendar'"
         [ragFilter]="true"
